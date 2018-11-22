@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "247ac5e7-06a5-40a2-9d8d-398f839a924d",
+    "name": "ihmp-dev",
+    "password": "password",
+    "email": "openchssupport+ihmp+test+1@samanvayfoundation.org",
+    "phoneNumber": "+919999999999",
+    "organisationUUID": "11845014-41e6-42fa-bbc8-57b1bfcd6f57",
+    "catchmentUUID": "6afe809c-a721-4bf1-999f-e51067331e8a",
+    "operatingIndividualScope": "ByCatchment",
+    "isAdmin": "false",
+    "isOrgAdmin": "false"
+  }
+]

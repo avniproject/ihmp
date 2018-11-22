@@ -1,0 +1,13 @@
+[
+  {
+    "uuid": "84176bf8-4ee3-4f63-a076-3dfb1a532ec6",
+    "name": "ihmp-admin",
+    "password": "password",
+    "email": "openchssupport+ihmp+admin@samanvayfoundation.org",
+    "phoneNumber": "+919999999999",
+    "organisationUUID": "11845014-41e6-42fa-bbc8-57b1bfcd6f57",
+    "operatingIndividualScope": "None",
+    "isAdmin": "false",
+    "isOrgAdmin": "true"
+  }
+]
