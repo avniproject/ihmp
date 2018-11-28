@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Disability",
+    "uuid": "f27e9504-81a3-48d9-b7cc-4bc90dbd4a30",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "6a85071d-201a-414d-8f25-4e9957053634",
+    "name": "Resident"
+  },
+  {
+    "uuid": "4458026d-eb1a-4d22-9768-0e7741329f9f",
+    "name": "Dead"
+  },
+  {
+    "uuid": "5f23fa43-2e4b-45df-8ca5-5e1ea81f6e2d",
+    "name": "Out migrant"
+  },
+  {
+    "name": "Status of the individual",
+    "uuid": "6617408e-b89e-4f2f-ab10-d818c5d7f1bd",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "6a85071d-201a-414d-8f25-4e9957053634",
+        "name": "Resident"
+      },
+      {
+        "uuid": "4458026d-eb1a-4d22-9768-0e7741329f9f",
+        "name": "Dead"
+      },
+      {
+        "uuid": "5f23fa43-2e4b-45df-8ca5-5e1ea81f6e2d",
+        "name": "Out migrant"
+      }
+    ]
+  }
+
+]
