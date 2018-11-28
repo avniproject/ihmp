@@ -1,0 +1,12 @@
+{
+  "organisationName": "IHMP",
+  "operationalPrograms": [
+    {
+      "uuid": "aaf5a933-6e33-4af3-8a27-c4c3c64dfc4c",
+      "name": "Eligible couple",
+      "program": {
+        "uuid": "fdf5c253-c49f-43e1-9591-4556a3ea36d4"
+      }
+    }
+  ]
+}

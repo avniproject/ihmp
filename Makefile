@@ -79,6 +79,14 @@ deploy_org_data_live:
 _deploy_refdata:
 	$(call _curl,POST,concepts,@registration/registrationConcepts.json)
 	$(call _curl,POST,forms,@registration/registrationForm.json)
+	$(call _curl,POST,programs,@programs.json)
+	$(call _curl,POST,encounterTypes,@encounterTypes.json)
+	$(call _curl,POST,operationalEncounterTypes,@operationalModules/operationalEncounterTypes.json)
+	$(call _curl,POST,operationalPrograms,@operationalModules/operationalPrograms.json)
+	$(call _curl,POST,concepts,@eligibleCouple/eligibleCoupleConcepts.json)
+	$(call _curl,POST,forms,@eligibleCouple/eligibleCoupleEnrolmentForm.json)
+	$(call _curl,POST,formMappings,@formMappings.json)
+
 
 deploy_rules:
 #	node index.js "$(server_url)" "$(token)" "$(username)"

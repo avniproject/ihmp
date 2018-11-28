@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Age of oldest child",
+    "uuid": "92b08af5-84f7-4f8a-b8ac-90609fa58db7",
+    "dataType": "Date"
+  },
+  {
+    "name": "Last pregnancy outcome",
+    "uuid": "5eabdcce-553b-488f-926c-49849f0c2e98",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Live Birth",
+        "uuid": "e3999b21-821c-4c6e-9953-156e70b9217c"
+      },
+      {
+        "name": "Still Birth",
+        "uuid": "797c7923-1993-49d9-b759-1706aae62ae9",
+        "abnormal": true
+      },
+      {
+        "name": "Early Neonatal death within first 24 Hours of birth",
+        "uuid": "63c6e46e-77ea-44d7-bb46-ae4f16acb399",
+        "abnormal": true
+      },
+      {
+        "name": "Live birth and Still birth",
+        "uuid": "231982cb-bacc-4d8b-8ee7-be47bdd4d47e",
+        "abnormal": true
+      },
+      {
+        "uuid": "03dddd29-c1bb-4231-a17b-55445e247e7d",
+        "name": "Abortion"
+      }
+    ]
+  },
+  {
+      "name": "Date of last pregnancy outcome",
+      "uuid": "9a9000ad-31b7-4144-884a-16c1194df1be",
+      "dataType": "Date"
+  },
+  {
+    "name": "Whether sterilized",
+    "uuid": "92475d77-7cdd-4976-98f0-3847939a95d1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Month and year of sterlization",
+    "uuid": "6679b01b-3f50-4cd9-be85-3cae1a04dabd",
+    "dataType": "Text"
+  }
+]
