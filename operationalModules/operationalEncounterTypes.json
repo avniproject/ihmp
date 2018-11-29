@@ -1,2 +1,12 @@
-[
-]
+{
+  "organisationName": "IHMP",
+  "operationalEncounterTypes": [
+    {
+      "uuid": "bde6d205-4ed6-4a7a-8780-217216ce8a3b",
+      "name": "Needs assessment",
+      "encounterType": {
+        "uuid": "55f10f7a-d85e-487e-b611-c1b5e26ab972"
+      }
+    }
+  ]
+}

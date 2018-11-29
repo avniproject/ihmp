@@ -35,9 +35,9 @@
     ]
   },
   {
-      "name": "Date of last pregnancy outcome",
-      "uuid": "9a9000ad-31b7-4144-884a-16c1194df1be",
-      "dataType": "Date"
+    "name": "Date of last pregnancy outcome",
+    "uuid": "9a9000ad-31b7-4144-884a-16c1194df1be",
+    "dataType": "Date"
   },
   {
     "name": "Whether sterilized",
@@ -56,5 +56,321 @@
     "name": "Month and year of sterlization",
     "uuid": "6679b01b-3f50-4cd9-be85-3cae1a04dabd",
     "dataType": "Text"
+  },
+  {
+    "name": "Whether got monthly periods",
+    "uuid": "6174bf54-6ed6-449e-8263-eb6a46dceb4a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether missed monthly periods",
+    "uuid": "056030f2-944a-4758-ac7c-e62e39935fc5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether undergone pregnancy test if missed monthly periods",
+    "uuid": "05902834-70dc-4f05-8700-41ac7c7e28c4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether currently pregnant",
+    "uuid": "6ac76c57-66e4-40e7-b9bb-983f276f986a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "ccf7cefe-a179-481b-b14f-54a7e7c0db7a",
+    "name": "Lactating mother"
+  },
+  {
+    "name": "Whether lactating mother or irregular periods",
+    "uuid": "8e8ad333-4639-45c8-be0a-7bac13d87b98",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ccf7cefe-a179-481b-b14f-54a7e7c0db7a",
+        "name": "Lactating mother"
+      },
+      {
+        "name": "Irregular menses",
+        "uuid": "ce47ae12-e61c-49cc-8ccd-715f9d5cb76d"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Whether using any family planning method currently",
+    "uuid": "0d748e89-f0ce-4891-9f41-a5c3f3c4ba2c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "4678e54d-e454-4472-acc6-8bfd16cd15a0",
+    "name": "Contraceptive Injection"
+  },
+  {
+    "uuid": "2a86185a-08be-414d-aa55-720123cb51e4",
+    "name": "Natural methods",
+    "dataType": "NA"
+  },
+  {
+    "name": "Family planning method used currently",
+    "uuid": "518cdd47-a634-4554-ae2d-fcc8e1d8ad14",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Pill",
+        "uuid": "5a548cae-aca3-494f-9ca0-058bcdf3551c",
+        "dataType": "NA"
+      },
+      {
+        "name": "Copper T / IUD",
+        "uuid": "cfb6bf16-97bc-45b0-bbfe-e1a613344bd3",
+        "dataType": "NA"
+      },
+      {
+        "uuid": "8f975508-8179-450b-9a27-d11b7818677b",
+        "name": "Condom"
+      },
+      {
+        "uuid": "4678e54d-e454-4472-acc6-8bfd16cd15a0",
+        "name": "Contraceptive injection"
+      },
+      {
+        "uuid": "2a86185a-08be-414d-aa55-720123cb51e4",
+        "name": "Natural methods"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+      }
+    ]
+  },
+  {
+    "name": "Since last how many month is she using the FP method?",
+    "uuid": "4f8fe008-5a57-4906-8f18-55c0c83bc312",
+    "dataType": "Duration"
+  },
+  {
+    "name": "Whether desire to use any FP methods in future",
+    "uuid": "66239280-5bb9-437c-86ff-ce9c59f2ea9f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "77f08191-4e82-4da0-9830-32686aa38680",
+    "name": "Male sterilization"
+  },
+  {
+    "uuid": "513a2943-b4a5-4072-ba72-839f8cc9fc2e",
+    "name": "Female sterilization"
+  },
+  {
+    "name": "FP method preference for future use",
+    "uuid": "2ccecc3f-7b63-4679-86de-5d7f1c150917",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Pill",
+        "uuid": "5a548cae-aca3-494f-9ca0-058bcdf3551c",
+        "dataType": "NA"
+      },
+      {
+        "name": "Copper T / IUD",
+        "uuid": "cfb6bf16-97bc-45b0-bbfe-e1a613344bd3",
+        "dataType": "NA"
+      },
+      {
+        "uuid": "8f975508-8179-450b-9a27-d11b7818677b",
+        "name": "Condom"
+      },
+      {
+        "uuid": "4678e54d-e454-4472-acc6-8bfd16cd15a0",
+        "name": "Contraceptive injection"
+      },
+      {
+        "uuid": "2a86185a-08be-414d-aa55-720123cb51e4",
+        "name": "Natural methods"
+      },
+      {
+        "uuid": "77f08191-4e82-4da0-9830-32686aa38680",
+        "name": "Male sterilization"
+      },
+      {
+        "uuid": "513a2943-b4a5-4072-ba72-839f8cc9fc2e",
+        "name": "Female sterilization"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+      }
+    ]
+  },
+  {
+    "uuid": "77d6c96a-c543-492e-b062-2ad5f96f0cd0",
+    "name": "Itching in vaginal area"
+  },
+  {
+    "uuid": "aa78c9b0-2157-4163-8bb8-2f8b0e0058ec",
+    "name": "Wounds/ulcer around vaginal area"
+  },
+  {
+    "uuid": "dbcca2ed-bb37-4a5b-b74c-93fa1dd953e1",
+    "name": "Swelling in inguinal area (lymph node enlargement)"
+  },
+  {
+    "uuid": "1bd28b6a-febb-48ba-bb43-f5d450daf9d7",
+    "name": "Pain during sexual intercourse"
+  },
+  {
+    "name": "Symptoms of RTI",
+    "uuid": "b9d037fb-50c1-497e-bf5c-4d8419909a31",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "White Discharge",
+        "uuid": "1ff880ff-477d-4519-a664-a612a393dd60"
+      },
+      {
+        "uuid": "77d6c96a-c543-492e-b062-2ad5f96f0cd0",
+        "name": "Itching in vaginal area"
+      },
+      {
+        "uuid": "aa78c9b0-2157-4163-8bb8-2f8b0e0058ec",
+        "name": "Wounds/ulcer around vaginal area"
+      },
+      {
+        "uuid": "dbcca2ed-bb37-4a5b-b74c-93fa1dd953e1",
+        "name": "Swelling in inguinal area (lymph node enlargement)"
+      },
+      {
+        "uuid": "1bd28b6a-febb-48ba-bb43-f5d450daf9d7",
+        "name": "Pain during sexual intercourse"
+      },
+      {
+        "name": "Lower abdominal pain",
+        "uuid": "92ad8878-b476-4291-aa76-3377fa7cf19c"
+      },
+      {
+        "uuid": "e82a61a5-b532-4293-b5e8-3ec014325b85",
+        "name": "Pain during micturition"
+      },
+      {
+        "uuid": "39e98eb7-efe2-4a8a-ba99-79f51d522a8d",
+        "name": "Prolapsed uterus"
+      },
+      {
+        "name": "None",
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Duration of RTI symptom(s) in days",
+    "uuid": "3f680272-dcfa-4db2-bc02-d4605b5454a2",
+    "dataType": "Duration"
+  },
+  {
+    "name": "Whether treatment for RTI symptom(s) taken",
+    "uuid": "3674585b-0ba3-4aeb-8e5a-901ab09ebf37",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether RTI cured",
+    "uuid": "9947d31c-e70a-4cee-8a7e-63293ce3af9b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "EC program follow up visit by ASHA",
+    "uuid": "2e6b1614-7d6c-4caa-bfbe-e0455c8b2309",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3cab380d-d6c4-4faa-a67e-d31fb9c6cf38",
+        "name": "Family planning"
+      },
+      {
+        "name": "Reproductive tract infection (RTI)",
+        "uuid": "86801543-4a90-4f60-bff4-494ea06a2f0b"
+      },
+      {
+        "name": "None",
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Follow up visit date for FP",
+    "uuid": "de3e8247-18e7-44aa-934e-6bd262251bd8",
+    "dataType": "Date"
+  },
+  {
+    "name": "Follow up visit date for RTI",
+    "uuid": "6539ec90-14b9-4e5f-9305-4ca05f89db50",
+    "dataType": "Date"
   }
 ]

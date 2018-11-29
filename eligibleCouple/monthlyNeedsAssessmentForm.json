@@ -1,0 +1,247 @@
+{
+  "name": "Monthly needs assessment",
+  "uuid": "8b5bf56e-346a-486e-b00e-9fa604fa0b54",
+  "formType": "ProgramEncounter",
+  "formElementGroups": [
+    {
+      "uuid": "0ab3490c-bffc-4e4f-b026-6e5e11766c01",
+      "name": "Menstrual surveillance",
+      "display": "Menstrual surveillance",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Whether got monthly periods",
+          "uuid": "3e32aab2-f4ef-423a-ad8a-748d36763ec7",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether got monthly periods",
+            "uuid": "6174bf54-6ed6-449e-8263-eb6a46dceb4a"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Whether missed monthly periods",
+          "uuid": "fb6823d5-e022-4a2d-b962-433a634ca92e",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether missed monthly periods",
+            "uuid": "056030f2-944a-4758-ac7c-e62e39935fc5"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Whether undergone pregnancy test if missed monthly periods",
+          "uuid": "772c77db-d0fa-43a5-a4a1-a2cfd04bcd64",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether undergone pregnancy test if missed monthly periods",
+            "uuid": "05902834-70dc-4f05-8700-41ac7c7e28c4"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Result of UPT",
+          "uuid": "bbc3e2c7-8997-425b-8e6a-7e979953f243",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Urine pregnancy test",
+            "uuid": "ae076480-008d-47ca-9fab-a5300a626e42"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Whether currently pregnant",
+          "uuid": "",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether currently pregnant",
+            "uuid": "6ac76c57-66e4-40e7-b9bb-983f276f986a"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "If not getting periods, whether lactating mother / irregular periods",
+          "uuid": "6e5d4080-821f-43f9-b59a-56c6cc740dc1",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether lactating mother or irregular periods",
+            "uuid": "8e8ad333-4639-45c8-be0a-7bac13d87b98"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        }
+
+      ]
+    },
+    {
+      "uuid": "4f6b6e8a-6e68-4d08-a47d-64dc59af37c8",
+      "name": "Family planning",
+      "display": "Family planning",
+      "displayOrder": 2,
+      "formElements": [
+        {
+          "name": "Whether using any family planning method currently",
+          "uuid": "8a4ef26c-976c-4e1d-a348-beee971b9954",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether using any family planning method currently",
+            "uuid": "0d748e89-f0ce-4891-9f41-a5c3f3c4ba2c"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Family planning method used currently",
+          "uuid": "56ee3504-482c-440f-b1aa-3bdfff3738a0",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Family planning method used currently",
+            "uuid": "518cdd47-a634-4554-ae2d-fcc8e1d8ad14"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Since last how many month is she using the FP method?",
+          "uuid": "552175fd-38a5-4ee9-9643-e8cf7b7bb03c",
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": [
+                "months"
+              ]
+            }
+          ],
+          "concept": {
+            "name": "Since last how many month is she using the FP method?",
+            "uuid": "4f8fe008-5a57-4906-8f18-55c0c83bc312"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Whether desire to use any FP methods in future",
+          "uuid": "f5727fc9-3e2d-4038-94fd-92ba5ea2697e",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether desire to use any FP methods in future",
+            "uuid": "66239280-5bb9-437c-86ff-ce9c59f2ea9f"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "FP method preference for future use",
+          "uuid": "d100880b-24e5-4507-95e6-772953fd679b",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "FP method preference for future use",
+            "uuid": "2ccecc3f-7b63-4679-86de-5d7f1c150917"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "e31f77b9-7846-44b6-8865-c5d9984997d4",
+      "name": "Reproductive Tract Infections (RTI)",
+      "display": "Reproductive Tract Infections (RTI)",
+      "displayOrder": 3,
+      "formElements": [
+        {
+          "name": "Currently having any one symptom of RTIs?",
+          "uuid": "96d537fb-b6c0-40dc-b7d9-f85c2765f62b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Symptoms of RTI",
+            "uuid": "b9d037fb-50c1-497e-bf5c-4d8419909a31"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Duration of symptoms in days",
+          "uuid": "8a443129-ae05-456b-94c0-5237ccea42b1",
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": [
+                "days"
+              ]
+            }
+          ],
+          "concept": {
+            "name": "Duration of symptoms in days",
+            "uuid": "3f680272-dcfa-4db2-bc02-d4605b5454a2"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Whether treatment for RTI symptom(s) taken",
+          "uuid": "205e41a8-e3e6-41d2-86af-2507d454c351",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether treatment for RTI symptom(s) taken",
+            "uuid": "3674585b-0ba3-4aeb-8e5a-901ab09ebf37"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "fb036f72-af55-4d16-b438-9a0268e3b0c0",
+      "name": "Follow up visits by ASHA",
+      "display": "Follow up visits by ASHA",
+      "displayOrder": 4,
+      "formElements": [
+        {
+          "name": "Follow up visit by ASHA",
+          "uuid": "c0e93606-1ec9-40ee-be66-38fddac879b3",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "EC program follow up visit by ASHA",
+            "uuid": "2e6b1614-7d6c-4caa-bfbe-e0455c8b2309"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Follow up visit date for FP",
+          "uuid": "227fcd48-d9bf-4d18-881e-119781bb244f",
+          "keyValues": [],
+          "concept": {
+            "name": "Follow up visit date for FP",
+            "uuid": "de3e8247-18e7-44aa-934e-6bd262251bd8"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Follow up visit date for RTI",
+          "uuid": "387a5785-bdfe-4c7c-b16b-4e0dea40ad01",
+          "keyValues": [],
+          "concept": {
+            "name": "Follow up visit date for RTI",
+            "uuid": "6539ec90-14b9-4e5f-9305-4ca05f89db50"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    }
+  ]
+}
