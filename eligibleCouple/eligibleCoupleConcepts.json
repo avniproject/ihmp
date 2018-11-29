@@ -40,19 +40,6 @@
     "dataType": "Date"
   },
   {
-    "name": "Whether sterilized",
-    "uuid": "92475d77-7cdd-4976-98f0-3847939a95d1",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
-      },
-      {
-        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
-      }
-    ]
-  },
-  {
     "name": "Month and year of sterlization",
     "uuid": "6679b01b-3f50-4cd9-be85-3cae1a04dabd",
     "dataType": "Text"
@@ -182,7 +169,8 @@
         "name": "Natural methods"
       },
       {
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
       }
     ]
   },
@@ -372,5 +360,185 @@
     "name": "Follow up visit date for RTI",
     "uuid": "6539ec90-14b9-4e5f-9305-4ca05f89db50",
     "dataType": "Date"
+  },
+  {
+    "uuid": "035f1e7c-752d-4bb0-8baf-cf0c02b52460",
+    "name": "User"
+  },
+  {
+    "uuid": "ba8e3aee-a4e0-412e-8325-fc7b184c4e04",
+    "name": "Non user"
+  },
+  {
+    "uuid": "d727f9e1-3b75-49c3-8f4f-5829211710e0",
+    "name": "Desire to use"
+  },
+  {
+    "name": "Current temporary FP methods usage status",
+    "uuid": "582ca6e6-3e31-4709-a555-28959cc58863",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "035f1e7c-752d-4bb0-8baf-cf0c02b52460",
+        "name": "User"
+      },
+      {
+        "uuid": "ba8e3aee-a4e0-412e-8325-fc7b184c4e04",
+        "name": "Non user"
+      },
+      {
+        "uuid": "d727f9e1-3b75-49c3-8f4f-5829211710e0",
+        "name": "Desire to use"
+      }
+    ]
+  },
+  {
+    "name": "Whether she utilized last referral service",
+    "uuid": "1622856e-8ee2-4f56-bb55-086493b10403",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "5d9d4e6b-c7c0-46a2-8196-0284a99294fd",
+    "name": "FP methods"
+  },
+  {
+    "uuid": "0a2327da-b9cb-445c-940b-0e5477a0de75",
+    "name": "Advantages of using specific FP methods"
+  },
+  {
+    "uuid": "7470fd46-313b-42f4-b68a-08cfbf03c20b",
+    "name": "Side effects of using specific FP methods"
+  },
+  {
+    "uuid": "0af6cd68-75b3-49b9-b6ab-d573df85649f",
+    "name": "Adverse consequences of having childbirth before 18 years of age"
+  },
+  {
+    "uuid": "5dfa8d2d-00b4-40c0-8261-88c1e06b15c3",
+    "name": "Advantages of 3 years spacing between two children"
+  },
+  {
+    "uuid": "747a01a4-c07d-4c54-bc9b-c33b2288a2d8",
+    "name": "Places where FP methods are available"
+  },
+  {
+    "uuid": "6c629c3c-54ff-43e1-8e52-c78541f6b638",
+    "name": "Cost incurred to get specific FP methods"
+  },
+  {
+    "name": "FP counselling topics covered",
+    "uuid": "92e0921d-1349-4711-91a6-209544471f28",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "5d9d4e6b-c7c0-46a2-8196-0284a99294fd",
+        "name": "FP methods"
+      },
+      {
+        "uuid": "0a2327da-b9cb-445c-940b-0e5477a0de75",
+        "name": "Advantages of using specific FP methods"
+      },
+      {
+        "uuid": "7470fd46-313b-42f4-b68a-08cfbf03c20b",
+        "name": "Side effects of using specific FP methods"
+      },
+      {
+        "uuid": "0af6cd68-75b3-49b9-b6ab-d573df85649f",
+        "name": "Adverse consequences of having childbirth before 18 years of age"
+      },
+      {
+        "uuid": "5dfa8d2d-00b4-40c0-8261-88c1e06b15c3",
+        "name": "Advantages of 3 years spacing between two children"
+      },
+      {
+        "uuid": "747a01a4-c07d-4c54-bc9b-c33b2288a2d8",
+        "name": "Places where FP methods are available"
+      },
+      {
+        "uuid": "6c629c3c-54ff-43e1-8e52-c78541f6b638",
+        "name": "Cost incurred to get specific FP methods"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "uuid": "e8115230-8b9b-40b5-afbf-facceb4645a1",
+    "name": "In laws"
+  },
+  {
+    "name": "FP counselling provided to",
+    "uuid": "a5235cbf-db5c-4121-a6ea-e1c106e58e0c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "fb11151f-158f-49a3-8575-bd429a1846ac",
+        "name": "Woman"
+      },
+      {
+        "uuid": "3305a303-be7f-4270-9f52-055a037b1f1f",
+        "name": "Husband"
+      },
+      {
+        "uuid": "e8115230-8b9b-40b5-afbf-facceb4645a1",
+        "name": "In laws"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Distributed FP methods",
+    "uuid": "8b6beb48-d681-4244-8a52-9f16fd05f9e0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Pill",
+        "uuid": "5a548cae-aca3-494f-9ca0-058bcdf3551c"
+      },
+      {
+        "uuid": "8f975508-8179-450b-9a27-d11b7818677b",
+        "name": "Condom"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Referred to facility for FP",
+    "uuid": "af8d4daa-a2b1-4a0b-b90e-5ebc41577385",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Auxillary Nurse Midwife",
+        "uuid": "d3f764e5-938a-42dd-bdef-02614d424f8d"
+      },
+      {
+        "name": "Primary Health Center",
+        "uuid": "b4007f93-f288-49aa-b2ad-96f1a0f75a43"
+      },
+      {
+        "name": "Government Hospital",
+        "uuid": "df6303d5-0b78-48e0-8a3c-1a7fec61a9f1"
+      },
+      {
+        "name": "Private hospital",
+        "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      }
+    ]
   }
 ]

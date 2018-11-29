@@ -34,6 +34,20 @@
         "name": "Out migrant"
       }
     ]
+  },
+  {
+    "name": "Whether sterilized",
+    "uuid": "92475d77-7cdd-4976-98f0-3847939a95d1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
   }
+
 
 ]

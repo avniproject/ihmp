@@ -86,6 +86,7 @@ _deploy_refdata:
 	$(call _curl,POST,concepts,@eligibleCouple/eligibleCoupleConcepts.json)
 	$(call _curl,POST,forms,@eligibleCouple/eligibleCoupleEnrolmentForm.json)
 	$(call _curl,POST,forms,@eligibleCouple/monthlyNeedsAssessmentForm.json)
+	$(call _curl,POST,forms,@eligibleCouple/fpServicesForm.json)
 	$(call _curl,POST,formMappings,@formMappings.json)
 
 

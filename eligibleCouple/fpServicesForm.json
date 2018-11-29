@@ -1,0 +1,113 @@
+{
+  "name": "Family planning services",
+  "uuid": "981b3e41-7fae-4b0e-a0aa-e9a42076414e",
+  "formType": "ProgramEncounter",
+  "formElementGroups": [
+    {
+      "uuid": "c6b0e2a1-d606-4d0a-ab18-0a5fdb8c199d",
+      "name": "Family planning status",
+      "display": "Family planning status",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Current temporary FP methods usage status",
+          "uuid": "0870863d-19ab-4b5d-8cbd-9b5de2a73395",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Current temporary FP methods usage status",
+            "uuid": "582ca6e6-3e31-4709-a555-28959cc58863"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Whether she utilized last referral service",
+          "uuid": "ef76e5b7-5957-478d-aa73-43dc98cf08cc",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether she utilized last referral service",
+            "uuid": "1622856e-8ee2-4f56-bb55-086493b10403"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "e822a857-c61d-4ada-ad8a-e389ba00ef9a",
+      "name": "FP services provided",
+      "display": "FP services provided",
+      "displayOrder": 2,
+      "formElements": [
+        {
+          "name": "FP counselling topics covered",
+          "uuid": "34226b8c-0ffe-4f61-b376-442028db4555",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "FP counselling topics covered",
+            "uuid": "92e0921d-1349-4711-91a6-209544471f28"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "FP counselling provided to",
+          "uuid": "1b6d70e9-f85b-44ea-8217-ca911bd8cb85",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "FP counselling provided to",
+            "uuid": "a5235cbf-db5c-4121-a6ea-e1c106e58e0c"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Distributed FP methods",
+          "uuid": "95751347-601e-46fe-8cae-decfd27e8aab",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Distributed FP methods",
+            "uuid": "8b6beb48-d681-4244-8a52-9f16fd05f9e0"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Referred to facility for FP",
+          "uuid": "6fc4875c-faaf-4b86-b62d-a858e5c492e6",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Referred to facility for FP",
+            "uuid": "af8d4daa-a2b1-4a0b-b90e-5ebc41577385"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "a9947ff9-c7fe-4061-bd4b-99cd1f029e5f",
+      "name": "Follow up",
+      "display": "Follow up",
+      "displayOrder": 3,
+      "formElements": [
+        {
+          "name": "Follow up date",
+          "uuid": "9e7f47a7-9419-404e-a5df-73205c997c7c",
+          "keyValues": [],
+          "concept": {
+            "name": "Follow up date",
+            "uuid": "403f346a-1ac0-4286-9097-6fc4cb42b093"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,13 @@
       "encounterType": {
         "uuid": "55f10f7a-d85e-487e-b611-c1b5e26ab972"
       }
+    },
+    {
+      "uuid": "81f646b8-6203-42a9-9088-6c4343ad76ea",
+      "name": "Family planning services",
+      "encounterType": {
+        "uuid": "90aee0f6-6267-4133-8bd8-2938c6da5da4"
+      }
     }
   ]
 }

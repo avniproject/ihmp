@@ -12,5 +12,12 @@
     "encounterTypeUUID": "55f10f7a-d85e-487e-b611-c1b5e26ab972",
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
     "comment": "Eligible couple monthly needs assessment"
+  },
+  {
+    "uuid": "c796c934-4178-44cc-bf93-1c49527d66fa",
+    "formUUID": "981b3e41-7fae-4b0e-a0aa-e9a42076414e",
+    "encounterTypeUUID": "90aee0f6-6267-4133-8bd8-2938c6da5da4",
+    "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "comment": "Eligible couple family planning services"
   }
 ]

@@ -136,13 +136,13 @@
           "mandatory": false
         },
         {
-          "name": "Family planning status",
+          "name": "Whether sterilized",
           "uuid": "fa28a1ea-1e58-4d8d-8d2a-96380f2b2b9c",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Family planning status",
-            "uuid": "cbcebf1d-4053-4778-9170-a2775df0a140"
+            "name": "Whether sterilized",
+            "uuid": "92475d77-7cdd-4976-98f0-3847939a95d1"
           },
           "displayOrder": 9,
           "mandatory": false
