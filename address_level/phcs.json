@@ -1,0 +1,16 @@
+[
+  {
+    "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477",
+    "name": "Anna Magar Hospital",
+    "level": 2.6,
+    "type": "PHC Area",
+    "parents": []
+  },
+  {
+    "uuid": "47592595-3ca7-4153-9418-a3756fb4ea11",
+    "name": "Wadigodri",
+    "level": 2.6,
+    "type": "PHC Area",
+    "parents": []
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "uuid": "de1a238f-2138-4f33-ac29-6d3565a61486",
+    "name": "Shine Vasti Ii",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "3306798e-0884-4cf0-b34d-15cdd8425f80",
+    "name": "Shankarmath Ii",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "2a621618-3b01-4f8d-ad92-5fbe6c1191f1",
+    "name": "Vaiduwadi I",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "ecd370a3-900b-4850-844b-c06e9e500216",
+    "name": "Nalewadi",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "47592595-3ca7-4153-9418-a3756fb4ea11"
+      }
+    ]
+  },
+  {
+    "uuid": "152cb9cd-5796-4cd4-9028-979ce58f1ea8",
+    "name": "Shahapur",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "47592595-3ca7-4153-9418-a3756fb4ea11"
+      }
+    ]
+  },
+  {
+    "uuid": "09dbf31d-842e-41c8-b888-f0797d1368a9",
+    "name": "Vaiduwadi Ii",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "f95ca39e-6029-48de-b478-2446f9938f69",
+    "name": "Samarth Nagar/Indira Nagar",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "7c137854-6ea1-497d-936c-515b0fd85afc",
+    "name": "Dongaon",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "47592595-3ca7-4153-9418-a3756fb4ea11"
+      }
+    ]
+  },
+  {
+    "uuid": "d72a6ce7-b897-4757-b895-73920fded619",
+    "name": "Gosavi Vasti Ii",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "12e61c43-d779-4186-8d67-9ad22ac2de75",
+    "name": "Gosavi Vasti Iii",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "ea5955ad-47b7-43b0-b059-1a5ace313384",
+    "name": "Wadigodri",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "47592595-3ca7-4153-9418-a3756fb4ea11"
+      }
+    ]
+  },
+  {
+    "uuid": "7580475e-3a93-4de1-aed2-f5e950c15bc5",
+    "name": "Shankarmath I",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "f91fd990-d91b-441c-946d-1601d38df4c3",
+    "name": "Taka",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "47592595-3ca7-4153-9418-a3756fb4ea11"
+      }
+    ]
+  },
+  {
+    "uuid": "0fd229f1-5d9c-4e91-ada8-c83a4fd644b3",
+    "name": "Bhamberi",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "47592595-3ca7-4153-9418-a3756fb4ea11"
+      }
+    ]
+  },
+  {
+    "uuid": "5141e01a-f68e-432a-9d62-5ee307698e4f",
+    "name": "Gosavi Vasti I",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "39a9ed13-78be-46c5-acdd-62aaede6f982",
+    "name": "Birajdar Vasti",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "20b4cadb-7472-466e-824f-cd1e021284e5",
+    "name": "Shine Vasti I",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  },
+  {
+    "uuid": "71bca370-10e4-4f8c-8287-9df1e3ce00a3",
+    "name": "Vaiduwadi Iii",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "1218d5ca-50b4-4f30-abdf-de64dc079477"
+      }
+    ]
+  }
+]
