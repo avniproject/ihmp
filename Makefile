@@ -92,7 +92,7 @@ _deploy_refdata:
 
 
 deploy_rules:
-#	node index.js "$(server_url)" "$(token)" "$(username)"
+	node index.js "$(server_url)" "$(token)" "$(username)"
 
 deploy_rules_live:
 	make auth deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=ihmp-admin password=$(password) server=https://server.openchs.org port=443
