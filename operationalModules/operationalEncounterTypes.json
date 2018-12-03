@@ -14,6 +14,13 @@
       "encounterType": {
         "uuid": "90aee0f6-6267-4133-8bd8-2938c6da5da4"
       }
+    },
+    {
+      "uuid": "5612fc4c-8232-43d5-b6f6-8568a104fd79",
+      "name": "RTI services",
+      "encounterType": {
+        "uuid": "f750c222-f7eb-4a98-bd79-273c578dedcf"
+      }
     }
   ]
 }

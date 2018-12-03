@@ -159,10 +159,10 @@
       "displayOrder": 3,
       "formElements": [
         {
-          "name": "Currently having any one symptom of RTIs?",
+          "name": "Currently having any symptom of RTIs?",
           "uuid": "96d537fb-b6c0-40dc-b7d9-f85c2765f62b",
           "keyValues": [],
-          "type": "SingleSelect",
+          "type": "MultiSelect",
           "concept": {
             "name": "Symptoms of RTI",
             "uuid": "b9d037fb-50c1-497e-bf5c-4d8419909a31"

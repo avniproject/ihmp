@@ -19,5 +19,12 @@
     "encounterTypeUUID": "90aee0f6-6267-4133-8bd8-2938c6da5da4",
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
     "comment": "Eligible couple family planning services"
+  },
+  {
+    "uuid": "8523c365-20b6-44a1-b9a6-c159fd2863bf",
+    "formUUID": "90a9660b-9bc5-4b73-8e09-f83d029216fa",
+    "encounterTypeUUID": "f750c222-f7eb-4a98-bd79-273c578dedcf",
+    "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "comment": "Eligible couple RTI services"
   }
 ]

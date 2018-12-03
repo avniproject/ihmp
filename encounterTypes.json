@@ -6,5 +6,9 @@
   {
     "uuid": "90aee0f6-6267-4133-8bd8-2938c6da5da4",
     "name": "Family planning services"
+  },
+  {
+    "uuid": "f750c222-f7eb-4a98-bd79-273c578dedcf",
+    "name": "RTI services"
   }
 ]

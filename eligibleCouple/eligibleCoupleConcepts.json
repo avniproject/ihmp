@@ -309,7 +309,8 @@
     "name": "Whether treatment for RTI symptom(s) taken",
     "uuid": "3674585b-0ba3-4aeb-8e5a-901ab09ebf37",
     "dataType": "Coded",
-    "answers": [
+    "answers":
+    [
       {
         "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
       },
