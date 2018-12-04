@@ -14,10 +14,9 @@ const WithStatusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'fo
 
 @EnrolmentViewFilter("bad682db-5dab-4a3b-af0c-2f0f870a1ab5", "IHMP EC Enrolment View Filter", 100.0, {})
 class ECEnrolmentViewFilterHandlerIHMP {
-    static exec(programEncounter, formElementGroup, today) {
-        console.log("came to ECEnrolmentViewFilterHandlerIHMP exec");
+    static exec(programEnrolment, formElementGroup, today) {
         return FormElementsStatusHelper
-            .getFormElementsStatusesWithoutDefaults(new ECEnrolmentViewFilterHandlerIHMP(), programEncounter, formElementGroup, today);
+            .getFormElementsStatusesWithoutDefaults(new ECEnrolmentViewFilterHandlerIHMP(), programEnrolment, formElementGroup, today);
     }
     
     @WithStatusBuilder
