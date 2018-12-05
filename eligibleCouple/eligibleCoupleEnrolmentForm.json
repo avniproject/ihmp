@@ -18,7 +18,7 @@
             "uuid": "dc2c23e9-19ad-471f-81d1-213069ccc975"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Parity",
@@ -29,7 +29,7 @@
             "uuid": "2d679fd5-a75b-46bd-96c2-10c180187342"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of living children",
@@ -40,7 +40,7 @@
             "name": "Number of living children"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of living children - Female",
@@ -52,7 +52,7 @@
             "dataType": "Numeric"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of living children - Male",
@@ -63,7 +63,7 @@
             "uuid": "1b749b48-bfae-470d-8219-a735dae99f7a"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of abortions",
@@ -74,7 +74,7 @@
             "uuid": "38b9986b-76e8-4015-ae51-48152b1cd42c"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of spontaneous abortions (miscarriages)",
@@ -85,7 +85,7 @@
             "name": "Number of miscarriages"
           },
           "displayOrder": 7,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of induced abortions",
@@ -96,7 +96,7 @@
             "uuid": "0b3eb875-b0f6-4420-be01-82bbd2812b21"
           },
           "displayOrder": 8,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of stillbirths",
@@ -107,7 +107,7 @@
             "name": "Number of stillbirths"
           },
           "displayOrder": 9,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of child deaths",
@@ -118,7 +118,7 @@
             "name": "Number of child deaths"
           },
           "displayOrder": 10,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of child deaths - Male",
@@ -129,7 +129,7 @@
             "uuid": "eb07e1bd-0379-4ffd-9bc6-df4b34f7745e"
           },
           "displayOrder": 11,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of child deaths - Female",
@@ -140,7 +140,7 @@
             "uuid": "c6454406-04da-4670-9318-3b71a2d9b0cf"
           },
           "displayOrder": 12,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Age of oldest child",
@@ -158,7 +158,7 @@
             "uuid": "92b08af5-84f7-4f8a-b8ac-90609fa58db7"
           },
           "displayOrder": 13,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Last pregnancy outcome",
@@ -170,7 +170,7 @@
             "uuid": "5eabdcce-553b-488f-926c-49849f0c2e98"
           },
           "displayOrder": 14,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Date of last pregnancy outcome",
@@ -181,7 +181,7 @@
             "uuid": "9a9000ad-31b7-4144-884a-16c1194df1be"
           },
           "displayOrder": 15,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Age of youngest child",
@@ -199,7 +199,7 @@
             "uuid": "305f693c-c8b6-4e3e-9a82-a6e91a3e462f"
           },
           "displayOrder": 16,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether sterlized",
@@ -210,7 +210,7 @@
             "uuid": "92475d77-7cdd-4976-98f0-3847939a95d1"
           },
           "displayOrder": 17,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Month and year of sterlization",
@@ -221,7 +221,7 @@
             "uuid": "6679b01b-3f50-4cd9-be85-3cae1a04dabd"
           },
           "displayOrder": 18,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     }
