@@ -19,7 +19,7 @@
             "uuid": "b9d037fb-50c1-497e-bf5c-4d8419909a31"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether treatment for RTI symptom(s) taken",
@@ -30,7 +30,7 @@
             "uuid": "3674585b-0ba3-4aeb-8e5a-901ab09ebf37"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether infection cured",
@@ -41,7 +41,7 @@
             "uuid": "9947d31c-e70a-4cee-8a7e-63293ce3af9b"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
