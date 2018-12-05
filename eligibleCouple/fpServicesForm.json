@@ -19,7 +19,7 @@
             "uuid": "582ca6e6-3e31-4709-a555-28959cc58863"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether she utilized last referral service",
@@ -30,7 +30,7 @@
             "uuid": "1622856e-8ee2-4f56-bb55-086493b10403"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -50,7 +50,7 @@
             "uuid": "92e0921d-1349-4711-91a6-209544471f28"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "FP counselling provided to",
@@ -62,7 +62,7 @@
             "uuid": "a5235cbf-db5c-4121-a6ea-e1c106e58e0c"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Distributed FP methods",
@@ -74,7 +74,7 @@
             "uuid": "8b6beb48-d681-4244-8a52-9f16fd05f9e0"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Referred to facility for FP",
@@ -86,7 +86,7 @@
             "uuid": "af8d4daa-a2b1-4a0b-b90e-5ebc41577385"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },

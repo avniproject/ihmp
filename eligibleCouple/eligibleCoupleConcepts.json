@@ -539,6 +539,11 @@
       {
         "name": "Private hospital",
         "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      },
+      {
+        "name": "None",
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "unique": true
       }
     ]
   },
