@@ -18,7 +18,7 @@
             "uuid": "6174bf54-6ed6-449e-8263-eb6a46dceb4a"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether missed monthly periods",
@@ -29,7 +29,7 @@
             "uuid": "056030f2-944a-4758-ac7c-e62e39935fc5"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether undergone pregnancy test if missed monthly periods",
@@ -40,7 +40,7 @@
             "uuid": "05902834-70dc-4f05-8700-41ac7c7e28c4"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Result of UPT",
@@ -52,7 +52,7 @@
             "uuid": "ae076480-008d-47ca-9fab-a5300a626e42"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether currently pregnant",
@@ -63,7 +63,7 @@
             "uuid": "6ac76c57-66e4-40e7-b9bb-983f276f986a"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "If not getting periods, whether lactating mother / irregular periods",
@@ -95,7 +95,7 @@
             "uuid": "0d748e89-f0ce-4891-9f41-a5c3f3c4ba2c"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Family planning method used currently",
@@ -107,7 +107,7 @@
             "uuid": "518cdd47-a634-4554-ae2d-fcc8e1d8ad14"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Since last how many month is she using the FP method?",
@@ -125,7 +125,7 @@
             "uuid": "4f8fe008-5a57-4906-8f18-55c0c83bc312"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether desire to use any FP methods in future",
@@ -136,7 +136,7 @@
             "uuid": "66239280-5bb9-437c-86ff-ce9c59f2ea9f"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "FP method preference for future use",
@@ -148,7 +148,7 @@
             "uuid": "2ccecc3f-7b63-4679-86de-5d7f1c150917"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -168,7 +168,7 @@
             "uuid": "b9d037fb-50c1-497e-bf5c-4d8419909a31"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Duration of symptoms in days",
@@ -186,7 +186,7 @@
             "uuid": "3f680272-dcfa-4db2-bc02-d4605b5454a2"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether treatment for RTI symptom(s) taken",
@@ -197,7 +197,7 @@
             "uuid": "3674585b-0ba3-4aeb-8e5a-901ab09ebf37"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -216,7 +216,7 @@
             "uuid": "b09e425a-8f06-4cb4-9b71-5e26613ea22c"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Follow up visit by ASHA",
@@ -228,7 +228,7 @@
             "uuid": "2e6b1614-7d6c-4caa-bfbe-e0455c8b2309"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Follow up visit date for FP",
