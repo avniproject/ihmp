@@ -76,7 +76,6 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     whetherTreatmentForRtiSymptomSTaken([], statusBuilder) {
-        console.log('came to whetherTreatmentForRtiSymptomsTaken');
         statusBuilder.show().when.valueInEncounter("Symptoms of RTI").is.defined
             .and.not.when.valueInEncounter("Symptoms of RTI").containsAnswerConceptName("None");
     }
