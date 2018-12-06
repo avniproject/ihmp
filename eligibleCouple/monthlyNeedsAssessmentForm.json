@@ -81,6 +81,26 @@
       ]
     },
     {
+      "uuid": "78e48bd5-491e-4f94-8464-564a451f3adc",
+      "name": "Menstrual surveillance counselling",
+      "display": "Menstrual surveillance recommendations",
+      "displayOrder": 1.5,
+      "formElements": [
+        {
+          "name": "Missed periods and not done UPT counselling",
+          "uuid": "b7d20cb1-676e-4805-8f74-1370e5e11ab9",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        }
+      ]
+    },
+    {
       "uuid": "4f6b6e8a-6e68-4d08-a47d-64dc59af37c8",
       "name": "Family planning",
       "display": "Family planning",
@@ -153,6 +173,86 @@
       ]
     },
     {
+      "uuid": "d33691cf-cc5f-4929-9bda-5b31b68fd927",
+      "name": "FP Counselling",
+      "display": "FP Counselling",
+      "displayOrder": 2.5,
+      "formElements": [
+        {
+          "name": "IHMP FP counselling to delay first conception",
+          "uuid": "36ae2102-f50a-484e-a864-4c4cafbaba30",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP FP counselling for spacing to non user",
+          "uuid": "853c0e08-c4aa-45d9-b3e4-ec3d651c9909",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP FP counselling for spacing to user",
+          "uuid": "477ced5f-8b5a-4760-b888-7126d90ca9b1",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP FP counselling for spacing to desire to use EC",
+          "uuid": "a20b22e8-7bad-437c-b999-b42f41bf48ee",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP FP counselling information regarding sterilization",
+          "uuid": "7a4b5394-91bf-44c1-beb5-23789ab33a55",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP IPIL counselling",
+          "uuid": "0f0548c3-cbea-44b8-970e-0039131e572b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        }
+      ]
+    },
+    {
       "uuid": "e31f77b9-7846-44b6-8865-c5d9984997d4",
       "name": "Reproductive Tract Infections (RTI)",
       "display": "Reproductive Tract Infections (RTI)",
@@ -198,6 +298,26 @@
           },
           "displayOrder": 3,
           "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "c13c8310-02d7-4ab1-a5e6-3ad463d3d0fc",
+      "name": "RTI recommendations",
+      "display": "RTI recommendations",
+      "displayOrder": 3.5,
+      "formElements": [
+        {
+          "name": "IHMP Recommendation for RTI symptoms",
+          "uuid": "7dc43404-7a5b-4213-810f-fb8914e82a5f",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 1,
+          "mandatory": false
         }
       ]
     },
