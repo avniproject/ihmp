@@ -6,7 +6,8 @@ import {
     FormElementStatusBuilder,
     StatusBuilderAnnotationFactory,
     FormElementStatus,
-    VisitScheduleBuilder
+    VisitScheduleBuilder,
+    ProgramRule
 } from 'rules-config/rules';
 
 const EnrolmentViewFilter = RuleFactory("23d8763d-4759-4c7d-bb46-d57a1ee58673", "ViewFilter");
@@ -100,4 +101,30 @@ class ECEnrolmentViewFilterHandlerIHMP {
     }
 }
 
-module.exports = {ECEnrolmentViewFilterHandlerIHMP}
+@ProgramRule({
+    name: "EC Program Summary",
+    uuid: "310a9bc4-71c9-4c9a-ada7-eb1f3f5a8abb",
+    programUUID: "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    executionOrder: 100.0,
+    metadata: {}
+})
+class ECProgramRule {
+    static exec(programEnrolment, summaries, context, today) {
+        let currentlyPregnant = programEnrolment.findObservationInEntireEnrolment('Whether currently pregnant');
+        if(currentlyPregnant) {
+            summaries.push({name: 'Whether currently pregnant', value: currentlyPregnant.getValue()});
+        }
+        let numberOfLivingChildren = programEnrolment.findObservation('Number of living children');
+        if(numberOfLivingChildren) {
+            summaries.push({name: 'Number of living children', value: numberOfLivingChildren.getValue()});
+        }
+
+        let ageOfYoungestChild = programEnrolment.findObservation('Age of youngest child');
+        if(ageOfYoungestChild) {
+            summaries.push({name: 'Age of youngest child', value: ageOfYoungestChild.getValue()});
+        }
+        return summaries;
+    }
+}
+
+module.exports = {ECEnrolmentViewFilterHandlerIHMP, ECProgramRule}
