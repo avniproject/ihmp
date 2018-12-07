@@ -14,6 +14,13 @@
     "comment": "Eligible couple monthly needs assessment"
   },
   {
+    "uuid": "dab9e439-4956-4f54-a7bf-161e31b39f8c",
+    "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
+    "encounterTypeUUID": "55f10f7a-d85e-487e-b611-c1b5e26ab972",
+    "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "comment": "Eligible couple monthly needs assessment Cancel"
+  },
+  {
     "uuid": "c796c934-4178-44cc-bf93-1c49527d66fa",
     "formUUID": "981b3e41-7fae-4b0e-a0aa-e9a42076414e",
     "encounterTypeUUID": "90aee0f6-6267-4133-8bd8-2938c6da5da4",
@@ -21,8 +28,22 @@
     "comment": "Eligible couple family planning services"
   },
   {
+    "uuid": "e8242846-9469-42c4-8f4e-8b7420ace41f",
+    "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
+    "encounterTypeUUID": "90aee0f6-6267-4133-8bd8-2938c6da5da4",
+    "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "comment": "Eligible couple family planning services cancel"
+  },
+  {
     "uuid": "8523c365-20b6-44a1-b9a6-c159fd2863bf",
     "formUUID": "90a9660b-9bc5-4b73-8e09-f83d029216fa",
+    "encounterTypeUUID": "f750c222-f7eb-4a98-bd79-273c578dedcf",
+    "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "comment": "Eligible couple RTI services"
+  },
+  {
+    "uuid": "1b24377a-04d3-4742-8725-11a178907529",
+    "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
     "encounterTypeUUID": "f750c222-f7eb-4a98-bd79-273c578dedcf",
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
     "comment": "Eligible couple RTI services"
