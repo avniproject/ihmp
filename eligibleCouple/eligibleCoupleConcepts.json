@@ -390,7 +390,8 @@
       },
       {
         "uuid": "ba8e3aee-a4e0-412e-8325-fc7b184c4e04",
-        "name": "Non user"
+        "name": "Non user",
+        "abnormal": true
       },
       {
         "uuid": "d727f9e1-3b75-49c3-8f4f-5829211710e0",
@@ -407,7 +408,8 @@
         "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
       },
       {
-        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "abnormal": true
       }
     ]
   },
@@ -477,6 +479,11 @@
         "name": "Other"
       }
     ]
+  },
+  {
+    "name": "Other topic covered in FP counselling",
+    "uuid": "86bbd9d2-7118-47f6-9a65-d9268b63a222",
+    "dataType": "Text"
   },
   {
     "uuid": "e8115230-8b9b-40b5-afbf-facceb4645a1",
