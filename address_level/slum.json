@@ -1,0 +1,134 @@
+[
+  {
+    "uuid": "eb9d4fac-dd1d-4fa5-8447-6cb373020f09",
+    "name": "Shankarmath I",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "3df61348-9180-479d-9443-1c522931acb8",
+    "name": "Gosavi Vasti I",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "00aa4f3e-d509-4d08-9b54-c6b1dd3ac997",
+    "name": "Shine Vasti Ii",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "f613e0d9-35a9-4935-aafc-176b71039d15",
+    "name": "Samarth Nagar/Indira Nagar",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "d7f286e4-ebfa-4f82-848f-48b487dbc65a",
+    "name": "Vaiduwadi I",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "3b684347-f35c-4956-8a2a-771b6a50f32a",
+    "name": "Shankarmath Ii",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "cbfecb7a-41a4-4b9d-914a-769f4b57a890",
+    "name": "Vaiduwadi Ii",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "57e0604c-b6d0-4fcd-ad0d-ce3a2e1d83d2",
+    "name": "Vaiduwadi Iii",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "c9067522-2e13-409d-ba49-2eb9ad233c94",
+    "name": "Gosavi Vasti Iii",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "953cd05d-a3d7-45de-8819-8612e71c0c2f",
+    "name": "Birajdar Vasti",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "80d89e51-4864-4c65-8d32-facbaf1ea780",
+    "name": "Gosavi Vasti Ii",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  },
+  {
+    "uuid": "9075f763-84db-47ab-ac46-cc5a5186f00c",
+    "name": "Shine Vasti I",
+    "level": 0.9,
+    "type": "Slum",
+    "parents": [
+      {
+        "uuid": "3e9c0352-1e82-46d1-9609-e3be22504c5d"
+      }
+    ]
+  }
+]
