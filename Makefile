@@ -113,9 +113,19 @@ deploy_prod:
 
 create_deploy: create_org deploy ##
 
-deploy_refdata_live:
-	make auth _deploy_refdata poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=ihmp-admin password=$(STAGING_LBP_ADMIN_USER_PASSWORD)
-# </deploy>
+deploy_staging:
+	make auth _deploy_prod poolId=$(OPENCHS_STAGING_USER_POOL_ID) clientId=$(OPENCHS_STAGING_APP_CLIENT_ID) server=https://staging.openchs.org port=443 username=ihmp-admin password=$(password)
+
+create_admin_user_staging:
+	make auth create_admin_user poolId=$(OPENCHS_STAGING_USER_POOL_ID) clientId=$(OPENCHS_STAGING_APP_CLIENT_ID) server=https://staging.openchs.org port=443 username=admin password=$(password)
+
+_create_users_staging:
+	$(call _curl,POST,users,@users/staging-users.json)
+
+create_users_staging:
+	make auth _create_users_staging poolId=$(OPENCHS_STAGING_USER_POOL_ID) clientId=$(OPENCHS_STAGING_APP_CLIENT_ID) server=https://staging.openchs.org port=443 username=ihmp-admin password=$(password)
+
+
 
 # <package>
 build_package: ## Builds a deployable package
