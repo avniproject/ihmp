@@ -19,12 +19,12 @@ class ECEnrolmentViewFilterHandlerIHMP {
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new ECEnrolmentViewFilterHandlerIHMP(), programEnrolment, formElementGroup, today);
     }
-    
+
     @WithStatusBuilder
     parity([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThanOrEqualTo(1);
     }
-    
+
     @WithStatusBuilder
     numberOfLivingChildren([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Parity").is.greaterThanOrEqualTo(1);
@@ -110,19 +110,41 @@ class ECEnrolmentViewFilterHandlerIHMP {
 })
 class ECProgramRule {
     static exec(programEnrolment, summaries, context, today) {
-        let currentlyPregnant = programEnrolment.findObservationInEntireEnrolment('Whether currently pregnant');
-        if(currentlyPregnant) {
+        const currentlyPregnant = programEnrolment.findObservationInEntireEnrolment('Whether currently pregnant');
+        if (!_.isNil(currentlyPregnant)) {
             summaries.push({name: 'Whether currently pregnant', value: currentlyPregnant.getValue()});
         }
-        let numberOfLivingChildren = programEnrolment.findObservation('Number of living children');
-        if(numberOfLivingChildren) {
+
+        const numberOfLivingChildren = programEnrolment.findObservation('Number of living children');
+        if (!_.isNil(numberOfLivingChildren)) {
             summaries.push({name: 'Number of living children', value: numberOfLivingChildren.getValue()});
         }
 
-        let ageOfYoungestChild = programEnrolment.findObservation('Age of youngest child');
-        if(ageOfYoungestChild) {
+        const ageOfYoungestChild = programEnrolment.findObservation('Age of youngest child');
+        if (!_.isNil(ageOfYoungestChild)) {
             summaries.push({name: 'Age of youngest child', value: ageOfYoungestChild.getValue()});
         }
+
+        const encountersInLastThreeMonths = _.chain(programEnrolment.getEncounters(true))
+            .filter((e) => moment().diff(moment(e.encounterDateTime), "months", true) <= 3)
+            .sortBy((e) => e.encounterDateTime)
+            .value();
+        const fpStatus = [];
+        encountersInLastThreeMonths.forEach((e) => {
+            const usingAnyFpMethodCurrently = e.getObservationReadableValue('Whether using any family planning method currently');
+            if (usingAnyFpMethodCurrently) {
+                if (usingAnyFpMethodCurrently === "Yes") {
+                    fpStatus.push("User");
+                } else {
+                    const anyDesireToUseFpMethods = e.getObservationReadableValue("Whether desire to use any FP methods in future");
+                    fpStatus.push(anyDesireToUseFpMethods === "Yes" ? "Desire to use" : "Non user");
+                }
+            }
+        }, []);
+        if(!_.isEmpty(fpStatus)) {
+            summaries.push({name: 'Last 3 months FP status', value: _.join(fpStatus, ', ')});
+        }
+
         return summaries;
     }
 }

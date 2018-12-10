@@ -375,6 +375,11 @@
     "name": "Desire to use"
   },
   {
+    "name": "Last 3 months FP status",
+    "uuid": "317c6ffe-e709-47b5-9db8-8a0f7b828c1e",
+    "dataType": "Text"
+  },
+  {
     "name": "Current temporary FP methods usage status",
     "uuid": "582ca6e6-3e31-4709-a555-28959cc58863",
     "dataType": "Coded",
