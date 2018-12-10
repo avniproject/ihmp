@@ -148,6 +148,18 @@
           "mandatory": true
         },
         {
+          "name": "Whether any disability",
+          "uuid": "1550e69c-858a-4723-a010-0ad34047c24e",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether any disability",
+            "uuid": "1eb73895-ddba-4ddb-992c-03225f93775c"
+          },
+          "displayOrder": 9.5,
+          "mandatory": true
+        },
+
+        {
           "name": "Disability",
           "uuid": "f4ac388b-daab-4e0b-9887-d14fea683f0d",
           "keyValues": [],
@@ -169,6 +181,32 @@
           },
           "displayOrder": 11,
           "mandatory": true
+        },
+        {
+          "name": "Aadhaar Number",
+          "uuid": "55d85d94-02d2-4ebb-9421-e607f26be3cd",
+          "keyValues": [],
+          "concept": {
+            "name": "Aadhaar ID",
+            "uuid": "43c4860f-fccf-48c9-818a-191bc0f8d0cf"
+          },
+          "displayOrder": 12,
+          "mandatory": false,
+          "validFormat": {
+            "regex": "^[0-9]{12}$",
+            "descriptionKey": "Required12Digits"
+          }
+        },
+        {
+          "name": "Contact Number",
+          "uuid": "f913d0db-4b57-4ffa-8e3d-b08666acf4ab",
+          "keyValues": [],
+          "concept": {
+            "name": "Contact Number",
+            "uuid": "82fa0dbb-92f9-4ec2-9263-49054e64d909"
+          },
+          "displayOrder": 13,
+          "mandatory": false
         }
       ]
     }

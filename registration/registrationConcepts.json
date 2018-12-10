@@ -1,5 +1,18 @@
 [
   {
+    "name": "Whether any disability",
+    "uuid": "1eb73895-ddba-4ddb-992c-03225f93775c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
     "name": "Disability",
     "uuid": "f27e9504-81a3-48d9-b7cc-4bc90dbd4a30",
     "dataType": "Text"
@@ -17,6 +30,14 @@
     "name": "Out migrant"
   },
   {
+    "uuid": "c3ac52e1-da4d-4ba9-baf9-7b5f6297c2c1",
+    "name": "In migrant"
+  },
+  {
+    "uuid": "ed1e7397-01cc-47aa-a0ea-3e8af78b09d2",
+    "name": "Female marriage"
+  },
+  {
     "name": "Status of the individual",
     "uuid": "6617408e-b89e-4f2f-ab10-d818c5d7f1bd",
     "dataType": "Coded",
@@ -32,6 +53,14 @@
       {
         "uuid": "5f23fa43-2e4b-45df-8ca5-5e1ea81f6e2d",
         "name": "Out migrant"
+      },
+      {
+        "uuid": "c3ac52e1-da4d-4ba9-baf9-7b5f6297c2c1",
+        "name": "In migrant"
+      },
+      {
+        "uuid": "ed1e7397-01cc-47aa-a0ea-3e8af78b09d2",
+        "name": "Female marriage"
       }
     ]
   },

@@ -20,6 +20,11 @@ class RegistrationHandlerIHMP {
     }
 
     @WithStatusBuilder
+    disability([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether any disability").is.yes;
+    }
+
+    @WithStatusBuilder
     dateOfMarriage([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Marital status").containsAnyAnswerConceptName("Married","Separated","Divorced","Widow(er)", "Remarried", "Other");
     }
