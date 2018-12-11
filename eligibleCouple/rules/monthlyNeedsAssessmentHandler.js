@@ -43,8 +43,8 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     ifNotGettingPeriodsWhetherLactatingMotherIrregularPeriods([], statusBuilder) {
-        statusBuilder.show().when.not.valueInEncounter("Whether currently pregnant").is.yes
-            .and.when.valueInEncounter("Whether got monthly periods").is.yes;
+        statusBuilder.show().when.valueInEncounter("Whether got monthly periods").is.no
+            .and.valueInEncounter("Whether currently pregnant").is.no;
     }
 
     @WithStatusBuilder
@@ -54,8 +54,8 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     whetherUsingAnyFamilyPlanningMethodCurrently([], statusBuilder) {
-        statusBuilder.show().when.not.valueInEncounter("Whether currently pregnant").is.yes
-            .and.when.valueInEnrolment("Whether sterilized").is.no;
+        statusBuilder.show().when.valueInEnrolment("Whether sterilized").is.no
+            .and.valueInEncounter("Whether currently pregnant").is.no;
     }
 
     @WithStatusBuilder
