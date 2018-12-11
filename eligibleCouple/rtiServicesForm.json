@@ -13,7 +13,7 @@
           "name": "Currently having any symptom of RTIs?",
           "uuid": "55b92770-2e7c-4062-a438-29652b803e8f",
           "keyValues": [],
-          "type": "SingleSelect",
+          "type": "MultiSelect",
           "concept": {
             "name": "Symptoms of RTI",
             "uuid": "b9d037fb-50c1-497e-bf5c-4d8419909a31"

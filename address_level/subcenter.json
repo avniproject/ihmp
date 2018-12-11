@@ -1,0 +1,68 @@
+[
+  {
+    "uuid": "81236ccd-3ef0-4327-bb29-c300d400de7f",
+    "name": "Taka",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "af5fb0f5-e77a-4f78-8ad9-ecce55473437"
+      }
+    ]
+  },
+  {
+    "uuid": "94051c9f-8489-48c3-91dc-b4889f54ca61",
+    "name": "Nalewadi",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "af5fb0f5-e77a-4f78-8ad9-ecce55473437"
+      }
+    ]
+  },
+  {
+    "uuid": "82356b99-a093-40df-a037-947cb0cec17d",
+    "name": "Wadigodri",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "af5fb0f5-e77a-4f78-8ad9-ecce55473437"
+      }
+    ]
+  },
+  {
+    "uuid": "54c86221-4e14-441c-af27-e2e3ddcb3f3c",
+    "name": "Bhamberi",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "af5fb0f5-e77a-4f78-8ad9-ecce55473437"
+      }
+    ]
+  },
+  {
+    "uuid": "55618525-277a-4e4e-88c4-67e2b218f66f",
+    "name": "Dongaon",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "af5fb0f5-e77a-4f78-8ad9-ecce55473437"
+      }
+    ]
+  },
+  {
+    "uuid": "ab4cac44-40ef-43f9-a62e-3fdbcc608e32",
+    "name": "Shahapur",
+    "level": 2.3,
+    "type": "Subcenter",
+    "parents": [
+      {
+        "uuid": "af5fb0f5-e77a-4f78-8ad9-ecce55473437"
+      }
+    ]
+  }
+]

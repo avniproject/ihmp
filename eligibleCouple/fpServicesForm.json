@@ -13,7 +13,7 @@
           "name": "Current temporary FP methods usage status",
           "uuid": "0870863d-19ab-4b5d-8cbd-9b5de2a73395",
           "keyValues": [],
-          "type": "MultiSelect",
+          "type": "SingleSelect",
           "concept": {
             "name": "Current temporary FP methods usage status",
             "uuid": "582ca6e6-3e31-4709-a555-28959cc58863"
@@ -53,6 +53,17 @@
           "mandatory": true
         },
         {
+          "name": "Other topic covered in FP counselling",
+          "uuid": "0e36985b-eec1-4141-9b5b-416af35b754f",
+          "keyValues": [],
+          "concept": {
+            "name": "Other topic covered in FP counselling",
+            "uuid": "86bbd9d2-7118-47f6-9a65-d9268b63a222"
+          },
+          "displayOrder": 1.5,
+          "mandatory": true
+        },
+        {
           "name": "FP counselling provided to",
           "uuid": "1b6d70e9-f85b-44ea-8217-ca911bd8cb85",
           "keyValues": [],
@@ -80,7 +91,7 @@
           "name": "Referred to facility for FP",
           "uuid": "6fc4875c-faaf-4b86-b62d-a858e5c492e6",
           "keyValues": [],
-          "type": "SingleSelect",
+          "type": "MultiSelect",
           "concept": {
             "name": "Referred to facility for FP",
             "uuid": "af8d4daa-a2b1-4a0b-b90e-5ebc41577385"

@@ -1,0 +1,222 @@
+[
+  {
+    "uuid": "4ed682e3-2632-46a9-9f82-09d8e0904b1d",
+    "name": "Baraswada",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "ab4cac44-40ef-43f9-a62e-3fdbcc608e32"
+      }
+    ]
+  },
+  {
+    "uuid": "45ae2283-2a50-46ec-89c5-85b759711300",
+    "name": "Ekanathnagar",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "82356b99-a093-40df-a037-947cb0cec17d"
+      }
+    ]
+  },
+  {
+    "uuid": "f640c173-cb4a-47cd-97c8-f63d7bbe2071",
+    "name": "Taka",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "81236ccd-3ef0-4327-bb29-c300d400de7f"
+      }
+    ]
+  },
+  {
+    "uuid": "fb8c6da1-7619-4c5b-96ba-847da814c46f",
+    "name": "Dongaon",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "55618525-277a-4e4e-88c4-67e2b218f66f"
+      }
+    ]
+  },
+  {
+    "uuid": "b92778b7-804c-4907-9634-f823d67380cf",
+    "name": "Domegaon",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "55618525-277a-4e4e-88c4-67e2b218f66f"
+      }
+    ]
+  },
+  {
+    "uuid": "1f660435-3963-404e-bb11-ee6988b2f59d",
+    "name": "Kolishirasgaon",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "55618525-277a-4e4e-88c4-67e2b218f66f"
+      }
+    ]
+  },
+  {
+    "uuid": "817a7a0a-a8f5-4cbc-ac85-4dc8b28e060f",
+    "name": "Dodadgaon",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "81236ccd-3ef0-4327-bb29-c300d400de7f"
+      }
+    ]
+  },
+  {
+    "uuid": "e39bd2a2-023b-47c4-b957-b3d5ece4b15c",
+    "name": "Krushnanagar",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "94051c9f-8489-48c3-91dc-b4889f54ca61"
+      }
+    ]
+  },
+  {
+    "uuid": "de676a5e-725a-4201-a7e6-54f0acf4465e",
+    "name": "Nalewadi",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "94051c9f-8489-48c3-91dc-b4889f54ca61"
+      }
+    ]
+  },
+  {
+    "uuid": "fecf1b8c-9269-46f4-925e-dceec1dcfd3c",
+    "name": "Dadegaon",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "ab4cac44-40ef-43f9-a62e-3fdbcc608e32"
+      }
+    ]
+  },
+  {
+    "uuid": "955d3541-245f-4cde-aa35-6ba3d5ebe1ef",
+    "name": "Dahayala",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "54c86221-4e14-441c-af27-e2e3ddcb3f3c"
+      }
+    ]
+  },
+  {
+    "uuid": "ac15e756-adaa-4f19-8b9c-44ae10702ef9",
+    "name": "Antarwali Sarathi",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "94051c9f-8489-48c3-91dc-b4889f54ca61"
+      }
+    ]
+  },
+  {
+    "uuid": "bd100d74-773e-4c90-9ba2-0575fe440e65",
+    "name": "Dhakalgaon",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "ab4cac44-40ef-43f9-a62e-3fdbcc608e32"
+      }
+    ]
+  },
+  {
+    "uuid": "5b7ca7bd-ea45-41e2-868d-f6845f2f31de",
+    "name": "Bhamberi",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "54c86221-4e14-441c-af27-e2e3ddcb3f3c"
+      }
+    ]
+  },
+  {
+    "uuid": "f8069440-a8c0-492a-add2-67f1c3ded40f",
+    "name": "Chandanapuri Kh.",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "54c86221-4e14-441c-af27-e2e3ddcb3f3c"
+      }
+    ]
+  },
+  {
+    "uuid": "cae1de83-66a4-43a7-a699-5f965a550dc1",
+    "name": "Wadigodri",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "82356b99-a093-40df-a037-947cb0cec17d"
+      }
+    ]
+  },
+  {
+    "uuid": "18191491-a9f2-47cc-9446-b1c33e4d046c",
+    "name": "Shahapur",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "ab4cac44-40ef-43f9-a62e-3fdbcc608e32"
+      }
+    ]
+  },
+  {
+    "uuid": "891bd119-0851-4a07-9637-59fe12120b07",
+    "name": "Renapuri",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "54c86221-4e14-441c-af27-e2e3ddcb3f3c"
+      }
+    ]
+  },
+  {
+    "uuid": "ccae7505-eb39-4009-ab3c-f1525cced36d",
+    "name": "Saundalgaon",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "81236ccd-3ef0-4327-bb29-c300d400de7f"
+      }
+    ]
+  },
+  {
+    "uuid": "345848f9-e379-4eb9-b1c6-328db800e5ae",
+    "name": "Ramgavhan",
+    "level": 1,
+    "type": "Village",
+    "parents": [
+      {
+        "uuid": "81236ccd-3ef0-4327-bb29-c300d400de7f"
+      }
+    ]
+  }
+]
