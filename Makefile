@@ -89,6 +89,7 @@ _deploy_refdata:
 	$(call _curl,POST,forms,@eligibleCouple/fpServicesForm.json)
 	$(call _curl,POST,forms,@eligibleCouple/rtiServicesForm.json)
 	$(call _curl,POST,forms,@eligibleCouple/ECEncounterCancellationForm.json)
+	$(call _curl,POST,forms,@eligibleCouple/ecProgramExitForm.json)
 	$(call _curl,POST,formMappings,@formMappings.json)
 
 

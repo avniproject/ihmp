@@ -556,5 +556,35 @@
     "name": "Next needs assessment date",
     "uuid": "b09e425a-8f06-4cb4-9b71-5e26613ea22c",
     "dataType": "Date"
+  },
+  {
+    "name": "Reason for exit",
+    "uuid": "9f815b72-4b4a-4210-a69f-a925d2baae1d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Shifted to other geographical area",
+        "uuid": "ca01f2cf-6479-44cf-9d43-ad428c82f9a6",
+        "abnormal": true
+      },
+      {
+        "name": "Death",
+        "uuid": "afff87d7-4c40-4dd4-9bf7-8e5d9adb3b83",
+        "abnormal": true
+      },
+      {
+        "name": "Completion",
+        "uuid": "f63a0122-8156-4956-a29c-c0722ff22a89"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "uuid": "305ed0d7-1e58-45e2-8643-6d58e7ec4a49",
+    "name": "Cause of person's death",
+    "dataType": "Text"
   }
 ]

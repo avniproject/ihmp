@@ -11,6 +11,7 @@ import {
 } from 'rules-config/rules';
 
 const EnrolmentViewFilter = RuleFactory("23d8763d-4759-4c7d-bb46-d57a1ee58673", "ViewFilter");
+const ProgramExitViewFilter = RuleFactory("a4db9a29-aefc-4a05-bf6d-dabf7dab7dfe", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
 
 @EnrolmentViewFilter("bad682db-5dab-4a3b-af0c-2f0f870a1ab5", "IHMP EC Enrolment View Filter", 100.0, {})
@@ -149,4 +150,44 @@ class ECProgramRule {
     }
 }
 
-module.exports = {ECEnrolmentViewFilterHandlerIHMP, ECProgramRule}
+@ProgramExitViewFilter("16943f77-ec5a-48ae-bc25-8bf056bfcf17", "EC Program exit filters", 1.0)
+class ECProgramExitViewFilterHandler {
+    static exec(programExit, formElementGroup) {
+        return FormElementsStatusHelper.getFormElementsStatuses(new ECProgramExitViewFilterHandler(), programExit, formElementGroup);
+    }
+
+    dateOfDeath(programExit, formElement) {
+        const statusBuilder = this._getStatusBuilder(programExit, formElement);
+        statusBuilder.show().when.valueInExit("Reason for exit").containsAnswerConceptName("Death");
+        return statusBuilder.build();
+    }
+
+    causeOfDeath(programExit, formElement) {
+        const statusBuilder = this._getStatusBuilder(programExit, formElement);
+        statusBuilder.show().when.valueInExit("Reason for exit").containsAnswerConceptName("Death");
+        return statusBuilder.build();
+    }
+
+    placeOfDeath(programExit, formElement) {
+        const statusBuilder = this._getStatusBuilder(programExit, formElement);
+        statusBuilder.show().when.valueInExit("Reason for exit").containsAnswerConceptName("Death");
+        return statusBuilder.build();
+    }
+
+    otherReasonPleaseSpecify(programExit, formElement) {
+        const statusBuilder = this._getStatusBuilder(programExit, formElement);
+        statusBuilder.show().when.valueInExit("Reason for exit").containsAnswerConceptName("Other");
+        return statusBuilder.build();
+    }
+
+
+    _getStatusBuilder(programExit, formElement) {
+        return new FormElementStatusBuilder({
+            programEnrolment: programExit,
+            formElement
+        });
+    }
+
+}
+
+module.exports = {ECEnrolmentViewFilterHandlerIHMP, ECProgramRule, ECProgramExitViewFilterHandler}
