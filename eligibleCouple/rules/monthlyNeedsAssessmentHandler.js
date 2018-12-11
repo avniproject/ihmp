@@ -135,9 +135,7 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     whetherInfectionCured([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Symptoms of RTI").is.defined
-            .and.not.when.valueInEncounter("Symptoms of RTI").containsAnswerConceptName("None")
-            .and.valueInEncounter("Whether treatment for RTI symptom(s) taken").is.yes;
+        statusBuilder.show().when.valueInEncounter("Whether treatment for RTI symptom(s) taken").is.yes;
     }
 
     @WithStatusBuilder
