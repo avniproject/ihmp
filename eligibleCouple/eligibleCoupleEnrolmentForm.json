@@ -202,7 +202,7 @@
           "mandatory": true
         },
         {
-          "name": "Whether sterlized",
+          "name": "Whether sterilized",
           "uuid": "bf07f3d2-5bd3-48cf-8cc9-f74a9fab070c",
           "type": "SingleSelect",
           "concept": {
@@ -213,11 +213,11 @@
           "mandatory": true
         },
         {
-          "name": "Month and year of sterlization",
+          "name": "Month and year of sterilization",
           "uuid": "8e02f994-28b2-431c-829c-3f136b254616",
           "keyValues": [],
           "concept": {
-            "name": "Month and year of sterlization",
+            "name": "Month and year of sterilization",
             "uuid": "6679b01b-3f50-4cd9-be85-3cae1a04dabd"
           },
           "displayOrder": 18,
