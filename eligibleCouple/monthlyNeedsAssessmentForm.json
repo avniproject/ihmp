@@ -298,6 +298,17 @@
           },
           "displayOrder": 3,
           "mandatory": true
+        },
+        {
+          "name": "Whether infection cured",
+          "uuid": "542ca53d-27fc-43e4-bc19-980d9c22ca46",
+          "keyValues": [],
+          "concept": {
+            "name": "Whether RTI cured",
+            "uuid": "9947d31c-e70a-4cee-8a7e-63293ce3af9b"
+          },
+          "displayOrder": 4,
+          "mandatory": true
         }
       ]
     },

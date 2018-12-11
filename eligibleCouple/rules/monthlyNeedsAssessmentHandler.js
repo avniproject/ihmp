@@ -82,7 +82,7 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
     @WithStatusBuilder
     ihmpFpCounsellingToDelayFirstConception([], statusBuilder) {
         statusBuilder.show().when.ageInYears.is.lessThanOrEqualTo(19)
-            .and.valueInEnrolment("gravida").is.equals(0)
+            .and.valueInEnrolment("Gravida").is.equals(0)
             .and.valueInEnrolment("Whether sterilized").is.no;
     }
 
@@ -131,6 +131,13 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
     whetherTreatmentForRtiSymptomSTaken([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Symptoms of RTI").is.defined
             .and.not.when.valueInEncounter("Symptoms of RTI").containsAnswerConceptName("None");
+    }
+
+    @WithStatusBuilder
+    whetherInfectionCured([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Symptoms of RTI").is.defined
+            .and.not.when.valueInEncounter("Symptoms of RTI").containsAnswerConceptName("None")
+            .and.valueInEncounter("Whether treatment for RTI symptom(s) taken").is.yes;
     }
 
     @WithStatusBuilder
