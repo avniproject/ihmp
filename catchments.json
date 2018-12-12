@@ -2,15 +2,27 @@
   "organisation": "IHMP",
   "catchments": [
     {
-      "name": "Pachod",
+      "name": "Taka",
       "uuid": "6afe809c-a721-4bf1-999f-e51067331e8a",
-      "type": "Villages",
+      "type": "Village",
       "locations": [
         {
-          "uuid": "1de51825-423b-409a-90e7-db9116f46637",
-          "comment": "Pachod"
+          "uuid": "f640c173-cb4a-47cd-97c8-f63d7bbe2071",
+          "comment": "Taka"
+        }
+      ]
+    },
+    {
+      "name": "Vaiduwadi I",
+      "uuid": "b30065c2-3fe1-43ca-be6e-b5b7f78d67bc",
+      "type": "Slum",
+      "locations": [
+        {
+          "uuid": "d7f286e4-ebfa-4f82-848f-48b487dbc65a",
+          "comment": "Vaiduwadi I"
         }
       ]
     }
+
   ]
 }

@@ -60,8 +60,13 @@ deploy_checklists:
 
 
 # <deploy>
-deploy_org_data:
-	$(call _curl,POST,locations,@locations.json)
+deploy_locations: auth
+	$(call _curl,POST,locations,@address_level/phc.json)
+	$(call _curl,POST,locations,@address_level/subcenter.json)
+	$(call _curl,POST,locations,@address_level/village.json)
+	$(call _curl,POST,locations,@address_level/slum.json)
+
+deploy_org_data: deploy_locations
 	$(call _curl,POST,catchments,@catchments.json)
 
 create_admin_user:
