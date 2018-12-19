@@ -25,6 +25,12 @@ class RegistrationHandlerIHMP {
     }
 
     @WithStatusBuilder
+    maritalStatus([], statusBuilder){
+        statusBuilder.skipAnswers('Remarried', 'Other');
+    }
+
+
+    @WithStatusBuilder
     dateOfMarriage([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Marital status").containsAnyAnswerConceptName("Married","Separated","Divorced","Widow(er)", "Remarried", "Other");
     }

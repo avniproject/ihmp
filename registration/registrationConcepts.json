@@ -76,7 +76,16 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
+  },
+  {
+    "name": "Standard upto which schooling completed",
+    "uuid": "38eaf459-4316-4da3-acfd-3c9c71334041",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Caste (Free Text)",
+    "uuid": "60c44aa2-3635-487d-8962-43000e77d382",
+    "dataType": "Text"
   }
-
 
 ]

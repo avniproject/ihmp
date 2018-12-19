@@ -19,7 +19,39 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new ECMonthlyNeedsAssessmentViewFilterHandlerIHMP(), programEncounter, formElementGroup, today);
     }
-    
+
+    menstrualSurveillance(programEncounter, formElementGroup) {
+        return formElementGroup.formElements.map(fe=>{
+            let statusBuilder = new FormElementStatusBuilder({programEncounter:programEncounter, formElement:fe});
+            statusBuilder.show().when.valueInEnrolment("Whether sterilized").is.no;
+            return statusBuilder.build();
+        });
+    }
+
+    menstrualSurveillanceCounselling(programEncounter, formElementGroup) {
+        return formElementGroup.formElements.map(fe=>{
+            let statusBuilder = new FormElementStatusBuilder({programEncounter:programEncounter, formElement:fe});
+            statusBuilder.show().when.valueInEnrolment("Whether sterilized").is.no;
+            return statusBuilder.build();
+        });
+    }
+
+    familyPlanning(programEncounter, formElementGroup) {
+        return formElementGroup.formElements.map(fe=>{
+            let statusBuilder = new FormElementStatusBuilder({programEncounter:programEncounter, formElement:fe});
+            statusBuilder.show().when.valueInEnrolment("Whether sterilized").is.no;
+            return statusBuilder.build();
+        });
+    }
+
+    fpCounselling(programEncounter, formElementGroup) {
+        return formElementGroup.formElements.map(fe=>{
+            let statusBuilder = new FormElementStatusBuilder({programEncounter:programEncounter, formElement:fe});
+            statusBuilder.show().when.valueInEnrolment("Whether sterilized").is.no;
+            return statusBuilder.build();
+        });
+    }
+
     @WithStatusBuilder
     whetherMissedMonthlyPeriods([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Whether got monthly periods").is.no

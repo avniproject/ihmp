@@ -65,6 +65,17 @@
           "mandatory": true
         },
         {
+          "name": "Caste",
+          "uuid": "e0cbda04-4ee4-49e5-bdc5-85efdfd3640c",
+          "keyValues": [],
+          "concept": {
+            "name": "Caste (Free Text)",
+            "uuid": "60c44aa2-3635-487d-8962-43000e77d382"
+          },
+          "displayOrder": 2.5,
+          "mandatory": true
+        },
+        {
           "name": "Caste category",
           "uuid": "14f3babd-1e75-432a-ad42-f5a94eac2059",
           "keyValues": [],
@@ -74,7 +85,7 @@
             "uuid": "61ab6413-5c6a-4512-ab6e-7d5cd1439569"
           },
           "displayOrder": 3,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Ration card",
@@ -89,13 +100,12 @@
           "mandatory": true
         },
         {
-          "name": "Education",
+          "name": "Standard upto which schooling completed",
           "uuid": "828e27a6-28f0-4cdb-bc02-972d31389c36",
           "keyValues": [],
-          "type": "SingleSelect",
           "concept": {
-            "name": "Education",
-            "uuid": "39595a16-a9c6-49a5-a42b-3f462607058c"
+            "name": "Standard upto which schooling completed",
+            "uuid": "38eaf459-4316-4da3-acfd-3c9c71334041"
           },
           "displayOrder": 5,
           "mandatory": true
@@ -158,7 +168,6 @@
           "displayOrder": 9.5,
           "mandatory": true
         },
-
         {
           "name": "Disability",
           "uuid": "f4ac388b-daab-4e0b-9887-d14fea683f0d",

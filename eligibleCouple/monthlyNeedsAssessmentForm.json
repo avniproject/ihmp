@@ -370,7 +370,7 @@
             "uuid": "de3e8247-18e7-44aa-934e-6bd262251bd8"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Follow up visit date for RTI",
@@ -381,7 +381,7 @@
             "uuid": "6539ec90-14b9-4e5f-9305-4ca05f89db50"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     }
