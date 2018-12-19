@@ -78,7 +78,7 @@ class ECEnrolmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     ageOfOldestChild([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Number of living children").is.greaterThanOrEqualTo(1);
+        statusBuilder.show().when.valueInEnrolment("Number of living children").is.greaterThanOrEqualTo(2);
     }
 
     @WithStatusBuilder
