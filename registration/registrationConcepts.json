@@ -86,6 +86,96 @@
     "name": "Caste (Free Text)",
     "uuid": "60c44aa2-3635-487d-8962-43000e77d382",
     "dataType": "Text"
+  },
+  {
+    "uuid": "a66d91e3-6d21-40cb-a7e9-43438a635a79",
+    "name": "Housewife"
+  },
+  {
+    "uuid": "0c885b5e-3e4d-4a10-89e4-41011bede03b",
+    "name": "Labourer"
+  },
+  {
+    "uuid": "98bce8ac-e741-4e9f-a660-d935983da335",
+    "name": "Agricultural labourer"
+  },
+  {
+    "uuid": "3ce1383a-0c1f-429c-88d0-cb16470ecdf7",
+    "name": "Skilled worker"
+  },
+  {
+    "uuid": "5cf0393d-940d-4d48-ad6e-4be7034ebc85",
+    "name": "Petty business"
+  },
+  {
+    "uuid": "28513d88-2fb0-4502-b56d-8eab62dfad15",
+    "name": "Contractor"
+  },
+  {
+    "uuid": "45425b1e-53c9-48d3-b4e8-ffdf677da0d7",
+    "name": "Political leader"
+  },
+  {
+    "uuid": "ea26d0d8-3291-4d97-b41d-59cca21bde29",
+    "name": "Health worker"
+  },
+  {
+    "uuid": "b8129d49-d953-407c-b26a-4d8e3c0a2355",
+    "name": "Priest"
+  },
+  {
+    "uuid": "a6db1aca-3eb7-4670-a5ff-4aa6c31b597b",
+    "name": "Student"
+  },
+  {
+    "name": "Occupation",
+    "uuid": "cd83afec-d147-42b2-bd50-0ca460dbd55f",
+    "dataType": "Coded",
+    "organisationUUID": "3539a906-dfae-4ec3-8fbb-1b08f35c3884",
+    "answers": [
+      {
+        "uuid": "a66d91e3-6d21-40cb-a7e9-43438a635a79",
+        "name": "Housewife"
+      },
+      {
+        "uuid": "0c885b5e-3e4d-4a10-89e4-41011bede03b",
+        "name": "Labourer"
+      },
+      {
+        "uuid": "98bce8ac-e741-4e9f-a660-d935983da335",
+        "name": "Agricultural labourer"
+      },
+      {
+        "uuid": "3ce1383a-0c1f-429c-88d0-cb16470ecdf7",
+        "name": "Skilled worker"
+      },
+      {
+        "uuid": "5cf0393d-940d-4d48-ad6e-4be7034ebc85",
+        "name": "Petty business"
+      },
+      {
+        "uuid": "28513d88-2fb0-4502-b56d-8eab62dfad15",
+        "name": "Contractor"
+      },
+      {
+        "uuid": "45425b1e-53c9-48d3-b4e8-ffdf677da0d7",
+        "name": "Political leader"
+      },
+      {
+        "uuid": "ea26d0d8-3291-4d97-b41d-59cca21bde29",
+        "name": "Health worker"
+      },
+      {
+        "uuid": "b8129d49-d953-407c-b26a-4d8e3c0a2355",
+        "name": "Priest"
+      },
+      {
+        "uuid": "a6db1aca-3eb7-4670-a5ff-4aa6c31b597b",
+        "name": "Student"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+      }
+    ]
   }
-
 ]

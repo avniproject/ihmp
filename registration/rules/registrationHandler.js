@@ -32,7 +32,7 @@ class RegistrationHandlerIHMP {
 
     @WithStatusBuilder
     dateOfMarriage([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Marital status").containsAnyAnswerConceptName("Married","Separated","Divorced","Widow(er)", "Remarried", "Other");
+        statusBuilder.show().when.valueInRegistration("Marital status").containsAnyAnswerConceptName("Currently married","Separated","Divorced","Widow(er)", "Remarried", "Other");
     }
 
     @WithStatusBuilder
@@ -47,10 +47,10 @@ class RegistrationHandlerIHMP {
 
     @WithStatusBuilder
     whetherSterilized([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Marital status").containsAnyAnswerConceptName("Married")
+        statusBuilder.show().when.valueInRegistration("Marital status").containsAnyAnswerConceptName("Currently married")
             .and.when.ageInYears.is.lessThanOrEqualTo(49);
     }
 
 }
 
-module.exports = {RegistrationHandlerIHMP}
+module.exports = {RegistrationHandlerIHMP};

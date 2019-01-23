@@ -215,8 +215,8 @@
           "mandatory": false
         },
         {
-          "name": "IHMP FP counselling for spacing to desire to use EC",
           "uuid": "a20b22e8-7bad-437c-b999-b42f41bf48ee",
+          "name": "IHMP FP counselling information regarding sterilization",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
@@ -227,8 +227,8 @@
           "mandatory": false
         },
         {
-          "name": "IHMP FP counselling information regarding sterilization",
           "uuid": "7a4b5394-91bf-44c1-beb5-23789ab33a55",
+          "name": "IHMP IPIL counselling",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
@@ -236,18 +236,6 @@
             "comment": "Placeholder for counselling form element"
           },
           "displayOrder": 5,
-          "mandatory": false
-        },
-        {
-          "name": "IHMP IPIL counselling",
-          "uuid": "0f0548c3-cbea-44b8-970e-0039131e572b",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
-            "comment": "Placeholder for counselling form element"
-          },
-          "displayOrder": 6,
           "mandatory": false
         }
       ]
