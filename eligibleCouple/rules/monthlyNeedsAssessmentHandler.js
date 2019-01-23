@@ -122,7 +122,8 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
     ihmpFpCounsellingForSpacingToNonUser([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Age of youngest child").asAge.is.lessThan(2)
             .and.when.valueInEncounter("Whether using any family planning method currently").is.no
-            .and.valueInEnrolment("Whether sterilized").is.no;
+            .and.valueInEnrolment("Whether sterilized").is.no
+            .and.valueInEnrolment("Number of living children").is.lessThan(2);
     }
 
     @WithStatusBuilder
@@ -131,13 +132,6 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
             .and.when.valueInEncounter("Whether using any family planning method currently").is.yes
             .and.valueInEnrolment("Whether sterilized").is.no;
 
-    }
-
-    @WithStatusBuilder
-    ihmpFpCounsellingForSpacingToDesireToUseEc([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Age of youngest child").asAge.is.lessThan(2)
-            .and.when.valueInEncounter("Whether desire to use any FP methods in future").is.yes
-            .and.valueInEnrolment("Whether sterilized").is.no;
     }
 
     @WithStatusBuilder
