@@ -1,0 +1,295 @@
+[
+  {
+    "name": "Date of registration for antenatal care",
+    "uuid": "b3f5af5e-6a0f-4af0-839a-72a7e9b67331",
+    "dataType": "Date"
+  },
+  {
+    "name": "Week of gestation when registered for antenatal care",
+    "uuid": "61108679-7242-479c-a6ba-380f4c9b9c3b",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Place where registered for antenatal care",
+    "uuid": "5932a6af-3316-4e90-9b77-579382ff9c9e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "VHND",
+        "uuid": "1d3d49c5-feba-48d4-9a18-e1aecffb29a6"
+      },
+      {
+        "name": "Sub Center",
+        "uuid": "fe24e909-6346-4e84-bacc-2ec5ae85bed8"
+      },
+      {
+        "name": "Primary Health Center",
+        "uuid": "b4007f93-f288-49aa-b2ad-96f1a0f75a43"
+      },
+      {
+        "name": "Community Health Centre",
+        "uuid": "ec4fdac4-1786-4e07-97ad-d46172d32f42"
+      },
+      {
+        "uuid": "a1a7476f-0f51-49ec-aa9d-314f15c4d62a",
+        "name": "Block hospital"
+      },
+      {
+        "name": "District Hospital",
+        "uuid": "6e3cb48a-5428-49d3-bccb-6964f958fdf3"
+      },
+      {
+        "name": "Private hospital",
+        "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      }
+    ]
+  },
+  {
+    "name": "ANC VHND date",
+    "uuid": "4c234fbb-7592-4f9a-87aa-3d49a08a74da",
+    "dataType": "Date"
+  },
+  {
+    "name": "Number of IFA tablets received",
+    "uuid": "f5ab6390-b107-4fcf-bee5-b54d23e5adc1",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of IFA tablets consumed",
+    "uuid": "0620abab-4449-4182-96f9-8daa5f855c80",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "e40446ef-fb81-4ae3-b1d2-54123976b929",
+    "name": "Excessive vomiting"
+  },
+  {
+    "uuid": "7a68c1a2-4268-4693-b9ec-53bbefdd76db",
+    "name": "Swelling on feet or face"
+  },
+  {
+    "name": "Pregnancy complications",
+    "uuid": "0adc4170-9ebb-4feb-8b81-450fbf9a04dc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Symptoms of anaemia",
+        "uuid": "49968689-e416-42af-b292-df577c0e45ad"
+      }
+    ]
+  },
+  {
+    "name": "Referral facility",
+    "uuid": "36bb487b-9d46-47bb-b6f4-7ca4b3f7856e",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "ee5491c6-2a9f-4f19-b620-97b38bd95c58",
+    "name": "Household level care"
+  },
+  {
+    "uuid": "ca0e16ab-ef73-4748-9cae-3c651b19e65d",
+    "name": "Importance of examination and services"
+  },
+  {
+    "uuid": "89f960d1-8116-4cde-9790-53a128a5202b",
+    "name": "Referral for danger signs"
+  },
+  {
+    "uuid": "f1d7db1b-943d-439c-b4b1-c97f2e51122d",
+    "name": "Preparation for delivery"
+  },
+  {
+    "uuid": "94edc863-c033-4e3e-99ae-4478cb6d800e",
+    "name": "Use of FP methods after delivery done"
+  },
+  {
+    "name": "BCC provided by ANM",
+    "uuid": "64403269-371d-4363-ac08-df38af151bbc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ee5491c6-2a9f-4f19-b620-97b38bd95c58",
+        "name": "Household level care"
+      },
+      {
+        "uuid": "ca0e16ab-ef73-4748-9cae-3c651b19e65d",
+        "name": "Importance of examination and services"
+      },
+      {
+        "uuid": "89f960d1-8116-4cde-9790-53a128a5202b",
+        "name": "Referral for danger signs"
+      },
+      {
+        "uuid": "f1d7db1b-943d-439c-b4b1-c97f2e51122d",
+        "name": "Preparation for delivery"
+      },
+      {
+        "uuid": "94edc863-c033-4e3e-99ae-4478cb6d800e",
+        "name": "Use of FP methods after delivery done"
+      },
+      {
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "comment": "None",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "BCC provided by ASHA",
+    "uuid": "902d49f0-9b68-4ca5-b14e-012fbdbcaf83",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ee5491c6-2a9f-4f19-b620-97b38bd95c58",
+        "name": "Household level care"
+      },
+      {
+        "uuid": "ca0e16ab-ef73-4748-9cae-3c651b19e65d",
+        "name": "Importance of examination and services"
+      },
+      {
+        "uuid": "89f960d1-8116-4cde-9790-53a128a5202b",
+        "name": "Referral for danger signs"
+      },
+      {
+        "uuid": "f1d7db1b-943d-439c-b4b1-c97f2e51122d",
+        "name": "Preparation for delivery"
+      },
+      {
+        "uuid": "94edc863-c033-4e3e-99ae-4478cb6d800e",
+        "name": "Use of FP methods after delivery done"
+      },
+      {
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "comment": "None",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Whether ANC VHND referral utilized",
+    "uuid": "d213ae72-b3f2-4ac2-b53d-646cbc8a906d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Place of ANC VHND referral utilized",
+    "uuid": "8a83e17c-a7a0-4fad-89fa-71d13459ac4b",
+    "dataType": "Text"
+  },
+  {
+    "name": "Whether treatment taken for antenatal complications",
+    "uuid": "a916a62d-5010-44af-8887-e7e7c4e89ed9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether the antenatal complications is addressed",
+    "uuid": "93464328-5978-499b-98b1-b299b067cbb1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether antenatal examination done",
+    "uuid": "ede1aad7-ee90-4c66-ab95-56e353ec5194",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Place where antenatal examination done",
+    "uuid": "ec9e602c-885d-4f3c-8224-46ca9e9aeae4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "VHND",
+        "uuid": "1d3d49c5-feba-48d4-9a18-e1aecffb29a6"
+      },
+      {
+        "name": "Sub Center",
+        "uuid": "fe24e909-6346-4e84-bacc-2ec5ae85bed8"
+      },
+      {
+        "name": "Primary Health Center",
+        "uuid": "b4007f93-f288-49aa-b2ad-96f1a0f75a43"
+      },
+      {
+        "name": "Community Health Centre",
+        "uuid": "ec4fdac4-1786-4e07-97ad-d46172d32f42"
+      },
+      {
+        "uuid": "a1a7476f-0f51-49ec-aa9d-314f15c4d62a",
+        "name": "Block hospital"
+      },
+      {
+        "name": "District Hospital",
+        "uuid": "6e3cb48a-5428-49d3-bccb-6964f958fdf3"
+      },
+      {
+        "name": "Private hospital",
+        "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      }
+    ]
+  },
+  {
+    "uuid": "738e9e52-9b14-4732-9b38-f75cc6036cb1",
+    "name": "Janani Suaksha Yojana (JSY)"
+  },
+  {
+    "uuid": "10e70d5d-22d0-43d8-80c7-b3a235415093",
+    "name": "Pradhanmantri Matrutva Vandan Yojana (PMVY)"
+  },
+  {
+    "name": "Whether enrolled in any government scheme related to pregnancy",
+    "uuid": "50782e71-4e37-42d0-8006-f373e09cce65",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "738e9e52-9b14-4732-9b38-f75cc6036cb1",
+        "name": "Janani Suaksha Yojana (JSY)"
+      },
+      {
+        "uuid": "10e70d5d-22d0-43d8-80c7-b3a235415093",
+        "name": "Pradhanmantri Matrutva Vandan Yojana (PMVY)"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "abnormal": false
+      },
+      {
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "comment": "None",
+        "unique": true
+      }
+    ]
+  }
+
+]

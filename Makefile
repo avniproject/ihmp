@@ -95,6 +95,13 @@ _deploy_refdata:
 	$(call _curl,POST,forms,@eligibleCouple/rtiServicesForm.json)
 	$(call _curl,POST,forms,@eligibleCouple/ECEncounterCancellationForm.json)
 	$(call _curl,POST,forms,@eligibleCouple/ecProgramExitForm.json)
+
+	$(call _curl,POST,concepts,@pregnancy/pregnancyConcepts.json)
+	$(call _curl,DELETE,forms,@pregnancy/enrolmentDeletions.json)
+	$(call _curl,PATCH,forms,@pregnancy/enrolmentAdditions.json)
+	$(call _curl,POST,forms,@pregnancy/ancvhndForm.json)
+	$(call _curl,POST,forms,@pregnancy/ancvhndfollowupForm.json)
+	$(call _curl,POST,forms,@pregnancy/ancashaForm.json)
 	$(call _curl,POST,formMappings,@formMappings.json)
 
 

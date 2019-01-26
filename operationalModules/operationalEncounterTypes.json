@@ -21,6 +21,27 @@
       "encounterType": {
         "uuid": "f750c222-f7eb-4a98-bd79-273c578dedcf"
       }
+    },
+    {
+      "uuid": "65ef588f-983a-4c77-b510-8889f1bed3e5",
+      "name": "ANC VHND",
+      "encounterType": {
+        "uuid": "0511f4b0-4af8-4493-ace6-97740f89f1f2"
+      }
+    },
+    {
+      "uuid": "6cfda1d9-61cd-41dc-bf6a-3cf0b2c44788",
+      "name": "ANC ASHA",
+      "encounterType": {
+        "uuid": "48f359e2-1387-49a0-bb15-71c1750b2acf"
+      }
+    },
+    {
+      "uuid": "8822ce6a-111d-4165-a82e-36fadb81c562",
+      "name": "ANC VHND Follow up",
+      "encounterType": {
+        "uuid": "e381bd4e-6bf5-498d-b870-48fcfea303ff"
+      }
     }
   ]
 }
