@@ -131,7 +131,6 @@
     "name": "Occupation",
     "uuid": "cd83afec-d147-42b2-bd50-0ca460dbd55f",
     "dataType": "Coded",
-    "organisationUUID": "3539a906-dfae-4ec3-8fbb-1b08f35c3884",
     "answers": [
       {
         "uuid": "a66d91e3-6d21-40cb-a7e9-43438a635a79",
@@ -172,9 +171,6 @@
       {
         "uuid": "a6db1aca-3eb7-4670-a5ff-4aa6c31b597b",
         "name": "Student"
-      },
-      {
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   }

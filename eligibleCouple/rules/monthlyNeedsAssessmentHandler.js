@@ -16,7 +16,7 @@ const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'fo
 
 let applicableForFamilyPlanning = function (programEncounter) {
     return new RuleCondition({programEncounter: programEncounter}).valueInEnrolment("Whether sterilized").is.no
-        .and.valueInEncounter("Whether currently pregnant").is.no
+        .and.not.valueInEncounter("Whether currently pregnant").is.yes
         .matches();
 };
 

@@ -290,6 +290,12 @@
         "unique": true
       }
     ]
+  },
+  {
+    "name": "R15 number",
+    "uuid": "fef5be79-24c0-415d-9494-64b2faf17aeb",
+    "dataType": "Numeric"
   }
+
 
 ]

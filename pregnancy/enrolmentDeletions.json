@@ -3,6 +3,19 @@
   "userUUID": "f5117600-c1b8-4690-af45-6282ff9b6bb7",
   "formElementGroups": [
     {
+      "uuid": "71b33c6d-e029-43be-baff-452c3e31890d",
+      "formElements": [
+        {
+          "uuid": "7c43bedd-dbd8-46d0-9a3f-8517dcb7e18d",
+          "comment": "Number of Abortions"
+        },
+        {
+          "uuid": "a21ba591-9f62-44b4-addc-44df0eea168b",
+          "comment": "Gravida"
+        }
+      ]
+    },
+    {
       "uuid": "50a2d045-88fe-44e3-86e0-0dba16f53818",
       "comment": "Past pregnancy history",
       "formElements": [
@@ -38,10 +51,6 @@
       "uuid": "2dff8c09-bed3-4848-943f-b2240b70d7ed",
       "comment": "ANC Enrolment Basic Details",
       "formElements": [
-        {
-          "comment": "Urine pregnancy test",
-          "uuid": "1e23c808-5932-484b-b913-1d78f81cc11f"
-        },
         {
           "uuid": "cadad826-0b4c-4474-b256-697b49159111",
           "comment": "ANC registration no"

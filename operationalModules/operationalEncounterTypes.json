@@ -42,6 +42,20 @@
       "encounterType": {
         "uuid": "e381bd4e-6bf5-498d-b870-48fcfea303ff"
       }
+    },
+    {
+      "uuid": "b7dcbb07-4f0e-4e65-8955-ef02a76c60e4",
+      "name": "Abortion",
+      "encounterType": {
+        "uuid": "1dec6355-4abd-45b7-89ab-bae1f5f9cc07"
+      }
+    },
+    {
+      "uuid": "43e7ecb9-2293-46f8-8070-b4e621eab8f7",
+      "name": "Delivery",
+      "encounterType": {
+        "uuid": "7b6a93c7-e1e1-4e73-842d-df8a1935bde2"
+      }
     }
   ]
 }

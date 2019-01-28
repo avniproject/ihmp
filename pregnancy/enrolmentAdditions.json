@@ -3,6 +3,195 @@
   "userUUID": "f5117600-c1b8-4690-af45-6282ff9b6bb7",
   "formElementGroups": [
     {
+      "uuid": "2dff8c09-bed3-4848-943f-b2240b70d7ed",
+      "name": "ANC Enrolment Basic Details",
+      "displayOrder": 1,
+      "display": "Basic Details",
+      "formElements": [
+        {
+          "name": "MCTS",
+          "uuid": "8b1e19e0-3404-4450-b335-6b8e69e6fcd2",
+          "keyValues": [],
+          "concept": {
+            "name": "MCTS Number",
+            "uuid": "191f8a30-d543-4b98-9464-2f5838d1d9a6"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "R15 number",
+          "uuid": "c59996fa-2073-47ba-9331-f7db471efbf9",
+          "keyValues": [],
+          "concept": {
+            "name": "R15 number",
+            "uuid": "fef5be79-24c0-415d-9494-64b2faf17aeb"
+          },
+          "displayOrder": 1.5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "7fe53177-4b25-4e97-8712-84fa41089834",
+      "name": "GPAL",
+      "display": "GPAL",
+      "displayOrder": 1.5,
+      "formElements": [
+        {
+          "name": "Gravida",
+          "uuid": "e2f23ddd-532d-4843-98a3-86422a4060e1",
+          "keyValues": [],
+          "concept": {
+            "name": "Gravida",
+            "uuid": "dc2c23e9-19ad-471f-81d1-213069ccc975"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Parity",
+          "uuid": "15e44a16-8a88-44a9-aff2-2c7d82d3da89",
+          "keyValues": [],
+          "concept": {
+            "name": "Parity",
+            "uuid": "2d679fd5-a75b-46bd-96c2-10c180187342"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Number of living children",
+          "uuid": "bfe27f9f-a6c5-4917-80d6-23d3489a4e8f",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b3e9c088-90ed-45d9-8c99-102d1bda66e1",
+            "name": "Number of living children"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Number of living children - Female",
+          "uuid": "66e69b95-7a9e-4fd2-a042-f8d00e29c98c",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of female children",
+            "uuid": "d924596e-e08e-4829-b4c3-77a0411d18c7",
+            "dataType": "Numeric"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Number of living children - Male",
+          "uuid": "2868e89a-1338-46a5-b313-74911c46dab8",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of male children",
+            "uuid": "1b749b48-bfae-470d-8219-a735dae99f7a"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "Number of abortions",
+          "uuid": "c82f2a4f-3d9c-4d37-a504-e4b812aac91b",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of abortions",
+            "uuid": "38b9986b-76e8-4015-ae51-48152b1cd42c"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "Number of spontaneous abortions (miscarriages)",
+          "uuid": "cbef0796-a0dc-4d1c-b125-b188b3e14fb9",
+          "keyValues": [],
+          "concept": {
+            "uuid": "99c9d0a3-6ffc-41a7-8641-d79e2e83a4c6",
+            "name": "Number of miscarriages"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        },
+        {
+          "name": "Number of induced abortions",
+          "uuid": "c4f1a36d-378d-4706-9eb2-6c7137ab8ca1",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of induced abortions",
+            "uuid": "0b3eb875-b0f6-4420-be01-82bbd2812b21"
+          },
+          "displayOrder": 8,
+          "mandatory": false
+        },
+        {
+          "name": "Number of stillbirths",
+          "uuid": "668407c4-f5d4-48be-8afb-1d301af2b1da",
+          "keyValues": [],
+          "concept": {
+            "uuid": "74de4054-0e8b-4088-aae8-bd5f2933d300",
+            "name": "Number of stillbirths"
+          },
+          "displayOrder": 9,
+          "mandatory": false
+        },
+        {
+          "name": "Number of child deaths",
+          "uuid": "cdcc87f7-f94a-4a3b-9d60-37ffc1801629",
+          "keyValues": [],
+          "concept": {
+            "uuid": "d7ae1329-9e09-47f1-ad7d-3c73474d973f",
+            "name": "Number of child deaths"
+          },
+          "displayOrder": 10,
+          "mandatory": false
+        },
+        {
+          "name": "Number of child deaths - Male",
+          "uuid": "8f609e78-dc58-4887-b4a6-5f3e506032ae",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of male child deaths",
+            "uuid": "eb07e1bd-0379-4ffd-9bc6-df4b34f7745e"
+          },
+          "displayOrder": 11,
+          "mandatory": false
+        },
+        {
+          "name": "Number of child deaths - Female",
+          "uuid": "0115a53b-d2b8-4219-bb81-9cc33c45b548",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of female child deaths",
+            "uuid": "c6454406-04da-4670-9318-3b71a2d9b0cf"
+          },
+          "displayOrder": 12,
+          "mandatory": false
+        },
+        {
+          "name": "Age of youngest child",
+          "uuid": "82ee8f39-3f9e-44fd-9501-672abc1a6663",
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": [
+                "months"
+              ]
+            }
+          ],
+          "concept": {
+            "name": "Age of youngest child",
+            "uuid": "305f693c-c8b6-4e3e-9a82-a6e91a3e462f"
+          },
+          "displayOrder": 13,
+          "mandatory": true
+        }
+      ]
+    },
+    {
       "uuid": "25734f5b-1d21-4ca6-8081-7a917e585e2a",
       "name": "Registration for antenatal care",
       "display": "Registration for antenatal care",
