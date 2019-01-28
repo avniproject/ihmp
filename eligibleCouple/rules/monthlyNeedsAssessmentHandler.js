@@ -7,11 +7,19 @@ import {
     StatusBuilderAnnotationFactory,
     FormElementStatus,
     VisitScheduleBuilder,
-    complicationsBuilder as ComplicationsBuilder
+    complicationsBuilder as ComplicationsBuilder,
+    RuleCondition
 } from 'rules-config/rules';
 
 const MonthlyAssessmentViewFilter = RuleFactory("8b5bf56e-346a-486e-b00e-9fa604fa0b54", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
+
+let applicableForFpCounselling = function (programEncounter) {
+    return new RuleCondition({programEncounter: programEncounter}).valueInEnrolment("Whether sterilized").is.no
+        .and.valueInEncounter("Whether currently pregnant").is.no
+        .matches();
+};
+
 
 @MonthlyAssessmentViewFilter("f9d1d4b2-437c-4040-8ecc-34e928466efb", "IHMP EC Monthly needs assessment View Filter", 100.0, {})
 class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
@@ -47,7 +55,7 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
     fpCounselling(programEncounter, formElementGroup) {
         return formElementGroup.formElements.map(fe=>{
             let statusBuilder = new FormElementStatusBuilder({programEncounter:programEncounter, formElement:fe});
-            statusBuilder.show().when.valueInEnrolment("Whether sterilized").is.no;
+            statusBuilder.show().whenItem(applicableForFpCounselling(programEncounter)).is.truthy;
             return statusBuilder.build();
         });
     }
@@ -115,34 +123,34 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
     ihmpFpCounsellingToDelayFirstConception([], statusBuilder) {
         statusBuilder.show().when.ageInYears.is.lessThanOrEqualTo(19)
             .and.valueInEnrolment("Gravida").is.equals(0)
-            .and.valueInEnrolment("Whether sterilized").is.no;
+            .and.whenItem(applicableForFpCounselling(statusBuilder.context.programEncounter)).is.truthy;
     }
 
     @WithStatusBuilder
     ihmpFpCounsellingForSpacingToNonUser([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Age of youngest child").asAge.is.lessThan(2)
             .and.when.valueInEncounter("Whether using any family planning method currently").is.no
-            .and.valueInEnrolment("Whether sterilized").is.no
-            .and.valueInEnrolment("Number of living children").is.lessThan(2);
+            .and.valueInEnrolment("Number of living children").is.lessThan(2)
+            .and.whenItem(applicableForFpCounselling(statusBuilder.context.programEncounter)).is.truthy;
     }
 
     @WithStatusBuilder
     ihmpFpCounsellingForSpacingToUser([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Age of youngest child").asAge.is.lessThan(2)
             .and.when.valueInEncounter("Whether using any family planning method currently").is.yes
-            .and.valueInEnrolment("Whether sterilized").is.no;
+            .and.whenItem(applicableForFpCounselling(statusBuilder.context.programEncounter)).is.truthy;
 
     }
 
     @WithStatusBuilder
     ihmpFpCounsellingInformationRegardingSterilization([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Number of living children").is.greaterThanOrEqualTo(2)
-            .and.valueInEnrolment("Whether sterilized").is.no;
+            .and.whenItem(applicableForFpCounselling(statusBuilder.context.programEncounter)).is.truthy;
     }
 
     @WithStatusBuilder
     ihmpIpilCounselling([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Whether sterilized").is.no
+        statusBuilder.show().whenItem(applicableForFpCounselling(statusBuilder.context.programEncounter)).is.truthy;
     }
 
 
