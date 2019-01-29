@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Sever pallor",
+    "uuid": "5a1dc4ef-bf37-4c37-ada3-b61e2f5abe36",
+    "dataType": "NA"
+  },
+  {
+    "name": "Swelling over face",
+    "uuid": "71449be1-391f-4615-9574-8f1270d81772",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "5156aaed-abda-4ed8-9bef-0cadb226c0a7",
+    "name": "Symptoms around head and face",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "5a1dc4ef-bf37-4c37-ada3-b61e2f5abe36",
+        "comment": "Sever pallor",
+        "abnormal": true
+      },
+      {
+        "uuid": "71449be1-391f-4615-9574-8f1270d81772",
+        "comment": "Swelling over face",
+        "abnormal": true
+      },
+      {
+        "uuid": "5a6ab8bb-fb14-4747-a66e-3961d718a83e",
+        "comment": "Severe headache",
+        "abnormal": true
+      },
+      {
+        "uuid": "2367268e-5988-4db3-a0ca-19438bd5931c",
+        "comment": "Blurred vision",
+        "abnormal": true
+      },
+      {
+        "uuid": "855fb739-19d8-418d-a8ae-c1da977b7fa9",
+        "comment": "No problem",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "uuid": "0bc76462-cacb-4f53-8cad-3ef195e95ae1",
+    "name": "Rate of breathing more than 20",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "92ec474e-c1e8-4178-8b87-84ef04a4d4f9",
+    "name": "Problems with chest area",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "8e1ef29f-c2d6-4586-97a1-5c791251c4f0",
+        "comment": "Difficulty in breathing",
+        "abnormal": true
+      },
+      {
+        "uuid": "0bc76462-cacb-4f53-8cad-3ef195e95ae1",
+        "comment": "Rate of breathing more than 20",
+        "abnormal": true
+      },
+      {
+        "uuid": "855fb739-19d8-418d-a8ae-c1da977b7fa9",
+        "comment": "No problem",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "uuid": "2de99de4-558c-44b0-9882-abe7d892fe6c",
+    "comment": "Any abdominal problems",
+    "answers": [
+      {
+        "uuid": "92ad8878-b476-4291-aa76-3377fa7cf19c",
+        "comment": "Lower abdominal pain",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "uuid": "b6964625-9672-4c14-a175-cfa0b366c381",
+    "name": "Inverted nipple",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "038b7051-c8df-4bcb-baac-bf8ee5f66ce0",
+    "name": "Lactation failure or insufficient lactation",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "88fe8286-316d-4ee8-be86-2d8c3840881c",
+    "comment": "Any breast problems",
+    "answers": [
+      {
+        "uuid": "b6964625-9672-4c14-a175-cfa0b366c381",
+        "comment": "Inverted nipple",
+        "abnormal": true
+      },
+      {
+        "uuid": "038b7051-c8df-4bcb-baac-bf8ee5f66ce0",
+        "comment": "Lactation failure or insufficient lactation",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "uuid": "af94706c-5251-490a-b2b5-1f8628154bd4",
+    "name": "Swelling around perineal tear",
+    "dataType": "NA"
+  },
+  {
+    "comment": "How is the incision area",
+    "uuid": "a70eb606-3155-49f1-b2b4-6bc858ea6d31",
+    "answers": [
+      {
+        "uuid": "af94706c-5251-490a-b2b5-1f8628154bd4",
+        "comment": "Swelling around perineal tear",
+        "abnormal": true
+      },
+      {
+        "uuid": "f67e74ea-f048-40b1-abaa-19ff8ac20b10",
+        "comment": "Infected perineum suture",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "uuid": "0f01b6f6-b7e3-41ea-8d49-9df23196125b",
+    "comment": "Any difficulties with urinating",
+    "answers": [
+      {
+        "uuid": "97652252-0024-434d-8749-078b395fb6f2",
+        "comment": "Pain on urination",
+        "abnormal": true
+      }
+    ]
+  }
+]

@@ -99,6 +99,9 @@ _deploy_refdata:
 	$(call _curl,POST,concepts,@pregnancy/pregnancyConcepts.json)
 	$(call _curl,DELETE,forms,@pregnancy/enrolmentDeletions.json)
 	$(call _curl,PATCH,forms,@pregnancy/enrolmentAdditions.json)
+	$(call _curl,POST,concepts,@pregnancy/pncConcepts.json)
+	$(call _curl,DELETE,forms,@pregnancy/pncDeletions.json)
+	$(call _curl,PATCH,forms,@pregnancy/pncAdditions.json)
 	$(call _curl,POST,forms,@pregnancy/ancvhndForm.json)
 	$(call _curl,POST,forms,@pregnancy/ancvhndfollowupForm.json)
 	$(call _curl,POST,forms,@pregnancy/ancashaForm.json)
@@ -160,3 +163,37 @@ build_package: ## Builds a deployable package
 
 deps:
 	npm i
+
+by_org_admin:
+	$(eval username:=$(org_admin_name))
+
+staging:
+	$(eval poolId:=$(OPENCHS_STAGING_USER_POOL_ID))
+	$(eval clientId:=$(OPENCHS_STAGING_APP_CLIENT_ID))
+	$(eval server_url:= https://staging.openchs.org:443)
+
+prod:
+	$(eval poolId:=$(OPENCHS_PROD_USER_POOL_ID))
+	$(eval clientId:=$(OPENCHS_PROD_APP_CLIENT_ID))
+	$(eval server_url:= https://server.openchs.org:443)
+
+dev:
+	$(eval poolId:=)
+	$(eval clientId:=)
+	$(eval server_url:=http://localhost:8021)
+
+api=
+file=
+method=
+curl_staging: staging by_org_admin auth #password=password
+	$(eval method:=$(if $(method),$(method),POST))
+	$(call _curl,$(method),$(api),@$(file))
+
+# ex: make curl_prod api=concepts file=child/homeVisitConcepts.json password=
+curl_prod: prod by_org_admin auth #password=password
+	$(eval method:=$(if $(method),$(method),POST))
+	$(call _curl,$(method),$(api),@$(file))
+
+curl_dev: dev by_org_admin
+	$(eval method:=$(if $(method),$(method),POST))
+	$(call _curl,$(method),$(api),@$(file))

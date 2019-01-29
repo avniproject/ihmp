@@ -1,0 +1,37 @@
+{
+  "comment": "PNC",
+  "uuid": "78b1400e-8100-4ba6-b78e-fef580f7fb77",
+  "formType": "ProgramEncounter",
+  "formElementGroups": [
+    {
+      "uuid": "bd0672b5-bc94-45c3-a24e-210a7c7b0d93",
+      "comment": "Mother PNC Danger Signs",
+      "formElements": [
+        {
+          "name": "Any symptoms around head and face",
+          "uuid": "65ec251e-59d5-4853-81e2-6469c0cbaae2",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "5156aaed-abda-4ed8-9bef-0cadb226c0a7",
+            "comment": "Symptoms around head and face"
+          },
+          "displayOrder": 0.5,
+          "mandatory": true
+        },
+        {
+          "name": "Any problems with chest area",
+          "uuid": "e0be9bd7-8e3a-41d2-9e62-61cfe8e382cf",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "92ec474e-c1e8-4178-8b87-84ef04a4d4f9",
+            "comment": "Problems with chest area"
+          },
+          "displayOrder": 0.75,
+          "mandatory": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "comment": "PNC",
+  "uuid": "78b1400e-8100-4ba6-b78e-fef580f7fb77",
+  "formType": "ProgramEncounter",
+  "formElementGroups": [
+    {
+      "uuid": "9b937fd3-3a23-40c7-bb11-fa2bfd9ce906",
+      "comment": "Mother PNC Vitals",
+      "formElements": [
+        {
+          "comment": "Systolic",
+          "uuid": "68bfde5c-92b7-4188-b2a2-bb96abfc174e"
+        },
+        {
+          "comment": "Diastolic",
+          "uuid": "a427afb1-a183-4d92-88eb-2a40e4a00058"
+        },
+        {
+          "comment": "Temperature",
+          "uuid": "a60089b0-71d7-487d-9102-1e8b52789bf7"
+        },
+        {
+          "comment": "Respiratory Rate",
+          "uuid": "f483e292-24b6-4d76-af72-8b13c9a5c596"
+        },
+        {
+          "comment": "Pulse",
+          "uuid": "62c01607-c063-49cd-ac39-ea1541243c44"
+        },
+        {
+          "comment": "Hb % Level",
+          "uuid": "3217fb80-e129-424a-891b-e1b32e10eead"
+        }
+      ]
+    },
+    {
+      "uuid": "bd0672b5-bc94-45c3-a24e-210a7c7b0d93",
+      "comment": "Mother PNC Danger Signs",
+      "formElements": [
+        {
+          "comment": "Any of the following difficulties",
+          "uuid": "3ae759ca-ba9e-43dd-8e64-270fdf0d1b38"
+        }
+      ]
+    }
+  ]
+}

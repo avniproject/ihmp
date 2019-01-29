@@ -56,6 +56,14 @@
       "encounterType": {
         "uuid": "7b6a93c7-e1e1-4e73-842d-df8a1935bde2"
       }
+    },
+    {
+      "uuid":"d3ee3abc-7005-4025-8351-f4dca3d5471a",
+      "name":"PNC",
+      "encounterType":{
+        "uuid":"e9971396-b74f-411c-956d-da44073922f5",
+        "comment":"PNC"
+      }
     }
   ]
 }

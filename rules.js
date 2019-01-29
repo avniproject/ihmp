@@ -7,5 +7,6 @@ module.exports = _.merge({},
     require('./eligibleCouple/rules/fpServicesHandler'),
     require('./eligibleCouple/rules/visitSchedule'),
     require('./eligibleCouple/rules/encounterCancelHandler'),
-    require('./pregnancy/rules/enrolmentHandler')
+    require('./pregnancy/rules/enrolmentHandler'),
+    require('./pregnancy/rules/pncHandler')
 );
