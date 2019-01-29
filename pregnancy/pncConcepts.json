@@ -136,5 +136,48 @@
         "abnormal": true
       }
     ]
+  },
+  {
+    "name": "Sever pain in leg muscle",
+    "uuid": "f8574d22-a2b0-47b4-b4b9-0f755cfe30b4",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "b3a53a37-1885-4852-b99b-d84454e4a3ba",
+    "name": "Any problems with legs",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "134285ac-d264-4c95-a533-9ee843c27729",
+        "comment": "Swelling of feet",
+        "abnormal": true
+      },
+      {
+        "uuid": "f8574d22-a2b0-47b4-b4b9-0f755cfe30b4",
+        "comment": "Sever pain in leg muscle",
+        "abnormal": true
+      },
+      {
+        "uuid": "a440c668-a9d8-4ac4-8652-0660e0ca6364",
+        "comment": "No difficulties",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "uuid": "e73e47d6-c34f-4fcc-8716-751c261c0b9e",
+    "name": "Doesn’t talk to anybody/sits alone",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "0776992a-78de-4bd1-bfcb-f63ff1f7630e",
+    "comment": "Post-Partum Depression Symptoms",
+    "answers": [
+      {
+        "uuid": "e73e47d6-c34f-4fcc-8716-751c261c0b9e",
+        "name": "Doesn’t talk to anybody/sits alone",
+        "abnormal": true
+      }
+    ]
   }
 ]

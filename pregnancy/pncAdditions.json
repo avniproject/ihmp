@@ -30,6 +30,18 @@
           },
           "displayOrder": 0.75,
           "mandatory": true
+        },
+        {
+          "uuid": "ef814041-c2a5-4615-b4cd-471ecc53b2a4",
+          "name": "Any problems with legs",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "b3a53a37-1885-4852-b99b-d84454e4a3ba",
+            "comment": "Any problems with legs"
+          },
+          "displayOrder": 6.5,
+          "mandatory": true
         }
       ]
     }
