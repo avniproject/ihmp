@@ -69,7 +69,6 @@ class ECCancelVisitsIHMP {
             RuleHelper.addSchedule(scheduleBuilder, 'Monthly needs assessment', 'Monthly needs assessment', followupDate, 3);
         }
         let rtiFollowupDate = programEncounter.findCancelEncounterObservationReadableValue('Follow up visit date for RTI');
-        console.log(rtiFollowupDate)
         if (!_.isNil(rtiFollowupDate)) {
             RuleHelper.addSchedule(scheduleBuilder, 'RTI services', 'RTI services', rtiFollowupDate, 3);
         }

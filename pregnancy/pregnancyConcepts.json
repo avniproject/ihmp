@@ -45,7 +45,7 @@
     ]
   },
   {
-    "name": "ANC VHND date",
+    "name": "Next VHND date",
     "uuid": "4c234fbb-7592-4f9a-87aa-3d49a08a74da",
     "dataType": "Date"
   },
@@ -68,6 +68,14 @@
     "name": "Swelling on feet or face"
   },
   {
+    "uuid": "c80629dc-6764-4805-9ae2-8379d1962726",
+    "name": "Reduced fetal movement"
+  },
+  {
+    "uuid": "09f81016-9287-419a-bf69-327aa7d2647e",
+    "name": "Watery discharge before onset of labour"
+  },
+  {
     "name": "Pregnancy complications",
     "uuid": "0adc4170-9ebb-4feb-8b81-450fbf9a04dc",
     "dataType": "Coded",
@@ -75,6 +83,30 @@
       {
         "name": "Symptoms of anaemia",
         "uuid": "49968689-e416-42af-b292-df577c0e45ad"
+      },
+      {
+        "uuid": "e40446ef-fb81-4ae3-b1d2-54123976b929",
+        "name": "Excessive vomiting"
+      },
+      {
+        "uuid": "7a68c1a2-4268-4693-b9ec-53bbefdd76db",
+        "name": "Swelling on feet or face"
+      },
+      {
+        "name": "High Blood Pressure",
+        "uuid": "63398939-0a45-46ee-8d92-f01d55e96c1a"
+      },
+      {
+        "name": "Convulsions",
+        "uuid": "ab9596e4-04b6-48f2-9f4d-1c7a2c82dbf8"
+      },
+      {
+        "uuid": "c80629dc-6764-4805-9ae2-8379d1962726",
+        "name": "Reduced fetal movement"
+      },
+      {
+        "uuid": "09f81016-9287-419a-bf69-327aa7d2647e",
+        "name": "Watery discharge before onset of labour"
       }
     ]
   },
@@ -295,7 +327,89 @@
     "name": "R15 number",
     "uuid": "fef5be79-24c0-415d-9494-64b2faf17aeb",
     "dataType": "Numeric"
+  },
+  {
+    "uuid": "8a3304da-a82d-463b-9bd5-9cd8df0bcc5e",
+    "name": "ANC registration"
+  },
+  {
+    "uuid": "031565b0-63e6-44c7-9054-3e57e4007bda",
+    "name": "Routine ANC checkups"
+  },
+  {
+    "uuid": "27050d37-d90f-4571-aff9-f9dea464b09c",
+    "name": "2 TT"
+  },
+  {
+    "uuid": "d30eaba6-c61c-4800-b784-c47a6916d578",
+    "name": "100 IFA"
+  },
+  {
+    "uuid": "9c50b18d-392b-4c6f-8913-03563b887667",
+    "name": "Balanced diet"
+  },
+  {
+    "uuid": "f937a4c7-70a3-4ca3-86f2-e066379124a2",
+    "name": "Meal frequency per day"
+  },
+  {
+    "uuid": "5b4e0026-76fb-4789-85ea-9ae7522e6fb1",
+    "name": "Birth preparedness"
+  },
+  {
+    "uuid": "db845503-c5d1-427c-b77f-d014d8c86a2c",
+    "name": "Rest during pregnancy"
+  },
+  {
+    "uuid": "c9158965-b86f-4881-8ca3-a2568586b117",
+    "name": "Referral and treatment for ANC complication"
+  },
+  {
+    "name": "ANC counselling provided by ASHA",
+    "uuid": "708aab8c-0ad1-406f-a417-aae0502137ea",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "8a3304da-a82d-463b-9bd5-9cd8df0bcc5e",
+        "name": "ANC registration"
+      },
+      {
+        "uuid": "031565b0-63e6-44c7-9054-3e57e4007bda",
+        "name": "Routine ANC checkups"
+      },
+      {
+        "uuid": "27050d37-d90f-4571-aff9-f9dea464b09c",
+        "name": "2 TT"
+      },
+      {
+        "uuid": "d30eaba6-c61c-4800-b784-c47a6916d578",
+        "name": "100 IFA"
+      },
+      {
+        "uuid": "9c50b18d-392b-4c6f-8913-03563b887667",
+        "name": "Balanced diet"
+      },
+      {
+        "uuid": "f937a4c7-70a3-4ca3-86f2-e066379124a2",
+        "name": "Meal frequency per day"
+      },
+      {
+        "uuid": "5b4e0026-76fb-4789-85ea-9ae7522e6fb1",
+        "name": "Birth preparedness"
+      },
+      {
+        "uuid": "db845503-c5d1-427c-b77f-d014d8c86a2c",
+        "name": "Rest during pregnancy"
+      },
+      {
+        "uuid": "c9158965-b86f-4881-8ca3-a2568586b117",
+        "name": "Referral and treatment for ANC complication"
+      }
+    ]
+  },
+  {
+    "name": "Next ASHA ANC visit date",
+    "uuid": "f6594bb7-db18-49cf-9987-eacbceb8f479",
+    "dataType": "Date"
   }
-
-
 ]

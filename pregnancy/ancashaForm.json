@@ -207,17 +207,89 @@
       "displayOrder": 7,
       "formElements": [
         {
-          "name": "ANC AHSA Counselling",
+          "name": "IHMP ASHA counselling for pregnancy confirmed and not registered for ANC",
           "uuid": "d4a87f78-5633-45ea-a5f6-6f2f4136aafc",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4"
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
           },
           "displayOrder": 1,
           "mandatory": false
+        },
+        {
+          "name": "IHMP ASHA counselling for monthly antenatal checkup",
+          "uuid": "9949571f-a2bb-4d10-ae82-e06f22299acb",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP ASHA counselling during every contact",
+          "uuid": "fc6085f5-72b0-435a-9a58-a157a1b0b142",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP ASHA counselling during every contact post 7th month",
+          "uuid": "cca7e37b-9e67-41a0-91d6-ee1066645214",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP ASHA counselling during every contact post registration",
+          "uuid": "57f7f0be-4830-4f6b-b96b-8ed36426a097",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP ASHA counselling during every contact post 8th month",
+          "uuid": "673fcfe2-3755-41ac-9c7d-8bb0973e30c8",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "Counselling provided",
+          "uuid": "6a6de548-6ea8-41cf-b163-89f4b2c717d1",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "ANC counselling provided by ASHA",
+            "uuid": "708aab8c-0ad1-406f-a417-aae0502137ea"
+          },
+          "displayOrder": 8,
+          "mandatory": false
         }
-
       ]
     },
     {
@@ -227,14 +299,26 @@
       "displayOrder": 8,
       "formElements": [
         {
-          "name": "ANC VHND date",
+          "name": "Next VHND date",
           "uuid": "ca48c6b7-34f2-49dc-9b1f-bb1ecf019ca7",
           "keyValues": [],
           "concept": {
-            "name": "ANC VHND date",
+            "name": "Next VHND date",
             "uuid": "4c234fbb-7592-4f9a-87aa-3d49a08a74da"
           },
           "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Next ANC ASHA visit date",
+          "uuid": "2742b976-c4c3-4bea-8f34-a986d9015c5e",
+          "keyValues": [],
+          "concept": {
+            "name": "Next ANC ASHA date",
+            "uuid": "f6594bb7-db18-49cf-9987-eacbceb8f479",
+            "dataType": "Date"
+          },
+          "displayOrder": 2,
           "mandatory": true
         }
       ]
