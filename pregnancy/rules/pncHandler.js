@@ -100,4 +100,4 @@ class ViewFilters {
 
 }
 
-module.exports = {[ViewFiltersUuid]: ViewFilters};
+exports[ViewFiltersUuid] = ViewFilters;
