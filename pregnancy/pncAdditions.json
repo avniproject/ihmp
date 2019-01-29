@@ -44,6 +44,25 @@
           "mandatory": true
         }
       ]
+    },
+    {
+      "uuid": "3f151743-020d-4bd2-bb7e-af1449fdada7",
+      "name": "Treatment for Postnatal complication",
+      "display": "Treatment for Postnatal complication",
+      "displayOrder": 2.5,
+      "formElements": [
+        {
+          "name": "Taken treatment for postnatal complication",
+          "uuid": "8bee906d-72b6-4397-8e4d-280d7c42ef25",
+          "keyValues": [],
+          "concept": {
+            "uuid": "51288406-dadf-454a-9630-35a207be56df",
+            "comment": "Taken treatment for postnatal complication"
+          },
+          "displayOrder": 0,
+          "mandatory": true
+        }
+      ]
     }
   ]
 }

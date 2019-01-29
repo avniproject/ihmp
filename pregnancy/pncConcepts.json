@@ -179,5 +179,20 @@
         "abnormal": true
       }
     ]
+  },
+  {
+    "uuid": "51288406-dadf-454a-9630-35a207be56df",
+    "name": "Taken treatment for postnatal complication",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
   }
 ]
