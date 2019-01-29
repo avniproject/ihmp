@@ -12,7 +12,24 @@
         {
           "uuid": "a21ba591-9f62-44b4-addc-44df0eea168b",
           "comment": "Gravida"
+        },
+        {
+          "comment": "Parity",
+          "uuid": "8e82a356-22a7-44ae-b28f-2b30fd6f9664"
+        },
+        {
+          "comment": "Number of male children",
+          "uuid": "0abd0e1e-484c-48c9-ab3a-ffa14b66c9c5"
+        },
+        {
+          "comment": "Number of female children",
+          "uuid": "8b7b54a0-6f07-40b4-b080-f2023ec2ee2f"
+        },
+        {
+          "comment": "Age of youngest child",
+          "uuid": "d07f9fdc-2dbe-4b21-abce-eb79c30470b8"
         }
+
       ]
     },
     {
