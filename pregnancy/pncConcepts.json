@@ -194,5 +194,95 @@
         "comment": "No"
       }
     ]
+  },
+  {
+    "name": "Place of treatment for postnatal complication",
+    "uuid": "cf7ecb02-05ca-4a40-9550-e0b90537abe2",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "VHND",
+        "uuid": "1d3d49c5-feba-48d4-9a18-e1aecffb29a6"
+      },
+      {
+        "name": "Sub Center",
+        "uuid": "fe24e909-6346-4e84-bacc-2ec5ae85bed8"
+      },
+      {
+        "name": "Primary Health Center",
+        "uuid": "b4007f93-f288-49aa-b2ad-96f1a0f75a43"
+      },
+      {
+        "name": "Community Health Centre",
+        "uuid": "ec4fdac4-1786-4e07-97ad-d46172d32f42"
+      },
+      {
+        "uuid": "a1a7476f-0f51-49ec-aa9d-314f15c4d62a",
+        "name": "Block hospital"
+      },
+      {
+        "name": "District Hospital",
+        "uuid": "6e3cb48a-5428-49d3-bccb-6964f958fdf3"
+      },
+      {
+        "name": "Private hospital",
+        "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      }
+    ]
+  },
+  {
+    "name": "The complication has been addressed",
+    "uuid": "ca067ae5-19f3-4a75-9299-9e2af7a4e808",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Number of home visits conducted by ANM within 42 days after delivery",
+    "uuid": "0ae7f621-9293-4638-8acf-9318d69cd709",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Place visited for postnatal care",
+    "uuid": "b2b9cd50-d0a5-4bd7-8f61-6738a7c24c04",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "VHND",
+        "uuid": "1d3d49c5-feba-48d4-9a18-e1aecffb29a6"
+      },
+      {
+        "name": "Sub Center",
+        "uuid": "fe24e909-6346-4e84-bacc-2ec5ae85bed8"
+      },
+      {
+        "name": "Primary Health Center",
+        "uuid": "b4007f93-f288-49aa-b2ad-96f1a0f75a43"
+      },
+      {
+        "name": "Community Health Centre",
+        "uuid": "ec4fdac4-1786-4e07-97ad-d46172d32f42"
+      },
+      {
+        "uuid": "a1a7476f-0f51-49ec-aa9d-314f15c4d62a",
+        "name": "Block hospital"
+      },
+      {
+        "name": "District Hospital",
+        "uuid": "6e3cb48a-5428-49d3-bccb-6964f958fdf3"
+      },
+      {
+        "name": "Private hospital",
+        "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      }
+    ]
   }
 ]

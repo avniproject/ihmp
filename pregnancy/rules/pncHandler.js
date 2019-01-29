@@ -65,6 +65,39 @@ class ViewFilters {
             || (_defined('Post-Partum Depression Symptoms') && !_contains('Post-Partum Depression Symptoms', 'No problem'))
         );
     }
+
+    /*Place of treatment for postnatal complication?*/
+    @WithStatusBuilder
+    placeOfTreatmentForPostnatalComplication([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter('Taken treatment for postnatal complication').is.defined;
+    }
+
+    /*Has the complication been addressed?*/
+    @WithStatusBuilder
+    hasTheComplicationBeenAddressed([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter('Taken treatment for postnatal complication').is.defined;
+    }
+
+    /*Diet and Rest*/
+    dietAndRest(programEncounter, formElementGroup) {
+        return formElementGroup.formElements.map((fe)=> new FormElementStatus(fe.uuid, false));
+    }
+
+    /*Breast Feeding*/
+    breastFeeding(programEncounter, formElementGroup) {
+        return formElementGroup.formElements.map((fe)=> new FormElementStatus(fe.uuid, false));
+    }
+
+    /*Hygiene*/
+    hygiene(programEncounter, formElementGroup) {
+        return formElementGroup.formElements.map((fe)=> new FormElementStatus(fe.uuid, false));
+    }
+
+    /*Immunization and Family planning*/
+    immunizationAndFamilyPlanning(programEncounter, formElementGroup) {
+        return formElementGroup.formElements.map((fe)=> new FormElementStatus(fe.uuid, false));
+    }
+
 }
 
 module.exports = {[ViewFiltersUuid]: ViewFilters};

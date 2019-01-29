@@ -55,11 +55,77 @@
           "name": "Taken treatment for postnatal complication",
           "uuid": "8bee906d-72b6-4397-8e4d-280d7c42ef25",
           "keyValues": [],
+          "type": "SingleSelect",
           "concept": {
             "uuid": "51288406-dadf-454a-9630-35a207be56df",
             "comment": "Taken treatment for postnatal complication"
           },
           "displayOrder": 0,
+          "mandatory": true
+        },
+        {
+          "name": "Place of treatment for postnatal complication?",
+          "uuid": "a4af18fe-b254-4545-90a2-1450bd3321d4",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "cf7ecb02-05ca-4a40-9550-e0b90537abe2",
+            "comment": "Place of treatment for postnatal complication"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Has the complication been addressed?",
+          "uuid": "e861df05-5c3b-4820-8abd-1d5f136878be",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "ca067ae5-19f3-4a75-9299-9e2af7a4e808",
+            "comment": "The complication has been addressed"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "6859ecbf-1d4d-4930-92df-b7ac9332cc82",
+      "name": "Services recived by the mother in Postnatal period",
+      "display": "Services recived by the mother in Postnatal period",
+      "displayOrder": 3.5,
+      "formElements": [
+        {
+          "name": "Number of IFA tablets consumed?",
+          "uuid": "eabcdc0a-5f8b-4149-898e-ca70ef1b8268",
+          "keyValues": [],
+          "concept": {
+            "comment": "Number of IFA tablets consumed",
+            "uuid": "0620abab-4449-4182-96f9-8daa5f855c80"
+          },
+          "displayOrder": 0,
+          "mandatory": true
+        },
+        {
+          "name": "How many home visits conducted by ANM within 42 days after delivery",
+          "uuid": "0f8eef3b-fb44-429b-aed1-f7e61109b22c",
+          "keyValues": [],
+          "concept": {
+            "uuid": "0ae7f621-9293-4638-8acf-9318d69cd709",
+            "comment": "Number of home visits conducted by ANM within 42 days after delivery"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Which facility she visited for postnatal care?",
+          "uuid": "191eff21-db20-47a1-b6a1-a181b16a3866",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b2b9cd50-d0a5-4bd7-8f61-6738a7c24c04",
+            "comment": "Place visited for postnatal care"
+          },
+          "displayOrder": 2,
           "mandatory": true
         }
       ]
