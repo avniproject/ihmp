@@ -19,7 +19,7 @@
             "uuid": "0adc4170-9ebb-4feb-8b81-450fbf9a04dc"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -58,7 +58,7 @@
             "uuid": "d213ae72-b3f2-4ac2-b53d-646cbc8a906d"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Place of ANC VHND referral utilized",
@@ -69,7 +69,7 @@
             "uuid": "8a83e17c-a7a0-4fad-89fa-71d13459ac4b"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     }
