@@ -424,5 +424,129 @@
     "name": "Next ASHA ANC visit date",
     "uuid": "f6594bb7-db18-49cf-9987-eacbceb8f479",
     "dataType": "Date"
+  },
+  {
+    "name": "Whether eligible for JSY",
+    "uuid": "710a414b-b33d-4d25-9914-8dfbabc571e0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether recieved benefit of JSY",
+    "uuid": "d6fb3f4a-5f56-49fe-b9b3-7b31563a2aad",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Details of JSY benefit - cheque number and amount",
+    "uuid": "c7ef7cd1-ca78-43a3-907f-201e9b0a79e2",
+    "dataType": "Text"
+  },
+  {
+    "name": "Whether received benefits of PMVY",
+    "uuid": "c6362992-94ff-4dc5-9b3b-e7f076532f6f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Benefits recieved under PMVY in rupees",
+    "uuid": "b67c6309-bd75-4a3e-8a94-8c1d52a62f5c",
+    "dataType": "Numeric",
+    "unit": "Rs"
+  },
+  {
+    "uuid": "17a65836-e8e3-4779-8060-a4f0a5d9b93d",
+    "name": "Contractions stopped prematurely"
+  },
+  {
+    "uuid": "2248bb68-1dee-4578-b689-f47f43a8c254",
+    "name": "Did not get good contractions"
+  },
+  {
+    "uuid": "ce76cc94-692d-43dd-8d23-30127855b055",
+    "name": "Obstructed/Prolonged labour"
+  },
+  {
+    "uuid": "835aab06-a126-49d8-843e-649759b9b3f6",
+    "name": "Hand/cord prolapse"
+  },
+  {
+    "uuid": "80c6ef73-b816-4746-bfaa-03dcb3db7c3a",
+    "name": "Meconium discharge"
+  },
+  {
+    "uuid": "3804d97d-f9a0-41aa-a2e4-4d0a93b06c34",
+    "name": "Large perineal tear"
+  },
+  {
+    "uuid": "eacd83c6-193e-42d8-a36e-a01d2b07bd3e",
+    "name": "Premature rupture of membrane"
+  },
+  {
+    "uuid": "9e3fe526-f984-4bfb-b431-035363c0b100",
+    "name": "No complication"
+  },
+  {
+    "name": "Delivery Complications",
+    "uuid": "42fcfd17-4e35-4981-96b3-1d028915d808",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "17a65836-e8e3-4779-8060-a4f0a5d9b93d",
+        "name": "Contractions stopped prematurely"
+      },
+      {
+        "uuid": "2248bb68-1dee-4578-b689-f47f43a8c254",
+        "name": "Did not get good contractions"
+      },
+      {
+        "uuid": "ce76cc94-692d-43dd-8d23-30127855b055",
+        "name": "Obstructed/Prolonged labour"
+      },
+      {
+        "uuid": "835aab06-a126-49d8-843e-649759b9b3f6",
+        "name": "Hand/cord prolapse"
+      },
+      {
+        "uuid": "80c6ef73-b816-4746-bfaa-03dcb3db7c3a",
+        "name": "Meconium discharge"
+      },
+      {
+        "uuid": "3804d97d-f9a0-41aa-a2e4-4d0a93b06c34",
+        "name": "Large perineal tear"
+      },
+      {
+        "uuid": "eacd83c6-193e-42d8-a36e-a01d2b07bd3e",
+        "name": "Premature rupture of membrane"
+      },
+      {
+        "uuid": "9e3fe526-f984-4bfb-b431-035363c0b100",
+        "name": "No complication",
+        "unique": true
+      }
+    ]
   }
-]
+
+
+    ]

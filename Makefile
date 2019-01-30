@@ -105,6 +105,8 @@ _deploy_refdata:
 	$(call _curl,POST,forms,@pregnancy/ancvhndForm.json)
 	$(call _curl,POST,forms,@pregnancy/ancvhndfollowupForm.json)
 	$(call _curl,POST,forms,@pregnancy/ancashaForm.json)
+	$(call _curl,DELETE,forms,@pregnancy/deliveryDeletions.json)
+	$(call _curl,PATCH,forms,@pregnancy/deliveryAdditions.json)
 	$(call _curl,POST,formMappings,@formMappings.json)
 
 

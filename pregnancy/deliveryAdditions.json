@@ -1,0 +1,96 @@
+{
+  "uuid": "cc6a3c6a-c3cc-488d-a46c-d9d538fcc9c2",
+  "formElementGroups": [
+    {
+      "uuid": "fa392acd-d9bf-4b90-b520-bc28d61300b8",
+      "formElements": [
+        {
+          "name": "Delivery complications",
+          "uuid": "bace2d88-cabc-4020-bfe2-dfc76bccdfa4",
+          "keyValues": [
+            {
+              "key": "ExcludedAnswers",
+              "value": [
+                "Obstructed Labour",
+                "PPH (postpartum haemorrhage)",
+                "Maternal Death",
+                "Uterine Rupture",
+                "Vaginal Rupture",
+                "None"
+              ]
+            }
+          ],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "42fcfd17-4e35-4981-96b3-1d028915d808"
+          },
+          "displayOrder": 4.1,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "2c669f10-cb34-44ae-a09c-cf2b89d6fb2d",
+      "name": "Entitlements",
+      "display": "Entitlements",
+      "displayOrder": 3.1,
+      "formElements": [
+        {
+          "name": "Whether eligible for JSY",
+          "uuid": "dc85eb6f-90a0-4e6a-9f07-76dd68589258",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether eligible for JSY",
+            "uuid": "710a414b-b33d-4d25-9914-8dfbabc571e0"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Whether recieved benefit of JSY",
+          "uuid": "919697d8-4a2e-4af4-a3cf-9c8de5641d87",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether recieved benefit of JSY",
+            "uuid": "d6fb3f4a-5f56-49fe-b9b3-7b31563a2aad"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Details of JSY benefit - cheque number and amount",
+          "uuid": "4630036e-d75b-464e-bd70-b136bc277aeb",
+          "keyValues": [],
+          "concept": {
+            "name": "Details of JSY benefit - cheque number and amount",
+            "uuid": "c7ef7cd1-ca78-43a3-907f-201e9b0a79e2"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Whether received benefits of Pradhanmantri Matrutva Vandan Yojana (PMVY)",
+          "uuid": "043832e3-460c-47fc-898d-d23bed5f77ca",
+          "keyValues": [],
+          "concept": {
+            "name": "Whether received benefits of PMVY",
+            "uuid": "c6362992-94ff-4dc5-9b3b-e7f076532f6f"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Benefits recieved under PMVY in rupees",
+          "uuid": "205fc62e-00f0-4092-8a83-22e3a057e5c2",
+          "keyValues": [],
+          "concept": {
+            "name": "Benefits recieved under PMVY in rupees",
+            "uuid": "b67c6309-bd75-4a3e-8a94-8c1d52a62f5c"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        }
+      ]
+    }
+  ]
+}
