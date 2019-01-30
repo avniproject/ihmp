@@ -10,6 +10,50 @@
       "displayOrder": 1,
       "formElements": [
         {
+          "name": "Whether registered for antenatal care",
+          "uuid": "f8720e82-b2a2-4671-84ad-240b880822ce",
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b0f42202-1c89-4c12-994a-381a7c79a264"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Date of registration for antenatal care",
+          "uuid": "bee112ef-6d25-4ca6-8c48-3739910d7cf0",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of registration for antenatal care",
+            "uuid": "b3f5af5e-6a0f-4af0-839a-72a7e9b67331"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Week of gestation when registered for antenatal care",
+          "uuid": "6dccedfd-1ea3-42c3-8aba-b36604534d4b",
+          "keyValues": [],
+          "concept": {
+            "name": "Week of gestation when registered for antenatal care",
+            "uuid": "61108679-7242-479c-a6ba-380f4c9b9c3b"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Place where registered for antenatal care",
+          "uuid": "f4912a92-5f1c-4288-a909-2e2105b4e943",
+          "keyValues": [],
+          "concept": {
+            "name": "Place where registered for antenatal care",
+            "uuid": "5932a6af-3316-4e90-9b77-579382ff9c9e"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+
+        {
           "name": "Whether enrolled in any government scheme related to pregnancy",
           "uuid": "ecfe2c89-10bd-41dd-818c-16bebe5f8ca9",
           "keyValues": [],
@@ -18,7 +62,7 @@
             "name": "Whether enrolled in any government scheme related to pregnancy",
             "uuid": "50782e71-4e37-42d0-8006-f373e09cce65"
           },
-          "displayOrder": 1,
+          "displayOrder": 5,
           "mandatory": false
         }
       ]
@@ -39,7 +83,7 @@
             "uuid": "0adc4170-9ebb-4feb-8b81-450fbf9a04dc"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether treatment taken for antenatal complications",
@@ -50,7 +94,7 @@
             "uuid": "a916a62d-5010-44af-8887-e7e7c4e89ed9"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether the antenatal complications is addressed",
@@ -61,7 +105,7 @@
             "uuid": "93464328-5978-499b-98b1-b299b067cbb1"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -81,7 +125,7 @@
             "uuid": "b441c480-1a19-4ad0-9d0a-196485aacf12"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Pallor",
@@ -93,7 +137,7 @@
             "uuid": "226f8715-563b-4a8b-8afa-f75cce2767af"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Breast examination - Nipple",
@@ -105,7 +149,7 @@
             "uuid": "ed087798-7116-4817-ba84-caa02a23e1b7"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -124,7 +168,7 @@
             "uuid": "ede1aad7-ee90-4c66-ab95-56e353ec5194"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Place where antenatal examination done",
@@ -136,7 +180,7 @@
             "uuid": "ec9e602c-885d-4f3c-8224-46ca9e9aeae4"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -196,7 +240,7 @@
             "uuid": "0620abab-4449-4182-96f9-8daa5f855c80"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },

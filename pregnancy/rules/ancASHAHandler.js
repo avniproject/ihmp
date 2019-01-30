@@ -7,7 +7,6 @@ import {
     StatusBuilderAnnotationFactory,
     FormElementStatus,
     VisitScheduleBuilder,
-    complicationsBuilder as ComplicationsBuilder,
     RuleCondition
 } from 'rules-config/rules';
 
@@ -20,35 +19,67 @@ class PregnancyANCASHAViewFilterHandlerIHMP {
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new PregnancyANCASHAViewFilterHandlerIHMP(), programEncounter, formElementGroup, today);
     }
+
+    @WithStatusBuilder
+    whetherRegisteredForAntenatalCare([], statusBuilder) {
+        statusBuilder.show().when.latestValueInPreviousEncounters("Whether registered for antenatal care").is.notDefined
+            .or.latestValueInPreviousEncounters("Whether registered for antenatal care").is.no;
+    }
+    
+    @WithStatusBuilder
+    dateOfRegistrationForAntenatalCare([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether registered for antenatal care").is.yes;
+    }
+
+    @WithStatusBuilder
+    weekOfGestationWhenRegisteredForAntenatalCare([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether registered for antenatal care").is.yes;
+    }
+
+
+    @WithStatusBuilder
+    placeWhereRegisteredForAntenatalCare([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether registered for antenatal care").is.yes;
+    }
+    
+    @WithStatusBuilder
+    whetherTreatmentTakenForAntenatalComplications([], statusBuilder) {
+        statusBuilder.show().when.not.valueInEncounter("Pregnancy complications").containsAnswerConceptName("No problem");
+    }
+    
+    @WithStatusBuilder
+    whetherTheAntenatalComplicationsIsAddressed([], statusBuilder) {
+        statusBuilder.show().when.not.valueInEncounter("Pregnancy complications").containsAnswerConceptName("No problem");
+    }
+    
+    @WithStatusBuilder
+    placeWhereAntenatalExaminationDone([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether antenatal examination done").is.yes;
+    }
     
     @WithStatusBuilder
     ihmpAshaCounsellingForPregnancyConfirmedAndNotRegisteredForAnc([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter()
+        statusBuilder.show().when.latestValueInAllEncounters("Whether registered for antenatal care").is.no;
     }
 
     @WithStatusBuilder
     ihmpAshaCounsellingForMonthlyAntenatalCheckup([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter()
+        statusBuilder.show().when.latestValueInAllEncounters("Whether registered for antenatal care").is.yes;
     }
-
-    @WithStatusBuilder
-    ihmpAshaCounsellingDuringEveryContact([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter()
-    }
-
+    
     @WithStatusBuilder
     ihmpAshaCounsellingDuringEveryContactPost7thMonth([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter()
+        statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(7);
     }
 
     @WithStatusBuilder
     ihmpAshaCounsellingDuringEveryContactPostRegistration([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter()
+        statusBuilder.show().when.latestValueInAllEncounters("Whether registered for antenatal care").is.yes;
     }
 
     @WithStatusBuilder
     ihmpAshaCounsellingDuringEveryContactPost8thMonth([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter()
+        statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(8);
     }
 }
 

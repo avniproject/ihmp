@@ -1,5 +1,18 @@
 [
   {
+    "name": "Whether registered for antenatal care",
+    "uuid": "b0f42202-1c89-4c12-994a-381a7c79a264",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
     "name": "Date of registration for antenatal care",
     "uuid": "b3f5af5e-6a0f-4af0-839a-72a7e9b67331",
     "dataType": "Date"

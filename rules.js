@@ -8,6 +8,7 @@ module.exports = _.merge({},
     require('./eligibleCouple/rules/visitSchedule'),
     require('./eligibleCouple/rules/encounterCancelHandler'),
     require('./pregnancy/rules/enrolmentHandler'),
+    require('./pregnancy/rules/ancASHAHandler'),
     require('./pregnancy/rules/pncHandler'),
     require('./pregnancy/rules/pncDecisions'),
     require('./pregnancy/rules/visitSchedule')
