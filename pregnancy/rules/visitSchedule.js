@@ -44,6 +44,10 @@ class ANCVHNDVisitBasedVisitsIHMP {
         if (!_.isNil(followupDate)) {
             RuleHelper.addSchedule(scheduleBuilder, 'ANC VHND Follow up', 'ANC VHND Follow up', followupDate, 1);
         }
+        let nextVhndDate = programEncounter.getObservationReadableValue('Next VHND date');
+        if (!_.isNil(nextVhndDate)) {
+            RuleHelper.addSchedule(scheduleBuilder, 'ANC VHND', 'ANC VHND', nextVhndDate, 1);
+        }
         return scheduleBuilder.getAllUnique("encounterType");
     }
 }

@@ -72,7 +72,7 @@
             "uuid": "0adc4170-9ebb-4feb-8b81-450fbf9a04dc"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Weight",
@@ -168,7 +168,7 @@
           "mandatory": false
         },
         {
-          "name": "Follow up date",
+          "name": "ASHA referral follow up date",
           "uuid": "a6a1521a-6540-4af5-9a63-fc924a6ed9b5",
           "keyValues": [],
           "concept": {
@@ -177,6 +177,17 @@
           },
           "displayOrder": 2,
           "mandatory": false
+        },
+        {
+          "name": "Next VHND date",
+          "uuid": "512f81be-b7f6-4502-a1ef-314fd9540be4",
+          "keyValues": [],
+          "concept": {
+            "name": "Next VHND date",
+            "uuid": "4c234fbb-7592-4f9a-87aa-3d49a08a74da"
+          },
+          "displayOrder": 3,
+          "mandatory": true
         }
       ]
     }
