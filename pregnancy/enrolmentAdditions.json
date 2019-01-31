@@ -190,26 +190,6 @@
           "mandatory": true
         }
       ]
-    },
-    {
-      "uuid": "211922db-93a2-4c71-baca-9055b8dd1970",
-      "name": "Follow up",
-      "display": "Follow up",
-      "displayOrder": 2.6,
-      "formElements": [
-        {
-          "name": "Next VHND date",
-          "uuid": "6bdecc89-ff08-49b0-af84-d2cbb750b9d8",
-          "keyValues": [],
-          "concept": {
-            "name": "Next VHND date",
-            "uuid": "4c234fbb-7592-4f9a-87aa-3d49a08a74da",
-            "dataType": "Date"
-          },
-          "displayOrder": 1,
-          "mandatory": true
-        }
-      ]
     }
   ]
 }

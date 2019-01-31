@@ -10,14 +10,12 @@ import {
 } from 'rules-config/rules';
 
 const CancelViewFilter = RuleFactory("88b10250-efa5-4cb7-bc99-bd91197f5a43", "ViewFilter");
-const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
 
 @CancelViewFilter("4296f7d6-da8a-4e08-ba18-64e78a36ba59", "IHMP EC Encounter Cancellation View Filter", 100.0, {})
-class ECCancellationViewFilterHandlerIHMP {
+class CancellationViewFilterHandlerIHMP {
 
     static exec(programEncounter, formElementGroup, today) {
-        console.log('came to ECCancellationViewFilterHandlerIHMP exect');
-        return FormElementsStatusHelper.getFormElementsStatusesWithoutDefaults(new ECCancellationViewFilterHandlerIHMP(), programEncounter, formElementGroup, today);
+        return FormElementsStatusHelper.getFormElementsStatusesWithoutDefaults(new CancellationViewFilterHandlerIHMP(), programEncounter, formElementGroup, today);
     }
 
     otherReason(programEncounter, formElement) {
@@ -45,5 +43,21 @@ class ECCancellationViewFilterHandlerIHMP {
         return new FormElementStatus(formElement.uuid, (programEncounter.encounterType.name === 'RTI services') && (answer !== 'Program exit'));
     }
 
+    nextVhndDate(programEncounter, formElement) {
+        const cancelReasonObs = programEncounter.findCancelEncounterObservation('Visit cancel reason');
+        const answer = cancelReasonObs && cancelReasonObs.getReadableValue();
+
+        return new FormElementStatus(formElement.uuid, (programEncounter.encounterType.name === 'ANC VHND' || programEncounter.encounterType.name === 'ANC ASHA') && (answer !== 'Program exit'));
+    }
+
+    nextAncAshaDate(programEncounter, formElement) {
+        const cancelReasonObs = programEncounter.findCancelEncounterObservation('Visit cancel reason');
+        const answer = cancelReasonObs && cancelReasonObs.getReadableValue();
+
+        return new FormElementStatus(formElement.uuid, (programEncounter.encounterType.name === 'ANC ASHA') && (answer !== 'Program exit'));
+    }
+
+
+
 }
-module.exports = {ECCancellationViewFilterHandlerIHMP};
+module.exports = {CancellationViewFilterHandlerIHMP};
