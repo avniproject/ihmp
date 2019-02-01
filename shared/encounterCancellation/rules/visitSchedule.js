@@ -1,10 +1,12 @@
-import {
-    RuleFactory,
-    VisitScheduleBuilder
-} from 'rules-config/rules';
-const RuleHelper = require('../../../RuleHelper');
+import {RuleFactory, VisitScheduleBuilder} from 'rules-config/rules';
+import RuleHelper from '../../../RuleHelper';
+import {IHMPPNCVisitSchedules} from '../../../pregnancy/rules/visitSchedule';
 
 const CancelVisitRule = RuleFactory("88b10250-efa5-4cb7-bc99-bd91197f5a43", "VisitSchedule");
+
+const postVisitMap = {
+    'PNC': IHMPPNCVisitSchedules
+};
 
 @CancelVisitRule("104301d5-b012-4afc-848e-9e12ecdf6045", "EC cancel visit next visit rule", 100.0)
 class CancelVisitsIHMP {
@@ -13,6 +15,12 @@ class CancelVisitsIHMP {
         if (visitCancelReason === 'Program exit') {
             return visitSchedule;
         }
+        let postVisit = postVisitMap[programEncounter.encounterType.name];
+        if (!_.isNil(postVisit)) {
+            const vals = postVisit.exec(programEncounter, visitSchedule);
+            return vals;
+        }
+
         let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
         let followupDate = programEncounter.findCancelEncounterObservationReadableValue('Next needs assessment date');
         if (!_.isNil(followupDate)) {

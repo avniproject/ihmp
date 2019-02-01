@@ -96,5 +96,12 @@
     "encounterTypeUUID": "48f359e2-1387-49a0-bb15-71c1750b2acf",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
     "comment": "Pregnancy ANC ASHA cancel"
+  },
+  {
+    "uuid": "023a75a9-e1de-488d-9870-88d6c1096d62",
+    "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
+    "encounterTypeUUID": "e9971396-b74f-411c-956d-da44073922f5",
+    "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "comment": "Pregnancy PNC cancel"
   }
 ]

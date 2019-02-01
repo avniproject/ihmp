@@ -97,6 +97,11 @@ class RuleHelper {
         addSchedule(scheduleBuilder, {name, encounterType, earliestDate, maxDate});
     }
 
+    static blindAddSchedule(scheduleBuilder, name, encounterType, earliestDate, numberOfDaysForMaxOffset) {
+        const maxDate = moment(earliestDate).add(numberOfDaysForMaxOffset, 'days').toDate();
+        scheduleBuilder.add({name, encounterType, earliestDate, maxDate});
+    }
+
     static hideFormElementGroup(formElementGroup) {
         return formElementGroup.getFormElements().map(fe => new FormElementStatus(fe.uuid, false));
     }
