@@ -91,6 +91,33 @@
           "mandatory": true
         }
       ]
+    },
+    {
+      "uuid": "fa392acd-d9bf-4b90-b520-bc28d61300b8",
+      "name": "Mother Delivery Medical Details",
+      "formElements": [
+        {
+          "name": "Number of days stayed at hospital",
+          "uuid": "ef7c5a2c-1011-4a41-bc17-4d0994b705db",
+          "keyValues": [],
+          "concept": {
+            "uuid": "0f4dfab3-4c4a-48a7-a0ba-510d00124c01"
+          },
+          "displayOrder": 3.5,
+          "mandatory": false
+        },
+        {
+          "name": "Did mother receive discharge report after delivery from hospital?",
+          "uuid": "c2975743-4458-4bb8-b66d-241aaec61f3b",
+          "keyValues": [],
+          "concept": {
+            "comment": "Received discharge report after delivery from hospital",
+            "uuid": "f34b101e-5d85-4e26-a162-49ed7d7415be"
+          },
+          "displayOrder": 3.6,
+          "mandatory": false
+        }
+      ]
     }
   ]
 }

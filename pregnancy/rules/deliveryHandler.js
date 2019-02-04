@@ -1,13 +1,13 @@
 const moment = require("moment");
 const _ = require("lodash");
 import {
-    RuleFactory,
     FormElementsStatusHelper,
-    FormElementStatusBuilder,
-    StatusBuilderAnnotationFactory,
     FormElementStatus,
-    VisitScheduleBuilder,
-    RuleCondition
+    FormElementStatusBuilder,
+    RuleCondition,
+    RuleFactory,
+    StatusBuilderAnnotationFactory,
+    VisitScheduleBuilder
 } from 'rules-config/rules';
 
 const DeliveryFilter = RuleFactory("cc6a3c6a-c3cc-488d-a46c-d9d538fcc9c2", 'ViewFilter');
@@ -43,6 +43,26 @@ class DeliveryFilterHandler {
         statusBuilder.show().when.valueInEncounter("Whether received benefits of PMVY").is.yes;
     }
 
+    @WithStatusBuilder
+    typeOfDelivery([], statusBuilder) {
+        statusBuilder.skipAnswers('Instrumental');
+    }
+
+    @WithStatusBuilder
+    numberOfDaysStayedAtHospital([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter('Delivery outcome')
+            .containsAnyAnswerConceptName("Live Birth", "Still Birth", "Live birth and Still birth")
+            .and.when.valueInEncounter('Place of delivery')
+            .containsAnyAnswerConceptName('Regional Hospital','NGO Hospital','Government Hospital');
+    }
+
+    @WithStatusBuilder
+    didMotherReceiveDischargeReportAfterDeliveryFromHospital([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter('Delivery outcome')
+            .containsAnyAnswerConceptName("Live Birth", "Still Birth", "Live birth and Still birth")
+            .and.when.valueInEncounter('Place of delivery')
+            .containsAnyAnswerConceptName('Regional Hospital','NGO Hospital','Government Hospital');
+    }
 }
 
 module.exports = {DeliveryFilterHandler};

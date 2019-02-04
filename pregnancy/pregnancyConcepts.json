@@ -508,6 +508,11 @@
     "name": "No complication"
   },
   {
+    "uuid": "4204df65-62dc-4712-bce5-7c66f007b49d",
+    "name": "Excessive bleeding",
+    "dataType": "NA"
+  },
+  {
     "name": "Delivery Complications",
     "uuid": "42fcfd17-4e35-4981-96b3-1d028915d808",
     "dataType": "Coded",
@@ -533,6 +538,18 @@
         "name": "Meconium discharge"
       },
       {
+        "uuid": "c80629dc-6764-4805-9ae2-8379d1962726",
+        "comment": "Reduced fetal movement"
+      },
+      {
+        "uuid": "5a6ab8bb-fb14-4747-a66e-3961d718a83e",
+        "comment": "Severe headache"
+      },
+      {
+        "uuid": "4204df65-62dc-4712-bce5-7c66f007b49d",
+        "comment": "Excessive bleeding"
+      },
+      {
         "uuid": "3804d97d-f9a0-41aa-a2e4-4d0a93b06c34",
         "name": "Large perineal tear"
       },
@@ -546,7 +563,45 @@
         "unique": true
       }
     ]
-  }
-
-
+  },
+  {
+    "name": "Assisted",
+    "uuid": "99221c21-1918-4157-8eb4-3f38a0b4beeb",
+    "dataType": "NA"
+  },
+  {
+    "comment": "Type of delivery",
+    "uuid": "69d0acf1-c32b-4694-9bc2-874b5e7a44c8",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "99221c21-1918-4157-8eb4-3f38a0b4beeb",
+        "comment": "Assisted"
+      }
     ]
+  },
+  {
+    "name": "Number of days stayed at hospital",
+    "uuid": "0f4dfab3-4c4a-48a7-a0ba-510d00124c01",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Received discharge report after delivery from hospital",
+    "uuid": "f34b101e-5d85-4e26-a162-49ed7d7415be",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      },
+      {
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "comment": "Don't know"
+      }
+    ]
+  }
+]
