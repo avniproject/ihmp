@@ -161,23 +161,23 @@
           "mandatory": true
         },
         {
-          "name": "Last pregnancy outcome",
+          "name": "Last delivery outcome",
           "uuid": "45c5a30b-2f45-480a-9caf-1160cabe6a0b",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Last pregnancy outcome",
+            "name": "Last delivery outcome",
             "uuid": "5eabdcce-553b-488f-926c-49849f0c2e98"
           },
           "displayOrder": 14,
           "mandatory": true
         },
         {
-          "name": "Date of last pregnancy outcome",
+          "name": "Date of last delivery outcome",
           "uuid": "9ced1bfd-a473-476d-92b5-f8a38d74033a",
           "keyValues": [],
           "concept": {
-            "name": "Date of last pregnancy outcome",
+            "name": "Date of last delivery outcome",
             "uuid": "9a9000ad-31b7-4144-884a-16c1194df1be"
           },
           "displayOrder": 15,

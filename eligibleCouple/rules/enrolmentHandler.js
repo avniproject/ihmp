@@ -82,12 +82,12 @@ class ECEnrolmentViewFilterHandlerIHMP {
     }
 
     @WithStatusBuilder
-    lastPregnancyOutcome([], statusBuilder) {
+    lastDeliveryOutcome([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThanOrEqualTo(1);
     }
 
     @WithStatusBuilder
-    dateOfLastPregnancyOutcome([], statusBuilder) {
+    dateOfLastDeliveryOutcome([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThanOrEqualTo(1);
     }
 

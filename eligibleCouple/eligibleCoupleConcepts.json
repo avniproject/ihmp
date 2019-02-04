@@ -5,7 +5,7 @@
     "dataType": "Date"
   },
   {
-    "name": "Last pregnancy outcome",
+    "name": "Last delivery outcome",
     "uuid": "5eabdcce-553b-488f-926c-49849f0c2e98",
     "dataType": "Coded",
     "answers": [
@@ -35,7 +35,7 @@
     ]
   },
   {
-    "name": "Date of last pregnancy outcome",
+    "name": "Date of last delivery outcome",
     "uuid": "9a9000ad-31b7-4144-884a-16c1194df1be",
     "dataType": "Date"
   },
