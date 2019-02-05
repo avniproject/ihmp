@@ -603,5 +603,37 @@
         "comment": "Don't know"
       }
     ]
+  },
+  {
+    "uuid": "efc9a994-80fd-48a2-b089-bff9e0585a61",
+    "name": "Treatment taken after spontaneous abortion",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "comment": "Abortion complaints",
+    "uuid": "fc1346b0-57fe-4a84-8d95-f4461d60176f",
+    "dataType":"Coded",
+    "answers": [
+      {
+        "uuid": "57c3c31b-341c-4ab9-ac65-de75a432a089",
+        "comment": "Foul smelling vaginal discharge or blood",
+        "abnormal": false
+      },
+      {
+        "uuid": "92ad8878-b476-4291-aa76-3377fa7cf19c",
+        "comment": "Lower abdominal pain",
+        "abnormal": true
+      }
+    ]
   }
 ]

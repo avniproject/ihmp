@@ -102,6 +102,7 @@ _deploy_refdata:
 	$(call _curl,POST,concepts,@pregnancy/pncConcepts.json)
 	$(call _curl,DELETE,forms,@pregnancy/pncDeletions.json)
 	$(call _curl,PATCH,forms,@pregnancy/pncAdditions.json)
+	$(call _curl,PATCH,forms,@pregnancy/abortionAdditions.json)
 	$(call _curl,POST,forms,@pregnancy/ancvhndForm.json)
 	$(call _curl,POST,forms,@pregnancy/ancvhndfollowupForm.json)
 	$(call _curl,POST,forms,@pregnancy/ancashaForm.json)
