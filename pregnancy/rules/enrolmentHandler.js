@@ -22,7 +22,7 @@ class PregnancyEnrolmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     parity([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThanOrEqualTo(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
     }
 
     @WithStatusBuilder
@@ -42,7 +42,7 @@ class PregnancyEnrolmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     numberOfAbortions([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThanOrEqualTo(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
     }
 
     @WithStatusBuilder
