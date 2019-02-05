@@ -3,10 +3,23 @@
   "formElementGroups": [
     {
       "uuid": "fa392acd-d9bf-4b90-b520-bc28d61300b8",
+      "comment": "Mother Delivery Medical Details",
       "formElements": [
         {
           "uuid": "d4d13b86-435f-4fe6-bb74-6a00cd41b174",
           "comment": "Delivery Complications"
+        },
+        {
+          "uuid": "205013a3-b967-4b42-ac0b-9ffe99fe88f9",
+          "comment": "Gender of new born1"
+        },
+        {
+          "uuid": "598a7f46-b0e9-40b6-b4b4-1312e6238819",
+          "comment": "Gender of new born2"
+        },
+        {
+          "uuid": "51bc43a2-1ee7-4f37-a3b1-e81aec1135e0",
+          "comment": "Gender of new born3"
         }
       ]
     }
