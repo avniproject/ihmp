@@ -1,11 +1,11 @@
 const moment = require("moment");
 const _ = require("lodash");
 import {
-    RuleFactory,
     FormElementsStatusHelper,
-    FormElementStatusBuilder,
-    StatusBuilderAnnotationFactory,
     FormElementStatus,
+    FormElementStatusBuilder,
+    RuleFactory,
+    StatusBuilderAnnotationFactory,
     VisitScheduleBuilder
 } from 'rules-config/rules';
 
@@ -44,20 +44,29 @@ class CancellationViewFilterHandlerIHMP {
     }
 
     nextVhndDate(programEncounter, formElement) {
+        const {programEnrolment} = programEncounter;
         const cancelReasonObs = programEncounter.findCancelEncounterObservation('Visit cancel reason');
         const answer = cancelReasonObs && cancelReasonObs.getReadableValue();
+        const showWhen = (programEncounter.encounterType.name === 'ANC VHND' || programEncounter.encounterType.name === 'ANC ASHA')
+            && (answer !== 'Program exit')
+            && !programEnrolment.hasCompletedEncounterOfType('Delivery');
 
-        return new FormElementStatus(formElement.uuid, (programEncounter.encounterType.name === 'ANC VHND' || programEncounter.encounterType.name === 'ANC ASHA') && (answer !== 'Program exit'));
+        return new FormElementStatus(formElement.uuid, showWhen);
     }
 
     nextAncAshaDate(programEncounter, formElement) {
+        const {programEnrolment} = programEncounter;
         const cancelReasonObs = programEncounter.findCancelEncounterObservation('Visit cancel reason');
         const answer = cancelReasonObs && cancelReasonObs.getReadableValue();
+        const showWhen = !programEnrolment.hasCompletedEncounterOfType('Delivery')
+            && (programEncounter.encounterType.name === 'ANC ASHA')
+            && (answer !== 'Program exit');
 
-        return new FormElementStatus(formElement.uuid, (programEncounter.encounterType.name === 'ANC ASHA') && (answer !== 'Program exit'));
+        return new FormElementStatus(formElement.uuid, showWhen);
     }
 
-
-
 }
-module.exports = {CancellationViewFilterHandlerIHMP};
+
+export {
+    CancellationViewFilterHandlerIHMP
+}
