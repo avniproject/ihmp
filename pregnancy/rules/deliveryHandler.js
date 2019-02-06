@@ -21,10 +21,15 @@ class DeliveryFilterHandler {
     }
 
     @WithStatusBuilder
-    deliveredBy([], statusBuilder) {
-        statusBuilder.skipAnswers("Relative", "TBA (Trained Birth Attendant)", "Non-Skilled Birth Attendant (NSBA)").when.valueInEncounter("Place of delivery")
-            .containsAnyAnswerConceptName("Private hospital", 'Government Hospital', 'Primary Health Center', 'Regional Hospital');
-        statusBuilder.show().whenItem(true).is.truthy;
+    deliveredBy([programEncounter, formElement], statusBuilder) {
+        const answersToSkip = ['Medical Officer/ Doctor'];
+        const toBeSkipped = new RuleCondition({programEncounter}).valueInEncounter("Place of delivery")
+            .containsAnyAnswerConceptName("Private hospital", 'Government Hospital', 'Primary Health Center', 'Regional Hospital')
+            .matches();
+        if(toBeSkipped) {
+            answersToSkip.push("Relative", "TBA (Trained Birth Attendant)", "Non-Skilled Birth Attendant (NSBA)");
+        }
+        statusBuilder.skipAnswers(...answersToSkip);
     }
 
 
