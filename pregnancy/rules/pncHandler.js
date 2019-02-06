@@ -98,6 +98,12 @@ class ViewFilters {
         return formElementGroup.formElements.map((fe)=> new FormElementStatus(fe.uuid, false));
     }
 
+    /*How many home visits conducted by ANM within 42 days after delivery*/
+    @WithStatusBuilder
+    howManyHomeVisitsConductedByAnmWithin42DaysAfterDelivery([programEncounter, formElement], statusBuilder) {
+        statusBuilder.show().whenItem(programEncounter.name === 'PNC 4').is.truthy;
+    }
+
 }
 
 exports[ViewFiltersUuid] = ViewFilters;
