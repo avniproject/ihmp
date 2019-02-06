@@ -23,7 +23,7 @@ class ECEnrolmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     parity([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThanOrEqualTo(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
     }
 
     @WithStatusBuilder
@@ -43,7 +43,7 @@ class ECEnrolmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     numberOfAbortions([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThanOrEqualTo(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
     }
 
     @WithStatusBuilder
@@ -83,12 +83,12 @@ class ECEnrolmentViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     lastDeliveryOutcome([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThanOrEqualTo(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
     }
 
     @WithStatusBuilder
     dateOfLastDeliveryOutcome([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThanOrEqualTo(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
     }
 
     @WithStatusBuilder
