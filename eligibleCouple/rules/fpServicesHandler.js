@@ -6,7 +6,8 @@ import {
     FormElementStatusBuilder,
     StatusBuilderAnnotationFactory,
     FormElementStatus,
-    VisitScheduleBuilder
+    VisitScheduleBuilder,
+    WithName,
 } from 'rules-config/rules';
 
 const FPServicesViewFilter = RuleFactory("981b3e41-7fae-4b0e-a0aa-e9a42076414e", "ViewFilter");
@@ -25,6 +26,13 @@ class ECFPServicesViewFilterHandlerIHMP {
         statusBuilder.show().when.valueInEncounter("FP counselling topics covered").containsAnswerConceptName("Other");
     }
 
+    @WithName('IHMP Recommendation for RTI symptoms')
+    @WithStatusBuilder
+    x([], statusBuilder) {
+        statusBuilder.show()
+            .when.valueInEncounter("Symptoms of RTI").is.defined
+            .and.not.when.valueInEncounter("Symptoms of RTI").containsAnswerConceptName("None");
+    }
 }
 
 module.exports = {ECFPServicesViewFilterHandlerIHMP};

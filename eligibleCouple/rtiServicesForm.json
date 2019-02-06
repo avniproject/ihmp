@@ -46,6 +46,26 @@
       ]
     },
     {
+      "uuid": "8c9d87c8-3d90-4ffd-9ee2-1f410b984a0b",
+      "name": "RTI recommendations",
+      "display": "RTI recommendations",
+      "displayOrder": 2,
+      "formElements": [
+        {
+          "name": "IHMP Recommendation for RTI symptoms",
+          "uuid": "34e6a9d7-4126-4bc2-a252-c662da0aa918",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        }
+      ]
+    },
+    {
       "uuid": "aa3eb417-bc26-4393-b09d-1e5c0eb0ed0d",
       "name": "Follow up",
       "display": "Follow up",
