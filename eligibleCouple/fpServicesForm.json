@@ -103,20 +103,68 @@
     },
     {
       "uuid": "ea011d63-49c4-410f-a566-6d30123fca74",
-      "name": "RTI recommendations",
-      "display": "RTI recommendations",
+      "name": "FP Counselling",
+      "display": "FP Counselling",
       "displayOrder": 3,
       "formElements": [
         {
-          "name": "IHMP Recommendation for RTI symptoms",
-          "uuid": "c24475e2-e679-40f1-9b46-561621a06b40",
+          "name": "IHMP FP counselling to delay first conception",
+          "uuid": "b0c206ae-4847-48ca-b20c-08bb1e19f868",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP FP counselling for spacing to non user",
+          "uuid": "777f5fba-34da-48af-a7c3-3eb414eb879a",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
             "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
             "comment": "Placeholder for counselling form element"
           },
-          "displayOrder": 1,
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP FP counselling for spacing to user",
+          "uuid": "8ac458e2-f986-4682-bb8c-f46e201fbbf9",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "uuid": "11e35cf1-1c88-4201-85a1-16e4e6f34b73",
+          "name": "IHMP FP counselling information regarding sterilization",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "uuid": "ae50f52f-070b-4ec9-b7cf-8979360a5e62",
+          "name": "IHMP IPIL counselling",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 5,
           "mandatory": false
         }
       ]
