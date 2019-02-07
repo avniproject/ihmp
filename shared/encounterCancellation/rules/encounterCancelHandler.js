@@ -9,6 +9,7 @@ import {
     VisitScheduleBuilder
 } from 'rules-config/rules';
 
+const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
 const CancelViewFilter = RuleFactory("88b10250-efa5-4cb7-bc99-bd91197f5a43", "ViewFilter");
 
 @CancelViewFilter("4296f7d6-da8a-4e08-ba18-64e78a36ba59", "IHMP EC Encounter Cancellation View Filter", 100.0, {})
@@ -16,6 +17,11 @@ class CancellationViewFilterHandlerIHMP {
 
     static exec(programEncounter, formElementGroup, today) {
         return FormElementsStatusHelper.getFormElementsStatusesWithoutDefaults(new CancellationViewFilterHandlerIHMP(), programEncounter, formElementGroup, today);
+    }
+
+    @WithStatusBuilder
+    cancelReason([], statusBuilder) {
+        statusBuilder.skipAnswers('Program exit')
     }
 
     otherReason(programEncounter, formElement) {
@@ -49,6 +55,7 @@ class CancellationViewFilterHandlerIHMP {
         const answer = cancelReasonObs && cancelReasonObs.getReadableValue();
         const showWhen = (programEncounter.encounterType.name === 'ANC VHND' || programEncounter.encounterType.name === 'ANC ASHA')
             && (answer !== 'Program exit')
+            && !programEnrolment.hasCompletedEncounterOfType('Abortion')
             && !programEnrolment.hasCompletedEncounterOfType('Delivery');
 
         return new FormElementStatus(formElement.uuid, showWhen);
@@ -59,6 +66,7 @@ class CancellationViewFilterHandlerIHMP {
         const cancelReasonObs = programEncounter.findCancelEncounterObservation('Visit cancel reason');
         const answer = cancelReasonObs && cancelReasonObs.getReadableValue();
         const showWhen = !programEnrolment.hasCompletedEncounterOfType('Delivery')
+            && !programEnrolment.hasCompletedEncounterOfType('Abortion')
             && (programEncounter.encounterType.name === 'ANC ASHA')
             && (answer !== 'Program exit');
 

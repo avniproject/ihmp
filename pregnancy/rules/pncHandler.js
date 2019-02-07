@@ -69,13 +69,17 @@ class ViewFilters {
     /*Place of treatment for postnatal complication?*/
     @WithStatusBuilder
     placeOfTreatmentForPostnatalComplication([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter('Taken treatment for postnatal complication').is.defined;
+        statusBuilder.show()
+            .when.valueInEncounter('Taken treatment for postnatal complication').is.defined
+            .and.when.valueInEncounter('Taken treatment for postnatal complication').is.yes;
     }
 
     /*Has the complication been addressed?*/
     @WithStatusBuilder
     hasTheComplicationBeenAddressed([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter('Taken treatment for postnatal complication').is.defined;
+        statusBuilder.show()
+            .when.valueInEncounter('Taken treatment for postnatal complication').is.defined
+            .and.when.valueInEncounter('Taken treatment for postnatal complication').is.yes;
     }
 
     /*Diet and Rest*/
