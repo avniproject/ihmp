@@ -81,7 +81,10 @@ create_users_dev:
 deploy_org_data_live:
 	make auth deploy_org_data poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=ihmp-admin password=$(STAGING_ADMIN_USER_PASSWORD)
 
-_deploy_refdata:
+deploy_subjects:
+	$(call _curl,POST,operationalSubjectTypes,@operationalModules/operationalSubjectTypes.json)
+
+_deploy_refdata: deploy_subjects
 	$(call _curl,POST,concepts,@registration/registrationConcepts.json)
 	$(call _curl,POST,forms,@registration/registrationForm.json)
 	$(call _curl,POST,programs,@programs.json)
