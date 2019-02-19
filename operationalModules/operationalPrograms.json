@@ -15,6 +15,14 @@
         "uuid": "076ddb2d-a499-4314-af95-4178553d279b",
         "comment": "Mother from core"
       }
+    },
+    {
+      "uuid": "1527fade-3e35-4f1a-8fca-693d5c648a89",
+      "name": "Child",
+      "program": {
+        "uuid": "352d906c-b386-496c-ba23-91b1468a5613",
+        "comment": "Child from core"
+      }
     }
   ]
 }
