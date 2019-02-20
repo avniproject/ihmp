@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Is current weight of the child equal to or less than the previous months weight?",
+    "uuid": "158d59f3-5933-46ea-9601-7008047ea079",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Baby has got diarrohea",
+    "uuid": "d7ae84be-0642-4e46-9d91-699574082abb",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Days since child is suffering from diarrohea",
+    "uuid": "dedb2f4a-3320-480d-a89f-7c304a3d20f9",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Baby has got cough and cold",
+    "uuid": "cdcfbc5e-9747-46fc-935c-143d308770a6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Days since child is suffering from cough and cold",
+    "uuid": "da26cfe0-4081-4265-8573-4ebcdac8f0ff",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Child has fever",
+    "uuid": "d5bb90bd-f597-4978-8657-15af7c04621b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Days since child is suffering from fever",
+    "uuid": "4f48d5cc-c98b-4864-a90b-b2db026f9cf1",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Refer to the hospital immediately for",
+    "uuid": "c59da618-20d8-4384-b32b-e0e31013581f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "d7ae84be-0642-4e46-9d91-699574082abb"
+      },
+      {
+        "uuid": "cdcfbc5e-9747-46fc-935c-143d308770a6"
+      },
+      {
+        "uuid": "d5bb90bd-f597-4978-8657-15af7c04621b"
+      }
+    ]
+  },
+  {
+    "name": "IHMP Diarrohea Councelling",
+    "uuid": "70831f4b-1fb7-4a49-8a41-9fc9e4360105",
+    "dataType": "NA"
+  }
+
+]

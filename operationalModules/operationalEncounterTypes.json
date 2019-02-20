@@ -64,6 +64,13 @@
         "uuid":"e9971396-b74f-411c-956d-da44073922f5",
         "comment":"PNC"
       }
+    },
+    {
+      "uuid": "d6cdd13b-9b1f-495a-aee9-00e9942fb1b5",
+      "name": "Nutritional status and Morbidity",
+      "encounterType": {
+        "uuid": "0126df9e-0167-4d44-9a2a-ae41cfc58d3d"
+      }
     }
   ]
 }
