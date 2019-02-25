@@ -94,6 +94,7 @@ _deploy_refdata: deploy_subjects
 	$(call _curl,POST,forms,@eligibleCouple/monthlyNeedsAssessmentForm.json)
 	$(call _curl,POST,forms,@eligibleCouple/fpServicesForm.json)
 	$(call _curl,POST,forms,@eligibleCouple/rtiServicesForm.json)
+	$(call _curl,POST,forms,@census/censusForm.json)
 
 	$(call _curl,POST,forms,@eligibleCouple/ecProgramExitForm.json)
 

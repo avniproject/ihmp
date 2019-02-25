@@ -26,5 +26,9 @@
   {
     "uuid": "0126df9e-0167-4d44-9a2a-ae41cfc58d3d",
     "name": "Nutritional status and Morbidity"
+  },
+  {
+    "uuid": "76244d2f-d23e-469b-a185-efa51d9ce536",
+    "name": "Census"
   }
 ]

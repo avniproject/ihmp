@@ -71,6 +71,13 @@
       "encounterType": {
         "uuid": "0126df9e-0167-4d44-9a2a-ae41cfc58d3d"
       }
+    },
+    {
+      "uuid": "b73a5cc4-36fe-4794-9d41-7346fa589cca",
+      "name": "Census",
+      "encounterType": {
+        "uuid": "76244d2f-d23e-469b-a185-efa51d9ce536"
+      }
     }
   ]
 }

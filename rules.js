@@ -17,5 +17,6 @@ module.exports = _.merge({},
     require('./pregnancy/rules/visitSchedule'),
     require('./shared/encounterCancellation/rules/encounterCancelHandler'),
     require('./shared/encounterCancellation/rules/visitSchedule'),
-    require('./child/rules/nutritionalStatus')
+    require('./child/rules/nutritionalStatus'),
+    require('./census/rules/censusFormHandler')
 );

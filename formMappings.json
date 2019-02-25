@@ -110,5 +110,11 @@
     "encounterTypeUUID": "0126df9e-0167-4d44-9a2a-ae41cfc58d3d",
     "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
     "comment": ""
+  },
+  {
+    "uuid": "e9999cf2-d892-4bae-b805-bb0ff0652c75",
+    "formUUID": "224a34c7-4101-49e3-9dcc-2c7c0b4d36ba",
+    "encounterTypeUUID": "76244d2f-d23e-469b-a185-efa51d9ce536",
+    "comment": "Census"
   }
 ]
