@@ -55,7 +55,9 @@ create_views:  ;psql -U$(su) openchs < create_views.sql
 
 
 deploy_checklists:
-
+	$(call _curl,POST,concepts,@child/checklistConcepts.json)
+	$(call _curl,POST,forms,@child/checklistForm.json)
+	$(call _curl,POST,checklistDetail,@child/checklist.json)
 
 # <deploy>
 deploy_locations: auth
