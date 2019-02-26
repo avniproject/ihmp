@@ -23,7 +23,7 @@ org_admin_name=ihmp-admin
 poolId:=
 clientId:=
 username:=ihmp-admin
-password:=
+password:=$(if $(password),$(password))
 
 auth:
 	$(if $(poolId),$(eval token:=$(shell node scripts/token.js $(poolId) $(clientId) $(username) $(password))))
