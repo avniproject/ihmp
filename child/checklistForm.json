@@ -5,28 +5,10 @@
   "userUUID": "f5117600-c1b8-4690-af45-6282ff9b6bb7",
   "formElementGroups": [
     {
-      "uuid": "3b135044-cdb0-431f-bb9a-c3fee60da787",
-      "name": "Date of Vaccination",
-      "display": "Date of Vaccination",
-      "displayOrder":1 ,
-      "formElements": [{
-        "name": "Date of Vaccination",
-        "uuid": "46732e2e-1e0f-43be-ac01-c21bd1928357",
-        "keyValues": [],
-        "concept": {
-          "name": "Date of Vaccination",
-          "uuid": "cd79d8d9-a78d-427f-bbd3-8e6ac6223c4d"
-        },
-        "displayOrder": 1,
-        "mandatory": true
-      }
-      ]
-    },
-    {
       "uuid": "4ae56bb2-19a7-49ae-be9c-4fb320a5627f",
       "name": "Administered By",
       "display": "Administered By",
-      "displayOrder": 2,
+      "displayOrder": 1,
       "formElements": [
         {
           "name": "Administered By",

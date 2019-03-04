@@ -1,10 +1,5 @@
 [
   {
-    "name": "Date of Vaccination",
-    "uuid": "cd79d8d9-a78d-427f-bbd3-8e6ac6223c4d",
-    "dataType": "Date"
-  },
-  {
     "uuid": "fe0ad6f6-3f07-4925-89bf-a6af43586c71",
     "name": "PHC",
     "dataType": "NA"

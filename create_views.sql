@@ -242,20 +242,38 @@ create or replace view ihmp_user_view as (
 
 drop view if exists ihmp_location_view;
 create or replace view ihmp_location_view as (
-select villages.title  village,
-            subcenter.title subcenter,
-            phc.title phc,
-            phc.level,
-            villages.id
-     from address_level villages
-            join location_location_mapping m2 on villages.id = m2.location_id
-            join address_level subcenter on subcenter.id = m2.parent_location_id
-            join location_location_mapping m3 on subcenter.id = m3.location_id
-            join address_level phc on phc.id = m3.parent_location_id
-     where subcenter.level = 2.3
-       and villages.level = 1
-       and phc.level = 2.6
-);
+  with rural_mapping as (select villages.title  village,
+                                 subcenter.title subcenter,
+                                 phc.title       phc,
+                                 phc.level,
+                                 villages.id     village_id,
+                                 phc.id          phc_id
+                          from address_level villages
+                                 join location_location_mapping m2 on villages.id = m2.location_id
+                                 join address_level subcenter on subcenter.id = m2.parent_location_id
+                                 join location_location_mapping m3 on subcenter.id = m3.location_id
+                                 join address_level phc on phc.id = m3.parent_location_id
+                          where subcenter.level = 2.3
+                            and villages.level = 1
+                            and phc.level = 2.6),
+
+    urban_mapping as (select slum.title slum,
+                             slum.id    slum_id,
+                             phc.level,
+                             phc.title  phc,
+                             phc.id     phc_id
+                      from address_level slum
+                             join location_location_mapping m2 on slum.id = m2.location_id
+                             join address_level phc on phc.id = m2.parent_location_id
+                      where slum.level = 0.9
+                        and phc.level = 2.6)
+    select coalesce(r.phc, u.phc)            as phc,
+           r.subcenter,
+           r.village,
+           u.slum,
+           coalesce(r.village_id, u.slum_id) as lowest_id
+    from rural_mapping r
+           full outer join urban_mapping u on r.phc_id = u.phc_id);
 
 -- ----------------------------------------------------
 set role none;
