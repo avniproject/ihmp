@@ -78,6 +78,13 @@
       "encounterType": {
         "uuid": "76244d2f-d23e-469b-a185-efa51d9ce536"
       }
+    },
+    {
+      "uuid": "5a98a1d1-5f60-4b55-aeee-9965ec5674c0",
+      "name": "Birth",
+      "encounterType": {
+        "uuid": "badd43fa-6346-436e-8fbc-9055be2754c9"
+      }
     }
   ]
 }

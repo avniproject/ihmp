@@ -215,7 +215,11 @@
             "uuid": "82fa0dbb-92f9-4ec2-9263-49054e64d909"
           },
           "displayOrder": 13,
-          "mandatory": false
+          "mandatory": false,
+          "validFormat": {
+            "regex": "^[0-9-() +]+$",
+            "descriptionKey": "RequiredValidContactNumber"
+          }
         }
       ]
     }

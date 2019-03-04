@@ -116,5 +116,12 @@
     "formUUID": "224a34c7-4101-49e3-9dcc-2c7c0b4d36ba",
     "encounterTypeUUID": "76244d2f-d23e-469b-a185-efa51d9ce536",
     "comment": "Census"
+  },
+  {
+    "uuid": "9fc80985-a9af-487d-8f51-5282a3099e40",
+    "formUUID": "18ce4e59-9393-4c01-922a-e73bcbcb5c24",
+    "encounterTypeUUID": "badd43fa-6346-436e-8fbc-9055be2754c9",
+    "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
+    "comment": "Child Birth"
   }
 ]

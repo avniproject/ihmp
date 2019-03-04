@@ -1,0 +1,95 @@
+{
+  "name": "Birth",
+  "uuid": "18ce4e59-9393-4c01-922a-e73bcbcb5c24",
+  "formType": "ProgramEncounter",
+  "formElementGroups": [
+    {
+      "uuid": "2cf7745f-25d6-4f84-84d1-3980e9e44e3d",
+      "name": "General",
+      "display": "General",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Place of birth",
+          "uuid": "f4c6a50b-b679-4ee7-a933-5a6186b6ae41",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Place of birth",
+            "uuid": "fc3f9353-3cf3-426c-91fa-96e5900fd8af"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Date of first weight taken",
+          "uuid": "3f27ef6a-4565-4518-a0c5-05019c98bfbe",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of first weight taken",
+            "uuid": "c269ed4a-1855-4516-8fa3-362a3ef28dea",
+            "dataType": "Date"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Birth weight",
+          "uuid": "46d399a9-c0e2-4ecd-ad70-5722d72beed0",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Birth Weight",
+            "uuid": "7ff327c5-8678-41e3-af39-c86f214c6f14"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Gestational age category at birth",
+          "uuid": "9e13b834-fb9b-4251-bd4f-285513da9177",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Gestational age category at birth",
+            "uuid": "24c71448-1068-4dc2-aa2f-8bbb66a5123f"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Time when breast feeding initiated to the newborn",
+          "uuid": "88977399-5667-4c5a-aaba-0f6111271806",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Time when breast feeding initiated to the newborn",
+            "uuid": "b99caee7-a97a-4ce4-970b-ee567dfea070"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "First feed given to the newborn",
+          "uuid": "4745ee6f-587a-4da8-a7f0-906f06eb877c",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "First feed given to the newborn",
+            "uuid": "44772c48-4182-4803-b34a-8a516f4fe7d5"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Other details - First feed given to the newborn",
+          "uuid": "a8337af1-4c1a-4cd4-a612-0e31bd94100d",
+          "keyValues": [],
+          "concept": {
+            "name": "Other details - First feed given to the newborn",
+            "uuid": "2eed955a-5a27-491f-b8c2-a4d6b46ea7cd"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        }
+      ]
+    }
+  ]
+}

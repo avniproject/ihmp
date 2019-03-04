@@ -23,7 +23,7 @@ org_admin_name=ihmp-admin
 poolId:=
 clientId:=
 username:=ihmp-admin
-password:=
+password:=$(if $(password),$(password))
 
 auth:
 	$(if $(poolId),$(eval token:=$(shell node scripts/token.js $(poolId) $(clientId) $(username) $(password))))
@@ -113,6 +113,7 @@ _deploy_refdata: deploy_subjects
 	$(call _curl,DELETE,forms,@pregnancy/deliveryDeletions.json)
 	$(call _curl,PATCH,forms,@pregnancy/deliveryAdditions.json)
 	$(call _curl,POST,concepts,@child/childConcepts.json)
+	$(call _curl,POST,forms,@child/birthForm.json)
 	$(call _curl,POST,forms,@child/nutritionalStatusForm.json)
 
 	$(call _curl,POST,forms,@shared/encounterCancellation/encounterCancellationForm.json)
