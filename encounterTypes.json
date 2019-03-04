@@ -30,5 +30,10 @@
   {
     "uuid": "76244d2f-d23e-469b-a185-efa51d9ce536",
     "name": "Census"
+  },
+  {
+    "uuid": "badd43fa-6346-436e-8fbc-9055be2754c9",
+    "name": "Birth (ASHA)"
   }
+
 ]

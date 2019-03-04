@@ -113,6 +113,7 @@ _deploy_refdata: deploy_subjects
 	$(call _curl,DELETE,forms,@pregnancy/deliveryDeletions.json)
 	$(call _curl,PATCH,forms,@pregnancy/deliveryAdditions.json)
 	$(call _curl,POST,concepts,@child/childConcepts.json)
+	$(call _curl,POST,forms,@child/birthForm.json)
 	$(call _curl,POST,forms,@child/nutritionalStatusForm.json)
 
 	$(call _curl,POST,forms,@shared/encounterCancellation/encounterCancellationForm.json)
