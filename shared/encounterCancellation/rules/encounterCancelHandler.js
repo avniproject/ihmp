@@ -19,11 +19,6 @@ class CancellationViewFilterHandlerIHMP {
         return FormElementsStatusHelper.getFormElementsStatusesWithoutDefaults(new CancellationViewFilterHandlerIHMP(), programEncounter, formElementGroup, today);
     }
 
-    @WithStatusBuilder
-    cancelReason([], statusBuilder) {
-        statusBuilder.skipAnswers('Program exit')
-    }
-
     otherReason(programEncounter, formElement) {
         const cancelReasonObs = programEncounter.findCancelEncounterObservation('Visit cancel reason');
         const answer = cancelReasonObs && cancelReasonObs.getReadableValue();
