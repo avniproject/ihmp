@@ -419,7 +419,8 @@ create or replace view ihmp_location_view as (
     select r.phc, r.subcenter, r.village, null as slum, r.village_id as lowest_id from rural_mapping r
     union all
     select u.phc, null, null, u.slum, u.slum_id from urban_mapping u
-    order by 1,2,3,4;
+    order by 1,2,3,4
+  );
 
 
 
