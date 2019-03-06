@@ -25,7 +25,7 @@ create or replace view ihmp_rti_services_view as
           programEncounter.name                                                                  "Enc.name",
           programEncounter.max_visit_date_time                                                   "Enc.max_visit_date_time",
           programEncounter.is_voided                                                             "Enc.is_voided",
-          programEnrolment.program_exit_date_time                                                 "Enc.program_exit_date_time",
+          programEnrolment.program_exit_date_time                                                "Enc.program_exit_date_time",
           individual.observations ->>
           'd685d229-e06e-42f3-90c7-ca06d2fefe17'::TEXT                                        as "Ind.Date of marriage",
           individual.observations ->>
@@ -224,7 +224,7 @@ create or replace view ihmp_needs_assessment_view as
           programEncounter.name                                                                  "Enc.name",
           programEncounter.max_visit_date_time                                                   "Enc.max_visit_date_time",
           programEncounter.is_voided                                                             "Enc.is_voided",
-          programEnrolment.program_exit_date_time                                                 "Enc.program_exit_date_time",
+          programEnrolment.program_exit_date_time                                                "Enc.program_exit_date_time",
           individual.observations ->>
           'd685d229-e06e-42f3-90c7-ca06d2fefe17'::TEXT                                        as "Ind.Date of marriage",
           individual.observations ->>
@@ -453,7 +453,7 @@ create or replace view ihmp_pnc_view as (
          programEncounter.name                                                                  "Enc.name",
          programEncounter.max_visit_date_time                                                   "Enc.max_visit_date_time",
          programEncounter.is_voided                                                             "Enc.is_voided",
-         programEnrolment.program_exit_date_time                                                 "Enc.program_exit_date_time",
+         programEnrolment.program_exit_date_time                                                "Enc.program_exit_date_time",
          individual.observations ->>
          'd685d229-e06e-42f3-90c7-ca06d2fefe17'::TEXT                                        as "Ind.Date of marriage",
          individual.observations ->>
@@ -629,7 +629,7 @@ create or replace view ihmp_delivery_view as (
          programEncounter.name                                                                  "Enc.name",
          programEncounter.max_visit_date_time                                                   "Enc.max_visit_date_time",
          programEncounter.is_voided                                                             "Enc.is_voided",
-         programEnrolment.program_exit_date_time                                                 "Enc.program_exit_date_time",
+         programEnrolment.program_exit_date_time                                                "Enc.program_exit_date_time",
          individual.observations ->>
          'd685d229-e06e-42f3-90c7-ca06d2fefe17'::TEXT                                        as "Ind.Date of marriage",
          individual.observations ->>
@@ -768,6 +768,186 @@ create or replace view ihmp_delivery_view as (
   WHERE c2.name not ilike '%master%'
     AND op.uuid = '3e42f1f5-53ec-4e72-bb9f-d10d53fc8de5'
     AND oet.uuid = '43e7ecb9-2293-46f8-8070-b4e621eab8f7'
+    AND programEncounter.encounter_date_time IS NOT NULL
+    AND programEnrolment.enrolment_date_time IS NOT NULL
+);
+
+drop view if exists ihmp_anc_asha_view;
+create or replace view ihmp_anc_asha_view as (
+  SELECT individual.uuid                                                                        "Ind.uuid",
+         individual.id                                                                          "Ind.id",
+         individual.first_name                                                                  "Ind.first_name",
+         individual.last_name                                                                   "Ind.last_name",
+         g.name                                                                                 "Ind.Gender",
+         individual.date_of_birth                                                               "Ind.date_of_birth",
+         individual.date_of_birth_verified                                                      "Ind.date_of_birth_verified",
+         individual.registration_date                                                           "Ind.registration_date",
+         individual.facility_id                                                                 "Ind.facility_id",
+         a.title                                                                                "Ind.Area",
+         individual.audit_id                                                                    "Ind.audit_id",
+         individual.address_id                                                            "Ind.address_id",
+         c2.name                                                                                "Ind.Catchment",
+         individual.is_voided                                                                   "Ind.is_voided",
+         op.name                                                                                "Enl.Program Name",
+         programEnrolment.uuid                                                                  "Enl.uuid",
+         programEnrolment.is_voided                                                             "Enl.is_voided",
+         oet.name                                                                               "Enc.Type",
+         programEncounter.earliest_visit_date_time                                              "Enc.earliest_visit_date_time",
+         programEncounter.encounter_date_time                                                   "Enc.encounter_date_time",
+         programEncounter.program_enrolment_id                                                  "Enc.program_enrolment_id",
+         programEncounter.uuid                                                                  "Enc.uuid",
+         programEncounter.name                                                                  "Enc.name",
+         programEncounter.max_visit_date_time                                                   "Enc.max_visit_date_time",
+         programEncounter.is_voided                                                             "Enc.is_voided",
+         programEnrolment.program_exit_date_time                                                "Enc.program_exit_date_time",
+         individual.observations ->>
+         'd685d229-e06e-42f3-90c7-ca06d2fefe17'::TEXT                                        as "Ind.Date of marriage",
+         individual.observations ->>
+         '60c44aa2-3635-487d-8962-43000e77d382'::TEXT                                        as "Ind.Caste (Free Text)",
+         individual.observations ->>
+         '38eaf459-4316-4da3-acfd-3c9c71334041'::TEXT                                        as "Ind.Standard upto which schooling completed",
+         single_select_coded(
+             individual.observations ->> '1eb73895-ddba-4ddb-992c-03225f93775c')::TEXT       as "Ind.Whether any disability",
+         individual.observations ->>
+         '43c4860f-fccf-48c9-818a-191bc0f8d0cf'::TEXT                                        as "Ind.Aadhaar ID",
+         single_select_coded(
+             individual.observations ->> 'c922c13c-1fa2-42dd-a7e8-d234b0324870')::TEXT       as "Ind.Religion",
+         single_select_coded(
+             individual.observations ->> '6617408e-b89e-4f2f-ab10-d818c5d7f1bd')::TEXT       as "Ind.Status of the individual",
+         individual.observations ->>
+         'f27e9504-81a3-48d9-b7cc-4bc90dbd4a30'::TEXT                                        as "Ind.Disability",
+         single_select_coded(
+             individual.observations ->> '1b6ae290-1823-4aab-91a5-b1d8a1b3b837')::TEXT       as "Ind.Relation to head of the family",
+         individual.observations ->>
+         '82fa0dbb-92f9-4ec2-9263-49054e64d909'::TEXT                                        as "Ind.Contact Number",
+         single_select_coded(
+             individual.observations ->> '61ab6413-5c6a-4512-ab6e-7d5cd1439569')::TEXT       as "Ind.Caste Category",
+         single_select_coded(
+             individual.observations ->> '92475d77-7cdd-4976-98f0-3847939a95d1')::TEXT       as "Ind.Whether sterilized",
+         single_select_coded(
+             individual.observations ->> 'cd83afec-d147-42b2-bd50-0ca460dbd55f')::TEXT       as "Ind.Occupation",
+         single_select_coded(
+             individual.observations ->> '476a0b71-485b-4a0a-ba6f-4f3cf13568ca')::TEXT       as "Ind.Ration Card",
+         single_select_coded(
+             individual.observations ->> 'aa6687c9-ba4d-49a3-9b3e-bba266eb6f32')::TEXT       as "Ind.Marital status",
+         individual.observations ->>
+         '24dabc3a-6562-4521-bd42-5fff11ea5c46'::TEXT                                        as "Ind.Household number",
+         individual.observations ->>
+         '25b73ca1-e268-452f-ba05-2595af28ac04'::TEXT                                        as "Ind.Number of household members (eating together)",
+         single_select_coded(
+             programEnrolment.observations ->> 'b47dca1d-3f42-4280-9b3e-3d68cce88bed')::TEXT as "Enl.Is she on TB medication?",
+         single_select_coded(
+             programEnrolment.observations ->> '4a20f69f-12c4-4472-ac82-ece0ab102e4b')::TEXT as "Enl.Did she complete her TB treatment?",
+         single_select_coded(
+             programEnrolment.observations ->> '2a8a5306-c0a9-4ca6-8bd7-b394069aa6f2')::TEXT as "Enl.Has she been taking her TB medication regularly?",
+         programEnrolment.observations ->>
+         'd883d5fe-e17d-4136-b989-089fa0295e34'::TEXT                                        as "Enl.Height",
+         programEnrolment.observations ->>
+         '1cc6fd5d-1359-483e-a971-4bf36e34a72d'::TEXT                                        as "Enl.Last menstrual period",
+         programEnrolment.observations ->>
+         'dde911fa-15eb-4564-8deb-bba46e9d3744'::TEXT                                        as "Enl.Estimated Date of Delivery",
+         programEnrolment.observations ->>
+         'fef5be79-24c0-415d-9494-64b2faf17aeb'::TEXT                                        as "Enl.R15 number",
+         programEnrolment.observations ->>
+         '191f8a30-d543-4b98-9464-2f5838d1d9a6'::TEXT                                        as "Enl.MCTS Number",
+         single_select_coded(
+             programEnrolment.observations ->> 'ae076480-008d-47ca-9fab-a5300a626e42')::TEXT as "Enl.Urine pregnancy test",
+         programEnrolment.observations ->>
+         '7d34125a-1b0b-4755-acc8-aeda71af8bd3'::TEXT                                        as "Enl.Other obstetrics history",
+         programEnrolment.observations ->>
+         '99c9d0a3-6ffc-41a7-8641-d79e2e83a4c6'::TEXT                                        as "Enl.Number of miscarriages",
+         programEnrolment.observations ->>
+         '74de4054-0e8b-4088-aae8-bd5f2933d300'::TEXT                                        as "Enl.Number of stillbirths",
+         programEnrolment.observations ->>
+         'd7ae1329-9e09-47f1-ad7d-3c73474d973f'::TEXT                                        as "Enl.Number of child deaths",
+         programEnrolment.observations ->>
+         'b3e9c088-90ed-45d9-8c99-102d1bda66e1'::TEXT                                        as "Enl.Number of living children",
+         programEnrolment.observations ->>
+         '38b9986b-76e8-4015-ae51-48152b1cd42c'::TEXT                                        as "Enl.Number of abortions",
+         programEnrolment.observations ->>
+         'eb07e1bd-0379-4ffd-9bc6-df4b34f7745e'::TEXT                                        as "Enl.Number of male child deaths",
+         programEnrolment.observations ->>
+         '305f693c-c8b6-4e3e-9a82-a6e91a3e462f'::TEXT                                        as "Enl.Age of youngest child",
+         programEnrolment.observations ->>
+         'c6454406-04da-4670-9318-3b71a2d9b0cf'::TEXT                                        as "Enl.Number of female child deaths",
+         programEnrolment.observations ->>
+         'dc2c23e9-19ad-471f-81d1-213069ccc975'::TEXT                                        as "Enl.Gravida",
+         programEnrolment.observations ->>
+         '2d679fd5-a75b-46bd-96c2-10c180187342'::TEXT                                        as "Enl.Parity",
+         programEnrolment.observations ->>
+         'd924596e-e08e-4829-b4c3-77a0411d18c7'::TEXT                                        as "Enl.Number of female children",
+         programEnrolment.observations ->>
+         '1b749b48-bfae-470d-8219-a735dae99f7a'::TEXT                                        as "Enl.Number of male children",
+         programEnrolment.observations ->>
+         '0b3eb875-b0f6-4420-be01-82bbd2812b21'::TEXT                                        as "Enl.Number of induced abortions",
+         programEncounter.observations ->>
+         'f91604a8-89ac-4a99-a3cb-9edd764c8b0e'::TEXT                                        as "Enc.TT1 Date",
+         programEncounter.observations ->>
+         'e1b7ce95-8c73-46fa-8354-19a14f5ca17f'::TEXT                                        as "Enc.TT Booster Date",
+         programEncounter.observations ->>
+         '57f66ff5-e050-4a72-ad03-94d99dad4630'::TEXT                                        as "Enc.TT2 Date",
+         single_select_coded(
+             programEncounter.observations ->> 'b441c480-1a19-4ad0-9d0a-196485aacf12')::TEXT as "Enc.Pedal Edema",
+         single_select_coded(
+             programEncounter.observations ->> 'ed087798-7116-4817-ba84-caa02a23e1b7')::TEXT as "Enc.Breast Examination - Nipple",
+         single_select_coded(
+             programEncounter.observations ->> '226f8715-563b-4a8b-8afa-f75cce2767af')::TEXT as "Enc.Pallor",
+         single_select_coded(
+             programEncounter.observations ->> 'a916a62d-5010-44af-8887-e7e7c4e89ed9')::TEXT as "Enc.Whether treatment taken for antenatal complications",
+         single_select_coded(
+             programEncounter.observations ->> '93464328-5978-499b-98b1-b299b067cbb1')::TEXT as "Enc.Whether the antenatal complications is addressed",
+         multi_select_coded(
+             programEncounter.observations -> '0adc4170-9ebb-4feb-8b81-450fbf9a04dc')::TEXT  as "Enc.Pregnancy complications",
+         single_select_coded(
+             programEncounter.observations ->> 'ede1aad7-ee90-4c66-ab95-56e353ec5194')::TEXT as "Enc.Whether antenatal examination done",
+         single_select_coded(
+             programEncounter.observations ->> 'ec9e602c-885d-4f3c-8224-46ca9e9aeae4')::TEXT as "Enc.Place where antenatal examination done",
+         programEncounter.observations ->>
+         '0620abab-4449-4182-96f9-8daa5f855c80'::TEXT                                        as "Enc.Number of IFA tablets consumed",
+         programEncounter.observations ->>
+         'f6594bb7-db18-49cf-9987-eacbceb8f479'::TEXT                                        as "Enc.Next ASHA ANC visit date",
+         programEncounter.observations ->>
+         '4c234fbb-7592-4f9a-87aa-3d49a08a74da'::TEXT                                        as "Enc.Next VHND date",
+         multi_select_coded(
+             programEncounter.observations -> '708aab8c-0ad1-406f-a417-aae0502137ea')::TEXT  as "Enc.ANC counselling provided by ASHA",
+         multi_select_coded(
+             programEncounter.observations -> '50782e71-4e37-42d0-8006-f373e09cce65')::TEXT  as "Enc.Whether enrolled in any government scheme related to pregnancy",
+         programEncounter.observations ->>
+         '61108679-7242-479c-a6ba-380f4c9b9c3b'::TEXT                                        as "Enc.Week of gestation when registered for antenatal care",
+         single_select_coded(
+             programEncounter.observations ->> '5932a6af-3316-4e90-9b77-579382ff9c9e')::TEXT as "Enc.Place where registered for antenatal care",
+         programEncounter.observations ->>
+         'b3f5af5e-6a0f-4af0-839a-72a7e9b67331'::TEXT                                        as "Enc.Date of registration for antenatal care",
+         single_select_coded(
+             programEncounter.observations ->> 'b0f42202-1c89-4c12-994a-381a7c79a264')::TEXT as "Enc.Whether registered for antenatal care",
+         programEncounter.cancel_date_time                                                      "EncCancel.cancel_date_time",
+         programEncounter.cancel_observations ->>
+         'f6594bb7-db18-49cf-9987-eacbceb8f479'::TEXT                                        as "EncCancel.Next ASHA ANC visit date",
+         programEncounter.cancel_observations ->>
+         'b09e425a-8f06-4cb4-9b71-5e26613ea22c'::TEXT                                        as "EncCancel.Next needs assessment date",
+         programEncounter.cancel_observations ->>
+         'f23251e2-68c6-447b-84c2-285d61e95f0f'::TEXT                                        as "EncCancel.Other reason for cancelling",
+         programEncounter.cancel_observations ->>
+         '4c234fbb-7592-4f9a-87aa-3d49a08a74da'::TEXT                                        as "EncCancel.Next VHND date",
+         single_select_coded(programEncounter.cancel_observations ->>
+                             '739f9a56-c02c-4f81-927b-69842d78c1e8')::TEXT                   as "EncCancel.Visit cancel reason",
+         programEncounter.cancel_observations ->>
+         '6539ec90-14b9-4e5f-9305-4ca05f89db50'::TEXT                                        as "EncCancel.Follow up visit date for RTI",
+         programEncounter.cancel_observations ->>
+         'de3e8247-18e7-44aa-934e-6bd262251bd8'::TEXT                                        as "EncCancel.Follow up visit date for FP"
+  FROM program_encounter programEncounter
+         LEFT OUTER JOIN operational_encounter_type oet on programEncounter.encounter_type_id = oet.encounter_type_id
+         LEFT OUTER JOIN program_enrolment programEnrolment
+                         ON programEncounter.program_enrolment_id = programEnrolment.id
+         LEFT OUTER JOIN operational_program op ON op.program_id = programEnrolment.program_id
+         LEFT OUTER JOIN individual individual ON programEnrolment.individual_id = individual.id
+         LEFT OUTER JOIN gender g ON g.id = individual.gender_id
+         LEFT OUTER JOIN address_level a ON individual.address_id = a.id
+         LEFT OUTER JOIN catchment_address_mapping m2 ON a.id = m2.addresslevel_id
+         LEFT OUTER JOIN catchment c2 ON m2.catchment_id = c2.id
+  WHERE c2.name not ilike '%master%'
+    AND op.uuid = '3e42f1f5-53ec-4e72-bb9f-d10d53fc8de5'
+    AND oet.uuid = '6cfda1d9-61cd-41dc-bf6a-3cf0b2c44788'
     AND programEncounter.encounter_date_time IS NOT NULL
     AND programEnrolment.enrolment_date_time IS NOT NULL
 );
