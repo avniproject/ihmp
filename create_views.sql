@@ -416,13 +416,10 @@ create or replace view ihmp_location_view as (
                              join address_level phc on phc.id = m2.parent_location_id
                       where slum.level = 0.9
                         and phc.level = 2.6)
-    select coalesce(r.phc, u.phc)            as phc,
-           r.subcenter,
-           r.village,
-           u.slum,
-           coalesce(r.village_id, u.slum_id) as lowest_id
-    from rural_mapping r
-           full outer join urban_mapping u on r.phc_id = u.phc_id);
+    select r.phc, r.subcenter, r.village, null as slum, r.village_id as lowest_id from rural_mapping r
+    union all
+    select u.phc, null, null, u.slum, u.slum_id from urban_mapping u
+    order by 1,2,3,4;
 
 
 
