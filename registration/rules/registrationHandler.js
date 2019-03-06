@@ -36,7 +36,7 @@ class RegistrationHandlerIHMP {
     }
 
     @WithStatusBuilder
-    education([], statusBuilder) {
+    standardUptoWhichSchoolingCompleted([], statusBuilder) {
         statusBuilder.show().when.ageInYears.is.greaterThanOrEqualTo(7);
     }
 
