@@ -8,6 +8,8 @@ const ASHAANCVisitBasedVisitsRule = RuleFactory("4201c189-5a6c-40ca-8c33-c5b7d24
 const ANCVHNDVisitBasedVisitsRule = RuleFactory("e2cf41de-d962-4110-9d66-70877e2eb59d", "VisitSchedule");
 const IHMPDeliveryVisitSchedulesRule = RuleFactory('cc6a3c6a-c3cc-488d-a46c-d9d538fcc9c2', 'VisitSchedule');
 const IHMPPNCVisitSchedulesRule = RuleFactory('78b1400e-8100-4ba6-b78e-fef580f7fb77', 'VisitSchedule');
+const IHMPPostAbortionVisitSchedulesRule = RuleFactory('32428a7e-d553-4172-b697-e8df3bbfb61d', 'VisitSchedule');
+const IHMPPostAbortionFollowupVisitSchedulesRule = RuleFactory('b9a823eb-0251-4697-a34a-49f3f8ab0c04', 'VisitSchedule');
 
 
 @PregnancyEnrolmentBasedVisitsRule("ba997f28-9d07-40a2-9747-3f2ea1a22bdb", "Pregnancy Enrolment based visit rule", 100.0)
@@ -91,10 +93,30 @@ class IHMPPNCVisitSchedules {
     }
 }
 
+
+@IHMPPostAbortionVisitSchedulesRule('5ea37a3f-cd49-42f1-919b-ba4ee3d098d1', "Abortion based visit rules", 100.0)
+class PostAbortionVisitScheduleIHMP {
+    static exec(programEncounter, visitSchedule = [], scheduleConfig) {
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
+        return RuleHelper.scheduleOneVisit(scheduleBuilder, 'First post abortion home visit', 'Abortion followup', moment(programEncounter.encounterDateTime).add(7, 'days').toDate(), 8);
+    }
+}
+
+@IHMPPostAbortionFollowupVisitSchedulesRule('15ef0432-1b60-407f-acb8-f3cf7975b908', "Abortion followup based visit rules", 100.0)
+class PostAbortionFollowupVisitScheduleIHMP {
+    static exec(programEncounter, visitSchedule = [], scheduleConfig) {
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
+        return RuleHelper.scheduleOneVisit(scheduleBuilder, 'Second post abortion home visit', 'Abortion followup', moment(programEncounter.encounterDateTime).add(10, 'days').toDate(), 11);
+    }
+}
+
+
 export {
     PregnancyEnrolmentBasedVisitsIHMP,
     ASHAANCVisitBasedVisitsIHMP,
     ANCVHNDVisitBasedVisitsIHMP,
     IHMPDeliveryVisitSchedules,
-    IHMPPNCVisitSchedules
+    IHMPPNCVisitSchedules,
+    PostAbortionVisitScheduleIHMP,
+    PostAbortionFollowupVisitScheduleIHMP
 };

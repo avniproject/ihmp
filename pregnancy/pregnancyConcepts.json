@@ -606,7 +606,7 @@
   },
   {
     "uuid": "efc9a994-80fd-48a2-b089-bff9e0585a61",
-    "name": "Treatment taken after spontaneous abortion",
+    "name": "Whether treatment taken after spontaneous abortion",
     "dataType": "Coded",
     "answers": [
       {
@@ -618,6 +618,11 @@
         "comment": "No"
       }
     ]
+  },
+  {
+    "name": "Date of treatment taken after spontaneous abortion",
+    "uuid": "bd5b5ffc-93d6-4a80-aa91-a5e5c9fc6a40",
+    "dataType": "Date"
   },
   {
     "comment": "Abortion complaints",
@@ -635,5 +640,82 @@
         "abnormal": true
       }
     ]
+  },
+  {
+    "name": "Whether treatment taken for spontaneous abortion within 24 hours",
+    "uuid": "bff23454-8b33-4a46-b01c-d12b1206efd7",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether taken treatment for post abortion complication",
+    "uuid": "42be7266-50e7-4f0b-88a5-b6e1f1cf0535",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Duration of post abortion treatment in days",
+    "uuid": "45d26a42-eb23-4744-be53-131ee782b09a",
+    "dataType": "Numeric",
+    "unit": "days"
+  },
+  {
+    "name": "Whether complication cured",
+    "uuid": "f13307be-a27d-4bb5-8adf-8fe38707c78d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "ba9768c1-1ba6-4b84-84aa-c81adc40c5e6",
+    "name": "Referral"
+  },
+  {
+    "uuid": "97d59c75-03d2-4ecd-b037-c6356d65fcc0",
+    "name": "Personal hygeine"
+  },
+  {
+    "name": "Post abortion BCC given by ASHA",
+    "uuid": "786f08ce-0e11-4e2a-9c36-7136d887bfea",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4e6cdd7d-7ef3-493d-bb7a-c956722a772a",
+        "name": "Treatment"
+      },
+      {
+        "uuid": "ba9768c1-1ba6-4b84-84aa-c81adc40c5e6",
+        "name": "Referral"
+      },
+      {
+        "uuid": "97d59c75-03d2-4ecd-b037-c6356d65fcc0",
+        "name": "Personal hygeine"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "abnormal": false
+      }
+    ]
   }
+
 ]

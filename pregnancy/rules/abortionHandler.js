@@ -26,11 +26,18 @@ class PregnancyAbortionViewFilterIHMP {
         statusBuilder.show().when.valueInEncounter('Type of Abortion').containsAnswerConceptName('Spontaneous abortion');
     }
 
-    @WithName('Abortion complaints')
+    @WithName('Post abortion complaints')
     @WithStatusBuilder
     y([], statusBuilder) {
         statusBuilder.skipAnswers('Abdominal pain');
     }
+
+    @WithName('When was the treatment taken after spontaneous abortion')
+    @WithStatusBuilder
+    z([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter('Whether treatment taken after spontaneous abortion').containsAnswerConceptName('Yes');
+    }
+
 }
 
 export {

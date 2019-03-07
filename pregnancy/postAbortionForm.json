@@ -1,0 +1,84 @@
+{
+  "name": "Abortion followup",
+  "uuid": "b9a823eb-0251-4697-a34a-49f3f8ab0c04",
+  "formType": "ProgramEncounter",
+  "formElementGroups": [
+    {
+      "uuid": "0aaac8f3-679f-4a5b-8460-4484e89a770f",
+      "name": "Post abortion followup",
+      "display": "Post abortion followup",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Whether treatment taken for spontaneous abortion within 24 hours",
+          "uuid": "9986debe-bea9-448d-9cc9-1e4627124048",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether treatment taken for spontaneous abortion within 24 hours",
+            "uuid": "bff23454-8b33-4a46-b01c-d12b1206efd7"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Currently suffering from any post abortion complaints",
+          "uuid": "187c7101-d7e3-4cc3-a613-5cc8010381ee",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "comment": "Post abortion complaints",
+            "uuid": "fc1346b0-57fe-4a84-8d95-f4461d60176f"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Whether taken treatment for post abortion complication",
+          "uuid": "87c03576-e032-46e7-b6da-10de503875cb",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether taken treatment for post abortion complication",
+            "uuid": "42be7266-50e7-4f0b-88a5-b6e1f1cf0535"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Duration of post abortion treatment in days",
+          "uuid": "5aaa0e36-4162-45ad-825c-8b7b63fd4759",
+          "keyValues": [],
+          "concept": {
+            "name": "Duration of post abortion treatment in days",
+            "uuid": "45d26a42-eb23-4744-be53-131ee782b09a"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Whether complication cured",
+          "uuid": "19ed5da9-8e6b-4ca5-bd71-6ffe40901729",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether complication cured",
+            "uuid": "f13307be-a27d-4bb5-8adf-8fe38707c78d"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Post abortion BCC given by ASHA",
+          "uuid": "d66cfcb1-c324-4e0e-a1bb-5bafee914ecf",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Post abortion BCC given by ASHA",
+            "uuid": "786f08ce-0e11-4e2a-9c36-7136d887bfea"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        }
+      ]
+    }
+    
+  ]
+}

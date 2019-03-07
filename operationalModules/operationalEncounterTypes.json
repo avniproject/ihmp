@@ -58,6 +58,13 @@
       }
     },
     {
+      "uuid": "e9261a18-76d5-42bd-af56-3e6f5ed8f212",
+      "name": "Abortion followup",
+      "encounterType": {
+        "uuid": "08250f58-6c95-49ca-ba42-57e49005ead6"
+      }
+    },
+    {
       "uuid":"d3ee3abc-7005-4025-8351-f4dca3d5471a",
       "name":"PNC",
       "encounterType":{

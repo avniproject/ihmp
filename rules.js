@@ -15,10 +15,11 @@ module.exports = _.merge({},
     require('./pregnancy/rules/pncHandler'),
     require('./pregnancy/rules/pncDecisions'),
     require('./pregnancy/rules/visitSchedule'),
+    require('./pregnancy/rules/postAbortionHandler'),
     require('./shared/encounterCancellation/rules/encounterCancelHandler'),
     require('./shared/encounterCancellation/rules/visitSchedule'),
     require('./child/rules/nutritionalStatus'),
     require('./child/rules/checkListViewFilterIHMP'),
     require('./census/rules/censusFormHandler'),
-    require('./child/rules/birthFormHandler')
+    require('./child/rules/birthFormHandler'),
 );

@@ -123,5 +123,12 @@
     "encounterTypeUUID": "badd43fa-6346-436e-8fbc-9055be2754c9",
     "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
     "comment": "Child Birth"
+  },
+  {
+    "uuid": "1e50cd3c-1833-4b8b-8657-eaa5640400a6",
+    "formUUID": "b9a823eb-0251-4697-a34a-49f3f8ab0c04",
+    "encounterTypeUUID": "08250f58-6c95-49ca-ba42-57e49005ead6",
+    "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "comment": "Pregnancy Abortion followup"
   }
 ]

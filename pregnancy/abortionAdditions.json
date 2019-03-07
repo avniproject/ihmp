@@ -17,7 +17,19 @@
           },
           "displayOrder": 6.5,
           "mandatory": false
+        },
+        {
+          "name": "When was the treatment taken after spontaneous abortion",
+          "uuid": "35096ea0-9280-4968-ac8e-3c7401099d16",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of treatment taken after spontaneous abortion",
+            "uuid": "bd5b5ffc-93d6-4a80-aa91-a5e5c9fc6a40"
+          },
+          "displayOrder": 6.6,
+          "mandatory": false
         }
+        
       ]
     }
   ]
