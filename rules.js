@@ -22,4 +22,6 @@ module.exports = _.merge({},
     require('./child/rules/checkListViewFilterIHMP'),
     require('./census/rules/censusFormHandler'),
     require('./child/rules/birthFormHandler'),
+    require('./child/rules/visitSchedule'),
+
 );
