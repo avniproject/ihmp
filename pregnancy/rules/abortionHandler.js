@@ -38,6 +38,12 @@ class PregnancyAbortionViewFilterIHMP {
         statusBuilder.show().when.valueInEncounter('Whether treatment taken after spontaneous abortion').containsAnswerConceptName('Yes');
     }
 
+    @WithName('Whether treatment taken for post abortion complaints')
+    @WithStatusBuilder
+    a([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter('Post abortion complaints').containsAnyAnswerConceptName('Foul smelling vaginal discharge or blood','Lower abdominal pain','Per vaginal bleeding','Fever', 'Other');
+    }
+
 }
 
 export {

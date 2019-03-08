@@ -28,8 +28,18 @@
           },
           "displayOrder": 5.6,
           "mandatory": false
+        },
+        {
+          "name": "Whether treatment taken for post abortion complaints",
+          "uuid": "b33a128f-f6d2-4350-8026-cffa6a58982d",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether taken treatment for post abortion complication",
+            "uuid": "42be7266-50e7-4f0b-88a5-b6e1f1cf0535"
+          },
+          "displayOrder": 7.5,
+          "mandatory": true
         }
-        
       ]
     }
   ]
