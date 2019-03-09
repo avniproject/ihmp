@@ -119,6 +119,9 @@ _deploy_refdata: deploy_subjects
 
 	$(call _curl,POST,forms,@shared/encounterCancellation/encounterCancellationForm.json)
 
+	$(call _curl,POST,concepts,@marriageRegister/marriageRegisterConcepts.json)
+	$(call _curl,POST,forms,@marriageRegister/marriageRegisterForm.json)
+
 	$(call _curl,POST,formMappings,@formMappings.json)
 
 

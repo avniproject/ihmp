@@ -92,6 +92,13 @@
       "encounterType": {
         "uuid": "badd43fa-6346-436e-8fbc-9055be2754c9"
       }
+    },
+    {
+      "uuid": "1c969bc6-61dc-404c-a7e4-1289d1ad7c9f",
+      "name" : "Marriage Register",
+      "encounterType": {
+        "uuid": "5666eb22-da31-4f0f-98cc-201e1657c502"
+      }
     }
   ]
 }

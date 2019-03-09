@@ -130,5 +130,11 @@
     "encounterTypeUUID": "08250f58-6c95-49ca-ba42-57e49005ead6",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
     "comment": "Pregnancy Abortion followup"
+  },
+  {
+    "uuid": "1449caa8-0f7d-4eb3-a85f-1b6d6da70dc8",
+    "formUUID": "e8fac8b3-b043-461d-8a32-6bdce9a33dc7",
+    "encounterTypeUUID": "5666eb22-da31-4f0f-98cc-201e1657c502",
+    "comment": "Marriage Register"
   }
 ]

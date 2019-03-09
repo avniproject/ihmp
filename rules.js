@@ -23,5 +23,5 @@ module.exports = _.merge({},
     require('./census/rules/censusFormHandler'),
     require('./child/rules/birthFormHandler'),
     require('./child/rules/visitSchedule'),
-
+    require('./marriageRegister/rules/marriageRegisterFormHandler')
 );

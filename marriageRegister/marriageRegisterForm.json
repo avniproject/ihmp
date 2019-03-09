@@ -1,0 +1,127 @@
+{
+  "name": "Marriage Register Form",
+  "uuid": "e8fac8b3-b043-461d-8a32-6bdce9a33dc7",
+  "formType": "Encounter",
+  "formElementGroups": [
+    {
+      "uuid": "8e7453de-ee06-4530-9bd9-7888c460fec1",
+      "name": "Marriage Registration",
+      "display": "Marriage Registration",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Date of marriage",
+          "uuid": "2981a357-f539-4e9e-924e-2bed094216a9",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of marriage",
+            "uuid": "d685d229-e06e-42f3-90c7-ca06d2fefe17"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Completed education at the time of marriage",
+          "uuid": "4482578a-951d-4954-a20b-4314999acd6f",
+          "keyValues": [],
+          "concept": {
+            "name" : "Completed education at the time of marriage",
+            "uuid": "ae735fe3-a8dc-4120-acab-4ca147c09601"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "How many years after completion of the education (maximum standard) did you get married?",
+          "uuid": "9e49e3b4-eae9-4de7-bd98-0221b6085006",
+          "keyValues": [],
+          "concept": {
+            "uuid": "9179d93b-677e-4d58-bd99-d5415e1d9a74"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Age at the time of first menses - completed years",
+          "uuid": "fa26c67b-6741-4294-9e7a-6d667d4a761f",
+          "keyValues": [],
+          "concept": {
+            "uuid": "ad55d79c-1451-4f21-bf76-0228bc58452c"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "How many years after starting menstruating, did you get married?",
+          "uuid": "ec9ee629-0879-49f7-b26a-ec89e6d0a8da",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c4a061bf-7aa6-413b-8cbc-2d549f933bc4"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Age when got married- completed years",
+          "uuid": "dad06075-6b60-43f3-b6de-73e8e8aaf909",
+          "keyValues": [],
+          "concept": {
+            "uuid": "17f246b9-cceb-4ca8-af79-4b3caff85b5f"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Attended Life Skills Education course",
+          "uuid": "9f1369f5-65f2-4818-87bd-afa3e390bcce",
+          "keyValues": [],
+          "concept": {
+            "uuid": "08ed8eb7-a408-4fa7-888f-9064b4460667"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "When attended LSE course - years",
+          "uuid": "2cdf3bab-f86a-4e04-a83d-fcc74f097865",
+          "keyValues": [],
+          "concept": {
+            "uuid": "cec847fe-d384-4ecc-9cd0-346544b852c3"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        },
+        {
+          "name": "Name of the spouse",
+          "uuid": "cbe825ba-e342-4ae6-afef-a37a87ca27e3",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c3db7b9e-7e23-44c4-bc51-7967838de12a"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        },
+        {
+          "name": "Age of the spouse - completed years",
+          "uuid": "d5b01a10-34a2-4ea9-aea4-706a63c50113",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c2036523-c805-48d8-8f8c-4f79eff32122"
+          },
+          "displayOrder": 10,
+          "mandatory": true
+        },
+        {
+          "name": "Remark",
+          "uuid": "75e0ce68-68ec-4989-b894-a429aafbd50c",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c4c40025-a8c3-4457-b3d5-5481b46ded8f"
+          },
+          "displayOrder": 11,
+          "mandatory": true
+        }
+      ]
+    }
+  ]
+}

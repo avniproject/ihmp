@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Completed education at the time of marriage",
+    "uuid": "ae735fe3-a8dc-4120-acab-4ca147c09601",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "How many years after completion of the education (maximum standard) did you get married?",
+    "uuid": "9179d93b-677e-4d58-bd99-d5415e1d9a74",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Age at the time of first menses - completed years",
+    "uuid": "ad55d79c-1451-4f21-bf76-0228bc58452c",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "How many years after starting menstruating, did you get married?",
+    "uuid": "c4a061bf-7aa6-413b-8cbc-2d549f933bc4",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Age when got married- completed years",
+    "uuid": "17f246b9-cceb-4ca8-af79-4b3caff85b5f",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Attended Life Skills Education course",
+    "uuid": "08ed8eb7-a408-4fa7-888f-9064b4460667",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "When attended LSE course - years",
+    "uuid": "cec847fe-d384-4ecc-9cd0-346544b852c3",
+    "dataType": "Text"
+  },
+  {
+    "name": "Name of the spouse",
+    "uuid": "c3db7b9e-7e23-44c4-bc51-7967838de12a",
+    "dataType": "Text"
+  },
+  {
+    "name": "Age of the spouse - completed years",
+    "uuid": "c2036523-c805-48d8-8f8c-4f79eff32122",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Remark",
+    "uuid": "c4c40025-a8c3-4457-b3d5-5481b46ded8f",
+    "dataType": "Text"
+  }
+]
