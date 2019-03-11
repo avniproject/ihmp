@@ -75,6 +75,7 @@
           "name": "Attended Life Skills Education course",
           "uuid": "9f1369f5-65f2-4818-87bd-afa3e390bcce",
           "keyValues": [],
+          "type" : "SingleSelect",
           "concept": {
             "uuid": "08ed8eb7-a408-4fa7-888f-9064b4460667"
           },
