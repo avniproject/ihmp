@@ -66,6 +66,11 @@ class RuleHelper {
         return removedOrNot;
     }
 
+    static replaceRecommendation(decisions, groupName, recommendation) {
+        decisions[groupName] = decisions[groupName] || [];
+        decisions[groupName] = decisions[groupName].filter((d) => d.name !== recommendation.name).concat(recommendation);
+    }
+
     static addRecommendation(decisions, groupName, recommendationName, reason) {
         const defaultVal = {name: recommendationName, value: []};
         const group = decisions[groupName] = decisions[groupName] || [];
