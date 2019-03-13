@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Exact date of death is known",
+    "uuid": "08c78089-b85a-49b0-bc7f-8f257c55a095",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "name": "No",
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Age at time of death",
+    "uuid": "85eb9885-be55-45f9-8a5d-d0d9d03946b8",
+    "dataType": "Duration"
+  }
+]
