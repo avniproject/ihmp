@@ -1,0 +1,76 @@
+{
+  "name": "Death Register Form",
+  "uuid": "2d8ca0a7-3f31-4de1-bd33-8312666f0d2b",
+  "formType": "Encounter",
+  "formElementGroups": [
+    {
+      "uuid": "13088971-39b9-43ac-adda-1e9c14d44af2",
+      "name": "Death Registration",
+      "display": "Death Registration",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Is exact date of death known?",
+          "uuid": "8501b0ef-b151-4bd4-a44f-2f9553279569",
+          "keyValues": [],
+          "concept": {
+            "name": "Exact date of death known",
+            "uuid": "08c78089-b85a-49b0-bc7f-8f257c55a095"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Age at time of death",
+          "uuid": "22ec78af-90bd-4ce6-909f-e38d524bd075",
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": ["years", "months", "days"]
+            }
+          ],
+          "concept": {
+            "name": "Age at time of death",
+            "uuid": "85eb9885-be55-45f9-8a5d-d0d9d03946b8"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Date of Death",
+          "uuid": "1988a0c3-9ad9-4500-831b-c0dec5eec327",
+          "keyValues": [],
+          "concept": {
+            "comment": "Date of death",
+            "uuid": "8cb6e1ec-37cf-4563-8ce9-30b943664182"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Cause of Death",
+          "uuid": "6cd1c666-56ea-48c8-bde9-6f616cdf204c",
+          "keyValues": [],
+          "concept": {
+            "name": "Cause of death",
+            "uuid": "4876f1ce-28f0-4788-8d22-d8a3db617fd2"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Place of Death",
+          "uuid": "aeca1504-5649-47b9-86d1-c8fc4c2c53b2",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Place of death",
+            "uuid": "3f6c371a-4638-4823-be14-98c22f208902"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        }
+      ]
+    }
+  ]
+}

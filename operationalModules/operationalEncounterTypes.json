@@ -99,6 +99,13 @@
       "encounterType": {
         "uuid": "5666eb22-da31-4f0f-98cc-201e1657c502"
       }
+    },
+    {
+      "uuid": "aac2a3cd-bad2-4263-9db0-3cbccf7ff9c4",
+      "name" : "Death Register",
+      "encounterType": {
+        "uuid": "c2d709b5-f769-42b0-bea5-8f8b182ef1a5"
+      }
     }
   ]
 }
