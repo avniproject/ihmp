@@ -72,11 +72,6 @@ class PregnancyAbortionDecisionIHMP {
             .and.valueInEncounter("Place of abortion").containsAnswerConceptName("Home")
             .and.valueInEncounter('Whether taken treatment for post abortion complication').is.no;
 
-        referralAdvice.addComplication("Induced abortion")
-            .when.valueInEncounter("Post abortion complaints").containsAnswerConceptName("Per vaginal bleeding")
-            .and.when.valueInEncounter("Type of Abortion").containsAnswerConceptName("Induced abortion")
-            .and.valueInEncounter('Whether taken treatment for post abortion complication').is.no;
-
         referralAdvice.addComplication("Spontaneous abortion")
             .when.valueInEncounter("Type of Abortion").containsAnswerConceptName("Spontaneous abortion")
             .and.valueInEncounter('Whether treatment taken after spontaneous abortion').is.no;

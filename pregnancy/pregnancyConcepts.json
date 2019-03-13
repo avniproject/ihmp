@@ -717,6 +717,12 @@
         "abnormal": false
       }
     ]
+  },
+  {
+    "name": "Gestational Age in months",
+    "uuid": "e0436479-593e-4e7d-8649-b294baafb44d",
+    "dataType": "Numeric",
+    "unit": "month(s)",
+    "comment": "right now we can't have a Concept with multiple units."
   }
-
 ]
