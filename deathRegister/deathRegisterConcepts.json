@@ -18,5 +18,10 @@
     "name": "Age at time of death",
     "uuid": "85eb9885-be55-45f9-8a5d-d0d9d03946b8",
     "dataType": "Duration"
+  },
+  {
+    "name": "Cause of death",
+    "uuid": "c483ac2a-472b-4bdc-b4bf-5ffe0550e3bd",
+    "dataType": "Text"
   }
 ]
