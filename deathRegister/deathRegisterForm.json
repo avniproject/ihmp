@@ -13,6 +13,7 @@
           "name": "Is exact date of death known?",
           "uuid": "8501b0ef-b151-4bd4-a44f-2f9553279569",
           "keyValues": [],
+	  "type": "SingleSelect",
           "concept": {
             "name": "Exact date of death known",
             "uuid": "08c78089-b85a-49b0-bc7f-8f257c55a095"
