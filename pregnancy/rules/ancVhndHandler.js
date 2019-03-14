@@ -1,5 +1,7 @@
 import lib from "../../lib";
 import {
+    complicationsBuilder as ComplicationsBuilder,
+    DecisionRule,
     FormElementsStatusHelper,
     FormElementStatus,
     FormElementStatusBuilder,
@@ -71,4 +73,40 @@ class PregnancyANCVHNDFollowupViewFilterHandlerIHMP {
     }
 }
 
-module.exports = {PregnancyANCVHNDViewFilterHandlerIHMP, PregnancyANCVHNDFollowupViewFilterHandlerIHMP};
+@DecisionRule({
+    name: 'Pregnancy ANC ASHA Form Decisions IHMP',
+    uuid: '4d0c9553-7311-4309-a14e-9e5c09e21aa6',
+    formUUID: 'e2cf41de-d962-4110-9d66-70877e2eb59d',
+    executionOrder: 100.0,
+    metadata: {}
+})
+class PregnancyANCVHNDDecisionsIHMP {
+
+    static highRisks(programEncounter, today) {
+        const highRiskBuilder = new ComplicationsBuilder({
+            programEnrolment: programEncounter.programEnrolment,
+            programEncounter,
+            complicationsConcept: 'High Risk Conditions'
+        });
+
+        highRiskBuilder.addComplication("Irregular weight gain")
+            .whenItem(lib.calculations.isNormalWeightGain(programEncounter.programEnrolment, programEncounter, today)).is.not.truthy;
+
+
+        console.log('lib.calculations.isNormalWeightGain(programEncounter.programEnrolment, programEncounter, today)');
+        console.log(lib.calculations.isNormalWeightGain(programEncounter.programEnrolment, programEncounter, today));
+        return highRiskBuilder.getComplications();
+    }
+
+    static exec(programEncounter, decisions, context, today) {
+        decisions.encounterDecisions.push(PregnancyANCVHNDDecisionsIHMP.highRisks(programEncounter, today));
+        return decisions;
+    }
+
+}
+
+export {
+    PregnancyANCVHNDViewFilterHandlerIHMP,
+    PregnancyANCVHNDFollowupViewFilterHandlerIHMP,
+    PregnancyANCVHNDDecisionsIHMP
+}

@@ -1,13 +1,13 @@
 const moment = require("moment");
 const _ = require("lodash");
 import {
-    RuleFactory,
     FormElementsStatusHelper,
-    FormElementStatusBuilder,
-    StatusBuilderAnnotationFactory,
     FormElementStatus,
-    VisitScheduleBuilder,
-    ProgramRule
+    FormElementStatusBuilder,
+    ProgramRule,
+    RuleFactory,
+    StatusBuilderAnnotationFactory,
+    VisitScheduleBuilder
 } from 'rules-config/rules';
 
 const EnrolmentViewFilter = RuleFactory("026e2f5c-8670-4e4b-9a54-cb03bbf3093d", "ViewFilter");
@@ -81,4 +81,24 @@ class PregnancyEnrolmentViewFilterHandlerIHMP {
     }
 }
 
-module.exports = {PregnancyEnrolmentViewFilterHandlerIHMP};
+@ProgramRule({
+    name: 'IHMP Pregnancy program summary',
+    uuid: '5cc548fa-2469-4532-a488-e2248448af11',
+    programUUID: '076ddb2d-a499-4314-af95-4178553d279b',
+    executionOrder: 100.0,
+    metadata: {}
+})
+class PregnancyProgramSummaryIHMP {
+    static exec(programEnrolment, summaries, context, today) {
+        const GAWeeks = _.find(summaries, summary => summary.name === "Current gestational age");
+        if (GAWeeks) {
+            GAWeeks.name = 'Gestational Age in months';
+            GAWeeks.value = _.round(moment.duration(GAWeeks.value, 'weeks').asMonths(), 0);
+        }
+        return summaries;
+    }
+}
+
+export {
+    PregnancyProgramSummaryIHMP, PregnancyEnrolmentViewFilterHandlerIHMP
+}
