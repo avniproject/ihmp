@@ -91,10 +91,6 @@ class PregnancyEnrolmentViewFilterHandlerIHMP {
 class PregnancyProgramSummaryIHMP {
     static exec(programEnrolment, summaries, context, today) {
         const GAWeeks = _.find(summaries, summary => summary.name === "Current gestational age");
-        console.log('yeh');
-        console.log(GAWeeks);
-        console.log(summaries);
-        console.log(programEnrolment.program);
         if (GAWeeks) {
             GAWeeks.name = 'Gestational Age in months';
             GAWeeks.value = _.round(moment.duration(GAWeeks.value, 'weeks').asMonths(), 0);
