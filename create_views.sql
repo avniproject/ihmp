@@ -137,7 +137,6 @@ create or replace view ihmp_rti_services_view as
      AND programEnrolment.enrolment_date_time IS NOT NULL
   );
 
-
 drop view if exists ihmp_registration_view;
 create or replace view ihmp_registration_view as
   (SELECT individual.uuid                                                                  "Ind.uuid",
@@ -195,7 +194,6 @@ create or replace view ihmp_registration_view as
           join audit audit on individual.audit_id = audit.id
           LEFT OUTER JOIN gender g ON g.id = individual.gender_id
   );
-
 
 drop view if exists ihmp_needs_assessment_view;
 create or replace view ihmp_needs_assessment_view as
@@ -422,8 +420,6 @@ create or replace view ihmp_location_view as (
     order by 1,2,3,4
   );
 
-
-
 drop view if exists ihmp_pnc_view;
 create or replace view ihmp_pnc_view as (
   SELECT individual.uuid                                                                        "Ind.uuid",
@@ -600,8 +596,6 @@ create or replace view ihmp_pnc_view as (
     AND programEncounter.encounter_date_time IS NOT NULL
     AND programEnrolment.enrolment_date_time IS NOT NULL
 );
-
-
 
 drop view if exists ihmp_delivery_view;
 create or replace view ihmp_delivery_view as (
@@ -953,10 +947,13 @@ create or replace view ihmp_anc_asha_view as (
 -- ----------------------------------------------------
 set role none;
 
-SELECT grant_all_on_all(a.rolname)
-FROM pg_roles a
-WHERE pg_has_role('openchs', a.oid, 'member')
-  and a.rolsuper is false
-  and a.rolname not like 'pg%'
-  and a.rolname not like 'rds%'
-order by a.rolname;
+select grant_all_on_views(array [
+                            'ihmp_rti_services_view',
+                            'ihmp_registration_view',
+                            'ihmp_needs_assessment_view',
+                            'ihmp_user_view',
+                            'ihmp_location_view',
+                            'ihmp_pnc_view',
+                            'ihmp_delivery_view',
+                            'ihmp_anc_asha_view'
+                            ], 'ihmp');
