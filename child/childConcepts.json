@@ -215,11 +215,6 @@
     ]
   },
   {
-    "name": "Chest indrawing",
-    "uuid": "363fb00f-4674-4f33-9702-fbbfacbbd266",
-    "dataType": "NA"
-  },
-  {
     "name": "Breathing to fast",
     "uuid": "7ba966a1-13e7-4ca2-a1fd-0d1789fddca5",
     "dataType": "NA"
@@ -230,23 +225,13 @@
     "dataType": "NA"
   },
   {
-    "name": "Grunting noises while breathing",
-    "uuid": "1ad1499f-a64e-4e0c-8d54-a69338e17f66",
-    "dataType": "NA"
-  },
-  {
-    "name": "No problem",
-    "uuid": "e0b09050-c3f6-4163-9c50-87df1bca165a",
-    "dataType": "NA"
-  },
-  {
     "name": "Any breathing problems",
     "uuid": "e562ec03-de59-45a3-828d-05b58e82e604",
     "dataType": "Coded",
     "answers": [
       {
         "comment": "Chest indrawing",
-        "uuid": "363fb00f-4674-4f33-9702-fbbfacbbd266"
+        "uuid": "4ac39842-039b-45de-a50d-7b31e51c9850"
       },
       {
         "comment": "Breathing to fast",
@@ -258,11 +243,11 @@
       },
       {
         "comment": "Grunting noises while breathing",
-        "uuid": "1ad1499f-a64e-4e0c-8d54-a69338e17f66"
+        "uuid": "5414e490-3bdd-4551-81d1-0ce69cb7580d"
       },
       {
         "comment": "No problem",
-        "uuid": "e0b09050-c3f6-4163-9c50-87df1bca165a",
+        "uuid": "855fb739-19d8-418d-a8ae-c1da977b7fa9",
         "unique": true
       }
     ]
