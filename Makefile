@@ -8,28 +8,32 @@ server_url:=http://localhost:8021
 install-deps:
 	yarn install
 
-define _curl_for_form_query_export
-	@curl -X GET '$(server_url)/query/program/$(1)/encounter/$(2)'  \
+define _curl_view_generation
+	@echo '$(body)' | \
+		curl -X POST '$(server_url)/query' -d @- \
 		-H "Content-Type: application/json"  \
-		-H "USER-NAME: $(org_admin_name)"  \
-		$(if $(token),-H "AUTH-TOKEN: $(token)",)
-	@echo
-	@echo
-endef
-
-define _curl_for_all_forms_query_export
-	@curl -X GET '$(server_url)/query/program/$(1)'  \
-		-H "Content-Type: application/json"  \
-		-H "USER-NAME: $(org_admin_name)"  \
-		$(if $(token),-H "AUTH-TOKEN: $(token)",)
+		-H "USER-NAME: $(org_admin_name)"
 	@echo
 	@echo
 endef
 
 program=
-encounter-type=
-get_forms:
-	$(call _curl_for_form_query_export,$(program),$(encounter-type))
+encounter=
+spreadout=false
+type=Registration
+#or
+type=ProgramEncounter
 
-get_all_forms:
-	$(call _curl_for_all_forms_query_export,$(program))
+body:={ \
+	"program": $(if $(program),"$(program)",null), \
+	"encounterType": $(if $(encounter),"$(encounter)",null), \
+	"spreadMultiSelectObs": $(spreadout), \
+	"type": "$(type)" }
+
+get_views:
+	$(call _curl_view_generation)
+
+store_views:
+	@echo posting '$(body)'
+	@echo storing views in /tmp/out.txt
+	make get_views body='$(body)' > /tmp/out.txt
