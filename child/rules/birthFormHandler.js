@@ -18,7 +18,6 @@ const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'fo
 class ChildBirthViewFilterHandlerIHMP {
 
     static exec(programEncounter, formElementGroup, today) {
-        console.log('came to ChildBirthViewFilterHandlerIHMP.exec');
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new ChildBirthViewFilterHandlerIHMP(), programEncounter, formElementGroup, today);
     }

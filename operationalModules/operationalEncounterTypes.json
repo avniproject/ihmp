@@ -94,6 +94,13 @@
       }
     },
     {
+      "uuid": "5f9c7399-08e0-4996-9307-0bb10a0e5255",
+      "name": "Neonatal",
+      "encounterType": {
+        "uuid": "cc6f9612-79af-4dcd-a019-5852c9e201aa"
+      }
+    },
+    {
       "uuid": "1c969bc6-61dc-404c-a7e4-1289d1ad7c9f",
       "name" : "Marriage Register",
       "encounterType": {

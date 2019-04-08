@@ -36,6 +36,10 @@
     "name": "Birth (ASHA)"
   },
   {
+    "uuid": "cc6f9612-79af-4dcd-a019-5852c9e201aa",
+    "name": "Neonatal"
+  },
+  {
     "uuid": "08250f58-6c95-49ca-ba42-57e49005ead6",
     "name": "Abortion followup"
   },

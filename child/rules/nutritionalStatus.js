@@ -38,9 +38,9 @@ class NutritionalStatusViewFilterHandlerIHMP {
         statusBuilder.show().when.valueInEncounter("Child has fever").is.yes;
     }
 
-    @WithName("IHMP Diarrohea Councelling")
+    @WithName("IHMP Diarrohea Counselling")
     @WithStatusBuilder
-    ihmpDiarroheaCouncelling([programEncounter], statusBuilder) {
+    ihmpDiarroheaCounselling([programEncounter], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Baby has got diarrohea").is.yes;
     }
 }

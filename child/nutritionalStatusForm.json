@@ -103,12 +103,12 @@
     },
     {
       "uuid": "37167a49-db4f-431a-b90b-367e736de8b3",
-      "name": "Diarrohea Councelling",
-      "display": "Diarrohea Councelling",
+      "name": "Diarrohea Counselling",
+      "display": "Diarrohea Counselling",
       "displayOrder": 3,
       "formElements": [
         {
-          "name": "IHMP Diarrohea Councelling",
+          "name": "IHMP Diarrohea Counselling",
           "uuid": "b74233db-394d-4cc5-9290-1623039a8a49",
           "keyValues": [],
           "type": "SingleSelect",

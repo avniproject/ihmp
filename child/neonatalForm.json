@@ -5,12 +5,12 @@
   "formElementGroups": [
     {
       "uuid": "35fc77df-da0e-492b-b301-152f98a5b100",
-      "name": "Recent history",
-      "display": "Recent history",
+      "name": "History immediately after birth",
+      "display": "History immediately after birth",
       "displayOrder": 1,
       "formElements": [
         {
-          "name": "Has the child pass urine since birth",
+          "name": "Has the child passed urine since birth",
           "uuid": "48476cdd-8998-406b-b5a5-52dd997e6743",
           "keyValues": [],
           "type": "SingleSelect",
@@ -21,18 +21,18 @@
           "mandatory": true
         },
         {
-          "name": "Has the child pass stool since birth",
+          "name": "Has the child passed meconium since birth",
           "uuid": "24ca1233-3739-4dcf-b5b5-590e6531b87f",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "uuid": "1cc85ff6-2637-4104-b42f-24348ef62f2c"
+            "uuid": "b58f5ae0-36f8-4ab9-8331-5597c71a4efb"
           },
           "displayOrder": 2,
           "mandatory": true
         },
         {
-          "name": "Limp/blue/Pale at the time of birth",
+          "name": "Whether limp/blue/Pale at the time of birth",
           "uuid": "a59d1b51-6da8-4b92-ae8c-1d2db0ab0b35",
           "keyValues": [],
           "type": "SingleSelect",
@@ -48,7 +48,9 @@
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "uuid": "089d2ddd-c44f-4df7-9391-608474f42182"
+            "uuid": "d6a0c77e-840d-40a2-9282-d22db7ede007",
+            "name": "Child PNC cry related complaints"
+
           },
           "displayOrder": 4,
           "mandatory": true
@@ -58,20 +60,326 @@
           "uuid": "635c7232-4342-4de9-b9f3-45d4d0bf86c3",
           "keyValues": [],
           "concept": {
-            "uuid": "8b226d16-77e4-42b6-8328-59cc15abfe9d"
+            "uuid": "17d5ed6e-b571-4e02-bebe-0c9db2c8f5ca",
+            "name": "Child PNC breathing problems"
           },
           "displayOrder": 5,
           "mandatory": true
         },
         {
-          "name": "Any congenital malformation ",
+          "name": "Whether any congenital malformation ",
           "uuid": "7cb52466-4e54-42cc-9be6-9cfde8c6274f",
           "keyValues": [],
           "concept": {
-            "uuid": "5283f28b-89d0-46df-8923-02e20d80e7e1"
+            "uuid": "cecd7bdb-1f34-4b89-a26d-1599222a2361"
           },
           "displayOrder": 6,
           "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "09d67ed0-d73f-40d6-a00b-804aed900f54",
+      "name": "Neonate complications (usually within 0 - 5 days)",
+      "display": "Complaints reported for neonate",
+      "displayOrder": 2,
+      "formElements": [
+        {
+          "name": "Whether feeling cold",
+          "uuid": "83b456dd-7bf7-4abf-8b51-8f816febc74a",
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "2fb86ae4-2cdf-4f12-ba18-32b8d512a3cc",
+            "name": "Whether feeling cold"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Feeding related complaints",
+          "uuid": "d018571d-42ba-4cf1-9c92-75331573674d",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Child PNC feeding related complaints",
+            "uuid": "bc7b0015-ee9a-4089-b0a3-76862a30aa1c"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Urination related complaints",
+          "uuid": "14f78813-8cc2-4f78-a0ef-3b7be33ef0a5",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Child PNC urination related complaints",
+            "uuid": "43a78b5a-f4da-440d-9614-80af65090e1f"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Stool related complaints",
+          "uuid": "17657635-b1e9-434f-9923-394497a3a758",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Child PNC stool related complaints",
+            "uuid": "bcd4495f-41fa-494b-a5d9-a766c87f37f9"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "8f16cbbb-3825-4795-839d-fb93b9c94a5f",
+      "name": "Neonate complications (usually within 0 - 10 days)",
+      "display": "Neonate complications (usually within 0 - 10 days)",
+      "displayOrder": 3,
+      "formElements": [
+        {
+          "name": "Activity related complaints",
+          "uuid": "c501471e-6dec-45a6-80ba-e09e28053b9b",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Child PNC activity related complaints",
+            "uuid": "ad5d7bf8-932a-4eb2-8e8a-7c38dc4bbe2b"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Umbilical related complaints",
+          "uuid": "5c83841a-1446-4421-92e1-f5f2326d652b",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Umbilical related problems",
+            "uuid": "cd409e43-6d89-4a98-8d75-6097c505366a"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Whether having any eye problems",
+          "uuid": "b16788d3-42a0-4916-8dd6-f1c77bb5c86d",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "PNC Eye Examination",
+            "uuid": "2010e1e0-468d-424c-85ef-290612f3eae8"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Child feeds only on mothers milk?",
+          "uuid": "89ea63df-00d0-426c-8d36-eacb9be18806",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Is baby exclusively breastfeeding",
+            "uuid": "5a3b65c1-1647-47d0-ad66-d8b22722c472"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "25cb44f6-e950-41ed-9582-08790537b754",
+      "name": "Neonate complications (usually within 0 - 42 days)",
+      "display": "Neonate complications (usually within 0 - 42 days)",
+      "displayOrder": 4,
+      "formElements": [
+        {
+          "name": "Whether feeling hot",
+          "uuid": "a116ecd4-7dd1-488e-aac3-ab593d9f3996",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether feeling hot",
+            "uuid": "dfeb2d8f-3d49-45ec-9d5c-0b4ff6251b9e"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Whether baby having diarrhoea",
+          "uuid": "87f8fcd9-a4cd-44ec-b60d-96fb59a017bc",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether having diarrhoea",
+            "uuid": "f9d7b5b2-31cd-409a-94ca-40554e65f1b7"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Whether baby having cough & cold",
+          "uuid": "9122e23f-5aa9-4c06-b171-950057dfae31",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether having cough and cold",
+            "uuid": "e6bd3ca9-caed-462a-bf7a-1614269ebeaa"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Whether having any skin problems",
+          "uuid": "6a2695c3-a41a-4ac4-a3af-5770d1e0dede",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Child PNC skin problems",
+            "uuid": "36460b33-a6c2-478f-894c-491128aa4ca5"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "2f7d2094-4953-41ae-871f-c58ddcd1bef4",
+      "name": "Treatment",
+      "display": "Treatment",
+      "displayOrder": 5,
+      "formElements": [
+        {
+          "name": "Whether taken treatment for neonatal complications",
+          "uuid": "29109010-b7a1-4e52-8d06-e0902462cbbd",
+          "keyValues": [],
+          "concept": {
+            "name": "Whether taken treatment for neonatal complications",
+            "uuid": "b3b609a8-1a95-4915-92be-89155731587b"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Whether neonatal complication addressed",
+          "uuid": "7cd9ba8d-4660-4049-8aa8-5b1f56bd3141",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether neonatal complication addressed",
+            "uuid": "66b3ad26-f501-499d-8be5-94997326f5c0"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "9f119b92-1fc3-4e7f-917b-521a3639102e",
+      "name": "Anthropometry",
+      "displayOrder": 6,
+      "display": "Anthropometry",
+      "formElements": [
+        {
+          "name": "Height",
+          "uuid": "775d3039-b506-463c-ad3b-076a7c32e976",
+          "keyValues": [],
+          "concept": {
+            "uuid": "d883d5fe-e17d-4136-b989-089fa0295e34",
+            "name": "Height"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Weight",
+          "uuid": "708f291d-9732-4fec-b8c3-9525ac29f6fc",
+          "keyValues": [],
+          "concept": {
+            "uuid": "75b1656e-2777-4753-9612-ce03a766a5e1",
+            "name": "Weight"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "8095593e-51c1-4610-b290-91c55315c759",
+      "name": "Home visits by ANM",
+      "display": "Home visits by ANM",
+      "displayOrder": 7,
+      "formElements": [
+        {
+          "name": "Date of first home visit by ANM to the neonate",
+          "uuid": "9e39f0bf-0eb4-44c2-bf1d-f1f68f9380f5",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of first home visit by ANM to the neonate",
+            "uuid": "76b08303-f7ff-490c-b656-5dfb5954dbe1"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Date of second home visit by ANM to the neonate",
+          "uuid": "6e6dce35-3720-4bae-94ab-8a458ee81523",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of second home visit by ANM to the neonate",
+            "uuid": "e8d8700e-af3c-44fd-bdfe-f9b3b2e6df75"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "6431523d-2f1e-41e6-8174-76b2e7e3f575",
+      "name": "Thermal care",
+      "display": "Thermal care",
+      "displayOrder": 8,
+      "formElements": [
+        {
+          "name": "Thermal care for baby in first 7 days",
+          "uuid": "39146488-72d4-4efd-9d36-6a24b29bdde1",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Thermal care for baby in first 7 days",
+            "uuid": "955f881b-7d3a-45c0-9d53-0ede9ba39c59"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "5eb31be5-26f1-4dc0-a28e-b0cc7b37b1e6",
+      "name": "Counselling",
+      "display": "Counselling",
+      "displayOrder": 9,
+      "formElements": [
+        {
+          "name": "IHMP NNC Exclusive breastfeeding counselling",
+          "uuid": "1bc7f854-2958-4643-bd41-a1e876ee6765",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "IHMP NNC Low Weight Counselling",
+          "uuid": "07eea7fa-3c20-4316-8755-0b9ed164f9a6",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 2,
+          "mandatory": false
         }
       ]
     }

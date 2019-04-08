@@ -31,19 +31,6 @@
     "dataType": "Numeric"
   },
   {
-    "name": "Baby has got cough and cold",
-    "uuid": "cdcfbc5e-9747-46fc-935c-143d308770a6",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
-      },
-      {
-        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
-      }
-    ]
-  },
-  {
     "name": "Days since child is suffering from cough and cold",
     "uuid": "da26cfe0-4081-4265-8573-4ebcdac8f0ff",
     "dataType": "Numeric"
@@ -83,7 +70,7 @@
     ]
   },
   {
-    "name": "IHMP Diarrohea Councelling",
+    "name": "IHMP Diarrohea Counselling",
     "uuid": "70831f4b-1fb7-4a49-8a41-9fc9e4360105",
     "dataType": "NA"
   },
@@ -156,7 +143,7 @@
     "dataType": "Text"
   },
   {
-    "name": "Limp/blue/Pale at the time of birth",
+    "name": "Whether limp/blue/Pale at the time of birth",
     "uuid": "83d232af-0b2e-472c-b216-fd13dc9e9b1e",
     "dataType": "Coded",
     "answers": [
@@ -181,74 +168,227 @@
     "dataType": "NA"
   },
   {
-    "name": "Cries continuosly",
-    "uuid": "7521c633-6ccb-4f64-8caf-f8b0a064408a",
-    "dataType": "NA"
-  },
-  {
-    "name": "Normal cry",
-    "uuid": "8ec43ebe-3ca9-4fa3-a357-16bcc4c3e36c",
-    "dataType": "NA"
-  },
-  {
-    "name": "Cry related complaints",
-    "uuid": "089d2ddd-c44f-4df7-9391-608474f42182",
+    "name": "Child PNC cry related complaints",
+    "uuid": "d6a0c77e-840d-40a2-9282-d22db7ede007",
     "dataType": "Coded",
     "answers": [
       {
-        "comment": "Weak cry within 24 hrs after birth",
-        "uuid": "f0fec5f2-cf19-4464-8c76-ed7c99b42af9"
+        "name": "Weak cry within 24 hrs after birth",
+        "uuid": "f0fec5f2-cf19-4464-8c76-ed7c99b42af9",
+        "dataType": "NA"
       },
       {
-        "comment": "Weak cry when ASHA paid first visit",
-        "uuid": "8e1a2114-d215-4e1f-8442-31c5603c2101"
+        "name": "Weak cry when ASHA paid first visit",
+        "uuid": "8e1a2114-d215-4e1f-8442-31c5603c2101",
+        "dataType": "NA"
+      }
+    ]
+  },
+  {
+    "uuid": "9332f2ff-82f6-43e0-9c24-bc3169bc176f",
+    "name": "White coated tongue"
+  },
+  {
+    "name": "Child PNC feeding related complaints",
+    "uuid": "bc7b0015-ee9a-4089-b0a3-76862a30aa1c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "9332f2ff-82f6-43e0-9c24-bc3169bc176f",
+        "name": "White coated tongue"
+      }
+    ]
+  },
+  {
+    "uuid": "617bc8f5-4ca2-4ed3-b316-79a525688dee",
+    "name": "Watery secretion from umblicus"
+  },
+  {
+    "uuid": "38564c53-4c28-4cbc-9f90-b0f9da10409b",
+    "name": "Pus discharge from umblicus"
+  },
+  {
+    "uuid": "bbfbe3e9-ec84-4594-b716-8330d81554e3",
+    "name": "abdomen around umblicus red and hot"
+  },
+  {
+    "name": "Umbilical related problems",
+    "uuid": "cd409e43-6d89-4a98-8d75-6097c505366a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "617bc8f5-4ca2-4ed3-b316-79a525688dee",
+        "name": "Watery secretion from umblicus"
       },
       {
-        "comment": "Cries continuosly",
-        "uuid": "7521c633-6ccb-4f64-8caf-f8b0a064408a"
+        "uuid": "38564c53-4c28-4cbc-9f90-b0f9da10409b",
+        "name": "Pus discharge from umblicus"
       },
       {
-        "comment": "Normal cry",
-        "uuid": "8ec43ebe-3ca9-4fa3-a357-16bcc4c3e36c",
+        "uuid": "bbfbe3e9-ec84-4594-b716-8330d81554e3",
+        "name": "abdomen around umblicus red and hot"
+      },
+      {
+        "name": "None",
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
         "unique": true
       }
     ]
   },
   {
-    "name": "Breathing to fast",
-    "uuid": "7ba966a1-13e7-4ca2-a1fd-0d1789fddca5",
-    "dataType": "NA"
-  },
-  {
-    "name": "Breathing to slow",
-    "uuid": "75672741-7807-4370-953f-1809a35033e7",
-    "dataType": "NA"
-  },
-  {
-    "name": "Any breathing problems",
-    "uuid": "e562ec03-de59-45a3-828d-05b58e82e604",
+    "name": "Whether feeling hot",
+    "uuid": "dfeb2d8f-3d49-45ec-9d5c-0b4ff6251b9e",
     "dataType": "Coded",
     "answers": [
       {
-        "comment": "Chest indrawing",
-        "uuid": "4ac39842-039b-45de-a50d-7b31e51c9850"
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
       },
       {
-        "comment": "Breathing to fast",
-        "uuid": "7ba966a1-13e7-4ca2-a1fd-0d1789fddca5"
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether having diarrhoea",
+    "uuid": "f9d7b5b2-31cd-409a-94ca-40554e65f1b7",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
       },
       {
-        "comment": "Breathing to slow",
-        "uuid": "75672741-7807-4370-953f-1809a35033e7"
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether having cough and cold",
+    "uuid": "e6bd3ca9-caed-462a-bf7a-1614269ebeaa",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
       },
       {
-        "comment": "Grunting noises while breathing",
-        "uuid": "5414e490-3bdd-4551-81d1-0ce69cb7580d"
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether any congenital malformation",
+    "uuid": "cecd7bdb-1f34-4b89-a26d-1599222a2361",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "abnormal": true
       },
       {
-        "comment": "No problem",
-        "uuid": "855fb739-19d8-418d-a8ae-c1da977b7fa9",
-        "unique": true
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether feeling cold",
+    "uuid": "2fb86ae4-2cdf-4f12-ba18-32b8d512a3cc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "936cee3a-33d2-4ba6-8811-95443a3c0a07",
+    "name": "Yellowness"
+  },
+  {
+    "name": "Child PNC skin problems",
+    "uuid": "36460b33-a6c2-478f-894c-491128aa4ca5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "936cee3a-33d2-4ba6-8811-95443a3c0a07",
+        "name": "Yellowness",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "name": "Whether taken treatment for neonatal complications",
+    "uuid": "b3b609a8-1a95-4915-92be-89155731587b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether neonatal complication addressed",
+    "uuid": "66b3ad26-f501-499d-8be5-94997326f5c0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Date of first home visit by ANM to the neonate",
+    "uuid": "76b08303-f7ff-490c-b656-5dfb5954dbe1",
+    "dataType": "Date"
+  },
+  {
+    "name": "Date of second home visit by ANM to the neonate",
+    "uuid": "e8d8700e-af3c-44fd-bdfe-f9b3b2e6df75",
+    "dataType": "Date"
+  },
+  {
+    "uuid": "4dd88510-406f-45e9-b69d-44eb485fa8e9",
+    "name": "Swaddled the baby in cotton cloth"
+  },
+  {
+    "uuid": "9e45841e-977c-4b02-8771-6de8febda9af",
+    "name": "Placed baby in a thermal bag"
+  },
+  {
+    "uuid": "7bec55f8-6cef-4bb4-95a7-fb8a3777d23a",
+    "name": "Swaddled the baby in woolen cloth/dressed baby in woollen clothing"
+  },
+  {
+    "uuid": "24056def-02db-4886-93ae-cd5afd65e148",
+    "name": "Baby was dressed in loose vest"
+  },
+  {
+    "name": "Thermal care for baby in first 7 days",
+    "uuid": "955f881b-7d3a-45c0-9d53-0ede9ba39c59",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4dd88510-406f-45e9-b69d-44eb485fa8e9",
+        "name": "Swaddled the baby in cotton cloth"
+      },
+      {
+        "uuid": "9e45841e-977c-4b02-8771-6de8febda9af",
+        "name": "Placed baby in a thermal bag"
+      },
+      {
+        "uuid": "7bec55f8-6cef-4bb4-95a7-fb8a3777d23a",
+        "name": "Swaddled the baby in woolen cloth/dressed baby in woollen clothing"
+      },
+      {
+        "uuid": "24056def-02db-4886-93ae-cd5afd65e148",
+        "name": "Baby was dressed in loose vest"
       }
     ]
   }

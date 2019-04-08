@@ -142,5 +142,20 @@
     "formUUID": "2d8ca0a7-3f31-4de1-bd33-8312666f0d2b",
     "encounterTypeUUID": "c2d709b5-f769-42b0-bea5-8f8b182ef1a5",
     "comment": "Death Register"
+  },
+  {
+    "uuid": "3133644c-909d-41d0-8393-18b0f21a65e1",
+    "formUUID": "b77bc4a1-c7e6-4d46-a0d9-eb211f05440e",
+    "encounterTypeUUID": "cc6f9612-79af-4dcd-a019-5852c9e201aa",
+    "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
+    "comment": "Neonatal"
+  },
+  {
+    "uuid": "64002888-3548-415f-8a8b-1f193a2cd489",
+    "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
+    "encounterTypeUUID": "cc6f9612-79af-4dcd-a019-5852c9e201aa",
+    "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
+    "comment": "Neonatal cancel"
   }
+
 ]
