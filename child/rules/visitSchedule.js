@@ -24,9 +24,6 @@ class ChildEnrolmentBasedVisitsIHMP {
         if (registrationAtChildBirth === 'Yes') {
             RuleHelper.addSchedule(scheduleBuilder, 'Birth', 'Birth (ASHA)',
                 programEnrolment.enrolmentDateTime, 0);
-            RuleHelper.addSchedule(scheduleBuilder, 'HBNC 1', 'Neonatal',
-                programEnrolment.enrolmentDateTime, 0);
-
         }
         let dateOfBirth = moment(programEnrolment.individual.dateOfBirth);
         let daysFromBirth = moment(programEnrolment.enrolmentDateTime).diff(dateOfBirth, 'days');
@@ -35,14 +32,14 @@ class ChildEnrolmentBasedVisitsIHMP {
                 programEnrolment.enrolmentDateTime, 1);
         } else if (daysFromBirth <= 3) {
             RuleHelper.addSchedule(scheduleBuilder, 'HBNC 2', 'Neonatal',
-                moment(programEnrolment.enrolmentDateTime).add(3, 'days'), 0);
+                dateOfBirth.add(3, 'days').toDate(), 0);
         } else if (dateOfBirth <= 7) {
             RuleHelper.addSchedule(scheduleBuilder, 'HBNC 3', 'Neonatal',
-                moment(programEnrolment.enrolmentDateTime).add(7, 'days'), 0);
+                dateOfBirth.add(7, 'days').toDate(), 0);
 
         } else if (dateOfBirth <= 42) {
             RuleHelper.addSchedule(scheduleBuilder, 'HBNC 4', 'Neonatal',
-                moment(programEnrolment.enrolmentDateTime).add(42, 'days'), 0);
+                dateOfBirth.add(42, 'days').toDate(), 0);
 
         }
 

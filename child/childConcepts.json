@@ -53,6 +53,12 @@
     "uuid": "4f48d5cc-c98b-4864-a90b-b2db026f9cf1",
     "dataType": "Numeric"
   },
+
+  {
+    "name": "Baby has got cough and cold",
+    "uuid": "cdcfbc5e-9747-46fc-935c-143d308770a6",
+    "dataType": "NA"
+  },
   {
     "name": "Refer to the hospital immediately for",
     "uuid": "c59da618-20d8-4384-b32b-e0e31013581f",

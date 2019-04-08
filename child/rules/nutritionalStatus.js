@@ -29,7 +29,7 @@ class NutritionalStatusViewFilterHandlerIHMP {
     @WithName("Since how many days is child suffering from cough and cold?")
     @WithStatusBuilder
     sufferingFromCoughAndCold([programEncounter], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Baby has got cough and cold").is.yes;
+        statusBuilder.show().when.valueInEncounter("Whether having cough and cold").is.yes;
     }
 
     @WithName("Since how many days is child suffering from fever?")
@@ -62,7 +62,7 @@ class NutritionalStatusDecisions {
             .when.valueInEncounter("Child has fever").is.yes;
 
         complicationsBuilder.addComplication("Baby has got cough and cold")
-            .when.valueInEncounter("Baby has got cough and cold").is.yes;
+            .when.valueInEncounter("Whether having cough and cold").is.yes;
 
         return complicationsBuilder.getComplications();
     }
