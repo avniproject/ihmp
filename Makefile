@@ -1,5 +1,5 @@
 
-include ./node_modules/openchs-idi/Makefile
+-include ./node_modules/openchs-idi/Makefile
 
 su:=$(shell id -un)
 org_admin_name=ihmp-admin

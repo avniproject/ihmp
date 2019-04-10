@@ -3627,7 +3627,7 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
 
 "openchs-idi@github:openchs/openchs-idi#master":
   version "0.0.1"
-  resolved "https://codeload.github.com/openchs/openchs-idi/tar.gz/495612724d5606cc7bb6a5fb54a47bb9608da045"
+  resolved "https://codeload.github.com/openchs/openchs-idi/tar.gz/e1083267902ed85fe9cf4ff7a9545862f832518d"
   dependencies:
     amazon-cognito-identity-js "1.28.0"
     axios "^0.18.0"
