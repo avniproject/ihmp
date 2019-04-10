@@ -1,11 +1,13 @@
 import {RuleFactory, VisitScheduleBuilder} from 'rules-config/rules';
 import RuleHelper from '../../../RuleHelper';
 import {IHMPPNCVisitSchedules} from '../../../pregnancy/rules/visitSchedule';
+import {ChildNeonatalBasedVisitsIHMP} from '../../../child/rules/visitSchedule';
 
 const CancelVisitRule = RuleFactory("88b10250-efa5-4cb7-bc99-bd91197f5a43", "VisitSchedule");
 
 const postVisitMap = {
-    'PNC': IHMPPNCVisitSchedules
+    'PNC': IHMPPNCVisitSchedules,
+    'Neonatal': ChildNeonatalBasedVisitsIHMP
 };
 
 @CancelVisitRule("104301d5-b012-4afc-848e-9e12ecdf6045", "EC cancel visit next visit rule", 100.0)
