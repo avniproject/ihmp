@@ -3625,16 +3625,15 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
   dependencies:
     wrappy "1"
 
-"openchs-idi@github:openchs/openchs-idi#master":
+"openchs-idi@github:openchs/openchs-idi#259d4a859a4d674ff5d3698cc5484b9363eccfe1":
   version "0.0.1"
-  resolved "https://codeload.github.com/openchs/openchs-idi/tar.gz/e1083267902ed85fe9cf4ff7a9545862f832518d"
+  resolved "https://codeload.github.com/openchs/openchs-idi/tar.gz/259d4a859a4d674ff5d3698cc5484b9363eccfe1"
   dependencies:
     amazon-cognito-identity-js "1.28.0"
     axios "^0.18.0"
     babel-core "6"
     babel-loader "7.1.5"
     grunt "^1.0.3"
-    rules-config "github:openchs/rules-config#68b0da32c98fb599d19b7266f78a2ec3eb10e29c"
     webpack "^4.13.0"
 
 os-browserify@^0.3.0:

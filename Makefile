@@ -7,8 +7,6 @@ server_url:=http://localhost:8021
 
 install-deps:
 	yarn install
-	# The following is required to ensure that the latest of sdk is installed
-	yarn add -D github:openchs/openchs-idi#master
 
 define _curl_view_generation
 	@echo '$(body)' | \
