@@ -49,6 +49,10 @@
   },
   {
     "uuid": "c2d709b5-f769-42b0-bea5-8f8b182ef1a5",
-    "name" : "Death Register"
+    "name": "Death Register"
+  },
+  {
+    "uuid": "7d38fd0e-94c5-48c1-9e3c-1719189cbea2",
+    "name": "Asha Inputs"
   }
 ]

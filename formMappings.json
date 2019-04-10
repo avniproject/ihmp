@@ -156,6 +156,11 @@
     "encounterTypeUUID": "cc6f9612-79af-4dcd-a019-5852c9e201aa",
     "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
     "comment": "Neonatal cancel"
+  },
+  {
+    "uuid": "124b19bb-5ba0-4168-9d9a-494b11eaf2af",
+    "formUUID": "3bee367f-6305-44ee-8fc3-5e8c93530a26",
+    "encounterTypeUUID": "7d38fd0e-94c5-48c1-9e3c-1719189cbea2",
+    "comment": "Asha Inputs"
   }
-
 ]

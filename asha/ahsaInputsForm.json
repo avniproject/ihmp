@@ -1,0 +1,855 @@
+{
+  "name": "Asha Inputs",
+  "uuid": "3bee367f-6305-44ee-8fc3-5e8c93530a26",
+  "formType": "Encounter",
+  "formElementGroups": [
+    {
+      "uuid": "6fc62d32-c0c8-47c6-94ec-15787cc5d144",
+      "name": "General information",
+      "display": "General information",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Village name",
+          "uuid": "caf0180a-dda6-4ce9-95b6-e30b064ce728",
+          "keyValues": [],
+          "concept": {
+            "name": "Village name",
+            "uuid": "ae05a6b0-4f7e-45e9-bc67-b2ee72c14d70"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Month & year",
+          "uuid": "f9a71f14-3f45-4b33-be3d-57b967ab22bf",
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": ["years", "months"]
+            }
+          ],
+          "concept": {
+            "name": "Month & year",
+            "uuid": "c5a65687-c6b9-4854-a0e6-41faf6f06b07"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Facilitators name",
+          "uuid": "c14c355d-cbde-4191-95f2-fc16c4ab6983",
+          "keyValues": [],
+          "concept": {
+            "name": "Facilitators name",
+            "uuid": "de4ebed9-1af3-423e-a832-c0c0637f54f9"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "4973ffae-ed84-45fb-b350-66baf7f41f8f",
+      "name": "BCC meetings conducted for married adolescent girls in ASHA area",
+      "display": "BCC meetings conducted for married adolescent girls in ASHA area",
+      "displayOrder": 2,
+      "formElements": [
+        {
+          "name": "Group meeting for married adolescent girls planned?",
+          "uuid": "2f72d23d-9670-4534-b2c5-13a146f1ede5",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Group meeting for married adolescent girls planned?",
+            "uuid": "c9a2cfd3-ea73-4e2a-9816-287f91a3112a"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Group meeting for married adolescent girls conducted?",
+          "uuid": "e92572ce-355e-4daa-91cd-ac4facf60da4",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Group meeting for married adolescent girls conducted?",
+            "uuid": "18a34d89-7cab-4f1c-9664-3e054e18ebfd"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Date of group meeting conducted for married adolescent girls?",
+          "uuid": "28074923-7b08-4917-bb8d-68e0df4096b4",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of group meeting conducted for married adolescent girls?",
+            "uuid": "b72b0d7a-2fb3-425b-9fe0-6ad3c7178551"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Number of married adolescent girls attended group meeting",
+          "uuid": "6b934382-5480-463f-81fb-3bf49b3954c5",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of married adolescent girls attended group meeting",
+            "uuid": "e6e56714-bfa8-40ec-a450-625df09510d5"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Topic covered in the group meeting for married adolescent girls?",
+          "uuid": "f6c8878b-4f6d-457d-b933-8f6145c159ec",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Topic covered in the group meeting for married adolescent girls?",
+            "uuid": "e1d89579-8240-43c8-a394-b86c7a3acd85"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "cf756cdc-cc9d-42de-87f7-4bd589e9d2b5",
+      "name": "BCC meetings conducted for Young married women in ASHA area",
+      "display": "BCC meetings conducted for Young married women in ASHA area",
+      "displayOrder": 3,
+      "formElements": [
+        {
+          "name": "Group meeting for Young married women planned?",
+          "uuid": "0a4ce3c8-5ba3-4ef4-b1ed-2acc643328f1",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Group meeting for Young married women planned?",
+            "uuid": "caf4cd6e-a404-424a-a7c9-17138a0e6066"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Group meeting for Young married women conducted?",
+          "uuid": "e2b36480-4465-4832-97e2-2ce6eeeb7e81",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Group meeting for Young married women conducted?",
+            "uuid": "82111d8f-341a-447a-ab35-0bd678dd00a5"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Date of group meeting conducted forYoung married women?",
+          "uuid": "456b2048-0b99-4351-a693-c16112d2c518",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of group meeting conducted forYoung married women?",
+            "uuid": "550ca33a-9226-475f-9c73-4aba84326768"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Number of Young married women attended group meeting",
+          "uuid": "3ec8c94f-2f16-4043-a421-4edf42cbb7a9",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of Young married women attended group meeting",
+            "uuid": "827aba99-53d6-42f9-8089-b59aaa96311d"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Topic covered in the group meeting for Young married women?",
+          "uuid": "7bd856db-410e-4b32-8946-94a6bcbc41be",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Topic covered in the group meeting for Young married women?",
+            "uuid": "539b373f-751d-481c-b4a4-581134bcd4d0"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "b20ee916-48e4-46f5-9cf1-b109d94e4265",
+      "name": "BCC meetings conducted for husbands in ASHA area",
+      "display": "BCC meetings conducted for husbands in ASHA area",
+      "displayOrder": 4,
+      "formElements": [
+        {
+          "name": "Group meeting for husbands planned?",
+          "uuid": "0401ecd7-d331-41fd-ae91-c002b1964907",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Group meeting for husbands planned?",
+            "uuid": "5efe7746-f624-4d69-9437-60a8d77a7c4d"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Group meeting for husbands conducted?",
+          "uuid": "96e6c78c-2038-47da-a5cc-e5385471cb59",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Group meeting for husbands conducted?",
+            "uuid": "dd9cf99e-82f8-4795-a610-62c860055cd6"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Date of group meeting conducted for husband?",
+          "uuid": "11c9cd3c-58ec-41e2-9bec-f5832fe66767",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of group meeting conducted for husband?",
+            "uuid": "b4937cb3-be94-45d5-bda4-1579e18b98cc"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Number of husband attended group meeting",
+          "uuid": "5da17877-e5fb-476d-8b02-4585d457fbe5",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of husband attended group meeting",
+            "uuid": "dcb6d84a-c58b-48a6-b10a-843069355dbb"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Topic covered in the group meeting for husband?",
+          "uuid": "a9171590-e57e-4580-9e6f-7c2f9ebdaf93",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Topic covered in the group meeting for husband?",
+            "uuid": "3b6e19d6-5d82-4506-a3b2-c32798e01a25"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "c2b49e43-7ba6-418a-8f1f-23508ff3c941",
+      "name": "BCC meetings conducted for inlaws/decision makers in ASHA area",
+      "display": "BCC meetings conducted for inlaws/decision makers in ASHA area",
+      "displayOrder": 5,
+      "formElements": [
+        {
+          "name": "Group meeting for inlaws/decision makers planned?",
+          "uuid": "ca00a52f-ee77-4910-8a71-08cc5a6b7c3d",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Group meeting for inlaws/decision makers planned?",
+            "uuid": "c67dbb84-8405-4967-811f-e61aff24fd08"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Group meeting for inlaws/decision makers conducted?",
+          "uuid": "c510a954-8f3e-48e6-9021-e7241e8d3384",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Group meeting for inlaws/decision makers conducted?",
+            "uuid": "5f3e8591-7f61-48e9-99f6-e90e8728fcbf"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Date of group meeting conducted for inlaws/decision makers?",
+          "uuid": "434e1472-b06f-434c-a78e-41f8ba0886b0",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of group meeting conducted for inlaws/decision makers?",
+            "uuid": "591ae264-4786-4970-a6e8-8d5aded89f4e"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Number of inlaws/decision makers attended group meeting",
+          "uuid": "fcf0a1f9-4ee0-4d7c-88af-99f46174f2d3",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of inlaws/decision makers attended group meeting",
+            "uuid": "922ab794-e105-4117-a1cf-9d8a00423eeb"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Topic covered in the group meeting for inlaws/decision makers?",
+          "uuid": "53e095d1-aef5-427f-b327-c8f81e052864",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Topic covered in the group meeting for inlaws/decision makers?",
+            "uuid": "f31caa73-6990-4c24-ba5b-00f1d36fdbb8"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "BCC meetings conducted for parents of Unmarried adolescent girls in ASHA area",
+      "name": "66f240c4-9dc4-4b95-8e55-8999e04afd5c",
+      "display": "BCC meetings conducted for parents of Unmarried adolescent girls in ASHA area",
+      "displayOrder": 6,
+      "formElements": [
+        {
+          "name": "Group meeting for parents of Unmarried adolescent girls planned?",
+          "uuid": "86432f2e-7c13-419c-8466-b254a675ca63",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Group meeting for parents of Unmarried adolescent girls planned?",
+            "uuid": "c8bd0b10-7c3c-4ed6-a603-e8be85b79d8f"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Group meeting for parents of Unmarried adolescent girls conducted?",
+          "uuid": "de926286-f7d9-4c50-a64c-d6531b8d7039",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Group meeting for parents of Unmarried adolescent girls conducted?",
+            "uuid": "e028d6ca-decd-406d-92f2-bf644f6e25a6"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Date of group meeting conducted for parents of Unmarried adolescent girls?",
+          "uuid": "3893cae3-2e94-4eb1-9ee9-4078931b55e6",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of group meeting conducted for parents of Unmarried adolescent girls?",
+            "uuid": "c9a31b6c-8724-4de6-a408-8aa966db4bb5"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Number of parents of Unmarried adolescent girls  attended group meeting",
+          "uuid": "67d0d14c-64b9-46ff-af71-bf65ab4d8a33",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of parents of Unmarried adolescent girls  attended group meeting",
+            "uuid": "84bd77aa-3b0a-48ba-984c-65a90f5a5382"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Topic covered in the group meeting for parents of Unmarried adolescent girls?",
+          "uuid": "759cd014-94d3-46d1-aaae-ad8bf76be85b",
+          "keyValues": [],
+          "concept": {
+            "name": "Topic covered in the group meeting for parents of Unmarried adolescent girls?",
+            "uuid": "afc23773-8402-455d-a286-ec033daea28f"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "3a6f3391-ae2a-4e01-aa66-6705be0e5ef2",
+      "name": "Village Health Sanitation Nutrition Commitee meetings in ASHA area",
+      "display": "Village Health Sanitation Nutrition Commitee meetings in ASHA area",
+      "displayOrder": 7,
+      "formElements": [
+        {
+          "name": "VHSNC meeting planned?",
+          "uuid": "961e01d7-49ce-4bdc-87fc-d11758e34ed9",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "VHSNC meeting planned?",
+            "uuid": "f330ed06-6e89-48fa-aa41-d5ef4cfe43aa"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Is VHSNC meetings conducted?",
+          "uuid": "48fc0b37-5610-46d6-8b9c-4694bd277881",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Is VHSNC meetings conducted?",
+            "uuid": "ac7cc206-6ddb-4c03-93da-b4ad1dbe2495"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Date of VHSNC meeting?",
+          "uuid": "733e598f-ffb5-4adc-b0eb-8a5ce18e2205",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of VHSNC meeting?",
+            "uuid": "6e8e4633-6a88-4903-aeff-4813150a5409"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Number of VHSNC members attended meeting",
+          "uuid": "36872b43-d723-4e9e-8d89-e57191cdbce8",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of VHSNC members attended meeting",
+            "uuid": "b88954b1-9790-46f4-97e2-c56e59297ab9"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Topic covered in the VHSNC meeting?",
+          "uuid": "3510086a-5989-412a-bc62-ffd35ea327f0",
+          "keyValues": [],
+          "concept": {
+            "name": "Topic covered in the VHSNC meeting?",
+            "uuid": "4e468bb4-2276-44c5-9107-23121642c733"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "acea31f8-4e95-4a29-b331-e1a2e930e9e1",
+      "name": "Supportive supervision visits by Facilitator",
+      "display": "Supportive supervision visits by Facilitator",
+      "displayOrder": 8,
+      "formElements": [
+        {
+          "name": "Number of superviory visits planned for the month?",
+          "uuid": "bf2ea792-435a-41e1-b1c5-27157e97a693",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of superviory visits planned for the month?",
+            "uuid": "9744f3fb-9553-419c-a088-b0e05175c339"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Number of superviory visits conducted for the month?",
+          "uuid": "d1266255-8661-4049-8c5a-8ab56046cef6",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of superviory visits conducted for the month?",
+            "uuid": "8325f8c3-2956-409d-8403-1b341390c7d4"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Date of superviory visit - first visit",
+          "uuid": "46e95c69-be38-458c-918a-34766ad474e6",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of superviory visit - first visit",
+            "uuid": "d3d444db-5aba-4133-8814-73070ab955b4"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Date of superviory visit - second visit",
+          "uuid": "7f5b989c-9b25-4324-815a-3ae12b78cbca",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of superviory visit - second visit",
+            "uuid": "24d792d0-d0c9-4ef3-a9be-174effb4fe4d"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Date of superviory visit - third visit",
+          "uuid": "4a259ba8-74ef-4435-8dfe-60479fa9edbc",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of superviory visit - third visit",
+            "uuid": "80010ff8-2ef0-424b-a2de-75f2e1b5b528"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "Date of superviory visit - fourth visit",
+          "uuid": "202c0c5d-01e5-4a77-ad39-3f8cb6cb6659",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of superviory visit - fourth visit",
+            "uuid": "94a31b96-b30f-48c2-80fb-c6982757db80"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "Skills/topics provided by the facilitator during superviory visit to ASHA?",
+          "uuid": "301a039d-6041-4dda-9606-9733ca3ffda6",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Skills/topics provided by the facilitator during superviory visit to ASHA?",
+            "uuid": "080ccadd-88b4-4537-8ba9-00abd2523cfd"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        },
+        {
+          "name": "Did ASHA visit all the expected households in the month?",
+          "uuid": "407e6b91-f778-41c9-8066-cc3ac93f6dea",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Did ASHA visit all the expected households in the month?",
+            "uuid": "074c0591-f5df-4360-9e6c-a1c358cf52c6"
+          },
+          "displayOrder": 8,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "0cfe9378-ab06-49df-923d-ee52277d441a",
+      "name": "Special need based counseling provided with facilitator to the target groups by ASHA",
+      "display": "Special need based counseling provided with facilitator to the target groups by ASHA",
+      "displayOrder": 9,
+      "formElements": [
+        {
+          "name": "Number of women to be covered for Need based counseling on promotion of temporary contraceptives - planned",
+          "uuid": "161c7014-23d1-4d58-8add-e4865b70c799",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of women to be covered for Need based counseling on promotion of temporary contraceptives - planned",
+            "uuid": "114bd27f-fa3b-4d47-a28c-df1675885801"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Number of women actually covered under Need based counseling on promotion of temporary contraceptives - covered",
+          "uuid": "aaa9e38d-398a-41c8-8b90-35bc71f3852f",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of women actually covered under Need based counseling on promotion of temporary contraceptives - covered",
+            "uuid": "9f01682a-08ac-42a1-bf46-490217377c0b"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Number of women to be covered for Need based counseling on promotion of permenant FP methods - planned",
+          "uuid": "5cac9cf1-f7bd-400d-a1aa-ef6e595c1562",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of women to be covered for Need based counseling on promotion of permenant FP methods - planned",
+            "uuid": "d8a171db-39b0-4c8b-af7a-b388d03d7fac"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Number of women actually covered under Need based counseling on promotion of Permenant FP methods - covered",
+          "uuid": "9ebb350a-c3df-4676-9335-97b2b2ac2f52",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of women actually covered under Need based counseling on promotion of Permenant FP methods - covered",
+            "uuid": "d11c6c02-ef73-466c-b64d-26f98a3fa8c5"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Number of women with RTI symptoms to be covered for counseling on RTI treatment - planned",
+          "uuid": "3b3a8557-0ace-4847-95d7-f557092c9846",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of women with RTI symptoms to be covered for counseling on RTI treatment - planned",
+            "uuid": "9ea2ee96-5cce-4b3f-b964-05765a24c5ec"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Number of women with RTI symptoms actually covered under counseling on RTI treatment - covered",
+          "uuid": "d6935c96-c44e-41c7-8923-8b3eb2b351d8",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of women with RTI symptoms actually covered under counseling on RTI treatment - covered",
+            "uuid": "5aaee3fa-ec04-4103-8123-69aa201fe5a8"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Number of pregnant mothers with danger signs to be covered for counseling  - planned",
+          "uuid": "f946c7d9-b9d2-4c1d-8620-cc1e804398ff",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of pregnant mothers with danger signs to be covered for counseling  - planned",
+            "uuid": "408e86eb-31ed-40dc-9f3d-972ea9197e30"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Number of pregnant mothers with danger signs actually covered under  counseling  - covered",
+          "uuid": "869962d7-47c5-4c9c-989b-72089c8d002f",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of pregnant mothers with danger signs actually covered under  counseling  - covered",
+            "uuid": "1472c7fb-233d-4581-b3a9-8e6380b9d178"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        },
+        {
+          "name": "Number of parents of unmarried adolescent girls received counseling by failitator",
+          "uuid": "2cbbff02-6898-43ac-801b-0bec6cfeb9e2",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of parents of unmarried adolescent girls received counseling by failitator",
+            "uuid": "c89f3001-4c86-441f-826c-03c493ea3b13"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "25cd2baa-d788-4f4b-b302-5b09bb26a1ed",
+      "name": "Supervision of LSE classes by facilitator",
+      "display": "Supervision of LSE classes by facilitator",
+      "displayOrder": 10,
+      "formElements": [
+        {
+          "name": "Number of LSE sessions planned for the month?",
+          "uuid": "10d9666b-6494-45bc-973f-d72ff2e8a8e7",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of LSE sessions planned for the month?",
+            "uuid": "15a62c07-3b8a-49a5-80d6-8277f0050adc"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Number of LSE sessions were conducted by ASHA in the month?",
+          "uuid": "e2e5b928-3c72-42d6-b947-4f929e3f12cd",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of LSE sessions were conducted by ASHA in the month?",
+            "uuid": "4711f02b-bc9c-40f3-b021-9245332a3ac0"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Number of superviory visits planned for LSE classes by the facilitator?",
+          "uuid": "b776e2e3-4e58-4593-9e8d-47dd510f67dc",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of superviory visits planned for LSE classes by the facilitator?",
+            "uuid": "17f53f06-57f5-403b-ad6c-f08cfe020d6a"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Number of superviory visits actually conducted by the facilitator for LSE classes?",
+          "uuid": "264279ac-6c21-4a93-a429-e89e89c09e38",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of superviory visits actually conducted by the facilitator for LSE classes?",
+            "uuid": "899371a8-9e39-4061-b91d-9c2666956308"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Actual number of LSE sessions observed by the facilitator?",
+          "uuid": "41951267-34fe-4a9b-bd2b-aecf4c6075b8",
+          "keyValues": [],
+          "concept": {
+            "name": "Actual number of LSE sessions observed by the facilitator?",
+            "uuid": "99ef691f-49fc-4200-bd5e-4d1ca0f98f84"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Number of Kishori Mandals Established in ASHA area",
+          "uuid": "202fd7ea-3871-47a9-8981-732ebb1ee7ec",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of Kishori Mandals Established in ASHA area",
+            "uuid": "a6269759-6c12-47d9-8625-41adfb9fed0d"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Number of community events planned for UAGs for the month",
+          "uuid": "3c5a7ea6-7639-4eb2-8fc1-8dcbdae37c51",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of community events planned for UAGs for the month",
+            "uuid": "cb6a5079-145b-4cee-ae82-1ec98ce91bad"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Number of community events actually conducted for UAGs for the month",
+          "uuid": "9578691e-ce1b-411b-8ede-71aaaf7bddf0",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of community events actually conducted for UAGs for the month",
+            "uuid": "a7d4f819-8a85-49b5-b4a6-9f836259cc81"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        },
+        {
+          "name": "Number of UAGs participated in the community events",
+          "uuid": "055b06c3-f1be-44ba-bf89-05891082f6b1",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of UAGs participated in the community events",
+            "uuid": "38c9ead2-b8ca-4a38-bdb1-66c4ed84550a"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "fad9045a-7af6-4865-86cf-452710883b9d",
+      "name": "Men component",
+      "display": "Men component",
+      "displayOrder": 11,
+      "formElements": [
+        {
+          "name": "Number of men group established?",
+          "uuid": "f2c6d6e6-4f30-4cee-936a-e517a1f4a1a3",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of men group established?",
+            "uuid": "90ccc2ac-de70-4946-bf5d-c026a606b835"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Number of men participated in the Men group?",
+          "uuid": "750d211a-323d-413e-92a2-8cfc145a4fcc",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of men participated in the Men group?",
+            "uuid": "a955eadb-ad79-4e5d-a3e6-a5c866c48228"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Number of youth groups (13 to 17 years men) established",
+          "uuid": "8d2096d1-58ad-453f-abdf-dbed59f3ffc4",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of youth groups (13 to 17 years men) established",
+            "uuid": "19e67fba-a976-41e3-a93e-853cecd14b59"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Number of Youths (13 to 17 years) participated in the youth group?",
+          "uuid": "54bb13b1-65ac-4328-b2ec-a9eb2d486acd",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of Youths (13 to 17 years) participated in the youth group?",
+            "uuid": "45ac0902-272e-480b-b59d-f6c3ddf7dc00"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Number of LSE  sessions planned for youths (13 to 17 years)",
+          "uuid": "217218c1-a479-4c76-9159-8de9615d31dc",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of LSE  sessions planned for youths (13 to 17 years)",
+            "uuid": "9e5ce7ef-ba11-4a28-bba5-da4e1f78dc80"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Number of LSE  sessions conducted for youths (13 to 17 years)",
+          "uuid": "51d3141a-0e49-42e4-9de2-56f689128838",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of LSE  sessions conducted for youths (13 to 17 years)",
+            "uuid": "0adeaaf0-0f33-4cd6-96db-a9a4c11ab5bb"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Number of LSE  sessions planned for men",
+          "uuid": "595ea583-7a73-4d5b-b0e6-fc4247215265",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of LSE  sessions planned for men",
+            "uuid": "23c91687-154a-4171-aec4-eaf37c693add"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Number of LSE  sessions conducted for men",
+          "uuid": "4fd4c49a-f69d-485b-91b4-b0558325c01c",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of LSE  sessions conducted for men",
+            "uuid": "166f04da-1cc7-442f-bcb6-0c570cb4c194"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        }
+      ]
+    }
+  ]
+}

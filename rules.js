@@ -25,5 +25,6 @@ module.exports = _.merge({},
     require('./child/rules/neonatalFormHandler'),
     require('./child/rules/visitSchedule'),
     require('./marriageRegister/rules/marriageRegisterFormHandler'),
-    require('./deathRegister/rules/deathRegisterFormHandler')
+    require('./deathRegister/rules/deathRegisterFormHandler'),
+    require('./asha/rules/ashaFormHandler'),
 );

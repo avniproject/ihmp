@@ -1,0 +1,707 @@
+[
+  {
+    "name": "Village name",
+    "uuid": "ae05a6b0-4f7e-45e9-bc67-b2ee72c14d70",
+    "dataType": "Text"
+  },
+  {
+    "name": "Month & year",
+    "uuid": "c5a65687-c6b9-4854-a0e6-41faf6f06b07",
+    "dataType": "Duration"
+  },
+  {
+    "name": "Facilitators name",
+    "uuid": "de4ebed9-1af3-423e-a832-c0c0637f54f9",
+    "dataType": "Text"
+  },
+  {
+    "name": "Group meeting for married adolescent girls planned?",
+    "uuid": "c9a2cfd3-ea73-4e2a-9816-287f91a3112a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Group meeting for married adolescent girls conducted?",
+    "uuid": "18a34d89-7cab-4f1c-9664-3e054e18ebfd",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Date of group meeting conducted for married adolescent girls?",
+    "uuid": "b72b0d7a-2fb3-425b-9fe0-6ad3c7178551",
+    "dataType": "Date"
+  },
+  {
+    "name": "Number of married adolescent girls attended group meeting",
+    "uuid": "e6e56714-bfa8-40ec-a450-625df09510d5",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Antenatal care",
+    "uuid": "11f3283d-33fd-4575-97b9-1717d5f6fc07",
+    "dataType": "NA"
+  },
+  {
+    "name": "Delivery care",
+    "uuid": "2e297c54-c06d-4840-812b-37473abffd89",
+    "dataType": "NA"
+  },
+  {
+    "name": "Postnatal care",
+    "uuid": "be173579-acf9-4ab1-9ce5-523bb9ff4136",
+    "dataType": "NA"
+  },
+  {
+    "name": "Neonatal care",
+    "uuid": "d9a834ee-4fe7-4245-9adb-d91c7ce30fa3",
+    "dataType": "NA"
+  },
+  {
+    "name": "Reproductive tract infections",
+    "uuid": "b953b34c-c543-4158-bb15-f03d6a7bb6cd",
+    "dataType": "NA"
+  },
+  {
+    "name": "Adolescent rights",
+    "uuid": "1ce1b70a-8d60-4348-a793-16251201d913",
+    "dataType": "NA"
+  },
+  {
+    "name": "Topic covered in the group meeting for married adolescent girls?",
+    "uuid": "e1d89579-8240-43c8-a394-b86c7a3acd85",
+    "dataType": "Coded",
+    "type": "MultiSelect",
+    "answers": [
+      {
+        "uuid": "11f3283d-33fd-4575-97b9-1717d5f6fc07",
+        "name": "Antenatal care"
+      },
+      {
+        "name": "Delivery care",
+        "uuid": "2e297c54-c06d-4840-812b-37473abffd89"
+      },
+      {
+        "name": "Postnatal care",
+        "uuid": "be173579-acf9-4ab1-9ce5-523bb9ff4136"
+      },
+      {
+        "name": "Neonatal care",
+        "uuid": "d9a834ee-4fe7-4245-9adb-d91c7ce30fa3"
+      },
+      {
+        "name": "Reproductive tract infections",
+        "uuid": "b953b34c-c543-4158-bb15-f03d6a7bb6cd"
+      },
+      {
+        "name": "Adolescent rights",
+        "uuid": "1ce1b70a-8d60-4348-a793-16251201d913"
+      },
+      {
+        "uuid": "3cab380d-d6c4-4faa-a67e-d31fb9c6cf38",
+        "name": "Family planning"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Group meeting for Young married women planned?",
+    "uuid": "caf4cd6e-a404-424a-a7c9-17138a0e6066",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Group meeting for Young married women conducted?",
+    "uuid": "82111d8f-341a-447a-ab35-0bd678dd00a5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Date of group meeting conducted forYoung married women?",
+    "uuid": "550ca33a-9226-475f-9c73-4aba84326768",
+    "dataType": "Date"
+  },
+  {
+    "name": "Number of Young married women attended group meeting",
+    "uuid": "827aba99-53d6-42f9-8089-b59aaa96311d",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Topic covered in the group meeting for Young married women?",
+    "uuid": "539b373f-751d-481c-b4a4-581134bcd4d0",
+    "dataType": "Coded",
+    "type": "MultiSelect",
+    "answers": [
+      {
+        "uuid": "11f3283d-33fd-4575-97b9-1717d5f6fc07",
+        "name": "Antenatal care"
+      },
+      {
+        "name": "Delivery care",
+        "uuid": "2e297c54-c06d-4840-812b-37473abffd89"
+      },
+      {
+        "name": "Postnatal care",
+        "uuid": "be173579-acf9-4ab1-9ce5-523bb9ff4136"
+      },
+      {
+        "name": "Neonatal care",
+        "uuid": "d9a834ee-4fe7-4245-9adb-d91c7ce30fa3"
+      },
+      {
+        "name": "Reproductive tract infections",
+        "uuid": "b953b34c-c543-4158-bb15-f03d6a7bb6cd"
+      },
+      {
+        "name": "Adolescent rights",
+        "uuid": "1ce1b70a-8d60-4348-a793-16251201d913"
+      },
+      {
+        "uuid": "3cab380d-d6c4-4faa-a67e-d31fb9c6cf38",
+        "name": "Family planning"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Group meeting for husbands planned?",
+    "uuid": "5efe7746-f624-4d69-9437-60a8d77a7c4d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Group meeting for husbands conducted?",
+    "uuid": "dd9cf99e-82f8-4795-a610-62c860055cd6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Date of group meeting conducted for husband?",
+    "uuid": "b4937cb3-be94-45d5-bda4-1579e18b98cc",
+    "dataType": "Date"
+  },
+  {
+    "name": "Number of husband attended group meeting",
+    "uuid": "dcb6d84a-c58b-48a6-b10a-843069355dbb",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Topic covered in the group meeting for husband?",
+    "uuid": "3b6e19d6-5d82-4506-a3b2-c32798e01a25",
+    "dataType": "Coded",
+    "type": "MultiSelect",
+    "answers": [
+      {
+        "uuid": "11f3283d-33fd-4575-97b9-1717d5f6fc07",
+        "name": "Antenatal care"
+      },
+      {
+        "name": "Delivery care",
+        "uuid": "2e297c54-c06d-4840-812b-37473abffd89"
+      },
+      {
+        "name": "Postnatal care",
+        "uuid": "be173579-acf9-4ab1-9ce5-523bb9ff4136"
+      },
+      {
+        "name": "Neonatal care",
+        "uuid": "d9a834ee-4fe7-4245-9adb-d91c7ce30fa3"
+      },
+      {
+        "name": "Reproductive tract infections",
+        "uuid": "b953b34c-c543-4158-bb15-f03d6a7bb6cd"
+      },
+      {
+        "name": "Adolescent rights",
+        "uuid": "1ce1b70a-8d60-4348-a793-16251201d913"
+      },
+      {
+        "uuid": "3cab380d-d6c4-4faa-a67e-d31fb9c6cf38",
+        "name": "Family planning"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Group meeting for inlaws/decision makers planned?",
+    "uuid": "c67dbb84-8405-4967-811f-e61aff24fd08",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Group meeting for inlaws/decision makers conducted?",
+    "uuid": "5f3e8591-7f61-48e9-99f6-e90e8728fcbf",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Date of group meeting conducted for inlaws/decision makers?",
+    "uuid": "591ae264-4786-4970-a6e8-8d5aded89f4e",
+    "dataType": "Date"
+  },
+  {
+    "name": "Number of inlaws/decision makers attended group meeting",
+    "uuid": "922ab794-e105-4117-a1cf-9d8a00423eeb",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Topic covered in the group meeting for inlaws/decision makers?",
+    "uuid": "f31caa73-6990-4c24-ba5b-00f1d36fdbb8",
+    "dataType": "Coded",
+    "type": "MultiSelect",
+    "answers": [
+      {
+        "uuid": "11f3283d-33fd-4575-97b9-1717d5f6fc07",
+        "name": "Antenatal care"
+      },
+      {
+        "name": "Delivery care",
+        "uuid": "2e297c54-c06d-4840-812b-37473abffd89"
+      },
+      {
+        "name": "Postnatal care",
+        "uuid": "be173579-acf9-4ab1-9ce5-523bb9ff4136"
+      },
+      {
+        "name": "Neonatal care",
+        "uuid": "d9a834ee-4fe7-4245-9adb-d91c7ce30fa3"
+      },
+      {
+        "name": "Reproductive tract infections",
+        "uuid": "b953b34c-c543-4158-bb15-f03d6a7bb6cd"
+      },
+      {
+        "name": "Adolescent rights",
+        "uuid": "1ce1b70a-8d60-4348-a793-16251201d913"
+      },
+      {
+        "uuid": "3cab380d-d6c4-4faa-a67e-d31fb9c6cf38",
+        "name": "Family planning"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Group meeting for parents of Unmarried adolescent girls planned?",
+    "uuid": "c8bd0b10-7c3c-4ed6-a603-e8be85b79d8f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Group meeting for parents of Unmarried adolescent girls conducted?",
+    "uuid": "e028d6ca-decd-406d-92f2-bf644f6e25a6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Date of group meeting conducted for parents of Unmarried adolescent girls?",
+    "uuid": "c9a31b6c-8724-4de6-a408-8aa966db4bb5",
+    "dataType": "Date"
+  },
+  {
+    "name": "Number of parents of Unmarried adolescent girls  attended group meeting",
+    "uuid": "84bd77aa-3b0a-48ba-984c-65a90f5a5382",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Topic covered in the group meeting for parents of Unmarried adolescent girls?",
+    "uuid": "afc23773-8402-455d-a286-ec033daea28f",
+    "dataType": "Text"
+  },
+  {
+    "name": "VHSNC meeting planned?",
+    "uuid": "f330ed06-6e89-48fa-aa41-d5ef4cfe43aa",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is VHSNC meetings conducted?",
+    "uuid": "ac7cc206-6ddb-4c03-93da-b4ad1dbe2495",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Date of VHSNC meeting?",
+    "uuid": "6e8e4633-6a88-4903-aeff-4813150a5409",
+    "dataType": "Date"
+  },
+  {
+    "name": "Number of VHSNC members attended meeting",
+    "uuid": "b88954b1-9790-46f4-97e2-c56e59297ab9",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Topic covered in the VHSNC meeting?",
+    "uuid": "4e468bb4-2276-44c5-9107-23121642c733",
+    "dataType": "Text"
+  },
+  {
+    "name": "Number of superviory visits planned for the month?",
+    "uuid": "9744f3fb-9553-419c-a088-b0e05175c339",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of superviory visits conducted for the month?",
+    "uuid": "8325f8c3-2956-409d-8403-1b341390c7d4",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Date of superviory visit - first visit",
+    "uuid": "d3d444db-5aba-4133-8814-73070ab955b4",
+    "dataType": "Date"
+  },
+  {
+    "name": "Date of superviory visit - second visit",
+    "uuid": "24d792d0-d0c9-4ef3-a9be-174effb4fe4d",
+    "dataType": "Date"
+  },
+  {
+    "name": "Date of superviory visit - third visit",
+    "uuid": "80010ff8-2ef0-424b-a2de-75f2e1b5b528",
+    "dataType": "Date"
+  },
+  {
+    "name": "Date of superviory visit - fourth visit",
+    "uuid": "94a31b96-b30f-48c2-80fb-c6982757db80",
+    "dataType": "Date"
+  },
+  {
+    "name": "Filling up of surviellance register using app",
+    "uuid": "1e3c53a1-1bcc-4446-80bc-515af62a9fd5",
+    "dataType": "NA"
+  },
+  {
+    "name": "Counseling/BCC",
+    "uuid": "a5a8423f-ddcc-40c6-9df2-4b8b0404e64f",
+    "dataType": "NA"
+  },
+  {
+    "name": "Referral skills",
+    "uuid": "0738b9ff-941e-4033-834e-7eb29e8315c5",
+    "dataType": "NA"
+  },
+  {
+    "name": "Planning of services",
+    "uuid": "812e27d1-f010-4749-9047-41fa53f35988",
+    "dataType": "NA"
+  },
+  {
+    "name": "How to compile MPR",
+    "uuid": "c0287cf2-cce1-4218-bbd5-56c0a9f37c63",
+    "dataType": "NA"
+  },
+  {
+    "name": "How to use information for planning activities",
+    "uuid": "df4f7341-cf58-41ee-92c3-313487aad4d1",
+    "dataType": "NA"
+  },
+  {
+    "name": "How to resolve community level problems",
+    "uuid": "946b3425-6738-4b6c-9cf2-bb19b44c3a5a",
+    "dataType": "NA"
+  },
+  {
+    "name": "Skills/topics provided by the facilitator during superviory visit to ASHA?",
+    "uuid": "080ccadd-88b4-4537-8ba9-00abd2523cfd",
+    "dataType": "Coded",
+    "type": "MultiSelect",
+    "answers": [
+      {
+        "name": "Filling up of surviellance register using app",
+        "uuid": "1e3c53a1-1bcc-4446-80bc-515af62a9fd5"
+      },
+      {
+        "name": "Counseling/BCC",
+        "uuid": "a5a8423f-ddcc-40c6-9df2-4b8b0404e64f"
+      },
+      {
+        "name": "Referral skills",
+        "uuid": "0738b9ff-941e-4033-834e-7eb29e8315c5"
+      },
+      {
+        "name": "Planning of services",
+        "uuid": "812e27d1-f010-4749-9047-41fa53f35988"
+      },
+      {
+        "name": "How to compile MPR",
+        "uuid": "c0287cf2-cce1-4218-bbd5-56c0a9f37c63"
+      },
+      {
+        "name": "How to use information for planning activities",
+        "uuid": "df4f7341-cf58-41ee-92c3-313487aad4d1"
+      },
+      {
+        "name": "How to resolve community level problems",
+        "uuid": "946b3425-6738-4b6c-9cf2-bb19b44c3a5a"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Did ASHA visit all the expected households in the month?",
+    "uuid": "074c0591-f5df-4360-9e6c-a1c358cf52c6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70",
+        "comment": "Yes"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "comment": "No"
+      }
+    ]
+  },
+  {
+    "name": "Number of women to be covered for Need based counseling on promotion of temporary contraceptives - planned",
+    "uuid": "114bd27f-fa3b-4d47-a28c-df1675885801",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of women actually covered under Need based counseling on promotion of temporary contraceptives - covered",
+    "uuid": "9f01682a-08ac-42a1-bf46-490217377c0b",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of women to be covered for Need based counseling on promotion of permenant FP methods - planned",
+    "uuid": "d8a171db-39b0-4c8b-af7a-b388d03d7fac",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of women actually covered under Need based counseling on promotion of Permenant FP methods - covered",
+    "uuid": "d11c6c02-ef73-466c-b64d-26f98a3fa8c5",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of women with RTI symptoms to be covered for counseling on RTI treatment - planned",
+    "uuid": "9ea2ee96-5cce-4b3f-b964-05765a24c5ec",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of women with RTI symptoms actually covered under counseling on RTI treatment - covered",
+    "uuid": "5aaee3fa-ec04-4103-8123-69aa201fe5a8",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of pregnant mothers with danger signs to be covered for counseling  - planned",
+    "uuid": "408e86eb-31ed-40dc-9f3d-972ea9197e30",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of pregnant mothers with danger signs actually covered under  counseling  - covered",
+    "uuid": "1472c7fb-233d-4581-b3a9-8e6380b9d178",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of parents of unmarried adolescent girls received counseling by failitator",
+    "uuid": "c89f3001-4c86-441f-826c-03c493ea3b13",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of LSE sessions planned for the month?",
+    "uuid": "15a62c07-3b8a-49a5-80d6-8277f0050adc",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of LSE sessions were conducted by ASHA in the month?",
+    "uuid": "4711f02b-bc9c-40f3-b021-9245332a3ac0",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of superviory visits planned for LSE classes by the facilitator?",
+    "uuid": "17f53f06-57f5-403b-ad6c-f08cfe020d6a",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of superviory visits actually conducted by the facilitator for LSE classes?",
+    "uuid": "899371a8-9e39-4061-b91d-9c2666956308",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Actual number of LSE sessions observed by the facilitator?",
+    "uuid": "99ef691f-49fc-4200-bd5e-4d1ca0f98f84",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of Kishori Mandals Established in ASHA area",
+    "uuid": "a6269759-6c12-47d9-8625-41adfb9fed0d",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of community events planned for UAGs for the month",
+    "uuid": "cb6a5079-145b-4cee-ae82-1ec98ce91bad",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of community events actually conducted for UAGs for the month",
+    "uuid": "a7d4f819-8a85-49b5-b4a6-9f836259cc81",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of UAGs participated in the community events",
+    "uuid": "38c9ead2-b8ca-4a38-bdb1-66c4ed84550a",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of men group established?",
+    "uuid": "90ccc2ac-de70-4946-bf5d-c026a606b835",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of men participated in the Men group?",
+    "uuid": "a955eadb-ad79-4e5d-a3e6-a5c866c48228",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of youth groups (13 to 17 years men) established",
+    "uuid": "19e67fba-a976-41e3-a93e-853cecd14b59",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of Youths (13 to 17 years) participated in the youth group?",
+    "uuid": "45ac0902-272e-480b-b59d-f6c3ddf7dc00",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of LSE  sessions planned for youths (13 to 17 years)",
+    "uuid": "9e5ce7ef-ba11-4a28-bba5-da4e1f78dc80",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of LSE  sessions conducted for youths (13 to 17 years)",
+    "uuid": "0adeaaf0-0f33-4cd6-96db-a9a4c11ab5bb",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of LSE  sessions planned for men",
+    "uuid": "23c91687-154a-4171-aec4-eaf37c693add",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of LSE  sessions conducted for men",
+    "uuid": "166f04da-1cc7-442f-bcb6-0c570cb4c194",
+    "dataType": "Numeric"
+  }
+]

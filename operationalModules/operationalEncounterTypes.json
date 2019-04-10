@@ -65,11 +65,11 @@
       }
     },
     {
-      "uuid":"d3ee3abc-7005-4025-8351-f4dca3d5471a",
-      "name":"PNC",
-      "encounterType":{
-        "uuid":"e9971396-b74f-411c-956d-da44073922f5",
-        "comment":"PNC"
+      "uuid": "d3ee3abc-7005-4025-8351-f4dca3d5471a",
+      "name": "PNC",
+      "encounterType": {
+        "uuid": "e9971396-b74f-411c-956d-da44073922f5",
+        "comment": "PNC"
       }
     },
     {
@@ -102,16 +102,23 @@
     },
     {
       "uuid": "1c969bc6-61dc-404c-a7e4-1289d1ad7c9f",
-      "name" : "Marriage Register",
+      "name": "Marriage Register",
       "encounterType": {
         "uuid": "5666eb22-da31-4f0f-98cc-201e1657c502"
       }
     },
     {
       "uuid": "aac2a3cd-bad2-4263-9db0-3cbccf7ff9c4",
-      "name" : "Death Register",
+      "name": "Death Register",
       "encounterType": {
         "uuid": "c2d709b5-f769-42b0-bea5-8f8b182ef1a5"
+      }
+    },
+    {
+      "uuid": "04695cf0-98e7-444c-974a-4362902b6128",
+      "name": "Asha Inputs",
+      "encounterType": {
+        "uuid": "7d38fd0e-94c5-48c1-9e3c-1719189cbea2"
       }
     }
   ]
