@@ -13,28 +13,24 @@
           "name": "Village name",
           "uuid": "caf0180a-dda6-4ce9-95b6-e30b064ce728",
           "keyValues": [],
+          "type": "SingleSelect",
           "concept": {
             "name": "Village name",
             "uuid": "ae05a6b0-4f7e-45e9-bc67-b2ee72c14d70"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Month & year",
           "uuid": "f9a71f14-3f45-4b33-be3d-57b967ab22bf",
-          "keyValues": [
-            {
-              "key": "durationOptions",
-              "value": ["years", "months"]
-            }
-          ],
+          "keyValues": [],
           "concept": {
             "name": "Month & year",
             "uuid": "c5a65687-c6b9-4854-a0e6-41faf6f06b07"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Facilitators name",
@@ -45,7 +41,19 @@
             "uuid": "de4ebed9-1af3-423e-a832-c0c0637f54f9"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
+        },
+        {
+          "name": "Name of ASHA",
+          "uuid": "e978d61d-0022-4b6f-93e3-2976f50ea5b1",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Name of ASHA",
+            "uuid": "ac2fbfb7-cf37-47f9-a08c-fe8c2dee6480"
+          },
+          "displayOrder": 4,
+          "mandatory": true
         }
       ]
     },
