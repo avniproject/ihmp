@@ -72,7 +72,7 @@ class ChildNeonatalViewFilterHandlerIHMP {
             .or.valueInEncounter("Umbilical related problems").containsAnswerConceptNameOtherThan("None")
             .or.valueInEncounter("PNC Eye Examination").containsAnswerConceptNameOtherThan("None")
             .or.valueInEncounter("Whether feeling hot").containsAnswerConceptNameOtherThan("No")
-            .or.valueInEncounter("Whether baby having diarrhoea").containsAnswerConceptNameOtherThan("No")
+            .or.valueInEncounter("Whether having diarrhoea").containsAnswerConceptNameOtherThan("No")
             .or.valueInEncounter("Whether baby having cough & cold").containsAnswerConceptNameOtherThan("No")
             .or.valueInEncounter("Child PNC skin problems").containsAnswerConceptNameOtherThan("No problem");
 
@@ -80,7 +80,21 @@ class ChildNeonatalViewFilterHandlerIHMP {
     
     @WithStatusBuilder
     whetherNeonatalComplicationAddressed([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Whether taken treatment for neonatal complications").containsAnswerConceptName("Yes");
+        statusBuilder.show().when
+            .valueInEncounter("Child PNC cry related complaints").containsAnswerConceptNameOtherThan("None")
+            .or.valueInEncounter("Child PNC breathing problems").containsAnswerConceptNameOtherThan("No problem")
+            .or.valueInEncounter("Whether feeling cold").containsAnswerConceptNameOtherThan("No")
+            .or.valueInEncounter("Child PNC feeding related complaints").containsAnswerConceptNameOtherThan("Sucking well")
+            .or.valueInEncounter("Child PNC urination related complaints").containsAnswerConceptNameOtherThan("Proper urination")
+            .or.valueInEncounter("Child PNC stool related complaints").containsAnswerConceptNameOtherThan("None")
+            .or.valueInEncounter("Child PNC activity related complaints").containsAnswerConceptNameOtherThan("None")
+            .or.valueInEncounter("Umbilical related problems").containsAnswerConceptNameOtherThan("None")
+            .or.valueInEncounter("PNC Eye Examination").containsAnswerConceptNameOtherThan("None")
+            .or.valueInEncounter("Whether feeling hot").containsAnswerConceptNameOtherThan("No")
+            .or.valueInEncounter("Whether having diarrhoea").containsAnswerConceptNameOtherThan("No")
+            .or.valueInEncounter("Whether baby having cough & cold").containsAnswerConceptNameOtherThan("No")
+            .or.valueInEncounter("Child PNC skin problems").containsAnswerConceptNameOtherThan("No problem");
+
     }
 
     
@@ -88,6 +102,19 @@ class ChildNeonatalViewFilterHandlerIHMP {
     dateOfSecondHomeVisitByAnmToTheNeonate([], statusBuilder) {
         statusBuilder.show().when.latestValueInPreviousEncounters("Date of second home visit by ANM to the neonate").is.notDefined;
     }
+
+    @WithStatusBuilder
+    ihmpNncLowWeightCounselling([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Weight").lessThanOrEqualTo(2.5);
+    }
+
+    @WithStatusBuilder
+    thermalCareForBabyInFirst7Days([], statusBuilder) {
+        statusBuilder.show().when.valueInEntireEnrolment("Thermal care for baby in first 7 days").is.notDefined
+            .or.valueInEncounter("Thermal care for baby in first 7 days").is.defined;
+    }
+
+
 
 
 

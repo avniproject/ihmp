@@ -81,7 +81,7 @@
     {
       "uuid": "09d67ed0-d73f-40d6-a00b-804aed900f54",
       "name": "Neonate complications (usually within 0 - 5 days)",
-      "display": "Complaints reported for neonate",
+      "display": "Neonate complications (usually within 0 - 5 days)",
       "displayOrder": 2,
       "formElements": [
         {
