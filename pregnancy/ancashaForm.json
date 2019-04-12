@@ -31,12 +31,17 @@
           "mandatory": true
         },
         {
-          "name": "Week of gestation when registered for antenatal care",
+          "name": "Month of gestation when registered for antenatal care",
           "uuid": "6dccedfd-1ea3-42c3-8aba-b36604534d4b",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "editable",
+              "value": false
+            }
+          ],
           "concept": {
-            "name": "Week of gestation when registered for antenatal care",
-            "uuid": "61108679-7242-479c-a6ba-380f4c9b9c3b"
+            "name": "Month of gestation when registered for antenatal care",
+            "uuid": "90154b2f-41b9-488f-b881-8992718b0267"
           },
           "displayOrder": 3,
           "mandatory": true

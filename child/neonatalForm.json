@@ -380,7 +380,20 @@
           },
           "displayOrder": 2,
           "mandatory": false
+        },
+        {
+          "name": "IHMP NNC Complication counselling",
+          "uuid": "4a80e91b-1176-4374-a488-7f364b2875b1",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b4e5a662-97bf-4846-b9b7-9baeab4d89c4",
+            "comment": "Placeholder for counselling form element"
+          },
+          "displayOrder": 3,
+          "mandatory": false
         }
+
       ]
     }
   ]

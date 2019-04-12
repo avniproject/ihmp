@@ -118,14 +118,47 @@
           "mandatory": true
         },
         {
-          "name": "Which facility she visited for postnatal care?",
+          "name": "Date of first home visit by ANM to the mother",
+          "uuid": "cdf432f9-bf22-44cd-8222-625baf232a5d",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of first home visit by ANM to the mother",
+            "uuid": "7664163c-7ca4-4340-b810-61035195d0e8"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Date of second home visit by ANM to the mother",
+          "uuid": "de6a3d09-e46e-43aa-bd04-c100a7873c69",
+          "keyValues": [],
+          "concept": {
+            "name": "Date of second home visit by ANM to the mother",
+            "uuid": "6e6e8df8-c132-4a08-b33c-6688d34c11ce"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Whether any facility visited by mother for postnatal care",
+          "uuid": "d37b592f-b4b2-40a1-9ca2-2877719b3f34",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether any facility visited by mother for postnatal care",
+            "uuid": "95d975c8-ef3e-43d2-a47f-9b6ea12db9bc"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Facility mother visited for postnatal care",
           "uuid": "191eff21-db20-47a1-b6a1-a181b16a3866",
           "keyValues": [],
           "concept": {
             "uuid": "b2b9cd50-d0a5-4bd7-8f61-6738a7c24c04",
             "comment": "Place visited for postnatal care"
           },
-          "displayOrder": 2,
+          "displayOrder": 5,
           "mandatory": true
         }
       ]

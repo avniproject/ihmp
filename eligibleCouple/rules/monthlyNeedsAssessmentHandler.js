@@ -143,6 +143,7 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
     }
 
     @WithStatusBuilder
+
     ihmpFpCounsellingInformationRegardingSterilization([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Number of living children").is.greaterThanOrEqualTo(2)
             .and.whenItem(applicableForFamilyPlanning(statusBuilder.context.programEncounter)).is.truthy;

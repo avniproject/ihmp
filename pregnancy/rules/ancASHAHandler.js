@@ -9,6 +9,7 @@ import {
     StatusBuilderAnnotationFactory,
     VisitScheduleBuilder
 } from 'rules-config/rules';
+import _ from "lodash";
 
 const ANCASHAViewFilter = RuleFactory("4201c189-5a6c-40ca-8c33-c5b7d24a9604", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
@@ -31,9 +32,16 @@ class PregnancyANCASHAViewFilterHandlerIHMP {
         statusBuilder.show().when.valueInEncounter("Whether registered for antenatal care").is.yes;
     }
 
-    @WithStatusBuilder
-    weekOfGestationWhenRegisteredForAntenatalCare([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Whether registered for antenatal care").is.yes;
+    monthOfGestationWhenRegisteredForAntenatalCare(programEncounter, formElement) {
+        let gestationalAgeInMonthsAsOfANCRegistrationDate = '';
+        const whetherRegisteredForAntenatalCare = programEncounter.getObservationValue('Whether registered for antenatal care');
+
+        const dateOfRegistrationForAntenatalCare = programEncounter.getObservationValue('Date of registration for antenatal care');
+        if (!_.isNil(dateOfRegistrationForAntenatalCare)){
+            const lmp = programEncounter.programEnrolment.getObservationValue('Last menstrual period');
+            gestationalAgeInMonthsAsOfANCRegistrationDate = _.round(moment(dateOfRegistrationForAntenatalCare).diff(lmp, 'months', true), 1);
+        }
+        return new FormElementStatus(formElement.uuid, whetherRegisteredForAntenatalCare === 'Yes', gestationalAgeInMonthsAsOfANCRegistrationDate);
     }
 
 

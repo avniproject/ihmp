@@ -108,6 +108,23 @@ class ViewFilters {
         statusBuilder.show().whenItem(programEncounter.name === 'PNC 4').is.truthy;
     }
 
+    @WithStatusBuilder
+    facilityMotherVisitedForPostnatalCare([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether any facility visited by mother for postnatal care")
+            .containsAnswerConceptName("Yes");
+    }
+
+    @WithStatusBuilder
+    dateOfFirstHomeVisitByAnmToTheMother([], statusBuilder) {
+        statusBuilder.show().when.latestValueInPreviousEncounters("Date of first home visit by ANM to the mother").is.notDefined;
+    }
+
+    @WithStatusBuilder
+    dateOfSecondHomeVisitByAnmToTheMother([], statusBuilder) {
+        statusBuilder.show().when.latestValueInPreviousEncounters("Date of second home visit by ANM to the mother").is.notDefined;
+    }
+
+
 }
 
 exports[ViewFiltersUuid] = ViewFilters;

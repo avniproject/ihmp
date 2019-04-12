@@ -6,10 +6,22 @@ import {
 const moment = require("moment");
 const RuleHelper = require('../../RuleHelper');
 
+const ECEnrolmentBasedVisitRule = RuleFactory("23d8763d-4759-4c7d-bb46-d57a1ee58673", "VisitSchedule");
 const MonthlyAssessmentBasedVisitRule = RuleFactory("8b5bf56e-346a-486e-b00e-9fa604fa0b54", "VisitSchedule");
 const RTIServicesVisitRule = RuleFactory("90a9660b-9bc5-4b73-8e09-f83d029216fa", "VisitSchedule");
 const FPServicesVisitRule = RuleFactory("981b3e41-7fae-4b0e-a0aa-e9a42076414e", "VisitSchedule");
 
+
+@ECEnrolmentBasedVisitRule("afba8682-c2fd-4562-ae64-778aeb8b054c", "EC Enrolment based visit rule", 100.0)
+class ECEnrolmentBasedVisitsIHMP {
+
+    static exec(programEnrolment, visitSchedule = [], scheduleConfig) {
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEnrolment, visitSchedule);
+        RuleHelper.blindAddSchedule(scheduleBuilder, 'Monthly needs assessment', 'Monthly needs assessment',
+            programEnrolment.enrolmentDateTime, 3);
+        return scheduleBuilder.getAllUnique("encounterType");
+    }
+}
 
 
 @MonthlyAssessmentBasedVisitRule("191d4a2e-63a2-4594-8a54-cfc7fd2d78f4", "Monthly assessment based visit rule", 100.0)
@@ -57,4 +69,4 @@ class FPServicesVisitsIHMP {
 }
 
 
-module.exports = {MonthlyAssessmentBasedVisitsIHMP, RTIServicesVisitsIHMP, FPServicesVisitsIHMP};
+module.exports = {MonthlyAssessmentBasedVisitsIHMP, RTIServicesVisitsIHMP, FPServicesVisitsIHMP, ECEnrolmentBasedVisitsIHMP};
