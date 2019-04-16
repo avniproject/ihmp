@@ -141,6 +141,7 @@ create or replace view ihmp_rti_services_view as
 drop view if exists ihmp_registration_view;
 create or replace view ihmp_registration_view as
   (SELECT individual.uuid                                                                  "Ind.uuid",
+          individual.id                                                                     "Ind.Id",
           individual.first_name                                                            "Ind.first_name",
           individual.last_name                                                             "Ind.last_name",
           individual.organisation_id                                                       "Ind.organisation_id",
@@ -171,6 +172,8 @@ create or replace view ihmp_registration_view as
               individual.observations ->> 'c922c13c-1fa2-42dd-a7e8-d234b0324870')::TEXT as "Ind.Religion",
           single_select_coded(
               individual.observations ->> '6617408e-b89e-4f2f-ab10-d818c5d7f1bd')::TEXT as "Ind.Status of the individual",
+          single_select_coded(
+                individual.observations ->> '6617408e-b89e-4f2f-ab10-d818c5d7f1bd')::TEXT as individual_status,
           individual.observations ->>
           'f27e9504-81a3-48d9-b7cc-4bc90dbd4a30'::TEXT                                  as "Ind.Disability",
           single_select_coded(
@@ -446,6 +449,8 @@ create or replace view ihmp_pnc_view as (
          programEnrolment.uuid                                                                  "Enl.uuid",
          programEnrolment.is_voided                                                             "Enl.is_voided",
          oet.name                                                                               "Enc.Type",
+         programEncounter.id                                                                    "Enc.Id",
+         programEnrolment.id                                                                    "Enl.Id",
          programEncounter.earliest_visit_date_time                                              "Enc.earliest_visit_date_time",
          programEncounter.encounter_date_time                                                   "Enc.encounter_date_time",
          programEncounter.program_enrolment_id                                                  "Enc.program_enrolment_id",
@@ -608,6 +613,7 @@ create or replace view ihmp_pnc_view as (
 drop view if exists ihmp_delivery_view;
 create or replace view ihmp_delivery_view as (
   SELECT individual.uuid                                                                        "Ind.uuid",
+         individual.id                                                                          "Ind.id",
          individual.first_name                                                                  "Ind.first_name",
          individual.last_name                                                                   "Ind.last_name",
          g.name                                                                                 "Ind.Gender",
@@ -616,12 +622,16 @@ create or replace view ihmp_delivery_view as (
          individual.registration_date                                                           "Ind.registration_date",
          individual.facility_id                                                                 "Ind.facility_id",
          a.title                                                                                "Ind.Area",
+         individual.address_id                                                                  "Ind.address_id",
+         individual.audit_id                                                                    "Ind.audit_id",
          c2.name                                                                                "Ind.Catchment",
          individual.is_voided                                                                   "Ind.is_voided",
          op.name                                                                                "Enl.Program Name",
          programEnrolment.uuid                                                                  "Enl.uuid",
          programEnrolment.is_voided                                                             "Enl.is_voided",
          oet.name                                                                               "Enc.Type",
+         programEncounter.id                                                                    "Enc.Id",
+         programEnrolment.id                                                                    "Enl.Id",
          programEncounter.earliest_visit_date_time                                              "Enc.earliest_visit_date_time",
          programEncounter.encounter_date_time                                                   "Enc.encounter_date_time",
          programEncounter.program_enrolment_id                                                  "Enc.program_enrolment_id",
@@ -1170,6 +1180,119 @@ create view ihmp_birth_form_view as (
     AND programEnrolment.enrolment_date_time IS NOT NULL
 );
 
+drop view if exists ihmp_abortion_view;
+create view ihmp_abortion_view as (
+  SELECT individual.id                                                                          "Ind.Id",
+         individual.address_id                                                                  "Ind.address_id",
+         individual.uuid                                                                        "Ind.uuid",
+         individual.first_name                                                                  "Ind.first_name",
+         individual.last_name                                                                   "Ind.last_name",
+         g.name                                                                                 "Ind.Gender",
+         individual.date_of_birth                                                               "Ind.date_of_birth",
+         individual.date_of_birth_verified                                                      "Ind.date_of_birth_verified",
+         individual.registration_date                                                           "Ind.registration_date",
+         individual.facility_id                                                                 "Ind.facility_id",
+         a.title                                                                                "Ind.Area",
+         c2.name                                                                                "Ind.Catchment",
+         individual.is_voided                                                                   "Ind.is_voided",
+         op.name                                                                                "Enl.Program Name",
+         programEnrolment.id                                                                    "Enl.Id",
+         programEnrolment.uuid                                                                  "Enl.uuid",
+         programEnrolment.is_voided                                                             "Enl.is_voided",
+         oet.name                                                                               "Enc.Type",
+         programEncounter.id                                                                    "Enc.Id",
+         programEncounter.earliest_visit_date_time                                              "Enc.earliest_visit_date_time",
+         programEncounter.encounter_date_time                                                   "Enc.encounter_date_time",
+         programEncounter.program_enrolment_id                                                  "Enc.program_enrolment_id",
+         programEncounter.uuid                                                                  "Enc.uuid",
+         programEncounter.name                                                                  "Enc.name",
+         programEncounter.max_visit_date_time                                                   "Enc.max_visit_date_time",
+         programEncounter.is_voided                                                             "Enc.is_voided",
+         (individual.observations ->> '24dabc3a-6562-4521-bd42-5fff11ea5c46')::TEXT          as "Ind.Household number",
+         (individual.observations ->> '25b73ca1-e268-452f-ba05-2595af28ac04')::TEXT          as "Ind.Number of household members (eating together)",
+         single_select_coded(
+             individual.observations ->> '1b6ae290-1823-4aab-91a5-b1d8a1b3b837')::TEXT       as "Ind.Relation to head of the family",
+         single_select_coded(
+             individual.observations ->> 'c922c13c-1fa2-42dd-a7e8-d234b0324870')::TEXT       as "Ind.Religion",
+         (individual.observations ->> '60c44aa2-3635-487d-8962-43000e77d382')::TEXT          as "Ind.Caste (Free Text)",
+         single_select_coded(
+             individual.observations ->> '61ab6413-5c6a-4512-ab6e-7d5cd1439569')::TEXT       as "Ind.Caste Category",
+         single_select_coded(
+             individual.observations ->> '476a0b71-485b-4a0a-ba6f-4f3cf13568ca')::TEXT       as "Ind.Ration Card",
+         (individual.observations ->> '38eaf459-4316-4da3-acfd-3c9c71334041')::TEXT          as "Ind.Standard upto which schooling completed",
+         single_select_coded(
+             individual.observations ->> 'cd83afec-d147-42b2-bd50-0ca460dbd55f')::TEXT       as "Ind.Occupation",
+         single_select_coded(
+             individual.observations ->> 'aa6687c9-ba4d-49a3-9b3e-bba266eb6f32')::TEXT       as "Ind.Marital status",
+         (individual.observations ->> 'd685d229-e06e-42f3-90c7-ca06d2fefe17')::TEXT          as "Ind.Date of marriage",
+         single_select_coded(
+             individual.observations ->> '92475d77-7cdd-4976-98f0-3847939a95d1')::TEXT       as "Ind.Whether sterilized",
+         single_select_coded(
+             individual.observations ->> '1eb73895-ddba-4ddb-992c-03225f93775c')::TEXT       as "Ind.Whether any disability",
+         (individual.observations ->> 'f27e9504-81a3-48d9-b7cc-4bc90dbd4a30')::TEXT          as "Ind.Disability",
+         single_select_coded(
+             individual.observations ->> '6617408e-b89e-4f2f-ab10-d818c5d7f1bd')::TEXT       as "Ind.Status of the individual",
+         (individual.observations ->> '43c4860f-fccf-48c9-818a-191bc0f8d0cf')::TEXT          as "Ind.Aadhaar ID",
+         (individual.observations ->> '82fa0dbb-92f9-4ec2-9263-49054e64d909')::TEXT          as "Ind.Contact Number",
+         (programEnrolment.observations ->> '191f8a30-d543-4b98-9464-2f5838d1d9a6')::TEXT    as "Enl.MCTS Number",
+         (programEnrolment.observations ->> 'fef5be79-24c0-415d-9494-64b2faf17aeb')::TEXT    as "Enl.R15 number",
+         (programEnrolment.observations ->> '1cc6fd5d-1359-483e-a971-4bf36e34a72d')::TEXT    as "Enl.Last menstrual period",
+         (programEnrolment.observations ->> 'dde911fa-15eb-4564-8deb-bba46e9d3744')::TEXT    as "Enl.Estimated Date of Delivery",
+         (programEnrolment.observations ->> 'd883d5fe-e17d-4136-b989-089fa0295e34')::TEXT    as "Enl.Height",
+         single_select_coded(
+             programEnrolment.observations ->> 'ae076480-008d-47ca-9fab-a5300a626e42')::TEXT as "Enl.Urine pregnancy test",
+         (programEnrolment.observations ->> 'dc2c23e9-19ad-471f-81d1-213069ccc975')::TEXT    as "Enl.Gravida",
+         (programEnrolment.observations ->> '2d679fd5-a75b-46bd-96c2-10c180187342')::TEXT    as "Enl.Parity",
+         (programEnrolment.observations ->> 'b3e9c088-90ed-45d9-8c99-102d1bda66e1')::TEXT    as "Enl.Number of living children",
+         (programEnrolment.observations ->> 'd924596e-e08e-4829-b4c3-77a0411d18c7')::TEXT    as "Enl.Number of female children",
+         (programEnrolment.observations ->> '1b749b48-bfae-470d-8219-a735dae99f7a')::TEXT    as "Enl.Number of male children",
+         (programEnrolment.observations ->> '38b9986b-76e8-4015-ae51-48152b1cd42c')::TEXT    as "Enl.Number of abortions",
+         (programEnrolment.observations ->> '99c9d0a3-6ffc-41a7-8641-d79e2e83a4c6')::TEXT    as "Enl.Number of miscarriages",
+         (programEnrolment.observations ->> '0b3eb875-b0f6-4420-be01-82bbd2812b21')::TEXT    as "Enl.Number of induced abortions",
+         (programEnrolment.observations ->> '74de4054-0e8b-4088-aae8-bd5f2933d300')::TEXT    as "Enl.Number of stillbirths",
+         (programEnrolment.observations ->> 'd7ae1329-9e09-47f1-ad7d-3c73474d973f')::TEXT    as "Enl.Number of child deaths",
+         (programEnrolment.observations ->> 'eb07e1bd-0379-4ffd-9bc6-df4b34f7745e')::TEXT    as "Enl.Number of male child deaths",
+         (programEnrolment.observations ->> 'c6454406-04da-4670-9318-3b71a2d9b0cf')::TEXT    as "Enl.Number of female child deaths",
+         (programEnrolment.observations ->> '305f693c-c8b6-4e3e-9a82-a6e91a3e462f')::TEXT    as "Enl.Age of youngest child",
+         (programEnrolment.observations ->> '7d34125a-1b0b-4755-acc8-aeda71af8bd3')::TEXT    as "Enl.Other obstetrics history",
+         single_select_coded(
+             programEnrolment.observations ->> 'b47dca1d-3f42-4280-9b3e-3d68cce88bed')::TEXT as "Enl.Is she on TB medication?",
+         single_select_coded(
+             programEnrolment.observations ->> '2a8a5306-c0a9-4ca6-8bd7-b394069aa6f2')::TEXT as "Enl.Has she been taking her TB medication regularly?",
+         single_select_coded(
+             programEnrolment.observations ->> '4a20f69f-12c4-4472-ac82-ece0ab102e4b')::TEXT as "Enl.Did she complete her TB treatment?",
+         (programEncounter.observations ->> 'c82404a6-78f6-4e55-93b8-51acc5d8aa68')::TEXT    as "Enc.Date of abortion",
+         single_select_coded(
+             programEncounter.observations ->> '94e3ad45-ae52-41dc-a26a-27b4973cbd04')::TEXT as "Enc.Type of Abortion",
+         (programEncounter.observations ->> '6912e863-ba7c-438e-83d9-b73fc4878b92')::TEXT    as "Enc.Period of gestation in weeks at the time of abortion",
+         single_select_coded(
+             programEncounter.observations ->> 'b8893e96-89fd-4965-93ea-b9307dd69be0')::TEXT as "Enc.Place of abortion",
+         (programEncounter.observations ->> 'b4d6b6b6-fff0-4dda-8f60-aa273ff20250')::TEXT    as "Enc.Date of discharge",
+         single_select_coded(
+             programEncounter.observations ->> 'efc9a994-80fd-48a2-b089-bff9e0585a61')::TEXT as "Enc.Whether treatment taken after spontaneous abortion",
+         (programEncounter.observations ->> 'bd5b5ffc-93d6-4a80-aa91-a5e5c9fc6a40')::TEXT    as "Enc.Date of treatment taken after spontaneous abortion",
+         multi_select_coded(
+             programEncounter.observations -> 'fc1346b0-57fe-4a84-8d95-f4461d60176f')::TEXT  as "Enc.Post abortion complaints",
+         (programEncounter.observations ->> 'a7d52633-56ff-486d-b451-b119d74a7760')::TEXT    as "Enc.Other abortion complaints",
+         single_select_coded(
+             programEncounter.observations ->> '42be7266-50e7-4f0b-88a5-b6e1f1cf0535')::TEXT as "Enc.Whether taken treatment for post abortion complication",
+         programEncounter.cancel_date_time                                                      "EncCancel.cancel_date_time"
+  FROM program_encounter programEncounter
+         LEFT OUTER JOIN operational_encounter_type oet on programEncounter.encounter_type_id = oet.encounter_type_id
+         LEFT OUTER JOIN program_enrolment programEnrolment
+                         ON programEncounter.program_enrolment_id = programEnrolment.id
+         LEFT OUTER JOIN operational_program op ON op.program_id = programEnrolment.program_id
+         LEFT OUTER JOIN individual individual ON programEnrolment.individual_id = individual.id
+         LEFT OUTER JOIN gender g ON g.id = individual.gender_id
+         LEFT OUTER JOIN address_level a ON individual.address_id = a.id
+         LEFT OUTER JOIN virtual_catchment_address_mapping_table m2 ON a.id = m2.addresslevel_id
+         LEFT OUTER JOIN catchment c2 ON m2.catchment_id = c2.id
+  WHERE c2.name not ilike '%master%'
+    AND op.uuid = '3e42f1f5-53ec-4e72-bb9f-d10d53fc8de5'
+    AND oet.uuid = 'b7dcbb07-4f0e-4e65-8955-ef02a76c60e4'
+    AND programEncounter.encounter_date_time IS NOT NULL
+    AND programEnrolment.enrolment_date_time IS NOT NULL
+);
 -- ----------------------------------------------------
 set role none;
 

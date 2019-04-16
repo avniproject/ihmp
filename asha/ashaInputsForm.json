@@ -22,12 +22,12 @@
           "mandatory": true
         },
         {
-          "name": "Month & year",
+          "name": "Select Date",
           "uuid": "f9a71f14-3f45-4b33-be3d-57b967ab22bf",
           "keyValues": [],
           "concept": {
-            "name": "Month & year",
-            "uuid": "c5a65687-c6b9-4854-a0e6-41faf6f06b07"
+            "name": "Date",
+            "uuid": "17456ce0-88bf-4db6-a3dc-a9977ca6c7cc"
           },
           "displayOrder": 2,
           "mandatory": true

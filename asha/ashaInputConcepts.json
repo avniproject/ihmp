@@ -471,8 +471,8 @@
     ]
   },
   {
-    "name": "Month & year",
-    "uuid": "c5a65687-c6b9-4854-a0e6-41faf6f06b07",
+    "name": "Date",
+    "uuid": "17456ce0-88bf-4db6-a3dc-a9977ca6c7cc",
     "dataType": "Date"
   },
   {
