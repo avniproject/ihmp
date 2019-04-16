@@ -385,7 +385,7 @@ create or replace view ihmp_needs_assessment_view as
 
 drop view if exists ihmp_user_view;
 create or replace view ihmp_user_view as (
-  SELECT u.name,
+  SELECT u.username as name,
          a.id
   FROM individual i
          join audit a on i.audit_id = a.id
