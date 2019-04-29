@@ -12,7 +12,7 @@ define _curl_view_generation
 	@echo '$(body)' | \
 		curl -X POST '$(server_url)/query' -d @- \
 		-H "Content-Type: application/json"  \
-		-H "USER-NAME: $(org_admin_name)"
+		-H "USER-NAME: $(org_admin_name)" > /tmp/out.json
 	@echo
 	@echo
 endef
@@ -23,6 +23,7 @@ spreadout=false
 type=Registration
 #or
 type=ProgramEncounter
+printsql=
 
 body:={ \
 	"program": $(if $(program),"$(program)",null), \
@@ -30,10 +31,19 @@ body:={ \
 	"spreadMultiSelectObs": $(spreadout), \
 	"type": "$(type)" }
 
-get_views:
+_get_views:
 	$(call _curl_view_generation)
 
-store_views:
-	@echo posting '$(body)'
-	@echo storing views in /tmp/out.txt
-	make get_views body='$(body)' > /tmp/out.txt
+get_views:
+	-rm /tmp/out.json
+	@echo storing views in /tmp/out.json
+	@echo
+	make _get_views body='$(body)'
+
+print_views:
+	make get_views
+	node ./printGeneratedSql.js
+
+# make get_views spreadout=false program=Pregnancy
+# make get_views spreadout=true program=Pregnancy
+# make print_views spreadout=true program=Pregnancy
