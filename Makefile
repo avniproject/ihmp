@@ -1,12 +1,11 @@
-
+deps:; npm i -g grunt; yarn install
 -include ./node_modules/openchs-idi/Makefile
+
+#######################################
 
 su:=$(shell id -un)
 org_admin_name=ihmp-admin
 server_url:=http://localhost:8021
-
-install-deps:
-	yarn install
 
 define _curl_view_generation
 	@echo '$(body)' | \
