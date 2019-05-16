@@ -1,6 +1,7 @@
 const moment = require("moment");
 const _ = require("lodash");
 import {
+    lib,
     RuleFactory,
     FormElementsStatusHelper,
     FormElementStatusBuilder,
@@ -8,7 +9,8 @@ import {
     FormElementStatus,
     VisitScheduleBuilder,
     complicationsBuilder as ComplicationsBuilder,
-    RuleCondition
+    RuleCondition,
+    WorkListUpdationRule
 } from 'rules-config/rules';
 
 const MonthlyAssessmentViewFilter = RuleFactory("8b5bf56e-346a-486e-b00e-9fa604fa0b54", "ViewFilter");
@@ -155,7 +157,7 @@ class ECMonthlyNeedsAssessmentViewFilterHandlerIHMP {
     }
 
 
-    
+
     @WithStatusBuilder
     durationOfSymptomsInDays([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Symptoms of RTI").is.defined
@@ -206,12 +208,44 @@ class ECMonthlyNeedsAssessmentDecisionIHMP {
         decisions.encounterDecisions.push(complicationsBuilder.getComplications());
         return decisions;
     }
-
-
-
-
 }
 
+@WorkListUpdationRule({
+    name: 'IHMPWorkListUpdationRule',
+    uuid: '495e255c-335c-4ee5-ae53-6d3487ae2209',
+    executionOrder: 100.0,
+    metadata: {}
+})
+class IHMPWorkListUpdationRule {
+    static exec(workLists, context) {
+        const WorkItem = lib.models.WorkItem;
+        const currentWorkItem = workLists.getCurrentWorkItem();
+        const isProgramEncounterType = currentWorkItem.type === WorkItem.type.PROGRAM_ENCOUNTER;// && WorkItem.encounterType === 'Monthly needs assessment';
+        const enrolToMotherProgram = () => workLists.addItemsToCurrentWorkList(
+            new WorkItem('31af5921-368f-4cbd-a830-40f38d1c73c3',
+                WorkItem.type.PROGRAM_ENROLMENT,
+                {
+                    programName: 'Mother',
+                    subjectUUID: _.get(context, 'entity.programEnrolment.individual.uuid')
+                }));
 
+        if (isProgramEncounterType) {
+            const programEncounter = context.entity;
+            const item = !_.some(programEncounter.programEnrolment.individual.enrolments, ['program.name', 'Mother']);
+            console.log('item', item);
+            const ruleCondition = new RuleCondition({programEncounter})
+                .when
+                .valueInEncounter("Whether currently pregnant").is.yes
+                .and.whenItem(!_.some(programEncounter.programEnrolment.individual.enrolments, ['program.name', 'Mother'])).is.truthy;
 
-module.exports = {ECMonthlyNeedsAssessmentViewFilterHandlerIHMP, ECMonthlyNeedsAssessmentDecisionIHMP};
+            if (ruleCondition.matches()) {
+                enrolToMotherProgram();
+            }
+
+        }
+
+        return workLists;
+    }
+}
+
+module.exports = {ECMonthlyNeedsAssessmentViewFilterHandlerIHMP, ECMonthlyNeedsAssessmentDecisionIHMP, IHMPWorkListUpdationRule};
