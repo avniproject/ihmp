@@ -1,6 +1,6 @@
 import moment from 'moment';
-import lib from '../../lib';
 import {
+    lib,
     FormElementsStatusHelper,
     FormElementStatus,
     FormElementStatusBuilder,
@@ -98,7 +98,7 @@ class PregnancyANCASHAViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     pregnancyComplications([programEncounter, fe, today], statusBuilder) {
-        const currentTrimester = lib.calculations.currentTrimester(programEncounter.programEnrolment, today);
+        const currentTrimester = lib().calculations.currentTrimester(programEncounter.programEnrolment, today);
         if (currentTrimester !== 3) {
             statusBuilder.skipAnswers('Reduced fetal movement', 'Watery discharge before onset of labour');
         }

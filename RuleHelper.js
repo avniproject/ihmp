@@ -1,5 +1,4 @@
-import {FormElementStatusBuilder, FormElementStatus, VisitScheduleBuilder} from 'rules-config/rules';
-import lib from './lib';
+import {lib, FormElementStatusBuilder, FormElementStatus, VisitScheduleBuilder} from 'rules-config/rules';
 import moment from 'moment';
 
 const addSchedule = (builder, visitSchedule) => {
@@ -12,7 +11,7 @@ const addSchedules = (builder, visitSchedules) => visitSchedules.forEach((vs) =>
 
 class RuleHelper {
     static getAgeOfYoungestChildInMonths(individual, referenceDate) {
-        const youngestChild = lib.C.getYoungestChild(individual);
+        const youngestChild = lib().C.getYoungestChild(individual);
         return youngestChild && youngestChild.getAgeInMonths(referenceDate);
     };
 
@@ -50,7 +49,7 @@ class RuleHelper {
         height = height && height.getValue();
         weight = weight && weight.getValue();
         if (Number.isFinite(weight) && Number.isFinite(height)) {
-            value = lib.C.calculateBMI(weight, height);
+            value = lib().C.calculateBMI(weight, height);
         }
         return new FormElementStatus(formElement.uuid, true, value);
     }

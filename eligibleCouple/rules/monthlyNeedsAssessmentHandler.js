@@ -218,7 +218,7 @@ class ECMonthlyNeedsAssessmentDecisionIHMP {
 })
 class IHMPWorkListUpdationRule {
     static exec(workLists, context) {
-        const WorkItem = lib.models.WorkItem;
+        const WorkItem = lib().models.WorkItem;
         const currentWorkItem = workLists.getCurrentWorkItem();
         const isProgramEncounterType = currentWorkItem.type === WorkItem.type.PROGRAM_ENCOUNTER;// && WorkItem.encounterType === 'Monthly needs assessment';
         const enrolToMotherProgram = () => workLists.addItemsToCurrentWorkList(

@@ -1,5 +1,5 @@
-import lib from "../../lib";
 import {
+    lib,
     complicationsBuilder as ComplicationsBuilder,
     DecisionRule,
     FormElementsStatusHelper,
@@ -43,7 +43,7 @@ class PregnancyANCVHNDViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     pregnancyComplications([programEncounter, fe, today], statusBuilder) {
-        const currentTrimester = lib.calculations.currentTrimester(programEncounter.programEnrolment, today);
+        const currentTrimester = lib().calculations.currentTrimester(programEncounter.programEnrolment, today);
         if (currentTrimester !== 3) {
             statusBuilder.skipAnswers('Reduced fetal movement', 'Watery discharge before onset of labour');
         }
@@ -61,7 +61,7 @@ class PregnancyANCVHNDFollowupViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     pregnancyComplications([programEncounter, fe, today], statusBuilder) {
-        const currentTrimester = lib.calculations.currentTrimester(programEncounter.programEnrolment, today);
+        const currentTrimester = lib().calculations.currentTrimester(programEncounter.programEnrolment, today);
         if (currentTrimester !== 3) {
             statusBuilder.skipAnswers('Reduced fetal movement', 'Watery discharge before onset of labour');
         }
@@ -90,11 +90,11 @@ class PregnancyANCVHNDDecisionsIHMP {
         });
 
         highRiskBuilder.addComplication("Irregular weight gain")
-            .whenItem(lib.calculations.isNormalWeightGain(programEncounter.programEnrolment, programEncounter, today)).is.not.truthy;
+            .whenItem(lib().calculations.isNormalWeightGain(programEncounter.programEnrolment, programEncounter, today)).is.not.truthy;
 
 
         console.log('lib.calculations.isNormalWeightGain(programEncounter.programEnrolment, programEncounter, today)');
-        console.log(lib.calculations.isNormalWeightGain(programEncounter.programEnrolment, programEncounter, today));
+        console.log(lib().calculations.isNormalWeightGain(programEncounter.programEnrolment, programEncounter, today));
         return highRiskBuilder.getComplications();
     }
 
