@@ -1,5 +1,11 @@
 [
   {
+    "uuid": "550a1e8a-51ad-4b01-a454-e94c5c6935a1",
+    "formUUID": "36ba19a3-c289-44b7-bf56-eed36e9d7519",
+    "comment": "Registration",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
+  },
+  {
     "uuid": "8120ff5a-6d13-47ad-b728-53074b9f43ff",
     "formUUID": "23d8763d-4759-4c7d-bb46-d57a1ee58673",
     "encounterTypeUUID": null,
