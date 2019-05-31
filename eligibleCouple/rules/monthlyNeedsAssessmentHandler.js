@@ -231,12 +231,11 @@ class IHMPWorkListUpdationRule {
 
         if (isProgramEncounterType) {
             const programEncounter = context.entity;
-            const item = !_.some(programEncounter.programEnrolment.individual.enrolments, ['program.name', 'Mother']);
-            console.log('item', item);
             const ruleCondition = new RuleCondition({programEncounter})
                 .when
                 .valueInEncounter("Whether currently pregnant").is.yes
-                .and.whenItem(!_.some(programEncounter.programEnrolment.individual.enrolments, ['program.name', 'Mother'])).is.truthy;
+                .and.whenItem(!_.some(programEncounter.programEnrolment.individual.enrolments,
+                    enrolment => !enrolment.voided && enrolment.program.name === 'Mother')).is.truthy;
 
             if (ruleCondition.matches()) {
                 enrolToMotherProgram();
