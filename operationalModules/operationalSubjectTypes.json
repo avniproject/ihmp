@@ -7,6 +7,13 @@
       "subjectType": {
         "uuid": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
       }
+    },
+    {
+      "uuid": "24e978c4-7797-437a-9866-89ec6d379ee8",
+      "name": "ASHA Area Inputs",
+      "subjectType": {
+        "uuid": "1b1d7dde-e8c7-4dd1-9b84-bd23d96851da"
+      }
     }
   ]
 }

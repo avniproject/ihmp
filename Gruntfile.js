@@ -31,6 +31,7 @@ module.exports = IDI.configure({
             "pregnancy/ancvhndForm.json",
             "pregnancy/postAbortionForm.json",
             "registration/registrationForm.json",
+            "registration/ashaInputsRegistrationForm.json",
             "shared/encounterCancellation/encounterCancellationForm.json",
         ],
         "formMappings": [
@@ -74,6 +75,7 @@ module.exports = IDI.configure({
         "encounterTypes": ["encounterTypes.json"],
         "operationalEncounterTypes": ["operationalModules/operationalEncounterTypes.json"],
         "operationalPrograms": ["operationalModules/operationalPrograms.json"],
+        "subjectTypes": ["subjectTypes.json"],
         "operationalSubjectTypes": ["operationalModules/operationalSubjectTypes.json"],
         "users": {
             "dev": ["users/dev-users.json"]

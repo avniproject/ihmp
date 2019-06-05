@@ -10,6 +10,7 @@
     "formUUID": "23d8763d-4759-4c7d-bb46-d57a1ee58673",
     "encounterTypeUUID": null,
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Eligible couple enrolment"
   },
   {
@@ -17,6 +18,7 @@
     "formUUID": "a4db9a29-aefc-4a05-bf6d-dabf7dab7dfe",
     "encounterTypeUUID": null,
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Eligible couple program exit"
   },
   {
@@ -24,6 +26,7 @@
     "formUUID": "8b5bf56e-346a-486e-b00e-9fa604fa0b54",
     "encounterTypeUUID": "55f10f7a-d85e-487e-b611-c1b5e26ab972",
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Eligible couple monthly needs assessment"
   },
   {
@@ -31,6 +34,7 @@
     "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
     "encounterTypeUUID": "55f10f7a-d85e-487e-b611-c1b5e26ab972",
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Eligible couple monthly needs assessment Cancel"
   },
   {
@@ -38,6 +42,7 @@
     "formUUID": "981b3e41-7fae-4b0e-a0aa-e9a42076414e",
     "encounterTypeUUID": "90aee0f6-6267-4133-8bd8-2938c6da5da4",
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Eligible couple family planning services"
   },
   {
@@ -45,6 +50,7 @@
     "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
     "encounterTypeUUID": "90aee0f6-6267-4133-8bd8-2938c6da5da4",
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Eligible couple family planning services cancel"
   },
   {
@@ -52,6 +58,7 @@
     "formUUID": "90a9660b-9bc5-4b73-8e09-f83d029216fa",
     "encounterTypeUUID": "f750c222-f7eb-4a98-bd79-273c578dedcf",
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Eligible couple RTI services"
   },
   {
@@ -59,6 +66,7 @@
     "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
     "encounterTypeUUID": "f750c222-f7eb-4a98-bd79-273c578dedcf",
     "programUUID": "fdf5c253-c49f-43e1-9591-4556a3ea36d4",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Eligible couple RTI services cancel"
   },
   {
@@ -66,6 +74,7 @@
     "formUUID": "e2cf41de-d962-4110-9d66-70877e2eb59d",
     "encounterTypeUUID": "0511f4b0-4af8-4493-ace6-97740f89f1f2",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Pregnancy ANC VHND"
   },
   {
@@ -73,6 +82,7 @@
     "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
     "encounterTypeUUID": "0511f4b0-4af8-4493-ace6-97740f89f1f2",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Pregnancy ANC VHND cancel"
   },
   {
@@ -80,6 +90,7 @@
     "formUUID": "5edbca3a-04bf-4e16-b624-57331a71da39",
     "encounterTypeUUID": "e381bd4e-6bf5-498d-b870-48fcfea303ff",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Pregnancy ANC VHND Follow up by ASHA"
   },
   {
@@ -87,6 +98,7 @@
     "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
     "encounterTypeUUID": "e381bd4e-6bf5-498d-b870-48fcfea303ff",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Pregnancy ANC VHND Follow up by ASHA cancel"
   },
   {
@@ -94,6 +106,7 @@
     "formUUID": "4201c189-5a6c-40ca-8c33-c5b7d24a9604",
     "encounterTypeUUID": "48f359e2-1387-49a0-bb15-71c1750b2acf",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Pregnancy ANC ASHA"
   },
   {
@@ -101,6 +114,7 @@
     "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
     "encounterTypeUUID": "48f359e2-1387-49a0-bb15-71c1750b2acf",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Pregnancy ANC ASHA cancel"
   },
   {
@@ -108,6 +122,7 @@
     "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
     "encounterTypeUUID": "e9971396-b74f-411c-956d-da44073922f5",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Pregnancy PNC cancel"
   },
   {
@@ -115,12 +130,14 @@
     "formUUID": "38a778be-991f-40f0-9837-7244836ecdfc",
     "encounterTypeUUID": "0126df9e-0167-4d44-9a2a-ae41cfc58d3d",
     "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": ""
   },
   {
     "uuid": "e9999cf2-d892-4bae-b805-bb0ff0652c75",
     "formUUID": "224a34c7-4101-49e3-9dcc-2c7c0b4d36ba",
     "encounterTypeUUID": "76244d2f-d23e-469b-a185-efa51d9ce536",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Census"
   },
   {
@@ -128,6 +145,7 @@
     "formUUID": "18ce4e59-9393-4c01-922a-e73bcbcb5c24",
     "encounterTypeUUID": "badd43fa-6346-436e-8fbc-9055be2754c9",
     "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Child Birth"
   },
   {
@@ -135,18 +153,21 @@
     "formUUID": "b9a823eb-0251-4697-a34a-49f3f8ab0c04",
     "encounterTypeUUID": "08250f58-6c95-49ca-ba42-57e49005ead6",
     "programUUID": "076ddb2d-a499-4314-af95-4178553d279b",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Pregnancy Abortion followup"
   },
   {
     "uuid": "1449caa8-0f7d-4eb3-a85f-1b6d6da70dc8",
     "formUUID": "e8fac8b3-b043-461d-8a32-6bdce9a33dc7",
     "encounterTypeUUID": "5666eb22-da31-4f0f-98cc-201e1657c502",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Marriage Register"
   },
   {
     "uuid": "56f03670-fd8c-4ea9-b82d-57b99df5c1ea",
     "formUUID": "2d8ca0a7-3f31-4de1-bd33-8312666f0d2b",
     "encounterTypeUUID": "c2d709b5-f769-42b0-bea5-8f8b182ef1a5",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Death Register"
   },
   {
@@ -154,6 +175,7 @@
     "formUUID": "b77bc4a1-c7e6-4d46-a0d9-eb211f05440e",
     "encounterTypeUUID": "cc6f9612-79af-4dcd-a019-5852c9e201aa",
     "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Neonatal"
   },
   {
@@ -161,12 +183,14 @@
     "formUUID": "88b10250-efa5-4cb7-bc99-bd91197f5a43",
     "encounterTypeUUID": "cc6f9612-79af-4dcd-a019-5852c9e201aa",
     "programUUID": "352d906c-b386-496c-ba23-91b1468a5613",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Neonatal cancel"
   },
   {
     "uuid": "124b19bb-5ba0-4168-9d9a-494b11eaf2af",
     "formUUID": "3bee367f-6305-44ee-8fc3-5e8c93530a26",
     "encounterTypeUUID": "7d38fd0e-94c5-48c1-9e3c-1719189cbea2",
+    "subjectTypeUUID": "1b1d7dde-e8c7-4dd1-9b84-bd23d96851da",
     "comment": "Asha Inputs"
   }
 ]
