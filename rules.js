@@ -28,4 +28,5 @@ module.exports = _.merge({},
     require('./marriageRegister/rules/marriageRegisterFormHandler'),
     require('./deathRegister/rules/deathRegisterFormHandler'),
     require('./asha/rules/ashaFormHandler'),
+    // require('./shared/testRule'),
 );
