@@ -31,7 +31,6 @@ module.exports = IDI.configure({
             "pregnancy/ancvhndForm.json",
             "pregnancy/postAbortionForm.json",
             "registration/registrationForm.json",
-            "registration/ashaInputsRegistrationForm.json",
             "shared/encounterCancellation/encounterCancellationForm.json",
         ],
         "formMappings": [
