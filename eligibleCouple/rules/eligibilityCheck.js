@@ -10,7 +10,6 @@ import {EnrolmentEligibilityCheck} from 'rules-config/rules';
 })
 class EligibleCoupleEnrolmentEligibility {
     static exec({individual}) {
-        console.log('yeahhhhhh');
         return individual.isFemale() && individual.getAgeInYears() > 5;
     }
 }

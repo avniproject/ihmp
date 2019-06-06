@@ -210,41 +210,4 @@ class ECMonthlyNeedsAssessmentDecisionIHMP {
     }
 }
 
-@WorkListUpdationRule({
-    name: 'IHMPWorkListUpdationRule',
-    uuid: '495e255c-335c-4ee5-ae53-6d3487ae2209',
-    executionOrder: 100.0,
-    metadata: {}
-})
-class IHMPWorkListUpdationRule {
-    static exec(workLists, context) {
-        const WorkItem = lib().models.WorkItem;
-        const currentWorkItem = workLists.getCurrentWorkItem();
-        const isProgramEncounterType = currentWorkItem.type === WorkItem.type.PROGRAM_ENCOUNTER;// && WorkItem.encounterType === 'Monthly needs assessment';
-        const enrolToMotherProgram = () => workLists.addItemsToCurrentWorkList(
-            new WorkItem('31af5921-368f-4cbd-a830-40f38d1c73c3',
-                WorkItem.type.PROGRAM_ENROLMENT,
-                {
-                    programName: 'Mother',
-                    subjectUUID: _.get(context, 'entity.programEnrolment.individual.uuid')
-                }));
-
-        if (isProgramEncounterType) {
-            const programEncounter = context.entity;
-            const ruleCondition = new RuleCondition({programEncounter})
-                .when
-                .valueInEncounter("Whether currently pregnant").is.yes
-                .and.whenItem(!_.some(programEncounter.programEnrolment.individual.enrolments,
-                    enrolment => !enrolment.voided && enrolment.program.name === 'Mother')).is.truthy;
-
-            if (ruleCondition.matches()) {
-                enrolToMotherProgram();
-            }
-
-        }
-
-        return workLists;
-    }
-}
-
-module.exports = {ECMonthlyNeedsAssessmentViewFilterHandlerIHMP, ECMonthlyNeedsAssessmentDecisionIHMP, IHMPWorkListUpdationRule};
+module.exports = {ECMonthlyNeedsAssessmentViewFilterHandlerIHMP, ECMonthlyNeedsAssessmentDecisionIHMP};
