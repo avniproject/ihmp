@@ -40,7 +40,8 @@ class IHMPWorkListUpdationRules {
         currentWorkList.workItems.splice(
             splicePosition,
             1000,
-            new WorkItem('27b873ad-063e-4f18-a534-f8367de917b5', WorkItem.type.REGISTRATION, {subjectTypeName: 'Individual'}),
+            new WorkItem('27b873ad-063e-4f18-a534-f8367de917b5', WorkItem.type.REGISTRATION, {subjectTypeName: 'Individual',
+                saveAndProceedLabel: 'registerAChild'}),
             new WorkItem('cbe9dd3b-8f10-487a-bc30-39a18f6fc5bd', WorkItem.type.PROGRAM_ENROLMENT, {
                 programName: 'Child',
             }),
