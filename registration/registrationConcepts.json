@@ -138,7 +138,8 @@
       },
       {
         "uuid": "0c885b5e-3e4d-4a10-89e4-41011bede03b",
-        "name": "Labourer"
+        "name": "Labourer",
+        "voided": true
       },
       {
         "uuid": "98bce8ac-e741-4e9f-a660-d935983da335",
