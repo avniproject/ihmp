@@ -45,6 +45,9 @@ class IHMPWorkListUpdationRules {
             new WorkItem('cbe9dd3b-8f10-487a-bc30-39a18f6fc5bd', WorkItem.type.PROGRAM_ENROLMENT, {
                 programName: 'Child',
             }),
+            new WorkItem('332e6f97-26eb-4fbd-b95c-b1a7caf3bafa', WorkItem.type.PROGRAM_ENCOUNTER, {
+                encounterType: 'Birth (ASHA)'
+            }),
             new WorkItem('352f2887-45b8-47fc-9e1d-729982623c39', WorkItem.type.PROGRAM_ENCOUNTER, {
                 subjectUUID: programEncounter.programEnrolment.individual.uuid,
                 programEnrolmentUUID: programEncounter.programEnrolment.uuid,
@@ -62,11 +65,12 @@ class IHMPWorkListUpdationRules {
         const currentWorkItem = workLists.getCurrentWorkItem();
         const splicePosition = _.findIndex(currentWorkList.workItems,
             (workItem) => workItem.id === '352f2887-45b8-47fc-9e1d-729982623c39') + 1;
+        console.log('splice position', splicePosition);
 
         if (currentWorkItem.id === '352f2887-45b8-47fc-9e1d-729982623c39') {
             const childEnrolmentWorkItem = currentWorkList.findWorkItem('cbe9dd3b-8f10-487a-bc30-39a18f6fc5bd');
             if (childEnrolmentWorkItem) {
-                currentWorkList.workItems.splice(splicePosition, 0, new WorkItem('edeeebd6-997e-478a-8713-73df02f666de',
+                currentWorkList.workItems.splice(splicePosition, 1000, new WorkItem('edeeebd6-997e-478a-8713-73df02f666de',
                     WorkItem.type.PROGRAM_ENCOUNTER,
                     {
                         subjectUUID: childEnrolmentWorkItem.parameters.subjectUUID,
