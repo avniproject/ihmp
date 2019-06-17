@@ -257,6 +257,10 @@
     "name": "Pain during sexual intercourse"
   },
   {
+    "uuid": "97340a9c-1a5b-46df-8bbe-d1e5f88ce0b3",
+    "name": "Red Discharge"
+  },
+  {
     "name": "Symptoms of RTI",
     "uuid": "b9d037fb-50c1-497e-bf5c-4d8419909a31",
     "dataType": "Coded",
@@ -264,6 +268,10 @@
       {
         "name": "White Discharge",
         "uuid": "1ff880ff-477d-4519-a664-a612a393dd60"
+      },
+      {
+        "name": "Red Discharge",
+        "uuid": "97340a9c-1a5b-46df-8bbe-d1e5f88ce0b3"
       },
       {
         "uuid": "77d6c96a-c543-492e-b062-2ad5f96f0cd0",
