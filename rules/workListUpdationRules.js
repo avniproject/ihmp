@@ -32,55 +32,48 @@ class IHMPWorkListUpdationRules {
     //Move mother PNC encounter to the end, and insert registration and enrolment of child.
     static delivery(workLists, context) {
         const WorkItem = lib().models.WorkItem;
-        const programEncounter = context.entity;
         const currentWorkList = workLists.currentWorkList;
-        const splicePosition = _.findIndex(currentWorkList.workItems,
-            (workItem) => workItem.type === WorkItem.type.REGISTRATION && workItem.parameters.encounterType === 'PNC');
 
+        //Remove ANC scheduled visits if any
+        const positionOfANC = _.findIndex(currentWorkList.workItems,
+            (workItem) => workItem.type === WorkItem.type.PROGRAM_ENCOUNTER && workItem.parameters.encounterType === 'ANC ASHA');
+        if (positionOfANC !== -1) {
+            currentWorkList.workItems.splice(positionOfANC, 1);
+        }
+
+        let splicePosition = currentWorkList.findWorkItemIndex(currentWorkList.currentWorkItem.id) + 1;
         currentWorkList.workItems.splice(
             splicePosition,
-            1000,
+            0,
             new WorkItem('27b873ad-063e-4f18-a534-f8367de917b5', WorkItem.type.REGISTRATION, {subjectTypeName: 'Individual',
                 saveAndProceedLabel: 'registerAChild'}),
             new WorkItem('cbe9dd3b-8f10-487a-bc30-39a18f6fc5bd', WorkItem.type.PROGRAM_ENROLMENT, {
                 programName: 'Child',
-            }),
-            new WorkItem('332e6f97-26eb-4fbd-b95c-b1a7caf3bafa', WorkItem.type.PROGRAM_ENCOUNTER, {
-                encounterType: 'Birth (ASHA)'
-            }),
-            new WorkItem('352f2887-45b8-47fc-9e1d-729982623c39', WorkItem.type.PROGRAM_ENCOUNTER, {
-                subjectUUID: programEncounter.programEnrolment.individual.uuid,
-                programEnrolmentUUID: programEncounter.programEnrolment.uuid,
-                encounterType: 'PNC'
             })
         );
+
         return workLists;
     }
 
-
-    //By now, child enrolment would have completed. Go ahead and create a child pnc.
     static pnc(workLists, context) {
-        const WorkItem = lib().models.WorkItem;
-        const currentWorkList = workLists.currentWorkList;
-        const currentWorkItem = workLists.getCurrentWorkItem();
-        const splicePosition = _.findIndex(currentWorkList.workItems,
-            (workItem) => workItem.id === '352f2887-45b8-47fc-9e1d-729982623c39') + 1;
-        console.log('splice position', splicePosition);
-
-        if (currentWorkItem.id === '352f2887-45b8-47fc-9e1d-729982623c39') {
-            const childEnrolmentWorkItem = currentWorkList.findWorkItem('cbe9dd3b-8f10-487a-bc30-39a18f6fc5bd');
-            if (childEnrolmentWorkItem) {
-                currentWorkList.workItems.splice(splicePosition, 1000, new WorkItem('edeeebd6-997e-478a-8713-73df02f666de',
-                    WorkItem.type.PROGRAM_ENCOUNTER,
-                    {
-                        subjectUUID: childEnrolmentWorkItem.parameters.subjectUUID,
-                        programEnrolmentUUID: childEnrolmentWorkItem.parameters.programEnrolmentUUID,
-                        encounterType: 'Neonatal',
-                    }
-                    )
-                )
-            }
+        const workItems = workLists.currentWorkList.workItems;
+        const pncWorkItemIndex = workItems.findIndex(workItem => workItem.parameters.encounterType === 'PNC' );
+        let neonatalWorkItemIndex = workItems.findIndex(workItem => workItem.parameters.encounterType === 'Neonatal');
+        if (pncWorkItemIndex !== -1 && neonatalWorkItemIndex !== -1) {
+            const [pncWorkItem] = workItems.splice(pncWorkItemIndex, 1);
+            //Recalculate since this would have changed since last splice
+            neonatalWorkItemIndex = workItems.findIndex(workItem => workItem.parameters.encounterType === 'Neonatal');
+            workItems.splice(neonatalWorkItemIndex, 0, pncWorkItem);
         }
+        return workLists;
+    }
+
+    static programEnrolment(workLists, context) {
+        const currentWorkItem = workLists.getCurrentWorkItem();
+        if (currentWorkItem.parameters.programName === 'Child') {
+            return IHMPWorkListUpdationRules.pnc(workLists, context);
+        }
+        return workLists;
     }
 
     static programEncounter(workLists, context) {
@@ -92,9 +85,6 @@ class IHMPWorkListUpdationRules {
             case 'Delivery': {
                 return IHMPWorkListUpdationRules.delivery(workLists, context);
             }
-            case 'PNC': {
-                return IHMPWorkListUpdationRules.pnc(workLists, context);
-            }
             default: {
                 return workLists;
             }
@@ -105,6 +95,9 @@ class IHMPWorkListUpdationRules {
     static exec(workLists, context) {
         const WorkItem = lib().models.WorkItem;
         const currentWorkItem = workLists.getCurrentWorkItem();
+        if (currentWorkItem.type === WorkItem.type.PROGRAM_ENROLMENT) {
+            IHMPWorkListUpdationRules.programEnrolment(workLists, context)
+        }
         if (currentWorkItem.type === WorkItem.type.PROGRAM_ENCOUNTER) {
             IHMPWorkListUpdationRules.programEncounter(workLists, context)
         }
