@@ -47,7 +47,7 @@
           "mandatory": true
         },
         {
-          "name": "Whether recieved benefit of JSY",
+          "name": "Whether received benefit of JSY",
           "uuid": "919697d8-4a2e-4af4-a3cf-9c8de5641d87",
           "type": "SingleSelect",
           "concept": {
@@ -58,12 +58,12 @@
           "mandatory": true
         },
         {
-          "name": "Details of JSY benefit - cheque number and amount",
+          "name": "Benefits received under JSY in rupees",
           "uuid": "4630036e-d75b-464e-bd70-b136bc277aeb",
           "keyValues": [],
           "concept": {
-            "name": "Details of JSY benefit - cheque number and amount",
-            "uuid": "c7ef7cd1-ca78-43a3-907f-201e9b0a79e2"
+            "name": "Benefits received under JSY in rupees",
+            "uuid": "1c186357-3c2c-48e3-8eec-7776c284a061"
           },
           "displayOrder": 3,
           "mandatory": true

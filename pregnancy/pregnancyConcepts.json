@@ -100,31 +100,38 @@
     "answers": [
       {
         "name": "Symptoms of anaemia",
-        "uuid": "49968689-e416-42af-b292-df577c0e45ad"
+        "uuid": "49968689-e416-42af-b292-df577c0e45ad",
+        "abnormal": true
       },
       {
         "uuid": "e40446ef-fb81-4ae3-b1d2-54123976b929",
-        "name": "Excessive vomiting"
+        "name": "Excessive vomiting",
+        "abnormal": true
       },
       {
         "uuid": "7a68c1a2-4268-4693-b9ec-53bbefdd76db",
-        "name": "Swelling on feet or face"
+        "name": "Swelling on feet or face",
+        "abnormal": true
       },
       {
         "name": "High Blood Pressure",
-        "uuid": "63398939-0a45-46ee-8d92-f01d55e96c1a"
+        "uuid": "63398939-0a45-46ee-8d92-f01d55e96c1a",
+        "abnormal": true
       },
       {
         "name": "Convulsions",
-        "uuid": "ab9596e4-04b6-48f2-9f4d-1c7a2c82dbf8"
+        "uuid": "ab9596e4-04b6-48f2-9f4d-1c7a2c82dbf8",
+        "abnormal": true
       },
       {
         "uuid": "09f81016-9287-419a-bf69-327aa7d2647e",
-        "name": "Watery discharge before onset of labour"
+        "name": "Watery discharge before onset of labour",
+        "abnormal": true
       },
       {
         "uuid": "c80629dc-6764-4805-9ae2-8379d1962726",
-        "comment": "Reduced fetal movement"
+        "comment": "Reduced fetal movement",
+        "abnormal": true
       }
     ]
   },
@@ -444,7 +451,7 @@
     ]
   },
   {
-    "name": "Whether recieved benefit of JSY",
+    "name": "Whether received benefit of JSY",
     "uuid": "d6fb3f4a-5f56-49fe-b9b3-7b31563a2aad",
     "dataType": "Coded",
     "answers": [
@@ -460,6 +467,12 @@
     "name": "Details of JSY benefit - cheque number and amount",
     "uuid": "c7ef7cd1-ca78-43a3-907f-201e9b0a79e2",
     "dataType": "Text"
+  },
+  {
+    "name": "Benefits received under JSY in rupees",
+    "uuid": "1c186357-3c2c-48e3-8eec-7776c284a061",
+    "dataType": "Numeric",
+    "unit": "Rs"
   },
   {
     "name": "Whether received benefits of PMVY",

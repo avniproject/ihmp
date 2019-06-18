@@ -39,7 +39,7 @@ class DeliveryFilterHandler {
     }
     
     @WithStatusBuilder
-    detailsOfJsyBenefitChequeNumberAndAmount([], statusBuilder) {
+    benefitsReceivedUnderJsyInRupees([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Whether recieved benefit of JSY").is.yes;
     }
     
