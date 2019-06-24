@@ -1,3 +1,5 @@
+import lib from "../../../aragyam/lib";
+
 const moment = require("moment");
 const _ = require("lodash");
 import {
@@ -13,6 +15,7 @@ import {
 const EnrolmentViewFilter = RuleFactory("23d8763d-4759-4c7d-bb46-d57a1ee58673", "ViewFilter");
 const ProgramExitViewFilter = RuleFactory("a4db9a29-aefc-4a05-bf6d-dabf7dab7dfe", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
+const validation = RuleFactory('23d8763d-4759-4c7d-bb46-d57a1ee58673', 'Validation');
 
 @EnrolmentViewFilter("bad682db-5dab-4a3b-af0c-2f0f870a1ab5", "IHMP EC Enrolment View Filter", 100.0, {})
 class ECEnrolmentViewFilterHandlerIHMP {
@@ -200,4 +203,20 @@ class ECProgramExitViewFilterHandler {
 
 }
 
-module.exports = {ECEnrolmentViewFilterHandlerIHMP, ECProgramRule, ECProgramExitViewFilterHandler}
+
+@validation("61360a54-692b-4e14-ab33-679b36173618", "Male Enrolment To EC Not Allowed", 100.0)
+class MaleEnrolmentFailureIHMP {
+    validate(programEnrolment) {
+        const validationResults = [];
+        if (programEnrolment.individual.isMale()) {
+            validationResults.push(lib.C.createValidationError('MaleEnrolmentToECNotAllowed'));
+        }
+        return validationResults;
+    }
+
+    static exec(programEncounter, validationErrors) {
+        return new MaleEnrolmentFailureIHMP().validate(programEncounter);
+    }
+}
+
+module.exports = {ECEnrolmentViewFilterHandlerIHMP, ECProgramRule, ECProgramExitViewFilterHandler, MaleEnrolmentFailureIHMP};
