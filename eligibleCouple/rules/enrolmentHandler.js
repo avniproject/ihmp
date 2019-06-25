@@ -1,16 +1,16 @@
-import lib from "../../../aragyam/lib";
-
-const moment = require("moment");
-const _ = require("lodash");
+import moment from "moment";
 import {
-    RuleFactory,
     FormElementsStatusHelper,
-    FormElementStatusBuilder,
-    StatusBuilderAnnotationFactory,
     FormElementStatus,
-    VisitScheduleBuilder,
-    ProgramRule
+    FormElementStatusBuilder,
+    lib,
+    ProgramRule,
+    RuleFactory,
+    StatusBuilderAnnotationFactory,
+    VisitScheduleBuilder
 } from 'rules-config/rules';
+
+import _ from "lodash";
 
 const EnrolmentViewFilter = RuleFactory("23d8763d-4759-4c7d-bb46-d57a1ee58673", "ViewFilter");
 const ProgramExitViewFilter = RuleFactory("a4db9a29-aefc-4a05-bf6d-dabf7dab7dfe", "ViewFilter");
@@ -209,7 +209,7 @@ class MaleEnrolmentFailureIHMP {
     validate(programEnrolment) {
         const validationResults = [];
         if (programEnrolment.individual.isMale()) {
-            validationResults.push(lib.C.createValidationError('MaleEnrolmentToECNotAllowed'));
+            validationResults.push(lib().C.createValidationError('MaleEnrolmentToECNotAllowed'));
         }
         return validationResults;
     }
