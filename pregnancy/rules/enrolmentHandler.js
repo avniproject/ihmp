@@ -1,3 +1,5 @@
+import {lib} from "rules-config";
+
 const moment = require("moment");
 const _ = require("lodash");
 import {
@@ -12,6 +14,7 @@ import {
 
 const EnrolmentViewFilter = RuleFactory("026e2f5c-8670-4e4b-9a54-cb03bbf3093d", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
+const validation = RuleFactory('026e2f5c-8670-4e4b-9a54-cb03bbf3093d', 'Validation');
 
 @EnrolmentViewFilter("63619362-70e0-4794-ab53-9c6635ce342b", "IHMP Pregnancy Enrolment View Filter", 100.0, {})
 class PregnancyEnrolmentViewFilterHandlerIHMP {
@@ -99,6 +102,21 @@ class PregnancyProgramSummaryIHMP {
     }
 }
 
+@validation("bc48beed-22a7-44b6-b532-9526fb5d441e", "Male Enrolment To Pregnancy Not Allowed", 100.0)
+class MaleEnrolmentToPregnancyFailureIHMP {
+    validate(programEnrolment) {
+        const validationResults = [];
+        if (programEnrolment.individual.isMale()) {
+            validationResults.push(lib().C.createValidationError('MaleEnrolmentToPregnancyNotAllowed'));
+        }
+        return validationResults;
+    }
+
+    static exec(programEncounter, validationErrors) {
+        return new MaleEnrolmentToPregnancyFailureIHMP().validate(programEncounter);
+    }
+}
+
 export {
-    PregnancyProgramSummaryIHMP, PregnancyEnrolmentViewFilterHandlerIHMP
+    PregnancyProgramSummaryIHMP, PregnancyEnrolmentViewFilterHandlerIHMP, MaleEnrolmentToPregnancyFailureIHMP
 }
