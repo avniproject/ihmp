@@ -397,5 +397,10 @@
         "name": "Baby was dressed in loose vest"
       }
     ]
+  },
+  {
+    "name": "Number of times baby was breast fed yesterday",
+    "uuid": "96b2055d-3e0a-45a2-b107-81db2ee6fc9c",
+    "dataType": "Numeric"
   }
 ]

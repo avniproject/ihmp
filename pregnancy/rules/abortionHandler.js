@@ -46,6 +46,12 @@ class PregnancyAbortionViewFilterIHMP {
         statusBuilder.show().when.valueInEncounter('Post abortion complaints').containsAnyAnswerConceptName('Foul smelling vaginal discharge or blood', 'Lower abdominal pain', 'Per vaginal bleeding', 'Fever', 'Other');
     }
 
+    @WithName("Whether complication cured")
+    @WithStatusBuilder
+    b([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter('Whether taken treatment for post abortion complication').containsAnswerConceptName('Yes');
+    }
+
 }
 
 @Decision('b3e83264-229a-4f6e-adb7-b24d17d117d5', 'PregnancyAbortionDecisionIHMP', 100.0, {})

@@ -39,6 +39,17 @@
           },
           "displayOrder": 7.5,
           "mandatory": true
+        },
+        {
+          "name": "Whether complication cured",
+          "uuid": "48530aaa-6e27-49b8-85e7-2cc66e6f60d9",
+          "keyValues": [],
+          "concept": {
+            "name": "Whether complication cured",
+            "uuid": "f13307be-a27d-4bb5-8adf-8fe38707c78d"
+          },
+          "displayOrder": 8,
+          "mandatory": true
         }
       ]
     }

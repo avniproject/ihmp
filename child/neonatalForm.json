@@ -80,8 +80,8 @@
     },
     {
       "uuid": "09d67ed0-d73f-40d6-a00b-804aed900f54",
-      "name": "Neonate complications (usually within 0 - 5 days)",
-      "display": "Neonate complications (usually within 0 - 5 days)",
+      "name": "Neonatal complications – 1",
+      "display": "Neonatal complications – 1",
       "displayOrder": 2,
       "formElements": [
         {
@@ -135,8 +135,8 @@
     },
     {
       "uuid": "8f16cbbb-3825-4795-839d-fb93b9c94a5f",
-      "name": "Neonate complications (usually within 0 - 10 days)",
-      "display": "Neonate complications (usually within 0 - 10 days)",
+      "name": "Neonatal complications – 2",
+      "display": "Neonatal complications – 2",
       "displayOrder": 3,
       "formElements": [
         {
@@ -190,8 +190,8 @@
     },
     {
       "uuid": "25cb44f6-e950-41ed-9582-08790537b754",
-      "name": "Neonate complications (usually within 0 - 42 days)",
-      "display": "Neonate complications (usually within 0 - 42 days)",
+      "name": "Neonatal complications – 3",
+      "display": "Neonatal complications – 3",
       "displayOrder": 4,
       "formElements": [
         {
@@ -347,6 +347,25 @@
             "uuid": "955f881b-7d3a-45c0-9d53-0ede9ba39c59"
           },
           "displayOrder": 8,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "e13a83e2-81b9-4a01-b377-27224716b473",
+      "name": "Breast feeding",
+      "display": "Breast feeding",
+      "displayOrder": 8.5,
+      "formElements": [
+        {
+          "name": "Number of times baby was breast fed yesterday",
+          "uuid": "cb4cb1b8-928e-48f3-83da-1830aa23ed08",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of times baby was breast fed yesterday",
+            "uuid": "96b2055d-3e0a-45a2-b107-81db2ee6fc9c"
+          },
+          "displayOrder": 1,
           "mandatory": true
         }
       ]

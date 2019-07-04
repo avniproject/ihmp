@@ -59,8 +59,11 @@ class ANCVHNDVisitBasedVisitsIHMP {
 class IHMPDeliveryVisitSchedules {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {
         let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
-        let dateOfDelivery = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of delivery', programEncounter);
-        RuleHelper.blindAddSchedule(scheduleBuilder, 'PNC 1', 'PNC', moment(programEncounter.encounterDateTime).startOf('day').toDate(), 0);
+        const placeOfDelivery = programEncounter.getObservationReadableValue('Place of delivery');
+        let earliestVisitDateTime = ["Home", "During Transportation like in Ambulance etc"].indexOf(placeOfDelivery) !== -1 ?
+            moment(programEncounter.encounterDateTime).startOf('day').toDate() :
+            moment(programEncounter.encounterDateTime).startOf('day').add(3, 'days').toDate();
+        RuleHelper.blindAddSchedule(scheduleBuilder, 'PNC 1', 'PNC', earliestVisitDateTime, 0);
         return scheduleBuilder.getAll();
     }
 }
@@ -69,7 +72,7 @@ class IHMPDeliveryVisitSchedules {
 class IHMPPNCVisitSchedules {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {
         let dateOfDelivery = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of delivery', programEncounter);
-        return VisitSchedule.postPartumVisits(programEncounter, 'PNC', dateOfDelivery,visitSchedule);
+        return VisitSchedule.postPartumVisits(programEncounter, 'PNC', dateOfDelivery, visitSchedule);
     }
 }
 
