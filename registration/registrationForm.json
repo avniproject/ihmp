@@ -73,7 +73,7 @@
             "uuid": "60c44aa2-3635-487d-8962-43000e77d382"
           },
           "displayOrder": 2.5,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Caste category",
