@@ -45,11 +45,11 @@
   },
   {
     "uuid": "5666eb22-da31-4f0f-98cc-201e1657c502",
-    "name" : "Marriage Register"
+    "name" : "Marriage"
   },
   {
     "uuid": "c2d709b5-f769-42b0-bea5-8f8b182ef1a5",
-    "name": "Death Register"
+    "name": "Death"
   },
   {
     "uuid": "7d38fd0e-94c5-48c1-9e3c-1719189cbea2",

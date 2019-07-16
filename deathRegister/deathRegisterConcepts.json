@@ -23,5 +23,10 @@
     "name": "Cause of death",
     "uuid": "c483ac2a-472b-4bdc-b4bf-5ffe0550e3bd",
     "dataType": "Text"
+  },
+  {
+    "name": "Other place of death",
+    "uuid": "509b754f-5f55-43d7-9290-38f955a0ee35",
+    "dataType":"Text"
   }
 ]

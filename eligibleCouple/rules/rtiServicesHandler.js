@@ -20,7 +20,7 @@ class RTIServicesViewFilterIHMP {
     x([], statusBuilder) {
         statusBuilder.show()
             .when.valueInEncounter("Symptoms of RTI").is.defined
-            .and.not.when.valueInEncounter("Symptoms of RTI").containsAnswerConceptName("None");
+            .and.when.valueInEncounter("Symptoms of RTI").not.containsAnswerConceptName("None");
     }
 
     static exec(programEncounter, formElementGroup, today) {

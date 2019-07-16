@@ -765,7 +765,21 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
+  },
+  {    
+    "name": "Number of times she ate yesterday",
+    "uuid": "894d2986-49fd-42c9-8de7-4c7e64ce70e9",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Place of delivery",
+    "uuid": "a0405799-1e3c-40ef-90ba-84c9c0931660",
+    "dataType": "Coded",
+    "answers": [
+      {
+          "name": "Private hospital",
+          "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      }
+        ]
   }
-
-
 ]

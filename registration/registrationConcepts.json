@@ -1,5 +1,37 @@
 [
   {
+    "uuid": "96acdbd3-d7d4-4e0b-b60f-e74709d754d8",
+    "name": "Grand child",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "f18d57bb-89e6-4837-8ec9-b7a85e7f67d2",
+    "name": " VJ/NT",
+    "dataType": "Text"
+  },
+  {
+    "name": "Relation to head of the family",
+    "uuid": "1b6ae290-1823-4aab-91a5-b1d8a1b3b837",
+    "dataType":"Coded",
+    "answers":[
+      {
+      "uuid": "96acdbd3-d7d4-4e0b-b60f-e74709d754d8",
+      "name": "Grand child"
+      }
+    ]
+  },
+  {
+    "name": "Caste Category",
+    "uuid": "61ab6413-5c6a-4512-ab6e-7d5cd1439569",
+    "dataType":"Coded",
+    "answers":[
+      {
+        "uuid": "f18d57bb-89e6-4837-8ec9-b7a85e7f67d2",
+        "name": " VJ/NT"
+      }
+    ]
+  },
+  {
     "name": "Whether any disability",
     "uuid": "1eb73895-ddba-4ddb-992c-03225f93775c",
     "dataType": "Coded",

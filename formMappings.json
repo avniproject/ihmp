@@ -161,14 +161,14 @@
     "formUUID": "e8fac8b3-b043-461d-8a32-6bdce9a33dc7",
     "encounterTypeUUID": "5666eb22-da31-4f0f-98cc-201e1657c502",
     "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
-    "comment": "Marriage Register"
+    "comment": "Marriage"
   },
   {
     "uuid": "56f03670-fd8c-4ea9-b82d-57b99df5c1ea",
     "formUUID": "2d8ca0a7-3f31-4de1-bd33-8312666f0d2b",
     "encounterTypeUUID": "c2d709b5-f769-42b0-bea5-8f8b182ef1a5",
     "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
-    "comment": "Death Register"
+    "comment": "Death"
   },
   {
     "uuid": "3133644c-909d-41d0-8393-18b0f21a65e1",

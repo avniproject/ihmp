@@ -58,7 +58,7 @@ class DeliveryFilterHandler {
         statusBuilder.show().when.valueInEncounter('Delivery outcome')
             .containsAnyAnswerConceptName("Live Birth", "Still Birth", "Live birth and Still birth")
             .and.when.valueInEncounter('Place of delivery')
-            .containsAnyAnswerConceptName('Regional Hospital','NGO Hospital','Government Hospital' ,'Primary Health Center','Sub Center');
+            .containsAnyAnswerConceptName('Private hospital','Regional Hospital','NGO Hospital','Government Hospital' ,'Primary Health Center','Sub Center');
     }
 
     @WithStatusBuilder
@@ -66,7 +66,7 @@ class DeliveryFilterHandler {
         statusBuilder.show().when.valueInEncounter('Delivery outcome')
             .containsAnyAnswerConceptName("Live Birth", "Still Birth", "Live birth and Still birth")
             .and.when.valueInEncounter('Place of delivery')
-            .containsAnyAnswerConceptName('Regional Hospital','NGO Hospital','Government Hospital' ,'Primary Health Center','Sub Center');
+            .containsAnyAnswerConceptName('Private hospital','Regional Hospital','NGO Hospital','Government Hospital' ,'Primary Health Center','Sub Center');
     }
 }
 

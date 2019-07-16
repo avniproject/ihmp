@@ -44,7 +44,6 @@ class PregnancyANCASHAViewFilterHandlerIHMP {
         return new FormElementStatus(formElement.uuid, whetherRegisteredForAntenatalCare === 'Yes', gestationalAgeInMonthsAsOfANCRegistrationDate);
     }
 
-
     @WithStatusBuilder
     placeWhereRegisteredForAntenatalCare([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Whether registered for antenatal care").is.yes;
@@ -98,6 +97,8 @@ class PregnancyANCASHAViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     pregnancyComplications([programEncounter, fe, today], statusBuilder) {
+        statusBuilder.skipAnswers('Morning Sickness', 'Excessive vomiting and inability to consume anything orally in last 24 hours');
+
         const currentTrimester = lib().calculations.currentTrimester(programEncounter.programEnrolment, today);
         if (currentTrimester !== 3) {
             statusBuilder.skipAnswers('Reduced fetal movement', 'Watery discharge before onset of labour');

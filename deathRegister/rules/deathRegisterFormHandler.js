@@ -35,6 +35,13 @@ class DeathRegisterFormHandler {
     ageAtDeath([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Exact date of death is known").is.no;
     }
+
+    @WithName("Please specify, other place of death")
+    @WithStatusBuilder
+    pleaseSpecifyOtherPlaceOfDeath([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Place of death").containsAnswerConceptName("Other");
+    }
+
 }
 
 function getDoDFromAge(encounter) {

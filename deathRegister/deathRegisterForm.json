@@ -13,7 +13,7 @@
           "name": "Is exact date of death known?",
           "uuid": "8501b0ef-b151-4bd4-a44f-2f9553279569",
           "keyValues": [],
-	  "type": "SingleSelect",
+	        "type": "SingleSelect",
           "concept": {
             "name": "Exact date of death known",
             "uuid": "08c78089-b85a-49b0-bc7f-8f257c55a095"
@@ -63,12 +63,23 @@
           "name": "Place of Death",
           "uuid": "aeca1504-5649-47b9-86d1-c8fc4c2c53b2",
           "keyValues": [],
-          "type": "MultiSelect",
+          "type": "SingleSelect",
           "concept": {
             "name": "Place of death",
             "uuid": "3f6c371a-4638-4823-be14-98c22f208902"
           },
           "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Please specify, other place of death",
+          "uuid": "610ed7c1-b4fb-4bc2-b05f-3baab651ba14",
+          "keyValues": [],
+          "concept": {
+            "name": "Other place of death",
+            "uuid": "509b754f-5f55-43d7-9290-38f955a0ee35"
+          },
+          "displayOrder": 7,
           "mandatory": true
         }
       ]

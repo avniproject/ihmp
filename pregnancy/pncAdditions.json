@@ -160,6 +160,17 @@
           },
           "displayOrder": 5,
           "mandatory": true
+        },
+        {
+          "name": "How many times did mother eat yestarday?",
+          "uuid": "630a3bef-6b27-4be1-9e6d-76f4ca0532b8",
+          "keyValues": [],
+          "concept": {
+            "uuid": "894d2986-49fd-42c9-8de7-4c7e64ce70e9",
+            "comment": "Number of times she ate yesterday"
+          },
+          "displayOrder": 6,
+          "mandatory": true
         }
       ]
     },
