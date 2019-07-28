@@ -34,13 +34,13 @@ class DeliveryFilterHandler {
 
 
     @WithStatusBuilder
-    whetherRecievedBenefitOfJsy([], statusBuilder) {
+    whetherReceivedBenefitOfJsy([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Whether eligible for JSY").is.yes;
     }
     
     @WithStatusBuilder
     benefitsReceivedUnderJsyInRupees([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Whether recieved benefit of JSY").is.yes;
+        statusBuilder.show().when.valueInEncounter("Whether received benefit of JSY").is.yes;
     }
     
     @WithStatusBuilder

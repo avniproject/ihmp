@@ -1,6 +1,6 @@
 [
   {
-    "name": "Sever pallor",
+    "name": "Severe pallor",
     "uuid": "5a1dc4ef-bf37-4c37-ada3-b61e2f5abe36",
     "dataType": "NA"
   },
@@ -16,7 +16,7 @@
     "answers": [
       {
         "uuid": "5a1dc4ef-bf37-4c37-ada3-b61e2f5abe36",
-        "comment": "Sever pallor",
+        "comment": "Severe pallor",
         "abnormal": true
       },
       {

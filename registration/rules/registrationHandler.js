@@ -42,7 +42,7 @@ class RegistrationHandlerIHMP {
 
     @WithStatusBuilder
     occupation([], statusBuilder) {
-        statusBuilder.skipAnswers('Daily wage labourer');
+        statusBuilder.skipAnswers('Daily wage labourer', 'Skilled manual');
         statusBuilder.show().when.ageInYears.is.greaterThanOrEqualTo(7);
     }
 
