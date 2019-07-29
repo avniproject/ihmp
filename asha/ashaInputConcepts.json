@@ -863,6 +863,14 @@
     "dataType": "Numeric"
   },
   {
+    "name": "Gender norms rights",
+    "uuid": "f4ccc1fe-4428-45a7-b543-b79be7bab1a5"
+  },
+  {
+    "name": "Domestic violence",
+    "uuid": "a56fc403-4149-4937-af59-79d7aefc8d4b"
+  },
+  {
     "name": "Topic covered in the group meeting for husband?",
     "uuid": "3b6e19d6-5d82-4506-a3b2-c32798e01a25",
     "dataType": "Coded",
@@ -895,6 +903,14 @@
       {
         "uuid": "3cab380d-d6c4-4faa-a67e-d31fb9c6cf38",
         "name": "Family planning"
+      },
+      {
+        "name": "Gender norms rights",
+        "uuid": "f4ccc1fe-4428-45a7-b543-b79be7bab1a5"
+      },
+      {
+        "name": "Domestic violence",
+        "uuid": "a56fc403-4149-4937-af59-79d7aefc8d4b"
       },
       {
         "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",

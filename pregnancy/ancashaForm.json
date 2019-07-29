@@ -5,8 +5,8 @@
   "formElementGroups": [
     {
       "uuid": "c303a538-aac9-4ef3-8e6e-56b2607f04ba",
-      "name": "General",
-      "display": "General",
+      "name": "General Information of Pregnant Woman",
+      "display": "General Information of Pregnant Woman",
       "displayOrder": 1,
       "formElements": [
         {

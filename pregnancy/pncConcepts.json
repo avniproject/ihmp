@@ -35,6 +35,11 @@
         "abnormal": true
       },
       {
+        "name": "Unconscious",
+        "uuid": "04d0248b-72c4-4d78-b4f1-3e3d9cc247b1",
+        "abnormal": true
+      },
+      {
         "uuid": "855fb739-19d8-418d-a8ae-c1da977b7fa9",
         "comment": "No problem",
         "unique": true

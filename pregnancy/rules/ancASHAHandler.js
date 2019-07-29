@@ -97,7 +97,7 @@ class PregnancyANCASHAViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     pregnancyComplications([programEncounter, fe, today], statusBuilder) {
-        statusBuilder.skipAnswers('Morning Sickness', 'Excessive vomiting and inability to consume anything orally in last 24 hours');
+        statusBuilder.skipAnswers('Morning Sickness', 'Excessive vomiting and inability to consume anything orally in last 24 hours', 'PV leaking');
 
         const currentTrimester = lib().calculations.currentTrimester(programEncounter.programEnrolment, today);
         if (currentTrimester !== 3) {
