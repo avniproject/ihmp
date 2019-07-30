@@ -35,7 +35,7 @@ class PregnancyPostAbortionViewFilterIHMP {
     @WithName('Whether taken treatment for post abortion complication')
     @WithStatusBuilder
     z([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter('Post abortion complaints').containsAnyAnswerConceptName('Foul smelling vaginal discharge or blood','Lower abdominal pain','Per vaginal bleeding','Fever', 'Other');
+        statusBuilder.show().when.valueInEncounter('Abortion complaints').containsAnyAnswerConceptName('Foul smelling vaginal discharge or blood','Lower abdominal pain','Per vaginal bleeding','Fever', 'Other');
     }
 
     @WithName('Duration of post abortion treatment in days')

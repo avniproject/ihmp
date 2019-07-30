@@ -43,7 +43,7 @@ class PregnancyAbortionViewFilterIHMP {
     @WithName('Whether treatment taken for post abortion complaints')
     @WithStatusBuilder
     a([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter('Post abortion complaints').containsAnyAnswerConceptName('Foul smelling vaginal discharge or blood', 'Lower abdominal pain', 'Per vaginal bleeding', 'Fever', 'Other');
+        statusBuilder.show().when.valueInEncounter('Abortion complaints').containsAnyAnswerConceptName('Foul smelling vaginal discharge or blood', 'Lower abdominal pain', 'Per vaginal bleeding', 'Fever', 'Other');
     }
 
     @WithName("Whether complication cured")

@@ -120,7 +120,7 @@
             "uuid": "c4c40025-a8c3-4457-b3d5-5481b46ded8f"
           },
           "displayOrder": 11,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     }
