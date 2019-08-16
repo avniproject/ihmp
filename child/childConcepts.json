@@ -402,5 +402,16 @@
     "name": "Number of times baby was breast fed yesterday",
     "uuid": "96b2055d-3e0a-45a2-b107-81db2ee6fc9c",
     "dataType": "Numeric"
+  },
+  {
+    "name": "Place of birth",
+    "uuid": "fc3f9353-3cf3-426c-91fa-96e5900fd8af",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Private hospital",
+        "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      }
+    ]
   }
 ]

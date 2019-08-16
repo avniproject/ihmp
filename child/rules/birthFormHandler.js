@@ -22,6 +22,11 @@ class ChildBirthViewFilterHandlerIHMP {
             .getFormElementsStatusesWithoutDefaults(new ChildBirthViewFilterHandlerIHMP(), programEncounter, formElementGroup, today);
     }
 
+    @WithStatusBuilder
+    placeOfBirth([], statusBuilder) {
+        statusBuilder.skipAnswers('NGO Hospital');
+    }
+
 
     @WithStatusBuilder
     otherDetailsFirstFeedGivenToTheNewborn([], statusBuilder) {

@@ -12,6 +12,7 @@
         {
           "name": "Village name",
           "uuid": "caf0180a-dda6-4ce9-95b6-e30b064ce728",
+          "voided": true,
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
@@ -47,6 +48,7 @@
           "name": "Name of ASHA",
           "uuid": "e978d61d-0022-4b6f-93e3-2976f50ea5b1",
           "keyValues": [],
+          "voided": true,
           "type": "SingleSelect",
           "concept": {
             "name": "Name of ASHA",
