@@ -1,13 +1,35 @@
 [
   {
     "uuid": "96acdbd3-d7d4-4e0b-b60f-e74709d754d8",
-    "name": "Grand child",
-    "dataType": "Text"
+    "name": "Grand child"
   },
   {
     "uuid": "f18d57bb-89e6-4837-8ec9-b7a85e7f67d2",
-    "name": " VJ/NT",
-    "dataType": "Text"
+    "name": " VJ/NT"
+  },
+  {
+    "uuid": "39eec340-ed37-4686-aeae-6597b26e29fc",
+    "name": "Father"
+  },
+  {
+    "uuid": "08921b1f-e8bd-473d-9c5e-4824008b00a6",
+    "name": "Mother"
+  },
+  {
+    "uuid": "954c8d40-eacc-41cb-9d1d-e5f79475015b",
+    "name": "Uncle"
+  },
+  {
+    "uuid": "6b2c4dde-5271-4e10-9daf-c3e19b177aba",
+    "name": "Aunty"
+  },
+  {
+    "uuid": "ecd6c006-bb25-4e3d-b03c-31f1d4a665b4",
+    "name": "Nephew"
+  },
+  {
+    "uuid": "5f2c72ca-c436-46cb-ad73-b600d9b754c9",
+    "name": "Niece"
   },
   {
     "name": "Relation to head of the family",
@@ -17,6 +39,30 @@
       {
       "uuid": "96acdbd3-d7d4-4e0b-b60f-e74709d754d8",
       "name": "Grand child"
+      },
+      {
+        "uuid": "39eec340-ed37-4686-aeae-6597b26e29fc",
+        "name": "Father"
+      },
+      {
+        "uuid": "08921b1f-e8bd-473d-9c5e-4824008b00a6",
+        "name": "Mother"
+      },
+      {
+        "uuid": "954c8d40-eacc-41cb-9d1d-e5f79475015b",
+        "name": "Uncle"
+      },
+      {
+        "uuid": "6b2c4dde-5271-4e10-9daf-c3e19b177aba",
+        "name": "Aunty"
+      },
+      {
+        "uuid": "ecd6c006-bb25-4e3d-b03c-31f1d4a665b4",
+        "name": "Nephew"
+      },
+      {
+        "uuid": "5f2c72ca-c436-46cb-ad73-b600d9b754c9",
+        "name": "Niece"
       }
     ]
   },
