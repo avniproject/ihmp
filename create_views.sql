@@ -401,10 +401,8 @@ create or replace view ihmp_location_view as (
                                 villages.id     village_id,
                                 phc.id          phc_id
                          from address_level villages
-                                join location_location_mapping m2 on villages.id = m2.location_id
-                                join address_level subcenter on subcenter.id = m2.parent_location_id
-                                join location_location_mapping m3 on subcenter.id = m3.location_id
-                                join address_level phc on phc.id = m3.parent_location_id
+                                    join address_level subcenter on subcenter.id = villages.parent_id
+                                    join address_level phc on phc.id = subcenter.parent_id
                          where subcenter.level = 2.3
                            and villages.level = 1
                            and phc.level = 2.6),
@@ -415,8 +413,7 @@ create or replace view ihmp_location_view as (
                              phc.title  phc,
                              phc.id     phc_id
                       from address_level slum
-                             join location_location_mapping m2 on slum.id = m2.location_id
-                             join address_level phc on phc.id = m2.parent_location_id
+                                    join address_level phc on phc.id = slum.parent_id
                       where slum.level = 0.9
                         and phc.level = 2.6)
     select r.phc, r.subcenter, r.village, null as slum, r.village_id as lowest_id
