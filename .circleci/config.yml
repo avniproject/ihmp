@@ -14,7 +14,7 @@ commands:
         keys:
         - v1-dependencies-{{ checksum "package.json" }}
         - v1-dependencies-
-    - run: npm install
+    - run: make
     - save_cache:
         paths:
         - node_modules
