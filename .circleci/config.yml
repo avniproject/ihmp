@@ -45,27 +45,18 @@ jobs:
     - run: npm test || echo 'done'
 
   STAGING_deploy:
-    docker:
-    - image: circleci/openjdk:8-jdk
-    working_directory: ~/
     steps:
     - deploy:
         to: staging
         phrase: STAG
 
   UAT_deploy:
-    docker:
-    - image: circleci/openjdk:8-jdk
-    working_directory: ~/
     steps:
     - deploy:
         to: uat
         phrase: UAT
 
   PRERELEASE_deploy:
-    docker:
-    - image: circleci/openjdk:8-jdk
-    working_directory: ~/
     steps:
     - deploy:
         to: prerelease
