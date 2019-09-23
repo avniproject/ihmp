@@ -69,6 +69,15 @@ jobs:
         to: prerelease
         phrase: PRER
 
+  PROD_deploy:
+    docker:
+    - image: circleci/node:8.5.0
+    working_directory: ~/ihmp
+    steps:
+    - deploy:
+        to: prod
+        phrase: PROD
+
 workflows:
   version: 2
   deploy:
@@ -95,3 +104,14 @@ workflows:
     - PRERELEASE_deploy:
         requires:
         - PRERELEASE_approve
+    - PROD_approve:
+        type: approval
+        requires:
+        - test
+    - PROD_DOUBLE_approve:
+        type: approval
+        requires:
+        - PROD_approve
+    - PROD_deploy:
+        requires:
+        - PROD_DOUBLE_approve
