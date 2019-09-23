@@ -14,7 +14,7 @@ commands:
         keys:
         - v1-dependencies-{{ checksum "package.json" }}
         - v1-dependencies-
-    - run: make
+    - run: sudo make deps
     - save_cache:
         paths:
         - node_modules
