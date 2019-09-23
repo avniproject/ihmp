@@ -8,9 +8,6 @@ commands:
         type: string
       phrase:
         type: string
-    docker:
-    - image: circleci/node:8.5.0
-    working_directory: ~/ihmp
     steps:
     - checkout
     - restore_cache:
@@ -45,18 +42,27 @@ jobs:
     - run: npm test || echo 'done'
 
   STAGING_deploy:
+    docker:
+    - image: circleci/node:8.5.0
+    working_directory: ~/ihmp
     steps:
     - deploy:
         to: staging
         phrase: STAG
 
   UAT_deploy:
+    docker:
+    - image: circleci/node:8.5.0
+    working_directory: ~/ihmp
     steps:
     - deploy:
         to: uat
         phrase: UAT
 
   PRERELEASE_deploy:
+    docker:
+    - image: circleci/node:8.5.0
+    working_directory: ~/ihmp
     steps:
     - deploy:
         to: prerelease
