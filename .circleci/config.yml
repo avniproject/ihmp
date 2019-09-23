@@ -80,7 +80,8 @@ jobs:
 
 workflows:
   version: 2
-  deploy:
+
+  deploy_to_test_envs:
     jobs:
     - test
     - STAGING_approve:
@@ -104,6 +105,10 @@ workflows:
     - PRERELEASE_deploy:
         requires:
         - PRERELEASE_approve
+
+  deploy_to_prod:
+    jobs:
+    - test
     - PROD_approve:
         type: approval
         requires:
