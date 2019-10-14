@@ -13,7 +13,6 @@ module.exports = IDI.configure({
             "dev": ["users/dev-admin-user.json"],
         },
         "forms": [
-            "census/censusForm.json",
             "child/birthForm.json",
             "child/checklistForm.json",
             "child/nutritionalStatusForm.json",
