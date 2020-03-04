@@ -40,5 +40,20 @@
         "comment": "Private Hospital"
       }
     ]
+  },
+  {
+    "name": "ROTA 1",
+    "uuid": "1982df47-836a-47b6-ba28-8e39973cce79",
+    "dataType": "NA"
+  },
+  {
+    "name": "ROTA 2",
+    "uuid": "f2ecfeff-5e7f-445c-b2b4-508357d2acbc",
+    "dataType": "NA"
+  },
+  {
+    "name": "ROTA 3",
+    "uuid": "c1b553ae-afa2-4a82-b021-86a21fbf81b6",
+    "dataType": "NA"
   }
 ]
