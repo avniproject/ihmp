@@ -326,17 +326,11 @@ create or replace view ihmp_needs_assessment_view as
               programEncounter.observations -> '518cdd47-a634-4554-ae2d-fcc8e1d8ad14')::TEXT  as "Enc.Family planning method used currently",
           multi_select_coded(
               programEncounter.observations -> '2ccecc3f-7b63-4679-86de-5d7f1c150917')::TEXT  as "Enc.FP method preference for future use",
-          (((programEncounter.observations ->> '4f8fe008-5a57-4906-8f18-55c0c83bc312')::JSONB #>>
-            '{durations,0,_durationValue}') || ' ' ||
-           ((programEncounter.observations ->> '4f8fe008-5a57-4906-8f18-55c0c83bc312')::JSONB #>>
-            '{durations,0,durationUnit}'))::TEXT                                              as "Enc.Since last how many month is she using the FP method?",
+          (programEncounter.observations ->> '4f8fe008-5a57-4906-8f18-55c0c83bc312')::TEXT    as "Enc.Since last how many month is she using the FP method?",
           multi_select_coded(programEncounter.observations ->
                              'b9d037fb-50c1-497e-bf5c-4d8419909a31')::TEXT                    as
                                                                                                  "Enc.Symptoms of RTI",
-          (((programEncounter.observations ->> '3f680272-dcfa-4db2-bc02-d4605b5454a2')::JSONB #>>
-            '{durations,0,_durationValue}') || ' ' ||
-           ((programEncounter.observations ->> '3f680272-dcfa-4db2-bc02-d4605b5454a2')::JSONB #>>
-            '{durations,0,durationUnit}'))::TEXT                                              as "Enc.Duration of RTI symptom(s) in days",
+          (programEncounter.observations ->> '3f680272-dcfa-4db2-bc02-d4605b5454a2')::TEXT    as "Enc.Duration of RTI symptom(s) in days",
           single_select_coded(programEncounter.observations ->>
                               '9947d31c-e70a-4cee-8a7e-63293ce3af9b')::TEXT                   as
                                                                                                  "Enc.Whether RTI cured",
