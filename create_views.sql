@@ -391,25 +391,30 @@ create or replace view ihmp_location_view as (
   with rural_mapping as (select villages.title  village,
                                 subcenter.title subcenter,
                                 phc.title       phc,
-                                phc.level,
+                                phc_type.level,
                                 villages.id     village_id,
                                 phc.id          phc_id
                          from address_level villages
+                                    join address_level_type villages_type on villages_type.id = villages.type_id
                                     join address_level subcenter on subcenter.id = villages.parent_id
+                                    join address_level_type subcenter_type on subcenter_type.id = subcenter.type_id
                                     join address_level phc on phc.id = subcenter.parent_id
-                         where subcenter.level = 2.3
-                           and villages.level = 1
-                           and phc.level = 2.6),
+                                    join address_level_type phc_type on phc_type.id = phc.type_id
+                         where subcenter_type.level = 2.3
+                           and villages_type.level = 1
+                           and phc_type.level = 2.6),
 
     urban_mapping as (select slum.title slum,
                              slum.id    slum_id,
-                             phc.level,
+                             phc_type.level,
                              phc.title  phc,
                              phc.id     phc_id
                       from address_level slum
+                                    join address_level_type slum_type on slum_type.id = slum.type_id
                                     join address_level phc on phc.id = slum.parent_id
-                      where slum.level = 0.9
-                        and phc.level = 2.6)
+                                    join address_level_type phc_type on phc_type.id = phc.type_id
+                      where slum_type.level = 0.9
+                        and phc_type.level = 2.6)
     select r.phc, r.subcenter, r.village, null as slum, r.village_id as lowest_id
     from rural_mapping r
     union all
