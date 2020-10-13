@@ -9,6 +9,7 @@ import {
     VisitScheduleBuilder
 } from 'rules-config/rules';
 
+
 const RegistrationViewFilter = RuleFactory("36ba19a3-c289-44b7-bf56-eed36e9d7519", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('individual', 'formElement');
 
@@ -51,6 +52,17 @@ class RegistrationHandlerIHMP {
         statusBuilder.show().when.valueInRegistration("Marital status").containsAnyAnswerConceptName("Currently married")
             .and.when.ageInYears.is.lessThanOrEqualTo(49);
     }
+    @WithStatusBuilder
+    specifyOtherRelation([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Relation to head of the family").containsAnswerConceptName("Other");
+    }
+
+    @WithStatusBuilder
+    specifyOtherReligion([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Religion").containsAnswerConceptName("Other");
+    }
+
+
 
 }
 
