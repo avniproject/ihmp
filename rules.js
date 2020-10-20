@@ -29,4 +29,6 @@ module.exports = _.merge({},
     require('./asha/rules/ashaFormHandler'),
     // require('./shared/testRule'),
     require('./rules/workListUpdationRules'),
+    require('./household/householdRegistrationHandler'),
+
 );
