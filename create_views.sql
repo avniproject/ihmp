@@ -405,11 +405,8 @@ create or replace view ihmp_needs_assessment_view as
 
 drop view if exists ihmp_user_view;
 create or replace view ihmp_user_view as (
-  SELECT u.username as name,
-         a.id
-  FROM individual i
-         join audit a on i.audit_id = a.id
-         join users u on a.created_by_id = u.id
+  SELECT u.username as name, id
+  FROM users u where organisation_id notnull
 );
 
 drop view if exists ihmp_location_view;
