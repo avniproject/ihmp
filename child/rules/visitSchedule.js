@@ -31,7 +31,7 @@ class ChildEnrolmentBasedVisitsIHMP {
         let daysFromBirth = moment(programEnrolment.enrolmentDateTime).diff(dateOfBirth, 'days');
         if (daysFromBirth <= 42) {
             RuleHelper.blindAddSchedule(scheduleBuilder, 'HBNC 1', 'Neonatal',
-              programEnrolment.enrolmentDateTime, 0);
+                moment(dateOfBirth).startOf('day').add(3, 'days').toDate(), 0);
         }
         return scheduleBuilder.getAllUnique("encounterType");
     }
