@@ -7,7 +7,7 @@ class VisitSchedule {
         let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
 
         const daysFromEvent = moment(programEncounter.earliestVisitDateTime).startOf('day').diff(eventDate, 'days');
-        const protocolDaysForVisit = encounterName !== 'HBNC' ? [3, 7, 14, 21, 28, 42] : [3, 14, 21, 28, 42];
+        const protocolDaysForVisit = [3, 7, 14, 21, 28, 42] ;
         const daysFromEventForNextEncounter = _.find(protocolDaysForVisit, (x) => daysFromEvent < x);
         if(_.isNil(daysFromEventForNextEncounter)) return visitSchedule;
 
