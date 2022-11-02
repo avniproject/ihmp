@@ -24,21 +24,17 @@ class PregnancyANCVHNDViewFilterHandlerIHMP {
 
 
     @WithStatusBuilder
-    tt1Date([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment('TT1 Date').is.notDefined
-            .or.when.valueInEncounter('TT1 Date').is.defined;
+    tt1DateUpdated([], statusBuilder) {
+        statusBuilder.show().when.valueInEntireEnrolment('TT1 Date').is.notDefined;
     }
-
     @WithStatusBuilder
     tt2Date([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment('TT2 Date').is.notDefined
-            .or.when.valueInEncounter('TT2 Date').is.defined;
+        statusBuilder.show().when.valueInEntireEnrolment('TT2 Date').is.notDefined;
     }
 
     @WithStatusBuilder
     ttBoosterDate([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment('TT Booster Date').is.notDefined
-            .or.when.valueInEncounter('TT Booster Date').is.defined;
+        statusBuilder.show().when.valueInEntireEnrolment('TT Booster Date').is.notDefined;
     }
 
     @WithStatusBuilder
