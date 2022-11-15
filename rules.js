@@ -29,6 +29,7 @@ module.exports = _.merge({},
     require('./asha/rules/ashaFormHandler'),
     // require('./shared/testRule'),
     require('./rules/workListUpdationRules'),
+    //TODO household is not on PROD so while deploying rule on prod comment it
     require('./household/householdRegistrationHandler'),
 
 );
