@@ -30,24 +30,51 @@ class ChildEnrolmentBasedVisitsIHMP {
         let dateOfBirth = moment(programEnrolment.individual.dateOfBirth);
         let daysFromBirth = moment(programEnrolment.enrolmentDateTime).diff(dateOfBirth, 'days');
         if (daysFromBirth <= 42) {
-            RuleHelper.blindAddSchedule(scheduleBuilder, 'HBNC 1', 'Neonatal',
-                moment(dateOfBirth).startOf('day').add(3, 'days').toDate(), 0);
+            // const protocolDaysForVisit = [3, 7, 14, 21, 28, 42];
+            // const daysFromEventForNextEncounter = _.find(protocolDaysForVisit, (x) => daysFromBirth < x);
+            // RuleHelper.blindAddSchedule(scheduleBuilder, 'HBNC 1', 'Neonatal',
+            //     moment(dateOfBirth).startOf('day').add(daysFromEventForNextEncounter, 'days').toDate(), 0);
+
+            scheduleChildHBNC(scheduleBuilder, 'Neonatal', programEnrolment.enrolmentDateTime, dateOfBirth, 0)
         }
         return scheduleBuilder.getAllUnique("encounterType");
     }
 }
 
 
-
 @ChildNeonatalBasedVisitsRule("0e9e55e5-388b-4a56-a977-61fc3b39bcb3", "Child Neonatal based visit rule", 100.0)
 class ChildNeonatalBasedVisitsIHMP {
 
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
         const dateOfBirth = moment(programEncounter.programEnrolment.individual.dateOfBirth).startOf('day').toDate();
-        return VisitSchedule.postPartumVisits(programEncounter, 'HBNC', dateOfBirth, visitSchedule);
+        let daysFromBirth = moment(programEncounter.encounterDateTime).diff(dateOfBirth, 'days');
+        if(daysFromBirth < 42) {
+            scheduleChildHBNC(scheduleBuilder, 'Neonatal', programEncounter.encounterDateTime, dateOfBirth, 0)
+        }
+        return scheduleBuilder.getAllUnique("encounterType");
     }
 }
 
+
+const scheduleChildHBNC = (scheduleBuilder, encounterType, encounterDate, eventDate, maxDay) => {
+    const schedule = [
+        {"Name": "HBNC 1", "days": 3},
+        {"Name": "HBNC 2", "days": 7},
+        {"Name": "HBNC 3", "days": 14},
+        {"Name": "HBNC 4", "days": 21},
+        {"Name": "HBNC 5", "days": 28},
+        {"Name": "HBNC 6", "days": 42},
+    ]
+    const daysFromEvent = moment(encounterDate).startOf('day').diff(eventDate, 'days');
+    const scheduleFromEventForNextEncounter = schedule.find(x => daysFromEvent < x.days)
+    console.log('scheduleFromEventForNextEncounter------>',scheduleFromEventForNextEncounter);
+
+
+    if(_.isNil(scheduleFromEventForNextEncounter)) return visitSchedule;
+    return RuleHelper.blindAddSchedule(scheduleBuilder, scheduleFromEventForNextEncounter.Name, encounterType,
+        moment(eventDate).add(scheduleFromEventForNextEncounter.days, 'days').toDate(), maxDay);
+}
 
 export {
     ChildEnrolmentBasedVisitsIHMP, ChildNeonatalBasedVisitsIHMP
