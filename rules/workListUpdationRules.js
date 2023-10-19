@@ -17,12 +17,16 @@ class IHMPWorkListUpdationRules {
                     subjectUUID: _.get(context, 'entity.programEnrolment.individual.uuid')
                 }));
 
-        const programEncounter = context.entity;
-        const ruleCondition = new RuleCondition({programEncounter})
-            .when
-            .valueInEncounter("Whether currently pregnant").is.yes
-            .and.whenItem(!_.some(programEncounter.programEnrolment.individual.enrolments,
-                enrolment => !enrolment.voided && enrolment.program.name === 'Mother')).is.truthy;
+         const programEncounter = context.entity;
+
+
+
+         const ruleCondition = new RuleCondition({programEncounter})
+             .when
+             .valueInEncounter("Whether currently pregnant").is.yes
+               .and.whenItem(!_.some(programEncounter.programEnrolment.individual.enrolments,
+                enrolment => !enrolment.voided && enrolment.program.name === 'Mother' && enrolment.isActive)).is.truthy;
+
 
         if (ruleCondition.matches()) {
             enrolToMotherProgram();

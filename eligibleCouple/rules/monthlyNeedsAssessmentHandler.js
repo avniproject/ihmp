@@ -201,9 +201,11 @@ class ECMonthlyNeedsAssessmentDecisionIHMP {
             programEncounter: programEncounter,
             complicationsConcept: 'Program enrolment advice'
         });
+
         complicationsBuilder.addComplication("Enrol in Mother program").when.valueInEncounter("Whether currently pregnant").is.yes
-            .and.not.valueInLastEncounter("Whether currently pregnant").is.yes
-            .and.whenItem(_.some(programEncounter.programEnrolment.individual.enrolments, ['program.name', 'Mother'])).is.falsy;
+            .and.whenItem(!_.some(programEncounter.programEnrolment.individual.enrolments,
+            enrolment => !enrolment.voided && enrolment.program.name === 'Mother' && enrolment.isActive)).is.truthy;
+
 
         decisions.encounterDecisions.push(complicationsBuilder.getComplications());
         return decisions;
