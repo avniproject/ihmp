@@ -90,19 +90,18 @@ class PregnancyANCASHAViewFilterHandlerIHMP {
     }
 
     @WithStatusBuilder
-    tt1DateUpdated([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment('TT1 Date').is.notDefined;
+    tt1Date([], statusBuilder) {
+        statusBuilder.show().when.valueInEntireEnrolment('TT1 Date').is.notDefined.and.When.valueInEntireEnrolment('TT Booster Date').is.notDefined;
     }
     @WithStatusBuilder
     tt2Date([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment('TT2 Date').is.notDefined;
+        statusBuilder.show().when.valueInEntireEnrolment('TT2 Date').is.notDefined.and.When.valueInEntireEnrolment('TT Booster Date').is.notDefined;
     }
 
     @WithStatusBuilder
     ttBoosterDate([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment('TT Booster Date').is.notDefined;
+        statusBuilder.show().when.valueInEntireEnrolment('TT Booster Date').is.notDefined.and.when.valueInEntireEnrolment('TT1 Date').is.notDefined.and.when.valueInEntireEnrolment('TT2 Date').is.notDefined;
     }
-
     @WithStatusBuilder
     pregnancyComplications([programEncounter, fe, today], statusBuilder) {
         statusBuilder.skipAnswers('Morning Sickness', 'Excessive vomiting and inability to consume anything orally in last 24 hours', 'PV leaking');
