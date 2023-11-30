@@ -25,16 +25,33 @@ class PregnancyANCVHNDViewFilterHandlerIHMP {
 
     @WithStatusBuilder
     tt1Date([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment('TT1 Date').is.notDefined.and.When.valueInEntireEnrolment('TT Booster Date').is.notDefined;
+        const programEnrolment = statusBuilder.context.programEncounter.programEnrolment;
+        const condition1 = programEnrolment.findObservationValueInEntireEnrolment("TT1 Date");
+        const condition2 = programEnrolment.findObservationValueInEntireEnrolment("TT2 Date");
+        const condition3 = programEnrolment.findObservationValueInEntireEnrolment("TT Booster Date");
+        const condition4 = Boolean( !(condition1 || condition2 || condition3) );
+        // console.log(`=====================================> TT1 value of condition 4 is ${condition4}`);
+        statusBuilder.show().whenItem(condition4).is.truthy;
     }
     @WithStatusBuilder
     tt2Date([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment('TT2 Date').is.notDefined.and.When.valueInEntireEnrolment('TT Booster Date').is.notDefined;
+        const programEnrolment = statusBuilder.context.programEncounter.programEnrolment;
+        const condition1 = programEnrolment.findObservationValueInEntireEnrolment("TT2 Date");
+        const condition2 = programEnrolment.findObservationValueInEntireEnrolment("TT Booster Date");
+        const condition3 = Boolean( !(condition1 || condition2) );
+        // console.log(`=====================================> TT2 value of condition 3 is ${condition3}`);
+        statusBuilder.show().whenItem(condition3).is.truthy;
     }
 
     @WithStatusBuilder
     ttBoosterDate([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment('TT Booster Date').is.notDefined.and.when.valueInEntireEnrolment('TT1 Date').is.notDefined.and.when.valueInEntireEnrolment('TT2 Date').is.notDefined;
+        const programEnrolment = statusBuilder.context.programEncounter.programEnrolment;
+        const condition1 = programEnrolment.findObservationValueInEntireEnrolment("TT1 Date");
+        const condition2 = programEnrolment.findObservationValueInEntireEnrolment("TT2 Date");
+        const condition3 = programEnrolment.findObservationValueInEntireEnrolment("TT Booster Date");
+        const condition4 = Boolean( !(condition1 || condition2 || condition3) );
+        // console.log(`=====================================> TT Booster value of condition 4 is ${condition4}`);
+        statusBuilder.show().whenItem(condition4).is.truthy;
     }
 
     @WithStatusBuilder
