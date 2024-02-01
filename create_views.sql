@@ -1318,5 +1318,40 @@ create view ihmp_abortion_view as (
     AND programEncounter.encounter_date_time IS NOT NULL
     AND programEnrolment.enrolment_date_time IS NOT NULL
 );
+
+
+set role ihmp;
+
+create view ihmp_visit_name(visit_name) as
+SELECT 'Abortion'::text AS visit_name
+union
+select 'Delivery'::text as visit_name
+union
+SELECT 'Abortion followup'::text AS visit_name
+UNION
+SELECT 'ANC ASHA'::text AS visit_name
+union
+SELECT 'ANC VHND'::text AS visit_name
+union
+SELECT 'ANC VHND Follow up'::text AS visit_name
+union
+SELECT 'Birth'::text AS visit_name
+union
+SELECT 'FP services'::text AS visit_name
+union
+SELECT 'Monthly needs assessment'::text AS visit_name
+union
+SELECT 'Neonatal'::text AS visit_name
+union
+SELECT 'Nutritional status and Morbidity'::text AS visit_name
+union
+SELECT 'PNC'::text AS visit_name
+union
+SELECT 'RTI services'::text AS visit_name
+;
+
+alter table ihmp_visit_name owner to ihmp;
+
+
 -- ----------------------------------------------------
 set role none;
